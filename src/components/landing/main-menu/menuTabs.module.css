@@ -1,0 +1,39 @@
+.tabContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 105;
+}
+
+.tab {
+	width: 225px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f3f3f3;
+	color: #333;
+	font-size: 26px;
+	font-weight: 600;
+	border-radius: 8px 8px 0 0;
+	cursor: pointer;
+	transition: margin-top 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+	margin-top: 5px; /* Отступ сверху, чтобы при выборе карточка поднималась вверх */
+}
+
+.tab:hover,
+.activeTab {
+	height: 85px; /* Увеличивает высоту */
+	margin-top: 0; /* Поднимает карточку, убирая отступ сверху */
+	background-color: #e0e0e0;
+}
+
+.activeTab {
+	background-color: #ddd; /* Цвет для активной карточки */
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Тень только сверху для эффекта */
+}
