@@ -1,0 +1,53 @@
+.customDropdown {
+	position: relative;
+	display: inline-block;
+	align-items: center;
+}
+
+.dropdownHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 81px;
+	padding: 8px;
+	gap: 5px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	color: #22496d;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.dropdownHeader:hover {
+	color: #35bbd3;
+}
+
+.dropdownListNoneActive {
+	display: none;
+}
+
+.dropdownListActive {
+	display: flex;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 100px;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.dropdownListActive button {
+	white-space: nowrap;
+	padding: 8px 5px;
+	color: #22496d;
+	font-size: 12px;
+}
+
+.dropdownListActive button:hover {
+	color: #35bbd3;
+}

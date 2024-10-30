@@ -1,0 +1,288 @@
+.newsDetailContainer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-top: 100px;
+}
+.mainContent {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.blogContainer {
+	width: 80%;
+	height: auto;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f7f7f7;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.secondaryBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	margin: 10px;
+	overflow: hidden;
+	padding: 20px 100px 20px 100px;
+}
+
+.titleImageBlock {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-start;
+	text-align: left;
+}
+
+.newsHeader {
+	width: 70%;
+	padding-left: 40px;
+}
+
+.mediaContainer,
+.newsVideo {
+	width: 40%;
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 4px;
+	border: none;
+}
+.newsVideo {
+	width: 100%;
+	height: 100%;
+}
+
+.newsImage {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.newsContent {
+	flex: 1;
+}
+
+.newsTitle {
+	font-size: 22px;
+	font-weight: 600;
+}
+.newsTitle,
+.newsSummary {
+	padding: 10px;
+	margin-top: 10px;
+	margin: 0;
+	color: #22496d;
+}
+.upper {
+	padding: 10px;
+	padding-top: 20px;
+	margin: 0;
+	color: #22496d;
+	font-size: 24px;
+	font-weight: 600;
+}
+.fullTextsSubtitle {
+	margin: 0;
+	color: #22496d;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.newsSubtitle {
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;
+	color: #98a2b3;
+	letter-spacing: 0em;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.newsSummary {
+	width: 100%;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0;
+	text-align: left;
+	overflow-wrap: break-word;
+}
+strong {
+	display: inline;
+	font-weight: 500;
+}
+
+.fullText {
+	display: none;
+}
+
+.listContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+.firstWord {
+	font-size: 20px;
+	font-weight: 500;
+	padding-bottom: 10px;
+	margin: 0;
+	color: #35bbd3;
+	padding: 0;
+	padding-top: 5px;
+}
+
+.restOfSentence {
+	font-size: 18px;
+	font-style: italic;
+	line-height: 28px;
+	margin: 0;
+	color: #22496d;
+	padding-top: 10px;
+}
+
+.fullTextVisible {
+	max-height: none;
+	overflow: visible;
+}
+
+.backButton {
+	align-self: flex-start;
+	padding: 0;
+	color: #98a2b3;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 30px;
+}
+
+.backButton:hover {
+	text-decoration: underline;
+}
+.text {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0;
+	max-height: none;
+	overflow-y: visible;
+	padding: 10px;
+	margin-top: 10px;
+	margin: 0;
+	word-wrap: break-word;
+}
+.textTips {
+	font-size: 22px;
+	padding-left: 10px;
+	color: #22496d;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.newsDetailContainer {
+		padding-top: 20px;
+	}
+	.newsTitle {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.mainContent {
+		width: 90%;
+	
+	}
+
+	.blogContainer {
+		width: 100%;
+		box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+		margin-bottom: 20px;
+		margin-top: 0;
+		padding: 10px;
+	}
+
+	.secondaryBlock {
+		padding: 10px;
+	}
+
+	.titleImageBlock {
+		flex-direction: column;
+	}
+
+	.newsHeader {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.mediaContainer {
+		width: 100%;
+		height: 150px;
+	}
+
+	.newsContent {
+		padding: 10px;
+	}
+	.upper {
+		font-size: 18px;
+		text-align: left;
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+	.newsTitle {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.newsSubtitle {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.fullTextsSubtitle {
+		font-size: 16px;
+		padding-left: 0;
+	}
+
+	.textTips {
+		font-size: 18px;
+	}
+
+	.firstWord {
+		font-size: 18px;
+	}
+
+	.restOfSentence {
+		font-size: 16px;
+	}
+
+	.backButton {
+		font-size: 16px;
+		padding-left: 10px;
+		padding-bottom: 5px;
+	}
+}

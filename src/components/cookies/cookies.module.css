@@ -1,0 +1,205 @@
+.cookieConsentContainer {
+	animation: fadeInUpwards 0.8s forwards;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+	width: 100%;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	z-index: 101;
+	box-sizing: border-box;
+}
+
+.cookiesBox {
+	width: 60%;
+	padding-right: 30px;
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.cookieImage {
+	width: 100px;
+	height: auto;
+	animation: rotateCookie 2s forwards;
+}
+
+.cookieText {
+	padding: 10px 0 10px 0;
+	text-align: left;
+	font-family: 'PT Root UI VF', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	margin: 0;
+	color: #22496b;
+}
+
+.weUseCookies {
+	text-align: left;
+	font-family: 'PT Root UI VF', sans-serif;
+	color: #35bbd3;
+	font-size: 14px;
+	letter-spacing: 0em;
+	margin: 0;
+	transition:
+		color 0.3s ease-in-out,
+		transform 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.privacyPolicy {
+	text-align: left;
+	font-family: 'PT Root UI VF', sans-serif;
+	color: #22496b;
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 14px;
+	letter-spacing: 0em;
+	margin: 0;
+	transition:
+		color 0.3s ease-in-out,
+		transform 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.privacyPolicy:hover {
+	color: #03a4bd;
+	text-decoration: underline;
+}
+
+.privacyPolicy:active {
+	color: #016978;
+	transform: translateY(2px);
+}
+.cookieButtons {
+	color: #f9fafb;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: baseline;
+	gap: 36px;
+	padding-bottom: 10px;
+}
+
+.cookieButtons button {
+	width: 100px;
+	padding: 10px;
+	background: linear-gradient(145deg, #22496d, #2e6099);
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	transition:
+		background-color 0.3s,
+		transform 0.1s;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	outline: none;
+}
+
+.cookieButtons button:hover {
+	color: #ffffff;
+	background-image: linear-gradient(145deg, #2cb5e8 0%, #3ad2f5 100%);
+}
+
+.cookieButtons button:active {
+	transform: translateY(2px);
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 102;
+}
+
+.modalContent {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 1000px;
+	max-height: 80vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.closeButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.closeButton:hover {
+	color: #22496b;
+}
+@media (max-width: 768px) {
+	.cookieConsentContainer {
+		padding: 10px 5px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.cookiesBox {
+		width: 80%;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.cookieImage {
+		width: 30%;
+		height: auto;
+	}
+
+	.cookieText,
+	.weUseCookies,
+	.privacyPolicy {
+		text-align: center;
+		font-size: 10px;
+		line-height: 18px;
+	}
+
+	.cookieButtons {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.cookieButtons button {
+		width: 100px;
+		padding: 8px;
+		font-size: 12px;
+	}
+}

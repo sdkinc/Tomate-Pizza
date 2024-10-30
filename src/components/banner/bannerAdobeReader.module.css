@@ -1,0 +1,117 @@
+.banner {
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffffff;
+	padding: 10px 20px 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #c92029;
+}
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 20px;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bannerImage {
+	width: 80px;
+	height: auto;
+	display: flex;
+	padding-right: 50px;
+}
+
+.downloadLinkAdobe {
+	background-color: none;
+	color: #c92029;
+	padding: 0;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.downloadLinkAdobe:hover {
+	color: #feac26;
+	padding: 0;
+}
+
+.explanatoryNote {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 16px;
+}
+.subtitle {
+	color: #555;
+	font-size: 14px;
+	font-style: italic;
+	margin: 0;
+	text-align: center;
+}
+
+.downloadButton {
+	margin-left: 50px;
+	padding: 8px 16px;
+	background: linear-gradient(145deg, #c92029, #ed9ea2);
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.downloadButton:hover {
+	background: linear-gradient(145deg, #c92029, #feac26);
+}
+@media (max-width: 768px) {
+	.banner {
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+		padding: 20px;
+		gap: 15px;
+	}
+
+	.content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bannerImage {
+		width: 60px;
+		padding-right: 0;
+	}
+
+	.textContainer {
+		padding-left: 0;
+		text-align: center;
+	}
+	.downloadLinkAdobe {
+		font-weight: 600;
+		font-size: 18px;
+	}
+	.explanatoryNote {
+		font-size: 14px;
+	}
+	.subtitle {
+		font-size: 12px;
+	}
+	.downloadButton {
+		margin-left: 0;
+		margin-top: 15px;
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -1,0 +1,58 @@
+.navbarBox {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 102;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.navigationPanelTop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.logoBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	gap: 20px;
+}
+
+.logoBoxHome {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	padding: 0;
+	padding-left: 10px;
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
+}
+
+.textLogo {
+	width: 100%;
+	font-size: 16px;
+	line-height: 30px;
+	color: #22496d;
+}
+.languageBox {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+}

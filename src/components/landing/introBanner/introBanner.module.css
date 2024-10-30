@@ -1,0 +1,148 @@
+.pageBox {
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+.bannerContainer {
+	background-image: url('/ML_banner.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: calc(40vw * 5 / 4);
+	max-width: 600px;
+	max-height: 750px;
+}
+
+.textContainer {
+	width: 60%;
+	position: relative;
+	overflow: hidden;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	padding-top: 70px;
+	margin-right: 40px;
+}
+
+.introducing {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.introducingParagraph1 {
+	width: 90%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 48px;
+	letter-spacing: 0em;
+	background: #ffffff;
+	color: #22496d;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0 5%;
+}
+
+.introducingParagraph3 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	background: #ffffff;
+	color: #22496d;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+}
+@media (max-width: 1280px) {
+	.introducingParagraph1 {
+		font-size: 24px;
+	}
+
+	.introducingParagraph3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+@media (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.bannerContainer {
+		width: 50vw;
+		height: calc(50vw * 5 / 4);
+		max-width: 500px;
+		max-height: 625px;
+	}
+
+	.textContainer {
+		width: 90%;
+		margin-right: 0;
+		padding-top: 20px;
+	}
+
+	.introducingParagraph1 {
+		font-size: 24px;
+		line-height: 40px;
+	}
+
+	.introducingParagraph3 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.bannerContainer {
+		width: 300px;
+		height: 375px;
+	}
+
+	.textContainer {
+		width: 100%;
+		margin-right: 0;
+		padding-top: 0;
+	}
+
+	.introducingParagraph1 {
+		width: 90%;
+		font-size: 20px;
+		line-height: 30px;
+		padding: 0 5%;
+	}
+
+	.introducingParagraph3 {
+		width: 90%;
+		font-size: 14px;
+		line-height: 24px;
+		padding-top: 10px;
+	}
+}

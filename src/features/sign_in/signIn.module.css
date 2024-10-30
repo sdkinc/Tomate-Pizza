@@ -1,0 +1,286 @@
+.signInBox {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+}
+.logoBox {
+	display: flex;
+	align-items: center;
+}
+
+.logoBoxHome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 240px;
+	height: 40px;
+	border-radius: 8px;
+	gap: 10px;
+	color: #22496d;
+}
+
+.logoBoxHome:hover {
+	color: #35bbd3;
+	border-radius: 8px;
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+	border-radius: 0.8px;
+	padding: 0;
+}
+
+.textLogo {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 40px;
+	letter-spacing: 0em;
+	text-align: left;
+	left: 40px;
+}
+
+.mainContainer {
+	width: auto;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: center;
+	padding: 0;
+	background-color: #ffffff;
+}
+.signInBlock {
+	height: 100%;
+}
+
+.signInBox {
+	width: auto;
+	height: max-content;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: center;
+	padding-top: 30px;
+}
+.loginHeaderContainer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+.title {
+	color: #22496d;
+	display: flex;
+	text-align: center;
+	justify-content: left;
+	font-size: 26px;
+}
+.loginContainer {
+	display: flex;
+	text-align: center;
+	justify-content: left;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0em;
+	margin: 0;
+	color: #22496d;
+}
+.link,
+.linkLogin {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #22496d;
+	font-size: 16px;
+	text-decoration: none;
+	transition:
+		transform 0.3s ease,
+		text-decoration 0.3s ease;
+}
+
+.linkLogin {
+	color: #35bbd3;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.linkLogin:hover {
+	text-decoration: none;
+	opacity: 0.7;
+}
+.inputContainer,
+.passwordContainer {
+	width: 466px;
+	height: min-content;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.email,
+.password {
+	width: 200px;
+	height: 26px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	color: #1d2939;
+	margin: 0;
+	padding-bottom: 10px;
+}
+.emailInput,
+.passwordInput {
+	box-sizing: border-box;
+	width: 466px;
+	min-height: 52px;
+	border-radius: 8px;
+	border: 1px solid #98a2b380;
+	padding: 0;
+	gap: 8px;
+	background-color: #ffffff;
+	border-color: #98a2b3;
+	display: flex;
+	align-items: center;
+}
+.emailInput:focus,
+.passwordInput:focus {
+	outline: none;
+	border: 1.5px solid #373d44;
+}
+.emailExample,
+.passwordExample {
+	font-family: 'PTRootUIWebVF', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	color: #797979;
+	padding-left: 10px;
+}
+.button {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.buttonContinue {
+	margin-top: 40px;
+	gap: 16px;
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	background: linear-gradient(145deg, #1570ef, #0c418c);
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+}
+
+.buttonContinue:hover {
+	opacity: 0.7;
+}
+
+.buttonContinue:active {
+	background-color: #98a2b3;
+	transform: translateY(1px);
+}
+.buttonContinueText {
+	color: #ffffff;
+	font-family: 'PTRootUIWebVF', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	align-items: center;
+}
+
+.buttonNoFullCorrect {
+	background-color: #98a2b3;
+}
+.buttonNoFullCorrect:hover {
+	cursor: auto;
+	opacity: 1;
+}
+
+.agreementTextContainer {
+	width: 466px;
+	height: 56px;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.agreementText {
+	font-family: 'PTRootUIWebVF', sans-serif;
+	font-size: 18;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	color: #98a2b3;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	display: flex;
+}
+
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1050;
+}
+
+.modalContent {
+	position: relative;
+	background-color: #fff;
+	margin: auto;
+	padding: 0 20px 20px 20px;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 800px;
+	max-height: 90vh;
+	overflow-y: auto;
+	z-index: 1051;
+	display: flex;
+	flex-direction: column;
+}
+
+.closeButton {
+	position: sticky;
+	top: 0;
+	text-align: right;
+	background-color: #fff;
+	font-size: 26px;
+	border: none;
+	cursor: pointer;
+	color: #000;
+	padding: 10px;
+	margin: 0;
+}
+
+@keyframes scaleUp {
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+.modalBody {
+	margin-top: -100px;
+}

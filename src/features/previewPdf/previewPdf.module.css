@@ -1,0 +1,13 @@
+.mainBlock {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: calc(100vh - 241px - 72px);
+}
+
+.content {
+	width: max-content;
+	transform-origin: top;
+	left: auto;
+	position: relative;
+}
