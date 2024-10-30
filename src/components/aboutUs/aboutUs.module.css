@@ -1,0 +1,306 @@
+.aboutUsBox {
+	margin: 0 auto;
+	padding: 50px 0;
+	background-color: #ffffff;
+	max-width: 1200px;
+	padding-top: 120px;
+}
+
+.titlePage {
+	text-align: center;
+	color: #22496d;
+	margin-bottom: 30px;
+	font-size: 28px;
+}
+
+.welcomeBlock,
+.storyBlock,
+.servicesBlock,
+.chooseUsBlock,
+.joinUsBlock {
+	background-color: #f7f7f7;
+	padding: 20px;
+	margin-bottom: 30px;
+	border-radius: 12px;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.welcomeBlock:hover,
+.storyBlock:hover,
+.servicesBlock:hover,
+.chooseUsBlock:hover,
+.joinUsBlock:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contextWelcomeBox,
+.contextStoryBox,
+.contextServicesBox,
+.contextChooseUsBox,
+.contextJoinUsBox {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.contextWelcomeBox {
+	box-shadow: none;
+}
+.contextStoryBox {
+	border-right: 5px solid #35bbd3;
+}
+.contextServicesBox {
+	box-shadow: none;
+}
+.contextChooseUsBox {
+	border-right: 5px solid #fed02a;
+}
+.contextJoinUsBox {
+	box-shadow: none;
+}
+.titleWelcomeBlock {
+	color: #f78109;
+}
+
+.titleStoryBlock {
+	color: #35bbd3;
+}
+.titleServicesBlock {
+	color: #c92029;
+}
+.titleChooseUsBlock {
+	color: #fed02a;
+}
+.titleJoinUsBlock {
+	color: #22496d;
+}
+.titleWelcomeBlock,
+.titleStoryBlock,
+.titleServicesBlock,
+.titleChooseUsBlock,
+.titleJoinUsBlock {
+	margin-bottom: 20px;
+	font-size: 22px;
+	font-weight: 600;
+}
+.subtitle {
+	color: #22496d;
+	font-size: 18px;
+}
+.text {
+	color: #22496d;
+	text-align: left;
+	font-size: 18px;
+	line-height: 1.5;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.сaptionText {
+	font-size: 16px;
+	font-style: italic;
+	color: #22496d;
+	text-align: left;
+	line-height: 1.5;
+	padding-right: 30px;
+	padding-left: 20px;
+}
+
+.leadText {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.contextPageBox {
+	animation: fadeInUp 0.5s ease-out both;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.servicesBlock .overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contextServicesWrapper,
+.contextJoinUsWrapper,
+.contextWelcomeWrapper {
+	display: flex;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	width: 100%;
+	max-width: 1200px;
+	justify-content: space-between;
+	align-items: flex-start;
+	overflow: hidden;
+}
+.contextServicesWrapper {
+	border-left: 5px solid #c92029;
+}
+.contextJoinUsWrapper {
+	border-left: 5px solid #35bbd3;
+}
+.contextWelcomeWrapper {
+	border-left: 5px solid #f78109;
+}
+.contextServicesBox {
+	flex: 1;
+	margin-right: 20px;
+}
+.contextJoinUsBox {
+	flex: 1;
+	margin-left: 20px;
+}
+.contextWelcomeBox {
+	flex: 1;
+	margin-left: 20px;
+}
+.imageContainer {
+	flex: 1;
+	max-width: none;
+}
+.imageContainerAboutUs {
+	flex: 1;
+	max-width: none;
+	padding-top: 20px;
+}
+.imageContainer img,
+.imageContainerAboutUs img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+@media (max-width: 1280px) {
+	.aboutUsBox {
+		margin: 0 auto;
+		padding: 120px 20px 30px 20px;
+		background-color: #ffffff;
+		max-width: 1200px;
+	}
+	.titlePage {
+		font-size: 24px;
+	}
+}
+@media (max-width: 1024px) {
+	.aboutUsBox {
+		margin: 0 auto;
+		padding: 0 20px 30px 20px;
+	}
+	.titleWelcomeBlock,
+	.titleStoryBlock,
+	.titleServicesBlock,
+	.titleChooseUsBlock,
+	.titleJoinUsBlock {
+		margin-bottom: 0;
+		font-size: 20px;
+	}
+	.subtitle {
+		color: #22496d;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.text {
+		color: #22496d;
+		text-align: left;
+		font-size: 16px;
+		line-height: 1.5;
+		padding-right: 20px;
+		padding-left: 10px;
+		margin: 0;
+	}
+	.сaptionText {
+		font-size: 14px;
+		font-style: italic;
+		color: #22496d;
+		text-align: left;
+		line-height: 1.5;
+		padding-right: 30px;
+		padding-left: 20px;
+	}
+
+	.leadText {
+		font-weight: bold;
+		font-size: 16px;
+	}
+}
+@media (max-width: 768px) {
+	.aboutUsBox {
+		padding: 20px 15px;
+	}
+
+	.titlePage {
+		font-size: 24px;
+	}
+
+	.welcomeBlock,
+	.storyBlock,
+	.servicesBlock,
+	.chooseUsBlock,
+	.joinUsBlock {
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	.contextWelcomeBox,
+	.contextStoryBox,
+	.contextServicesBox,
+	.contextChooseUsBox,
+	.contextJoinUsBox {
+		padding: 15px;
+	}
+
+	.contextWelcomeWrapper,
+	.contextStoryBox,
+	.contextServicesWrapper,
+	.contextJoinUsWrapper {
+		flex-direction: column;
+	}
+
+	.imageContainer,
+	.imageContainerAboutUs {
+		flex: none;
+		padding-top: 10px;
+	}
+
+	.imageContainer img,
+	.imageContainerAboutUs img {
+		max-width: 100%;
+		max-height: 200px;
+		object-fit: cover;
+	}
+
+	.text,
+	.сaptionText {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.titleWelcomeBlock,
+	.titleStoryBlock,
+	.titleServicesBlock,
+	.titleChooseUsBlock,
+	.titleJoinUsBlock {
+		font-size: 18px;
+		text-align: left;
+	}
+
+	.leadText {
+		font-size: 16px;
+	}
+
+	.subtitle {
+		font-size: 18px;
+	}
+}

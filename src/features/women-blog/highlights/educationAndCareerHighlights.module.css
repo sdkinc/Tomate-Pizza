@@ -1,0 +1,126 @@
+.mainContainer {
+	padding: 20px 15px;
+	min-width: 1200px;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 20px 0;
+}
+.highlightsTitle {
+	font-size: 22px;
+	color: #7c2a19;
+	font-weight: 500;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.border-color-variant-1 {
+	border-left: 5px solid #2e5177;
+}
+
+.border-color-variant-2 {
+	border-left: 5px solid #7c2a19;
+}
+.highlightsList {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.highlightItem {
+	text-align: center;
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+	background-color: #f7f7f7;
+	border-radius: 12px;
+	padding: 10px;
+}
+
+.textContainer {
+	color: #ffffff;
+	padding: 5px;
+}
+.highlightTitle {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+	color: #666;
+	margin-bottom: 0;
+}
+.highlightText {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Tahoma;
+	color: #666;
+	padding: 10px;
+	margin: 0;
+}
+
+.highlightItalic {
+	font-style: italic;
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #666;
+}
+
+.highlightBold {
+	font-weight: 500;
+	font-size: 16;
+	line-height: 24px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #666;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 1024px) {
+	.mainContainer {
+		display: flex;
+		justify-content: center;
+		min-width: 100%;
+		max-width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.highlightsTitle {
+		font-size: 20px;
+		text-align: left;
+	}
+	.highlightsList {
+		padding: 20px;
+	}
+}
+@media (max-width: 768px) {
+	.mainContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 90%;
+		max-width: 90%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.highlightsList {
+		width: 90%;
+	}
+
+	.highlightText {
+		font-size: 16px;
+	}
+
+	.highlightBold,
+	.highlightItalic {
+		font-size: 14px;
+	}
+}

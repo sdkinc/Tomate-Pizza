@@ -1,0 +1,97 @@
+.resumeBlock {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	overflow: hidden;
+	background: #ffffff;
+	padding: 100px 0 50px 0;
+}
+
+.textBlock {
+	width: 100%;
+	padding: 0 10px 20px 20px;
+	height: auto;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: left;
+}
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #22496d;
+	padding: 0;
+	margin: 0;
+}
+.resumeParagraph {
+	font-size: 16px;
+	color: #22496d;
+	text-align: left;
+}
+.resumeContainer {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 700px;
+	padding: 30px 20px 30px 0;
+}
+
+.resumeImage {
+	width: 200px;
+	height: auto;
+	transition:
+		transform 1s,
+		opacity 1s;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	transform: translate(-50%, -50%) scale(0.6);
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+.resumeImage.active {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+	z-index: 5;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.textContainer {
+	position: relative;
+	width: 40%;
+	padding-right: 20px;
+}
+
+.resumeCreateButton {
+	display: inline-block;
+	width: 40%;
+	height: 50px;
+	margin: 10px 0 0 20px;
+	background: linear-gradient(145deg, #22496d, #2e6099);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	transition:
+		background-color 0.3s,
+		transform 0.1s;
+	text-align: center;
+	line-height: 50px;
+}
+
+.resumeCreateButton:hover {
+	background-color: #35bbd3;
+}
+
+.resumeCreateButton:active {
+	transform: translateY(2px);
+}

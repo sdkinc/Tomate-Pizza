@@ -1,0 +1,261 @@
+html {
+	scroll-behavior: smooth;
+}
+
+a,
+button {
+	text-decoration: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.navbarBox {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	z-index: 102;
+	width: 100%;
+}
+
+.navigationPanelTop {
+	padding: 10px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+}
+
+.logoBox {
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.logoBoxHome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 40px;
+	border-radius: 8px;
+	gap: 10px;
+	margin-right: 40px;
+	color: #22496d;
+	padding-top: 5px;
+}
+
+.logoBoxHome:hover {
+	color: #35bbd3;
+	border-radius: 8px;
+}
+
+.logo {
+	width: 40px;
+	height: 40px;
+	border-radius: 0.8px;
+}
+
+.textLogo {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 40px;
+	letter-spacing: 0em;
+	text-align: left;
+	left: 40px;
+}
+
+.rightSection {
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+}
+
+.navigationPanel {
+	width: 100%;
+	background-color: #22496d;
+	display: flex;
+	justify-content: right;
+	padding: 10px 0;
+}
+.languageBox {
+	padding-top: 10px;
+	margin-right: 40px;
+}
+
+.menuContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	text-align: right;
+	margin-right: 100px;
+}
+
+.menuLinks {
+	display: flex;
+	gap: 40px;
+	margin-right: 30px;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.menuButton {
+	margin-right: 40px;
+}
+
+.activeLink {
+	color: #22496d;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	opacity: 0.8;
+	padding: 0;
+}
+
+.link {
+	color: #22496d;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 0;
+	padding: 5px;
+}
+
+.link:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+.dropdown {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.dropBtn {
+	background: none;
+	border: none;
+	color: #22496d;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+@keyframes dropdownFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.dropdownContent {
+	display: none;
+	position: fixed;
+	top: 52px;
+	left: 5%;
+	width: 90vw;
+	background-color: #f9f9f9;
+	border-radius: 6px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	padding: 40px;
+	box-sizing: border-box;
+	transform: translateY(-10px);
+	animation-fill-mode: forwards;
+	animation-duration: 0.5s;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+	animation-name: dropdownFadeIn;
+}
+
+.dropdown:hover .dropBtn {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+.dropdownGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.dropdownItem {
+	display: flex;
+	text-align: left;
+	align-items: center;
+	transition:
+		background-color 0.3s ease,
+		transform 0.3s ease;
+	border-radius: 6px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin: 20px;
+	min-height: 100px;
+}
+
+.dropdownItemLink {
+	text-decoration: none;
+	display: block;
+}
+
+.dropdownItemLink:hover .dropdownItem {
+	background-color: #f1f1f1;
+	transform: scale(1.012);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdownIcon {
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+.dropdownText {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.subtitleMenu {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #22496d;
+	font-weight: 500;
+}
+.subtitleMenu:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+.dropdownSubheading {
+	font-size: 14px;
+	color: #666;
+}
+@media (max-width: 1280px) {
+	.textLogo {
+		font-size: 20px;
+	}
+	.activeLink,
+	.link,
+	.dropBtn {
+		font-size: 14px;
+	}
+	.dropdownItem {
+		min-height: 110px;
+	}
+}

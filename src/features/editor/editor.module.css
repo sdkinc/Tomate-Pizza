@@ -1,0 +1,10 @@
+.mainContainer {
+  padding: 20px;
+	padding-top: 120px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.titleContainer {
+  font-size: 22px;
+  color: #22496b;
+}

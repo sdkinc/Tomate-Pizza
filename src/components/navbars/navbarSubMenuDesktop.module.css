@@ -1,0 +1,223 @@
+.navigationPanel {
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(145deg, #22496d, #2e6099);
+	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 0;
+	position: fixed;
+	z-index: 101;
+	top: 70px;
+}
+
+.menuContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	text-align: right;
+}
+
+.menuLinks {
+	display: flex;
+	gap: 50px;
+	margin: 0 auto;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: auto;
+}
+
+.menuButton {
+	margin-right: 40px;
+}
+
+.activeLink,
+.activeLinkMenu {
+	color: white;
+	font-size: 14px;
+	text-decoration: underline;
+	opacity: 0.8;
+	padding: 0;
+}
+.activeLinkMenu {
+	padding-bottom: 2px;
+	color: #f6f6f6;
+}
+.activeDropdown {
+	color: #f6f6f6;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.link,
+.linkDrop,
+.linkMenu {
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0;
+}
+.linkMenu {
+	padding-bottom: 2px;
+}
+.linkDrop {
+	color: #22496d;
+}
+
+.activeLinkDrop {
+	text-decoration: underline;
+	opacity: 0.8;
+	padding: 0;
+	color: #22496d;
+}
+
+.link:hover,
+.modalButton:hover,
+.linkDrop:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+.linkMenu:hover {
+	padding-bottom: 2px;
+	text-decoration: underline;
+	opacity: 0.8;
+}
+.linkDrop:hover {
+	color: #22496d;
+}
+.modalButton {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0;
+	align-items: center;
+	padding-bottom: 8px;
+}
+
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modalContent {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	position: relative;
+	width: 90%;
+	max-width: 800px;
+}
+
+.closeButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.dropBtn {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.dropdownContent {
+	display: none;
+	position: fixed;
+	top: 110px;
+	left: 5%;
+	width: 90vw;
+	background-color: #f9f9f9;
+	border-radius: 6px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.dropdownGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.dropdownItem {
+	display: flex;
+	text-align: left;
+	align-items: center;
+	transition:
+		background-color 0.3s ease,
+		transform 0.3s ease;
+	border-radius: 6px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin: 20px;
+	min-height: 100px;
+}
+
+.dropdownItem:hover {
+	background-color: #f1f1f1;
+	transform: scale(1.02);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownIcon {
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+.dropdownText {
+	display: flex;
+	flex-direction: column;
+}
+
+.subtitleMenu {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #22496d;
+	font-weight: 500;
+	padding: 0;
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+.dropdownSubheading {
+	font-size: 14px;
+	color: #666;
+	padding-left: 15px;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+}
+
+.dropBtn:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}

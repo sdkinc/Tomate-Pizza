@@ -1,0 +1,4 @@
+.guideContainer {
+	display: flex;
+	flex-direction: column;
+}

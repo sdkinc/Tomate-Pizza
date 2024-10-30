@@ -1,0 +1,110 @@
+.navbarBox {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.navigationPanelTop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.logoBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	padding: 0;
+	gap: 20px;
+}
+
+.logoBoxHome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	padding: 0;
+}
+
+.logo {
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
+}
+
+.textLogo {
+	font-size: 20px;
+	line-height: 30px;
+	color: #22496d;
+}
+
+.menuContainer {
+	width: 100%;
+	background: linear-gradient(145deg, #22496d, #2e6099);
+	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+	padding: 10px 0;
+}
+
+.menuLinks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.menuButton {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 10px 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.activeLinkMenu {
+	color: #f6f6f6;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+.linkMenu {
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.linkMenu:hover {
+	color: #f6f6f6;
+	text-decoration: underline;
+}
+
+.dropdownContent {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 6px;
+}
+
+.dropdownItemLink {
+	color: #22496d;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.dropdownItemLink:hover {
+	color: #2e6099;
+}

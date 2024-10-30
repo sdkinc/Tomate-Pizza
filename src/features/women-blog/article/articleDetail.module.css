@@ -1,0 +1,246 @@
+.mainContainer {
+	padding: 20px;
+	padding-top: 140px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.articleDetail {
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: max-content;
+	box-sizing: border-box;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+.articleDetail:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.articlePreview {
+	width: 100%;
+	margin: 0;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.articleBox {
+	padding: 0 15px;
+}
+.articleDetailTitle {
+	font-size: 24px;
+	color: #22496d;
+	margin-bottom: 20px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.articleContent {
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.articleHeading {
+	font-size: 22px;
+	margin-top: 30px;
+	color: #22496d;
+	font-weight: 500;
+}
+.text {
+	font-size: 18px;
+	color: #22496d;
+}
+.textItalic {
+	font-size: 16px;
+	color: #666;
+	font-family: Tahoma;
+}
+.textHighlight {
+	font-weight: bold;
+}
+.textBold {
+	font-size: 18px;
+	color: #666;
+	font-family: Tahoma;
+	font-weight: 600;
+}
+.highlightedText {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.imageBox {
+	display: flex;
+	justify-content: center;
+}
+
+.articleList {
+	padding-left: 20px;
+}
+
+.articleListItem {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.articleLink {
+	color: #c92029;
+	text-decoration: none;
+}
+
+.articleLink:hover {
+	text-decoration: underline;
+}
+.highlightedText {
+	font-weight: bold;
+	color: #d9534f;
+}
+.articleOrderedList {
+	padding-left: 20px;
+	list-style-type: decimal;
+}
+
+.articleListItem {
+	margin-bottom: 10px;
+}
+.customOrderedList {
+	list-style-type: decimal;
+	padding-left: 20px;
+}
+
+.customOrderedListItem {
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+.customArticleLink {
+	color: #d17f00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.customHighlightedText {
+	font-weight: bold;
+	color: #b2002d;
+}
+
+.customRegularText {
+	font-size: 18px;
+}
+.backButton {
+	margin: 20px 0;
+	padding: 10px 15px;
+	font-size: 16px;
+	color: #22496b;
+	font-style: italic;
+	font-weight: 500;
+	text-align: left;
+	text-decoration: none;
+	border-radius: 8px;
+	cursor: pointer;
+	background: linear-gradient(145deg, #f6f6f6, #ffffff);
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+}
+
+.backButton:hover {
+	background: linear-gradient(145deg, #ffffff, #f6f6f6);
+}
+@media (max-width: 1280px) {
+	.mainContainer {
+		max-width: 100%;
+		padding: 20px;
+	}
+
+	.articleDetail {
+		padding: 15px;
+	}
+
+	.articleDetailTitle {
+		font-size: 22px;
+	}
+
+	.articleContent {
+		font-size: 16px;
+	}
+}
+@media (max-width: 1024px) {
+	.mainContainer {
+		padding: 15px;
+	}
+
+	.articleDetail {
+		padding: 10px;
+	}
+
+	.articleDetailTitle {
+		font-size: 24px;
+	}
+
+	.articleContent {
+		font-size: 15px;
+	}
+
+	.text {
+		font-size: 16px;
+	}
+}
+@media (max-width: 768px) {
+	.mainContainer {
+		width: 90%;
+		padding: 10px 0;
+	}
+	.articlePreview {
+		width: 95%;
+	}
+	.articleDetail {
+		flex-direction: column;
+
+		padding: 10px;
+	}
+
+	.articleDetailTitle {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.articleContent {
+		font-size: 16px;
+		line-height: 1.4;
+	}
+
+	.text	 {
+		font-size: 16px;
+	}
+	.textBold {
+		font-size: 14px;
+	}
+	.textItalic {
+		font-size: 14px;
+	
+	}
+
+	.articleHeading {
+		font-size: 18px;
+	}
+
+	.backButton {
+		font-size: 14px;
+		padding: 8px 12px;
+	}
+}
