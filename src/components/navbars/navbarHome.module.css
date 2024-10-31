@@ -2,14 +2,15 @@
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end; /* Выравнивание всего меню справа */
+	align-items: center; /* Выравнивание всего меню справа */
 	position: absolute;
 	z-index: 102;
 	width: 100%;
+	background-color: transparent;
 }
 
 .navigationPanelTop {
-	padding: 10px 0;
+	padding: 5px 0 0 0;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -41,7 +42,7 @@
 }
 
 .languageBox {
-	padding-top: 10px;
+
 	margin-right: 20px; /* Сдвиг селектора языка вправо */
 }
 .link {

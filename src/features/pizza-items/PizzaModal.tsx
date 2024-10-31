@@ -78,7 +78,7 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 					</div>
 					<div className={styles.totalPrice}>Итого: {calculateTotalPrice().toFixed(2)} €</div>
 					<button type="button" className={styles.addToCartButton}>
-						Добавить в корзину
+						Выбрать
 					</button>
 				</div>
 			</div>

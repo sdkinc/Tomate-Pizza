@@ -1,62 +1,152 @@
 [
 	{
-		"name": "Pizza Margarita",
-		"description": "Mit würziger Tomatensauce und Käse",
-		"image": "pizza.png",
-		"sizes": [
-			{ "label": "Klein", "size": "26 cm", "price": 5.0 },
-			{ "label": "Mittel", "size": "32 cm", "price": 8.0 },
-			{ "label": "Familie", "size": "46×33 cm", "price": 13.5 }
-		],
-		"extras": [
-			{ "label": "Chili", "price": 1.0 },
-			{ "label": "Knoblauch", "price": 0.5 },
-			{ "label": "Ananas", "price": 1.5 }
-		]
+			"name": "Pizza Margarita",
+			"description": "Mit würziger Tomatensauce und Käse",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 5.0 },
+					{ "label": "Mittel", "size": "32 cm", "price": 8.0 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 13.5 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
 	},
 	{
-		"name": "Pizza Funghi",
-		"description": "Mit würziger Tomatensauce, Käse und Champignons",
-		"image": "pizza.png",
-		"sizes": [
-			{ "label": "Klein", "size": "26 cm", "price": 5.5 },
-			{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
-			{ "label": "Familie", "size": "46×33 cm", "price": 14.0 }
-		],
-		"extras": [
-			{ "label": "Chili", "price": 1.0 },
-			{ "label": "Knoblauch", "price": 0.5 },
-			{ "label": "Ananas", "price": 1.5 }
-		]
+			"name": "Pizza Funghi",
+			"description": "Mit würziger Tomatensauce, Käse und Champignons",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 5.5 },
+					{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 14.0 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
 	},
 	{
-		"name": "Pizza Salami",
-		"description": "Mit würziger Tomatensauce, Käse und Salami",
-		"image": "pizza.png",
-		"sizes": [
-			{ "label": "Klein", "size": "26 cm", "price": 6.0 },
-			{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
-			{ "label": "Familie", "size": "46×33 cm", "price": 14.5 }
-		],
-		"extras": [
-			{ "label": "Chili", "price": 1.0 },
-			{ "label": "Knoblauch", "price": 0.5 },
-			{ "label": "Ananas", "price": 1.5 }
-		]
+			"name": "Pizza Salami",
+			"description": "Mit würziger Tomatensauce, Käse und Salami",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 6.0 },
+					{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 14.5 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
 	},
 	{
-		"name": "Pizza Prosciutto",
-		"description": "Mit würziger Tomatensauce, Käse und Vorderschinken",
-		"image": "pizza.png",
-		"sizes": [
-			{ "label": "Klein", "size": "26 cm", "price": 5.5 },
-			{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
-			{ "label": "Familie", "size": "46×33 cm", "price": 14.0 }
-		],
-		"extras": [
-			{ "label": "Chili", "price": 1.0 },
-			{ "label": "Knoblauch", "price": 0.5 },
-			{ "label": "Ananas", "price": 1.5 }
-		]
+			"name": "Pizza Prosciutto",
+			"description": "Mit würziger Tomatensauce, Käse und Vorderschinken",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 5.5 },
+					{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 14.0 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
+	},
+	{
+			"name": "Pizza Hawaii",
+			"description": "Mit würziger Tomatensauce, Käse, Vorderschinken und Ananas",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 6.0 },
+					{ "label": "Mittel", "size": "32 cm", "price": 9.0 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 15.0 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
+	},
+	{
+			"name": "Pizza Diavolo",
+			"description": "Mit würziger Tomatensauce, Käse, Salami, Paprika, Zwiebeln und Peperoni",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 6.5 },
+					{ "label": "Mittel", "size": "32 cm", "price": 9.5 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 16.0 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
+	},
+	{
+			"name": "Pizza Vegetaria",
+			"description": "Mit würziger Tomatensauce, Käse, Broccoli, frische Tomaten, Zwiebeln, Paprika und Mais",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 6.0 },
+					{ "label": "Mittel", "size": "32 cm", "price": 9.0 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 14.0 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
+	},
+	{
+			"name": "Pizza Frutti di Mare",
+			"description": "Mit würziger Tomatensauce, Käse, Knoblauch und Meeresfrüchten",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 7.5 },
+					{ "label": "Mittel", "size": "32 cm", "price": 10.0 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 17.0 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
+	},
+	{
+			"name": "Pizza Quattro Stagioni",
+			"description": "Mit würziger Tomatensauce, Käse, Vorderschinken, Salami, Champignons und Artischocken",
+			"image": "pizza.png",
+			"sizes": [
+					{ "label": "Klein", "size": "26 cm", "price": 7.0 },
+					{ "label": "Mittel", "size": "32 cm", "price": 9.5 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 16.5 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
+	},
+	{
+			"name": "Pizza Schinken-Salami",
+			"description": "Mit Vorderschinken, Salami, Peperoni",
+			"image": "pizza.png",
+			"sizes": [
+				{ "label": "Klein", "size": "26 cm", "price": 8.5 },
+					{ "label": "Mittel", "size": "32 cm", "price": 10.5 },
+					{ "label": "Familie", "size": "46×33 cm", "price": 20.5 }
+			],
+			"extras": [
+					{ "label": "Chili", "price": 1.0 },
+					{ "label": "Knoblauch", "price": 0.5 },
+					{ "label": "Ananas", "price": 1.5 }
+			]
 	}
 ]

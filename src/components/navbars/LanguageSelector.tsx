@@ -20,7 +20,13 @@ function LanguageSelector(): JSX.Element {
 				className={styles.dropdownHeader}
 				onClick={() => setDropdownList(!dropdownList)}
 			>
-				<img src={`/globe-home.webp`} alt="globe" width="20" height="20" />
+				<img
+					className={styles.imageBox}
+					src={`/globe-home.webp`}
+					alt="globe"
+					width="20"
+					height="20"
+				/>
 				<span>{i18n.language.toUpperCase()}</span>
 			</button>
 			<div className={dropdownList ? styles.dropdownListActive : styles.dropdownListNoneActive}>

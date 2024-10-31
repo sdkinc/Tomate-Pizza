@@ -1,5 +1,4 @@
 import 'react';
-
 import styles from './introBanner.module.css';
 import MenuTabs from '../main-menu/MenuTabs';
 

@@ -1,39 +1,90 @@
+.tabContainerWrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100px;
+	overflow: hidden;
+margin-top: 80px;
+}
+
+.scrollButton {
+	position: absolute;
+	top: 55%;
+	transform: translateY(-50%);
+	background-color: #313131;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	height: 80px;
+	width: 50px;
+	font-size: 50px;
+	color: #ddd;
+	z-index: 110;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.scrollButton.left {
+	left: 0;
+}
+
+.scrollButton.right {
+	right: 0;
+}
+
 .tabContainer {
 	display: flex;
-	justify-content: center;
 	align-items: flex-end;
 	gap: 10px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 105;
+	overflow-x: hidden;
+	white-space: nowrap;
+	padding: 0 40px;
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.tabContainer::-webkit-scrollbar {
+	display: none;
 }
 
 .tab {
-	width: 225px;
-	height: 80px;
-	display: flex;
+	width: 180px;
+	height: 60px;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #f3f3f3;
 	color: #333;
-	font-size: 26px;
+	font-size: 18px;
 	font-weight: 600;
 	border-radius: 8px 8px 0 0;
 	cursor: pointer;
-	transition: margin-top 0.2s ease, height 0.2s ease, background-color 0.2s ease;
-	margin-top: 5px; /* Отступ сверху, чтобы при выборе карточка поднималась вверх */
+	transition:
+		margin-top 0.2s ease,
+		height 0.2s ease,
+		background-color 0.2s ease;
+	margin-top: 5px;
+	flex-shrink: 0;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
-.tab:hover,
-.activeTab {
-	height: 85px; /* Увеличивает высоту */
-	margin-top: 0; /* Поднимает карточку, убирая отступ сверху */
-	background-color: #e0e0e0;
+.tab:hover {
+	height: 65px;
+	margin-top: 0;
+	background-color: #ddd;
+	/* color: #e10714; */
 }
 
 .activeTab {
-	background-color: #ddd; /* Цвет для активной карточки */
-	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Тень только сверху для эффекта */
+	background-color: #ddd;
+	font-size: 26px;
+	font-weight: 500;
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+	height: 65px;
+	margin-top: 0;
 }

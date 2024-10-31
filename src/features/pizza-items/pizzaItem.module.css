@@ -1,68 +1,81 @@
-.pageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #ddd;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 .pizzaItem {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  width: 100%;
-  position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.pizzaImage {
-  width: 170px;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 20px;
- 
-}
-
-.pizzaInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
+.pizzaHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
 }
 
 .pizzaName {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
-}
-
-.pizzaDescription {
-  font-size: 16px;
-  color: #666;
-  margin-top: 10px;
-  line-height: 1.5;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	margin: 0;
 }
 
 .pizzaPrice {
-  font-size: 24px;
-  font-weight: bold;
-  color: #009640;
-  margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #009640;
+	margin: 0;
 }
 
-.addButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
+.pizzaDescription {
+	font-size: 14px;
+	color: #666;
+	margin: 10px 0;
+	line-height: 1.5;
+}
+
+.pizzaImage {
+	width: 100%;
+	max-width: 250px;
+	height: auto;
+	border-radius: 8px;
+	margin: 0 auto 10px; 
+	display: block;
+}
+
+.pizzaActions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.selectButton {
+	background-color: #009640;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 12px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	transition: background-color 0.2s ease;
+}
+
+.selectButton:hover {
+	background-color: #007b32;
+}
+
+.viewButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #333;
+	display: flex;
+	align-items: center;
 }
