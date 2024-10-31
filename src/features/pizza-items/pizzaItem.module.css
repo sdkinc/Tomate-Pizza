@@ -1,28 +1,91 @@
 .pizzaItem {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
 	background-color: white;
 	border: 1px solid #ddd;
 	border-radius: 12px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 	box-sizing: border-box;
+	align-items: center;
+}
+.topContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+.pizzaContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 20px;
+	width: 100%;
+	height: 100%;
+}
+.pizzaNameInfo {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	padding-bottom: 10px;
+}
+.pizzaName {
+	font-size: 26px;
+	color: #007b32;
+	font-weight: 500;
+}
+.productInfoButton {
+	background: none;
+	border: none;
+	color: #888;
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: 14px;
+	transition: color 0.2s ease;
+	padding: 0 0 5px 20px;
+}
+
+.productInfoButton:hover {
+	color: #666;
+	font-weight: 500;
+}
+
+.productInfoButton:active {
+	color: #444;
+	font-weight: 500;
 }
 
 .pizzaHeader {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 10px;
 }
 
-.pizzaName {
-	font-size: 20px;
-	font-weight: bold;
-	color: #333;
-	margin: 0;
+.priceBox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.pizzaSizeContainer {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	color: #555;
+	margin-right: 10px;
+}
+
+.sizeIcon {
+	font-size: 24px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	color: #999;
+}
+
+.pizzaSize {
+	font-weight: 500;
+	font-size: 14px;
+	color: #999;
 }
 
 .pizzaPrice {
@@ -30,29 +93,32 @@
 	font-weight: bold;
 	color: #009640;
 	margin: 0;
+	padding-bottom: 3px;
 }
 
 .pizzaDescription {
 	font-size: 14px;
 	color: #666;
-	margin: 10px 0;
-	line-height: 1.5;
+	margin: 0;
+	text-align: left;
 }
 
 .pizzaImage {
-	width: 100%;
-	max-width: 250px;
+	width: 160px;
+	height: 160px;
 	height: auto;
 	border-radius: 8px;
-	margin: 0 auto 10px; 
 	display: block;
+	margin-right: 20px;
 }
 
 .pizzaActions {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	margin-top: 15px;
+	align-items: flex-end;
+	margin-top: 20px;
+	width: 100%;
+	padding-left: 0;
 }
 
 .selectButton {
@@ -78,4 +144,62 @@
 	color: #333;
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.pizzaItem {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	.pizzaNameInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 10px;
+	}
+	.productInfoButton {
+		padding: 5px;
+	}
+	.topContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+		margin-bottom: 15px;
+	}
+	.pizzaDescription {
+		font-size: 14px;
+		color: #666;
+		margin: 0;
+		text-align: center;
+	}
+	.pizzaImage {
+		width: 200px;
+		height: 200px;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	.pizzaContent {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+	}
+
+	.pizzaHeader {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.pizzaActions {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-top: 20px;
+		width: 90%;
+	}
 }

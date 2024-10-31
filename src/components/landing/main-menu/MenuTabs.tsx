@@ -14,7 +14,7 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 	const [isDragging, setIsDragging] = useState(false);
 	const [startX, setStartX] = useState(0);
 	const [scrollLeft, setScrollLeft] = useState(0);
-	const [activeMenu, setActiveMenu] = useState('Pizza'); // Устанавливаем "Pizza" активным по умолчанию
+	const [activeMenu, setActiveMenu] = useState('Pizza');
 
 	useEffect(() => {
 		setSelectedMenu('Pizza');

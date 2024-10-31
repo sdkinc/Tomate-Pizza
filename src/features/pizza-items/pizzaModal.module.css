@@ -1,88 +1,113 @@
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 110;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 110;
+}
+select {
+	padding: 5px;
+	border-color: #009640;
 }
 
 .modalContent {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  width: 400px;
-  max-width: 90%;
-  position: relative;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	width: 400px;
+	max-width: 90%;
+	position: relative;
 }
 
 .closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
 }
 
 .extraOption {
-  display: block;
-  margin: 10px 0;
+	display: block;
+	margin: 10px 0;
 }
 
 .quantityControls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-right: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding-right: 10px;
 }
 
 .quantityButton {
-  padding: 5px 10px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f3f3f3;
+	padding: 5px 10px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #f3f3f3;
 }
 
 .quantity {
-  font-size: 1.2rem;
-  font-weight: bold;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+	flex-wrap: wrap;
 }
 
 .totalPrice {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-right: auto;
- 
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-right: auto;
 }
 
 .addToCartButton {
-  background-color: #009640;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
+	background-color: #009640;
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 0;
+	transition: background-color 0.3s ease;
 }
 
 .addToCartButton:hover {
-  background-color: #247045;
+	background-color: #247045;
+}
+@media (max-width: 768px) {
+	.modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 110;
+	}
+	.modalContent {
+		background: #fff;
+		padding: 20px;
+		border-radius: 8px;
+width: 320px;
+		
+		position: relative;
+	}
 }

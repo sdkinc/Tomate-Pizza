@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './pizzaModal.module.css';
 import { ExtraIngredient, PizzaSize } from './type/PizzaTypes';
+import { t } from 'i18next';
 
 interface PizzaModalProps {
 	name: string;
@@ -42,9 +43,9 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 				</button>
 				<h2>{name}</h2>
 				<p>{description}</p>
-				<h3>Выберите размер:</h3>
+				<h3>{t('selectSize')}:</h3>
 				<select
-					aria-label="Размер пиццы"
+					aria-label={t('pizzaSize')}
 					onChange={(e) => handleSizeChange(sizes[+e.target.value])}
 				>
 					{sizes.map((size, index) => (
@@ -54,7 +55,7 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 					))}
 				</select>
 
-				<h3>Ваши дополнительные ингредиенты:</h3>
+				<h3>{t('youExtras')}:</h3>
 				{extras.map((extra) => (
 					<label key={extra.label} className={styles.extraOption}>
 						<input
@@ -76,9 +77,11 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 							+
 						</button>
 					</div>
-					<div className={styles.totalPrice}>Итого: {calculateTotalPrice().toFixed(2)} €</div>
+					<div className={styles.totalPrice}>
+						{t('total')}: {calculateTotalPrice().toFixed(2)} €
+					</div>
 					<button type="button" className={styles.addToCartButton}>
-						Выбрать
+						{t('choose')}
 					</button>
 				</div>
 			</div>

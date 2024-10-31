@@ -14,6 +14,7 @@ const PizzaMenu: React.FC = () => {
 					image={pizza.image}
 					sizes={pizza.sizes}
 					extras={pizza.extras}
+					productInfo={pizza.productInfo || undefined}
 				/>
 			))}
 		</div>

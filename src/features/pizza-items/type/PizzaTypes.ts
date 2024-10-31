@@ -4,6 +4,13 @@ export interface Pizza {
 	image: string;
 	sizes: PizzaSize[];
 	extras: ExtraIngredient[];
+	productInfo?: ProductInfo;
+}
+export interface ProductInfo {
+	allergens?: string[];
+	substances?: string[];
+	disclaimer?: string;
+	additionalInfo?: string;
 }
 
 export interface PizzaSize {

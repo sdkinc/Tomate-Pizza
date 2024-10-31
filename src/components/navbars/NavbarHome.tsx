@@ -1,10 +1,10 @@
 import styles from './navbarHome.module.css';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+// import { useTranslation } from 'react-i18next';
+// import { Link } from 'react-router-dom';
 import LanguageSelector from './LanguageSelector';
 
 function NavbarMain(): JSX.Element {
-	const { t } = useTranslation();
+	// const { t } = useTranslation();
 
 	return (
 		<div className={styles.navbarBox}>
@@ -12,13 +12,13 @@ function NavbarMain(): JSX.Element {
 				<div className={styles.rightSection}>
 					<div className={styles.menuContainer}>
 						<div className={styles.menu}>
-							<Link
+							{/* <Link
 								to="/contactUs"
 								id="contactUsLink"
 								className={location.pathname === '/contactUs' ? styles.activeLink : styles.link}
 							>
 								{t('contactUs')}
-							</Link>
+							</Link> */}
 						</div>
 					</div>
 					<div className={styles.languageBox}>
