@@ -3,7 +3,9 @@
 	display: inline-block;
 	align-items: center;
 }
-
+.imageBox {
+	color: #ffffff;
+}
 .dropdownHeader {
 	display: flex;
 	justify-content: center;
@@ -14,7 +16,7 @@
 	cursor: pointer;
 	background-color: transparent;
 	border: none;
-	color: #22496d;
+	color: #ffffff;
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 24px;
@@ -23,7 +25,7 @@
 }
 
 .dropdownHeader:hover {
-	color: #35bbd3;
+	color: #f1f1f1;
 }
 
 .dropdownListNoneActive {
@@ -44,10 +46,10 @@
 .dropdownListActive button {
 	white-space: nowrap;
 	padding: 8px 5px;
-	color: #22496d;
+	color: #ffffff;
 	font-size: 12px;
 }
 
 .dropdownListActive button:hover {
-	color: #35bbd3;
+	color: #f1f1f1;
 }

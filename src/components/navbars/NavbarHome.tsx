@@ -13,14 +13,6 @@ function NavbarMain(): JSX.Element {
 					<div className={styles.menuContainer}>
 						<div className={styles.menu}>
 							<Link
-								to="/blog"
-								id="blogLink"
-								className={location.pathname === '/blog' ? styles.activeLink : styles.link}
-							>
-								{t('blog')}
-							</Link>
-
-							<Link
 								to="/contactUs"
 								id="contactUsLink"
 								className={location.pathname === '/contactUs' ? styles.activeLink : styles.link}

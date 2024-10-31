@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { PizzaSize, ExtraIngredient } from './type/PizzaTypes';
-import AddIcon from '@mui/icons-material/Add';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from './pizzaItem.module.css';
 import PizzaModal from './PizzaModal';
 
@@ -18,22 +18,26 @@ const PizzaItem: React.FC<PizzaItemProps> = ({ name, description, image, sizes, 
 	const closeModal = (): void => setIsModalOpen(false);
 
 	return (
-		<div className={styles.pageContainer}>
-			<div className={styles.pizzaItem}>
+		<div className={styles.pizzaItem}>
+			<div className={styles.pizzaHeader}>
+				<h3 className={styles.pizzaName}>{name}</h3>
+				<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
+			</div>
+			<p className={styles.pizzaDescription}>{description}</p>
+			<img src={image} alt={name} className={styles.pizzaImage} />
+			<div className={styles.pizzaActions}>
 				<button
 					type="button"
-					className={styles.addButton}
+					className={styles.viewButton}
 					onClick={openModal}
-					aria-label="Добавить пиццу"
+					aria-label="Посмотреть пиццу"
 				>
-					<AddIcon fontSize="large" />
+					<VisibilityIcon fontSize="medium" />
 				</button>
-				<img src={image} alt={name} className={styles.pizzaImage} />
-				<div className={styles.pizzaInfo}>
-					<h3 className={styles.pizzaName}>{name}</h3>
-					<p className={styles.pizzaDescription}>{description}</p>
-					<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
-				</div>
+				<button type="button" className={styles.selectButton}>
+					{/* {`Выбрать (${sizes[0].size})`} */}
+					{'Выбрать '}
+				</button>
 			</div>
 			{isModalOpen && (
 				<PizzaModal
