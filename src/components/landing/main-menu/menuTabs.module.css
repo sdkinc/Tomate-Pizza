@@ -1,21 +1,22 @@
 .tabContainerWrapper {
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	height: 100px;
 	overflow: hidden;
-margin-top: 80px;
+	z-index: 1;
 }
 
 .scrollButton {
 	position: absolute;
-	top: 55%;
-	transform: translateY(-50%);
+	bottom: 0;
 	background-color: #313131;
 	border: none;
 	cursor: pointer;
 	padding: 10px;
-	height: 80px;
+	height: 60px;
 	width: 50px;
 	font-size: 50px;
 	color: #ddd;
@@ -29,10 +30,12 @@ margin-top: 80px;
 
 .scrollButton.left {
 	left: 0;
+	border-radius: 0 8px 8px 0;
 }
 
 .scrollButton.right {
 	right: 0;
+	border-radius: 8px 0 0 8px;
 }
 
 .tabContainer {
@@ -77,7 +80,6 @@ margin-top: 80px;
 	height: 65px;
 	margin-top: 0;
 	background-color: #ddd;
-	/* color: #e10714; */
 }
 
 .activeTab {
@@ -87,4 +89,22 @@ margin-top: 80px;
 	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 	height: 65px;
 	margin-top: 0;
+}
+@media (max-width: 768px) {
+	.tabContainerWrapper {
+		height: 60px;
+	}
+
+	.tab {
+		width: 120px;
+		height: 35px;
+		font-size: 12px;
+	}
+
+	.scrollButton {
+		height: 35px;
+		width: 30px;
+		font-size: 30px;
+		padding: 5px;
+	}
 }

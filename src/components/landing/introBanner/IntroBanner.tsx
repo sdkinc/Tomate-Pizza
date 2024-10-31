@@ -1,16 +1,11 @@
 import 'react';
 import styles from './introBanner.module.css';
-import MenuTabs from '../main-menu/MenuTabs';
 
-interface IntroBannerProps {
-	setSelectedMenu: (menu: string) => void;
-}
-
-const IntroBanner: React.FC<IntroBannerProps> = ({ setSelectedMenu }) => {
+const IntroBanner: React.FC = () => {
 	return (
 		<div className={styles.pageBox}>
 			<div className={styles.bannerContainer}>
-				<MenuTabs setSelectedMenu={setSelectedMenu} />
+				<img src="/schapka_menu.svg" alt="Banner" className={styles.bannerImage} />
 			</div>
 		</div>
 	);
