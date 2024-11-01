@@ -27,6 +27,7 @@ function PageHome(): JSX.Element {
 				<MenuTabs setSelectedMenu={setSelectedMenu} />
 			</div>
 			<RenderMenu selectedMenu={selectedMenu} />
+			<RenderMenu selectedMenu="All" excludeCategory={selectedMenu} />
 			<Cookies />
 			<FooterPage />
 			<ScrollToTopButton />

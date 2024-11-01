@@ -74,18 +74,25 @@
 	flex-shrink: 0;
 	-webkit-user-select: none;
 	user-select: none;
+	text-align: center;
+	white-space: normal; 
+	word-wrap: break-word;
+	padding: 0 5px;
 }
 
 .tab:hover {
 	height: 65px;
+	font-size: 20px;
+	color: #247045;
 	margin-top: 0;
 	background-color: #ddd;
 }
 
 .activeTab {
 	background-color: #ddd;
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 500;
+	color: #247045;
 	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 	height: 65px;
 	margin-top: 0;
@@ -99,6 +106,7 @@
 		width: 120px;
 		height: 35px;
 		font-size: 12px;
+		white-space: normal;
 	}
 
 	.scrollButton {
