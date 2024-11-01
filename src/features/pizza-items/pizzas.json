@@ -17,7 +17,7 @@
 	{
 		"name": "Pizza Funghi",
 		"description": "Mit würziger Tomatensauce, Käse und Champignons",
-		"image": "pizza.png",
+		"image": "funghi.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 5.5 },
 			{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
@@ -32,7 +32,7 @@
 	{
 		"name": "Pizza Salami",
 		"description": "Mit würziger Tomatensauce, Käse und Salami",
-		"image": "pizza.png",
+		"image": "salami.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 6.0 },
 			{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
@@ -47,7 +47,7 @@
 	{
 		"name": "Pizza Prosciutto",
 		"description": "Mit würziger Tomatensauce, Käse und Vorderschinken",
-		"image": "pizza.png",
+		"image": "prosciutto.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 5.5 },
 			{ "label": "Mittel", "size": "32 cm", "price": 8.5 },
@@ -62,7 +62,7 @@
 	{
 		"name": "Pizza Hawaii",
 		"description": "Mit würziger Tomatensauce, Käse, Vorderschinken und Ananas",
-		"image": "pizza.png",
+		"image": "hawaii.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 6.0 },
 			{ "label": "Mittel", "size": "32 cm", "price": 9.0 },
@@ -77,7 +77,7 @@
 	{
 		"name": "Pizza Diavolo",
 		"description": "Mit würziger Tomatensauce, Käse, Salami, Paprika, Zwiebeln und Peperoni",
-		"image": "pizza.png",
+		"image": "diavolo.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 6.5 },
 			{ "label": "Mittel", "size": "32 cm", "price": 9.5 },
@@ -92,7 +92,7 @@
 	{
 		"name": "Pizza Vegetaria",
 		"description": "Mit würziger Tomatensauce, Käse, Broccoli, frische Tomaten, Zwiebeln, Paprika und Mais",
-		"image": "pizza.png",
+		"image": "vegetaria.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 6.0 },
 			{ "label": "Mittel", "size": "32 cm", "price": 9.0 },

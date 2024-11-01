@@ -2,7 +2,7 @@
   {
       "name": "Napoli",
       "description": "Mit Tomatensauce und Knoblauch",
-      "image": "pasta_image.webp",
+      "image": "napoli.webp",
       "price": 7.5,
       "ingredients": [
           { "label": "Regatoni" },
@@ -18,7 +18,7 @@
   {
       "name": "Bolognese",
       "description": "Mit Tomaten-Hackfleischsauce",
-      "image": "pasta_image.webp",
+      "image": "bolognese.webp",
       "price": 8.5,
       "ingredients": [
           { "label": "Regatoni" },
@@ -34,7 +34,7 @@
   {
       "name": "Carbonara",
       "description": "Mit Schinken, Ei und Sahnesauce",
-      "image": "pasta_image.webp",
+      "image": "carbonara.webp",
       "price": 8.5,
       "ingredients": [
           { "label": "Regatoni" },
@@ -50,7 +50,7 @@
   {
       "name": "Frutti di Mare",
       "description": "Mit Meeresfrüchten und Käse überbacken",
-      "image": "pasta_image.webp",
+      "image": "fruttdiMare.webp",
       "price": 8.5,
       "ingredients": [
           { "label": "Regatoni" },
