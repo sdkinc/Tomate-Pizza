@@ -2,7 +2,7 @@
 	{
 		"name": "Pizza Margarita",
 		"description": "Mit würziger Tomatensauce und Käse",
-		"image": "pizza.png",
+		"image": "margarita.webp",
 		"sizes": [
 			{ "label": "Klein", "size": "26 cm", "price": 5.0 },
 			{ "label": "Mittel", "size": "32 cm", "price": 8.0 },
