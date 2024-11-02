@@ -8,6 +8,7 @@ import PageHome from './views/PageHome';
 import PrivateRoute from './utils/authRoutes/PrivateRoute';
 import AdminPage from './views/AdminPage';
 import Loading from './components/loading/Loading';
+import PageCart from './views/PageCart';
 
 function App(): JSX.Element {
 	const { i18n } = useTranslation();
@@ -27,7 +28,8 @@ function App(): JSX.Element {
 				</Route>
 				<Route element={<RouteAuth />}></Route>
 				<Route path="/" element={<PageHome />} />
-				<Route path="/menu/:category" element={<PageHome />} />{' '}
+				<Route path="/menu/:category" element={<PageHome />} />
+				<Route path="/cart" element={<PageCart />} />
 				{/* Добавлен маршрут с категорией */}
 			</Routes>
 		</Suspense>
