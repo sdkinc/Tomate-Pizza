@@ -152,6 +152,7 @@
 		align-items: center;
 		text-align: center;
 		justify-content: center;
+		padding-bottom: 30px;
 	}
 	.pizzaNameInfo {
 		display: flex;
@@ -178,8 +179,8 @@
 	.pizzaImage {
 		width: 200px;
 		height: 200px;
-		margin-right: 0;
-		margin-bottom: 0;
+		border-radius: 8px;
+		margin: 20px 0;
 	}
 
 	.pizzaContent {

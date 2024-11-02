@@ -58,13 +58,17 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 					.filter((category) => category !== excludeCategory)
 					.map((category) => (
 						<div key={category} className={styles.categorySection}>
-							<img
-								src={`/${category.replace(/\s/g, '')}.webp`}
-								alt={category}
-								className={styles.categoryImage}
-							/>
-							<h2 className={styles.categoryTitle}>{category}</h2>
-							{getMenuComponent(category)}
+							<div className={styles.imageContainer}>
+								<img
+									src={`/${category.replace(/\s/g, '')}.webp`}
+									alt={category}
+									className={styles.categoryImage}
+								/>
+							</div>
+							<div className={styles.titleBox}>
+								<h2 className={styles.categoryTitle}>{category}</h2>
+								{getMenuComponent(category)}
+							</div>
 						</div>
 					))}
 			</>
