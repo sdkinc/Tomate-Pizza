@@ -1,0 +1,90 @@
+/* Основной контейнер */
+.cartContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+.cartTitle {
+  font-size: 2rem;
+  color: #581d1d;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Список товаров */
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.item {
+  padding: 15px;
+  border: 1px solid #412121;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #381f1f;
+}
+
+.itemDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.itemName {
+  font-weight: bold;
+  color: #903636;
+}
+
+.itemQuantity {
+  color: #923939;
+}
+
+.itemPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #009640;
+}
+
+.sizeExtras {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* Общая сумма */
+.totalPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: right;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: 2px solid #ddd;
+}
+
+/* Кнопка очистки */
+.clearButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.clearButton:hover {
+  background-color: #c9302c;
+}

@@ -1,7 +1,10 @@
+// PizzaModal.tsx
 import { useState } from 'react';
 import styles from './pizzaModal.module.css';
 import { ExtraIngredient, PizzaSize } from './type/PizzaTypes';
 import { t } from 'i18next';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../cart-items/cartSlice';
 
 interface PizzaModalProps {
 	name: string;
@@ -12,9 +15,10 @@ interface PizzaModalProps {
 }
 
 const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extras, onClose }) => {
-	const [selectedSize, setSelectedSize] = useState<PizzaSize | null>(sizes[0]);
+	const [selectedSize, setSelectedSize] = useState<PizzaSize>(sizes[0]);
 	const [selectedExtras, setSelectedExtras] = useState<ExtraIngredient[]>([]);
 	const [quantity, setQuantity] = useState(1);
+	const dispatch = useDispatch();
 
 	const handleSizeChange = (size: PizzaSize): void => {
 		setSelectedSize(size);
@@ -35,6 +39,21 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 		return singlePizzaPrice * quantity;
 	};
 
+	const handleAddToCart = (): void => {
+		dispatch(
+			addItem({
+				id: name + selectedSize.size, // уникальный ID для каждого размера
+				type: 'pizza',
+				name,
+				price: calculateTotalPrice(),
+				quantity,
+				extras: selectedExtras,
+				size: selectedSize.size,
+			})
+		);
+		onClose();
+	};
+
 	return (
 		<div className={styles.modal} onClick={onClose}>
 			<div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -43,6 +62,7 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 				</button>
 				<h2>{name}</h2>
 				<p>{description}</p>
+
 				<h3>{t('selectSize')}:</h3>
 				<select
 					aria-label={t('pizzaSize')}
@@ -80,7 +100,7 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 					<div className={styles.totalPrice}>
 						{t('total')}: {calculateTotalPrice().toFixed(2)} €
 					</div>
-					<button type="button" className={styles.addToCartButton}>
+					<button type="button" className={styles.addToCartButton} onClick={handleAddToCart}>
 						{t('choose')}
 					</button>
 				</div>

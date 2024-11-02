@@ -51,11 +51,8 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 							</button>
 						</div>
 						<div className={styles.priceBox}>
-							<div className={styles.pizzaSizeContainer}>
-								<span className={styles.sizeIcon}>⌀</span>
-								<span className={styles.pizzaSize}>{sizes[0].size}</span>
-							</div>
-							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
+							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>{' '}
+							{/* Цена минимального размера */}
 						</div>
 					</div>
 					<p className={styles.pizzaDescription}>{description}</p>
@@ -69,13 +66,10 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 					>
 						<VisibilityIcon fontSize="medium" />
 					</button>
-
-					<button type="button" className={styles.selectButton}>
-						{t('Choose')}
-					</button>
 				</div>
 			</div>
 
+			{/* Модальное окно выбора опций */}
 			{isPizzaModalOpen && (
 				<PizzaModal
 					name={name}
@@ -86,6 +80,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 				/>
 			)}
 
+			{/* Модальное окно с информацией о продукте */}
 			{isProductInfoModalOpen && productInfo && (
 				<ProductInfoModal
 					isOpen={isProductInfoModalOpen}
