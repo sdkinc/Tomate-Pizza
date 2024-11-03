@@ -2,12 +2,15 @@ import { useState } from 'react';
 import styles from './pastaModal.module.css';
 import { Ingredients } from './type/PastaTypes';
 import { t } from 'i18next';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../cart-items/cartSlice';
 
 interface PastaModalProps {
 	name: string;
 	description: string;
 	price: number;
 	ingredients: Ingredients[];
+	image: string; // Добавляем изображение для отправки в корзину
 	onClose: () => void;
 }
 
@@ -16,9 +19,12 @@ const PastaModal: React.FC<PastaModalProps> = ({
 	description,
 	price,
 	ingredients,
+	image,
 	onClose,
 }) => {
 	const [quantity, setQuantity] = useState(1);
+	const [selectedIngredient, setSelectedIngredient] = useState<Ingredients | null>(null);
+	const dispatch = useDispatch();
 
 	const increaseQuantity = (): void => setQuantity(quantity + 1);
 	const decreaseQuantity = (): void => setQuantity(quantity > 1 ? quantity - 1 : 1);
@@ -27,22 +33,57 @@ const PastaModal: React.FC<PastaModalProps> = ({
 		return price * quantity;
 	};
 
+	const handleIngredientSelect = (ingredient: Ingredients): void => {
+		setSelectedIngredient(ingredient);
+	};
+
+	const handleAddToCart = (): void => {
+		if (!selectedIngredient) {
+			alert(t('Please select an ingredient'));
+			return;
+		}
+
+		dispatch(
+			addItem({
+				id: name + selectedIngredient.label, // Используем уникальный ID для вариаций
+				type: 'pasta',
+				name,
+				image,
+				price: calculateTotalPrice(),
+				quantity,
+				ingredients: [selectedIngredient], // Передаем выбранный ингредиент как массив
+			})
+		);
+		onClose();
+	};
+
 	return (
 		<div className={styles.modal} onClick={onClose}>
 			<div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
 				<button type="button" onClick={onClose} className={styles.closeButton}>
 					✖
 				</button>
-				<h2>{name}</h2>
-				<p>{description}</p>
-
-				<h3>{t('yourTypeOfPasta')}:</h3>
-				{ingredients.map((ingredient) => (
-					<label key={ingredient.label} className={styles.extraOption}>
-						<input type="checkbox" />
-						{ingredient.label}
-					</label>
-				))}
+				<div className={styles.centeredContainer}>
+					<div className={styles.nameTitle}>{name}</div>
+					<div className={styles.imageContainer}>
+						<img src={image} alt={name} className={styles.image} />
+					</div>
+					<p>{description}</p>
+					<div className={styles.typeTitle}>{t('yourTypeOfPasta')}:</div>
+					<div className={styles.ingredientContainer}>
+						{ingredients.map((ingredient) => (
+							<label key={ingredient.label} className={styles.extraOption}>
+								<input
+									type="radio"
+									name="ingredient"
+									onChange={() => handleIngredientSelect(ingredient)}
+									checked={selectedIngredient === ingredient}
+								/>
+								{ingredient.label}
+							</label>
+						))}
+					</div>
+				</div>
 
 				<div className={styles.footer}>
 					<div className={styles.quantityControls}>
@@ -55,10 +96,9 @@ const PastaModal: React.FC<PastaModalProps> = ({
 						</button>
 					</div>
 					<div className={styles.totalPrice}>
-						{/* Здесь отображается корректная общая сумма */}
 						{t('total')}: {calculateTotalPrice().toFixed(2)} €
 					</div>
-					<button type="button" className={styles.addToCartButton}>
+					<button type="button" className={styles.addToCartButton} onClick={handleAddToCart}>
 						{t('choose')}
 					</button>
 				</div>
