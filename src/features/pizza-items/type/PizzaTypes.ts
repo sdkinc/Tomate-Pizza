@@ -21,5 +21,9 @@ export interface PizzaSize {
 
 export interface ExtraIngredient {
 	label: string;
-	price: number;
+	priceBySize: {
+		Klein: number;
+		Mittel: number;
+		Familie: number;
+	};
 }

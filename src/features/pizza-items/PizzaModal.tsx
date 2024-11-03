@@ -1,4 +1,3 @@
-// PizzaModal.tsx
 import { useState } from 'react';
 import styles from './pizzaModal.module.css';
 import { ExtraIngredient, PizzaSize } from './type/PizzaTypes';
@@ -38,14 +37,26 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 		);
 	};
 
+	const getExtraPrice = (extra: ExtraIngredient): number => {
+		const sizeKey = selectedSize.label as 'Klein' | 'Mittel' | 'Familie';
+		const price = extra.priceBySize[sizeKey];
+
+		if (price === undefined) {
+			console.warn(`Price for ${sizeKey} not found in extra ${extra.label}`);
+			return 0;
+		}
+		return price;
+	};
+
 	const increaseQuantity = (): void => setQuantity(quantity + 1);
 	const decreaseQuantity = (): void => setQuantity(quantity > 1 ? quantity - 1 : 1);
 
 	const calculateTotalPrice = (): number => {
-		const extrasTotal = selectedExtras.reduce((acc, extra) => acc + extra.price, 0);
+		const extrasTotal = selectedExtras.reduce((acc, extra) => acc + getExtraPrice(extra), 0);
 		const singlePizzaPrice = (selectedSize ? selectedSize.price : 0) + extrasTotal;
 		return singlePizzaPrice * quantity;
 	};
+
 	const handleAddToCart = (): void => {
 		const uniqueId = `${name}-${selectedSize.size}-${selectedExtras.map((extra) => extra.label).join(',')}`;
 		dispatch(
@@ -97,7 +108,7 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 									onChange={() => handleExtraToggle(extra)}
 									checked={selectedExtras.includes(extra)}
 								/>
-								{extra.label} (+{extra.price} €)
+								{t(`ingredients.${extra.label}`)} (+{getExtraPrice(extra).toFixed(2)} €)
 							</label>
 						))}
 					</div>

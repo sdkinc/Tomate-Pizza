@@ -7,5 +7,15 @@
 	"youExtras": "Your extras",
 	"pizzaSize": "Pizza size",
 	"selectSize": "Select size",
-	"yourTypeOfPasta": "Your type of pasta"
+	"yourTypeOfPasta": "Your type of pasta",
+	"productInfo": "Product info",
+	"substances": "Substances or products that may cause allergies or intolerances.",
+	"allergens": "Allergens",
+	"ingredients": {
+    "Cheese": "Cheese",
+    "Knoblauch": "Garlic",
+    "Ananas": "Pineapple",
+    "Artischocken": "Artichokes",
+    "BBQ-Sauce": "BBQ Sauce"
+  }
 }
