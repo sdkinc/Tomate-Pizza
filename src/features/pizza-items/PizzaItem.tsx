@@ -11,7 +11,7 @@ interface PizzaItemProps {
 	description: string;
 	image: string;
 	sizes: PizzaSize[];
-	extras: ExtraIngredient[];
+	extras: ExtraIngredient[]; // extras ожидается как массив
 	productInfo?: ProductInfo;
 }
 
@@ -51,7 +51,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 							</button>
 						</div>
 						<div className={styles.priceBox}>
-							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>{' '}
+							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
 						</div>
 					</div>
 					<p className={styles.pizzaDescription}>{description}</p>
@@ -73,7 +73,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 					name={name}
 					description={description}
 					sizes={sizes}
-					extras={extras}
+					extras={extras} // передаем общие ингредиенты
 					onClose={closePizzaModal}
 					image={image}
 				/>

@@ -2,6 +2,7 @@ import 'react';
 import pizzasData from './pizzas.json';
 import PizzaItem from './PizzaItem';
 import styles from './pizzaMenu.module.css';
+import extraIngredients from './ExtraIngredients';
 
 const PizzaMenu: React.FC = () => {
 	return (
@@ -13,8 +14,8 @@ const PizzaMenu: React.FC = () => {
 					description={pizza.description}
 					image={pizza.image}
 					sizes={pizza.sizes}
-					extras={pizza.extras}
-					productInfo={pizza.productInfo || undefined}
+					extras={extraIngredients} // Используем общий массив ингредиентов
+					productInfo={pizza.productInfo}
 				/>
 			))}
 		</div>
