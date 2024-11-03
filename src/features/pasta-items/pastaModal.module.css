@@ -14,6 +14,36 @@ select {
 	padding: 5px;
 	border-color: #009640;
 }
+.centeredContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Центровка по горизонтали */
+	margin-bottom: 20px;
+}
+
+.image {
+	width: 300px;
+	height: 300px;
+	border-radius: 8px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.ingredientContainer {
+	text-align: left;
+}
+.typeTitle {
+	font-size: 18px;
+	font-weight: 500;
+	color: #313131;
+
+}
+.nameTitle {
+	text-align: center; 
+	font-size: 26px;
+	font-weight: 600;
+
+	margin-bottom: 10px;
+}
 
 .modalContent {
 	background: #fff;
@@ -108,5 +138,9 @@ select {
 		border-radius: 8px;
 		width: 87%;
 		position: relative;
+	}
+	.image {
+		width: 200px;
+		height: 200px;
 	}
 }

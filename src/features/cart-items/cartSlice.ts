@@ -1,5 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { CartItem } from './type/CartTypes';
+import { ExtraIngredient } from '../pizza-items/type/PizzaTypes';
+import { Ingredients } from '../pasta-items/type/PastaTypes';
+
+interface CartItem {
+	id: string;
+	name: string;
+	image: string;
+	price: number;
+	quantity: number;
+	extras?: ExtraIngredient[];
+	ingredients?: Ingredients[];
+	size?: string;
+	type: string;
+}
 
 interface CartState {
 	items: CartItem[];
@@ -17,8 +30,10 @@ const cartSlice = createSlice({
 			const existingItem = state.items.find(
 				(item) => item.id === action.payload.id && item.size === action.payload.size
 			);
+
 			if (existingItem) {
 				existingItem.quantity += action.payload.quantity;
+				existingItem.price += action.payload.price; // Пересчитываем общую цену для данного товара
 			} else {
 				state.items.push(action.payload);
 			}

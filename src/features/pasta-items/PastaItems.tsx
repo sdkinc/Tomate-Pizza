@@ -1,8 +1,9 @@
 import { useState } from 'react';
+// import { useDispatch } from 'react-redux';
+// import { addItem } from '../cart-items/cartSlice';
 import { Ingredients, ProductInfo } from './type/PastaTypes';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from './pastaItems.module.css';
-
 import { t } from 'i18next';
 import PastaModal from './PastaModal';
 import ProductInfoModal from '../pizza-items/ProductInfoModal';
@@ -26,12 +27,27 @@ const PastaItem: React.FC<PastaItemProps> = ({
 }) => {
 	const [isPastaModalOpen, setIsPastaModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
+	// const dispatch = useDispatch();
 
 	const openPastaModal = (): void => setIsPastaModalOpen(true);
 	const closePastaModal = (): void => setIsPastaModalOpen(false);
 
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
+
+	// const handleAddToCart = (): void => {
+	// 	dispatch(
+	// 		addItem({
+	// 			id: name,
+	// 			type: 'pasta',
+	// 			name,
+	// 			image,
+	// 			price,
+	// 			quantity: 1,
+	// 			ingredients,
+	// 		})
+	// 	);
+	// };
 
 	return (
 		<div className={styles.itemBox}>
@@ -67,9 +83,13 @@ const PastaItem: React.FC<PastaItemProps> = ({
 						<VisibilityIcon fontSize="medium" />
 					</button>
 
-					<button type="button" className={styles.selectButton}>
+					{/* <button
+						type="button"
+						className={styles.selectButton}
+						onClick={handleAddToCart} // Добавляем обработчик
+					>
 						{t('Choose')}
-					</button>
+					</button> */}
 				</div>
 			</div>
 
@@ -79,6 +99,7 @@ const PastaItem: React.FC<PastaItemProps> = ({
 					description={description}
 					ingredients={ingredients}
 					price={price}
+					image={image}
 					onClose={closePastaModal}
 				/>
 			)}

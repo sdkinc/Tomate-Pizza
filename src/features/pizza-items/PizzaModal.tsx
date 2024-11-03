@@ -9,12 +9,20 @@ import { addItem } from '../cart-items/cartSlice';
 interface PizzaModalProps {
 	name: string;
 	description: string;
+	image: string;
 	sizes: PizzaSize[];
 	extras: ExtraIngredient[];
 	onClose: () => void;
 }
 
-const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extras, onClose }) => {
+const PizzaModal: React.FC<PizzaModalProps> = ({
+	name,
+	description,
+	sizes,
+	extras,
+	image,
+	onClose,
+}) => {
 	const [selectedSize, setSelectedSize] = useState<PizzaSize>(sizes[0]);
 	const [selectedExtras, setSelectedExtras] = useState<ExtraIngredient[]>([]);
 	const [quantity, setQuantity] = useState(1);
@@ -38,13 +46,14 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 		const singlePizzaPrice = (selectedSize ? selectedSize.price : 0) + extrasTotal;
 		return singlePizzaPrice * quantity;
 	};
-
 	const handleAddToCart = (): void => {
+		const uniqueId = `${name}-${selectedSize.size}-${selectedExtras.map((extra) => extra.label).join(',')}`;
 		dispatch(
 			addItem({
-				id: name + selectedSize.size, // уникальный ID для каждого размера
+				id: uniqueId,
 				type: 'pizza',
 				name,
+				image,
 				price: calculateTotalPrice(),
 				quantity,
 				extras: selectedExtras,
@@ -60,33 +69,39 @@ const PizzaModal: React.FC<PizzaModalProps> = ({ name, description, sizes, extra
 				<button type="button" onClick={onClose} className={styles.closeButton}>
 					✖
 				</button>
-				<h2>{name}</h2>
-				<p>{description}</p>
+				<div className={styles.centeredContainer}>
+					<div className={styles.nameTitle}>{name}</div>
+					<div className={styles.imageContainer}>
+						<img src={image} alt={name} className={styles.image} />
+					</div>
+					<p>{description}</p>
 
-				<h3>{t('selectSize')}:</h3>
-				<select
-					aria-label={t('pizzaSize')}
-					onChange={(e) => handleSizeChange(sizes[+e.target.value])}
-				>
-					{sizes.map((size, index) => (
-						<option key={size.label} value={index}>
-							{size.label} ({size.size}) - {size.price} €
-						</option>
-					))}
-				</select>
+					<div className={styles.typeTitle}>{t('selectSize')}:</div>
 
-				<h3>{t('youExtras')}:</h3>
-				{extras.map((extra) => (
-					<label key={extra.label} className={styles.extraOption}>
-						<input
-							type="checkbox"
-							onChange={() => handleExtraToggle(extra)}
-							checked={selectedExtras.includes(extra)}
-						/>
-						{extra.label} (+{extra.price} €)
-					</label>
-				))}
-
+					<select
+						aria-label={t('pizzaSize')}
+						onChange={(e) => handleSizeChange(sizes[+e.target.value])}
+					>
+						{sizes.map((size, index) => (
+							<option key={size.label} value={index}>
+								{size.label} ({size.size}) - {size.price} €
+							</option>
+						))}
+					</select>
+					<div className={styles.typeTitle}>{t('youExtras')}:</div>
+					<div className={styles.ingredientContainer}>
+						{extras.map((extra) => (
+							<label key={extra.label} className={styles.extraOption}>
+								<input
+									type="checkbox"
+									onChange={() => handleExtraToggle(extra)}
+									checked={selectedExtras.includes(extra)}
+								/>
+								{extra.label} (+{extra.price} €)
+							</label>
+						))}
+					</div>
+				</div>
 				<div className={styles.footer}>
 					<div className={styles.quantityControls}>
 						<button type="button" onClick={decreaseQuantity} className={styles.quantityButton}>

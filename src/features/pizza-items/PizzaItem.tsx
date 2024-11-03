@@ -52,7 +52,6 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 						</div>
 						<div className={styles.priceBox}>
 							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>{' '}
-							{/* Цена минимального размера */}
 						</div>
 					</div>
 					<p className={styles.pizzaDescription}>{description}</p>
@@ -69,7 +68,6 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 				</div>
 			</div>
 
-			{/* Модальное окно выбора опций */}
 			{isPizzaModalOpen && (
 				<PizzaModal
 					name={name}
@@ -77,10 +75,10 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 					sizes={sizes}
 					extras={extras}
 					onClose={closePizzaModal}
+					image={image}
 				/>
 			)}
 
-			{/* Модальное окно с информацией о продукте */}
 			{isProductInfoModalOpen && productInfo && (
 				<ProductInfoModal
 					isOpen={isProductInfoModalOpen}
