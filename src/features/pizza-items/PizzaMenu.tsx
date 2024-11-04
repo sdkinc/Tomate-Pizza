@@ -1,20 +1,23 @@
 import 'react';
-import pizzasData from './pizzas.json';
+import { useTranslation } from 'react-i18next';
+import pizzasData from './PizzaData';
 import PizzaItem from './PizzaItem';
 import styles from './pizzaMenu.module.css';
 import extraIngredients from './ExtraIngredients';
 
 const PizzaMenu: React.FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className={styles.pageContainer}>
 			{pizzasData.map((pizza) => (
 				<PizzaItem
 					key={pizza.name}
-					name={pizza.name}
-					description={pizza.description}
+					name={t(pizza.name)} // Переводим ключ
+					description={t(pizza.description)} // Переводим ключ
 					image={pizza.image}
 					sizes={pizza.sizes}
-					extras={extraIngredients} // Используем общий массив ингредиентов
+					extras={extraIngredients}
 					productInfo={pizza.productInfo}
 				/>
 			))}

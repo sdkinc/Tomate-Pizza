@@ -3,7 +3,7 @@ export interface Pizza {
 	description: string;
 	image: string;
 	sizes: PizzaSize[];
-	extras: ExtraIngredient[];
+	extras?: ExtraIngredient[];
 	productInfo?: ProductInfo;
 }
 export interface ProductInfo {

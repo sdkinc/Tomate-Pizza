@@ -1,3 +1,109 @@
 {
-	
+	"signUp": "Anmelden",
+	"signIn": "Einloggen",
+	"choose": "Wählen",
+	"View pizza": "Pizza ansehen",
+	"total": "Gesamt",
+	"youExtras": "Ihre Extras",
+	"pizzaSize": "Pizzagröße",
+	"selectSize": "Größe auswählen",
+	"yourTypeOfPasta": "Ihre Pastaart",
+	"productInfo": "Produktinformation",
+	"substances": "Substanzen oder Produkte, die Allergien oder Intoleranzen hervorrufen können.",
+	"allergens": "Allergene",
+	"ingredients": {
+		"Cheese": "Käse",
+		"Knoblauch": "Knoblauch",
+		"Ananas": "Ananas",
+		"Artischocken": "Artischocken",
+		"BBQ-Sauce": "BBQ-Sauce"
+	},
+	"disclaimer": "Diese Angaben zu Allergenen wurden vom Restaurant bestätigt.",
+	"additionalInfo": "Bitte beachte, dass diese Angaben sich ändern können.",
+	"pizzas": {
+		"PizzaMargarita": {
+			"name": "Pizza Margarita",
+			"description": "Mit würziger Tomatensauce und Käse",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaFunghi": {
+			"name": "Pizza Funghi",
+			"description": "Mit würziger Tomatensauce, Käse und Champignons",
+			"productInfo": {
+				"substances": ["Ohne Konservierungsstoffe"],
+				"allergens": ["Gluten", "Weizen", "Milch"]
+			}
+		},
+		"PizzaSalami": {
+			"name": "Pizza Salami",
+			"description": "Mit würziger Tomatensauce, Käse und Salami",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen"],
+				"allergens": ["Gluten", "Milch", "Weizen"]
+			}
+		},
+		"PizzaProsciutto": {
+			"name": "Pizza Prosciutto",
+			"description": "Mit würziger Tomatensauce, Käse und Vorderschinken",
+			"productInfo": {
+				"substances": ["Mit Farbstoff"],
+				"allergens": ["Milch", "Weizen", "Soja"]
+			}
+		},
+		"PizzaHawaii": {
+			"name": "Pizza Hawaii",
+			"description": "Mit würziger Tomatensauce, Käse, Vorderschinken und Ananas",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen"],
+				"allergens": ["Gluten", "Milch"]
+			}
+		},
+		"PizzaDiavolo": {
+			"name": "Pizza Diavolo",
+			"description": "Mit würziger Tomatensauce, Käse, Salami, Paprika, Zwiebeln und Peperoni",
+			"productInfo": {
+				"substances": ["Ohne künstliche Zusätze"],
+				"allergens": ["Gluten", "Milch", "Weizen"]
+			}
+		},
+		"PizzaVegetaria": {
+			"name": "Pizza Vegetaria",
+			"description": "Mit würziger Tomatensauce, Käse, Broccoli, frischen Tomaten, Zwiebeln, Paprika und Mais",
+			"productInfo": {
+				"substances": ["Vegan"],
+				"allergens": ["Gluten", "Milch"]
+			}
+		},
+		"PizzaFruttiDiMare": {
+			"name": "Pizza Frutti di Mare",
+			"description": "Mit würziger Tomatensauce, Käse, Knoblauch und Meeresfrüchten",
+			"productInfo": {
+				"substances": ["Mit Farbstoff"],
+				"allergens": ["Gluten", "Milch", "Schalentiere"]
+			}
+		},
+		"PizzaQuattroStagioni": {
+			"name": "Pizza Quattro Stagioni",
+			"description": "Mit würziger Tomatensauce, Käse, Vorderschinken, Salami, Champignons und Artischocken",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen"],
+				"allergens": ["Gluten", "Milch"]
+			}
+		},
+		"PizzaSchinkenSalami": {
+			"name": "Pizza Schinken-Salami",
+			"description": "Mit Vorderschinken, Salami und Peperoni",
+			"productInfo": {
+				"substances": ["Ohne Zusatzstoffe"],
+				"allergens": ["Gluten", "Milch"]
+			}
+		}
+	}
 }

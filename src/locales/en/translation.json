@@ -12,10 +12,98 @@
 	"substances": "Substances or products that may cause allergies or intolerances.",
 	"allergens": "Allergens",
 	"ingredients": {
-    "Cheese": "Cheese",
-    "Knoblauch": "Garlic",
-    "Ananas": "Pineapple",
-    "Artischocken": "Artichokes",
-    "BBQ-Sauce": "BBQ Sauce"
-  }
+		"Cheese": "Cheese",
+		"Knoblauch": "Garlic",
+		"Ananas": "Pineapple",
+		"Artischocken": "Artichokes",
+		"BBQ-Sauce": "BBQ Sauce"
+	},
+	"disclaimer": "These allergen details have been confirmed by the restaurant.",
+	"additionalInfo": "Please note that this information may change.",
+	"pizzas": {
+		"PizzaMargarita": {
+			"name": "Pizza Margarita",
+			"description": "With spicy tomato sauce and cheese",
+			"productInfo": {
+				"substances": ["With preservatives"],
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk products (contains lactose)"
+				]
+			}
+		},
+		"PizzaFunghi": {
+			"name": "Pizza Funghi",
+			"description": "With spicy tomato sauce, cheese, and mushrooms",
+			"productInfo": {
+				"substances": ["Without preservatives"],
+				"allergens": ["Gluten", "Wheat", "Milk"]
+			}
+		},
+		"PizzaSalami": {
+			"name": "Pizza Salami",
+			"description": "With spicy tomato sauce, cheese, and salami",
+			"productInfo": {
+				"substances": ["With preservatives"],
+				"allergens": ["Gluten", "Milk", "Wheat"]
+			}
+		},
+		"PizzaProsciutto": {
+			"name": "Pizza Prosciutto",
+			"description": "With spicy tomato sauce, cheese, and ham",
+			"productInfo": {
+				"substances": ["With coloring"],
+				"allergens": ["Milk", "Wheat", "Soy"]
+			}
+		},
+		"PizzaHawaii": {
+			"name": "Pizza Hawaii",
+			"description": "With spicy tomato sauce, cheese, ham, and pineapple",
+			"productInfo": {
+				"substances": ["With preservatives"],
+				"allergens": ["Gluten", "Milk"]
+			}
+		},
+		"PizzaDiavolo": {
+			"name": "Pizza Diavolo",
+			"description": "With spicy tomato sauce, cheese, salami, peppers, onions, and chili",
+			"productInfo": {
+				"substances": ["Without artificial additives"],
+				"allergens": ["Gluten", "Milk", "Wheat"]
+			}
+		},
+		"PizzaVegetaria": {
+			"name": "Pizza Vegetaria",
+			"description": "With spicy tomato sauce, cheese, broccoli, fresh tomatoes, onions, peppers, and corn",
+			"productInfo": {
+				"substances": ["Vegan"],
+				"allergens": ["Gluten", "Milk"]
+			}
+		},
+		"PizzaFruttiDiMare": {
+			"name": "Pizza Frutti di Mare",
+			"description": "With spicy tomato sauce, cheese, garlic, and seafood",
+			"productInfo": {
+				"substances": ["With coloring"],
+				"allergens": ["Gluten", "Milk", "Shellfish"]
+			}
+		},
+		"PizzaQuattroStagioni": {
+			"name": "Pizza Quattro Stagioni",
+			"description": "With spicy tomato sauce, cheese, ham, salami, mushrooms, and artichokes",
+			"productInfo": {
+				"substances": ["With preservatives"],
+				"allergens": ["Gluten", "Milk"]
+			}
+		},
+		"PizzaSchinkenSalami": {
+			"name": "Pizza Ham-Salami",
+			"description": "With ham, salami, and chili",
+			"productInfo": {
+				"substances": ["Without additives"],
+				"allergens": ["Gluten", "Milk"]
+			}
+		}
+	}
 }
