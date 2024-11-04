@@ -21,12 +21,13 @@ const ProductInfoModal: React.FC<ProductInfoModalProps> = ({ isOpen, onClose, pr
 				</button>
 				<h2 className={styles.title}>{t('productInfo')}</h2>
 
+				{/* Substances Section */}
 				{productInfo.substances && productInfo.substances.length > 0 && (
 					<>
 						<h3 className={styles.subsectionTitle}>{t('substances')}</h3>
 						<ul className={styles.list}>
-							{productInfo.substances.map((substance, index) => (
-								<li key={index}>{substance}</li>
+							{productInfo.substances.map((substanceKey, index) => (
+								<li key={index}>{t(substanceKey)}</li>
 							))}
 						</ul>
 					</>
@@ -37,18 +38,18 @@ const ProductInfoModal: React.FC<ProductInfoModalProps> = ({ isOpen, onClose, pr
 					<>
 						<h3 className={styles.subsectionTitle}>{t('allergens')}</h3>
 						<ul className={styles.list}>
-							{productInfo.allergens.map((allergen, index) => (
-								<li key={index}>{allergen}</li>
+							{productInfo.allergens.map((allergenKey, index) => (
+								<li key={index}>{t(allergenKey)}</li>
 							))}
 						</ul>
 					</>
 				)}
 
-				{productInfo.disclaimer && <p className={styles.disclaimer}>{productInfo.disclaimer}</p>}
+				{/* Disclaimer Section */}
+				<p className={styles.disclaimer}>{t('disclaimer')}</p>
 
-				{productInfo.additionalInfo && (
-					<p className={styles.additionalInfo}>{productInfo.additionalInfo}</p>
-				)}
+				{/* Additional Info Section */}
+				<p className={styles.additionalInfo}>{t('additionalInfo')}</p>
 			</div>
 		</div>
 	);

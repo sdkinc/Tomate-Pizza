@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import { PizzaSize, ExtraIngredient, ProductInfo } from './type/PizzaTypes';
+import { PizzaSize, ExtraIngredient } from './type/PizzaTypes';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from './pizzaItem.module.css';
 import PizzaModal from './PizzaModal';
 import ProductInfoModal from './ProductInfoModal';
 import { t } from 'i18next';
+import { ProductInfo } from '../pasta-items/type/PastaTypes';
 
 interface PizzaItemProps {
 	name: string;
 	description: string;
 	image: string;
 	sizes: PizzaSize[];
-	extras: ExtraIngredient[]; // extras ожидается как массив
+	extras: ExtraIngredient[];
 	productInfo?: ProductInfo;
 }
 
@@ -73,7 +74,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 					name={name}
 					description={description}
 					sizes={sizes}
-					extras={extras} // передаем общие ингредиенты
+					extras={extras}
 					onClose={closePizzaModal}
 					image={image}
 				/>
