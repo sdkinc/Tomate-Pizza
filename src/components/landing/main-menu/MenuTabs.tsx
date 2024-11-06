@@ -22,7 +22,8 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 
 	const scroll = (direction: 'left' | 'right'): void => {
 		if (tabContainerRef.current) {
-			const scrollAmount = 250;
+			const containerWidth = tabContainerRef.current.clientWidth;
+			const scrollAmount = containerWidth * 0.5; // Настроим величину прокрутки для мобильных экранов
 			tabContainerRef.current.scrollBy({
 				left: direction === 'left' ? -scrollAmount : scrollAmount,
 				behavior: 'smooth',
