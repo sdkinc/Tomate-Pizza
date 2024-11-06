@@ -11,7 +11,11 @@
 	"productInfo": "Produktinformation",
 	"substances": "Substanzen oder Produkte, die Allergien oder Intoleranzen hervorrufen können.",
 	"allergens": "Allergene",
+	"View info": "Informationen anzeigen",
+	"pcs": "Stk",
 	"ingredients": {
+		"Regatoni": "Regatoni",
+		"Spaghetti": "Spaghetti",
 		"Cheese": "Käse",
 		"Knoblauch": "Knoblauch",
 		"Ananas": "Ananas",
@@ -103,6 +107,40 @@
 			"productInfo": {
 				"substances": ["Ohne Zusatzstoffe"],
 				"allergens": ["Gluten", "Milch"]
+			}
+		}
+	},
+	"pastas": {
+		"Napoli": {
+			"name": "Napoli",
+			"description": "Mit Tomatensauce und Knoblauch",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Ei"],
+				"substances": ["Tomaten", "Knoblauch"]
+			}
+		},
+		"Bolognese": {
+			"name": "Bolognese",
+			"description": "Mit Tomaten-Hackfleischsauce",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Ei"],
+				"substances": ["Hackfleisch", "Tomaten"]
+			}
+		},
+		"Carbonara": {
+			"name": "Carbonara",
+			"description": "Mit Schinken, Ei und Sahnesauce",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Ei", "E-Milch"],
+				"substances": ["Schinken", "Sahnesauce"]
+			}
+		},
+		"FruttiDiMare": {
+			"name": "Frutti di Mare",
+			"description": "Mit Meeresfrüchten und Käse überbacken",
+			"productInfo": {
+				"allergens": ["A-Gluten", "L-Weichtiere", "M-Krebstiere"],
+				"substances": ["Meeresfrüchte", "Käse"]
 			}
 		}
 	}

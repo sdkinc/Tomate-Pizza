@@ -1,12 +1,10 @@
 import { useState } from 'react';
-// import { useDispatch } from 'react-redux';
-// import { addItem } from '../cart-items/cartSlice';
-import { Ingredients, ProductInfo } from './type/PastaTypes';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from './pastaItems.module.css';
-import { t } from 'i18next';
+import { Ingredients, ProductInfo } from './type/PastaTypes';
+import { useTranslation } from 'react-i18next';
 import PastaModal from './PastaModal';
-import ProductInfoModal from '../pizza-items/ProductInfoModal';
+import ProductInfoModal from './ProductInfoModal';
 
 interface PastaItemProps {
 	name: string;
@@ -25,9 +23,9 @@ const PastaItem: React.FC<PastaItemProps> = ({
 	ingredients,
 	productInfo,
 }) => {
+	const { t } = useTranslation();
 	const [isPastaModalOpen, setIsPastaModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
-	// const dispatch = useDispatch();
 
 	const openPastaModal = (): void => setIsPastaModalOpen(true);
 	const closePastaModal = (): void => setIsPastaModalOpen(false);
@@ -35,29 +33,15 @@ const PastaItem: React.FC<PastaItemProps> = ({
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
 
-	// const handleAddToCart = (): void => {
-	// 	dispatch(
-	// 		addItem({
-	// 			id: name,
-	// 			type: 'pasta',
-	// 			name,
-	// 			image,
-	// 			price,
-	// 			quantity: 1,
-	// 			ingredients,
-	// 		})
-	// 	);
-	// };
-
 	return (
 		<div className={styles.itemBox}>
 			<img src={image} alt={name} className={styles.itemImage} />
-
 			<div className={styles.itemContent}>
 				<div className={styles.topContainer}>
 					<div className={styles.itemHeader}>
 						<div className={styles.itemNameInfo}>
 							<div className={styles.itemName}>{name}</div>
+
 							<button
 								type="button"
 								className={styles.productInfoButton}
@@ -82,14 +66,6 @@ const PastaItem: React.FC<PastaItemProps> = ({
 					>
 						<VisibilityIcon fontSize="medium" />
 					</button>
-
-					{/* <button
-						type="button"
-						className={styles.selectButton}
-						onClick={handleAddToCart} // Добавляем обработчик
-					>
-						{t('Choose')}
-					</button> */}
 				</div>
 			</div>
 

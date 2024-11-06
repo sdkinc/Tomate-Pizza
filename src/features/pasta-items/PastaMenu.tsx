@@ -1,20 +1,24 @@
 import 'react';
-import styles from './pastaMenu.module.css';
-import pastasData from './pastas.json';
+import { useTranslation } from 'react-i18next';
+import pastasData from './PastaData';
 import PastaItem from './PastaItems';
+import styles from './pastaMenu.module.css';
+import extraIngredients from './ExtraPastaIngredients';
 
 const PastaMenu: React.FC = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className={styles.pageContainer}>
 			{pastasData.map((pasta) => (
 				<PastaItem
 					key={pasta.name}
-					name={pasta.name}
-					description={pasta.description}
+					name={t(pasta.name)}
+					description={t(pasta.description)}
 					image={pasta.image}
 					price={pasta.price}
-					ingredients={pasta.ingredients}
-					productInfo={pasta.productInfo || undefined}
+					ingredients={extraIngredients}
+					productInfo={pasta.productInfo}
 				/>
 			))}
 		</div>

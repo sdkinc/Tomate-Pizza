@@ -1,6 +1,6 @@
 import 'react';
 import styles from './productInfoModal.module.css';
-import { ProductInfo } from './type/PizzaTypes';
+import { ProductInfo } from './type/PastaTypes';
 import { useTranslation } from 'react-i18next';
 
 interface ProductInfoModalProps {
@@ -11,6 +11,7 @@ interface ProductInfoModalProps {
 
 const ProductInfoModal: React.FC<ProductInfoModalProps> = ({ isOpen, onClose, productInfo }) => {
 	const { t } = useTranslation();
+
 	if (!isOpen) return null;
 
 	return (
@@ -44,7 +45,6 @@ const ProductInfoModal: React.FC<ProductInfoModalProps> = ({ isOpen, onClose, pr
 				)}
 
 				<p className={styles.disclaimer}>{t('disclaimer')}</p>
-
 				<p className={styles.additionalInfo}>{t('additionalInfo')}</p>
 			</div>
 		</div>
