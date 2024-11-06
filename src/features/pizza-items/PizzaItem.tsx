@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { PizzaSize, ExtraIngredient } from './type/PizzaTypes';
+import { PizzaSize, ExtraIngredient, ProductInfo } from './type/PizzaTypes';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from './pizzaItem.module.css';
 import PizzaModal from './PizzaModal';
 import ProductInfoModal from './ProductInfoModal';
-import { t } from 'i18next';
-import { ProductInfo } from '../pasta-items/type/PastaTypes';
+import { useTranslation } from 'react-i18next';
 
 interface PizzaItemProps {
 	name: string;
@@ -24,6 +23,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 	extras,
 	productInfo,
 }) => {
+	const { t } = useTranslation();
 	const [isPizzaModalOpen, setIsPizzaModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
 

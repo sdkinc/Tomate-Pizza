@@ -13,8 +13,8 @@ const PizzaMenu: React.FC = () => {
 			{pizzasData.map((pizza) => (
 				<PizzaItem
 					key={pizza.name}
-					name={t(pizza.name)} // Переводим ключ
-					description={t(pizza.description)} // Переводим ключ
+					name={t(pizza.name)}
+					description={t(pizza.description)}
 					image={pizza.image}
 					sizes={pizza.sizes}
 					extras={extraIngredients}

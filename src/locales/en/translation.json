@@ -11,6 +11,8 @@
 	"productInfo": "Product info",
 	"substances": "Substances or products that may cause allergies or intolerances.",
 	"allergens": "Allergens",
+	"View info": "View info",
+	"pcs": "pcs",
 	"ingredients": {
 		"Cheese": "Cheese",
 		"Knoblauch": "Garlic",
@@ -105,5 +107,39 @@
 				"allergens": ["Gluten", "Milk"]
 			}
 		}
+	},
+	"pastas": {
+	"Napoli": {
+		"name": "Napoli",
+		"description": "With tomato sauce and garlic",
+		"productInfo": {
+			"allergens": ["A-Gluten", "B-Egg"],
+			"substances": ["Tomatoes", "Garlic"]
+		}
+	},
+	"Bolognese": {
+		"name": "Bolognese",
+		"description": "With tomato and minced meat sauce",
+		"productInfo": {
+			"allergens": ["A-Gluten", "B-Egg"],
+			"substances": ["Minced meat", "Tomatoes"]
+		}
+	},
+	"Carbonara": {
+		"name": "Carbonara",
+		"description": "With ham, egg, and cream sauce",
+		"productInfo": {
+			"allergens": ["A-Gluten", "B-Egg", "E-Milk"],
+			"substances": ["Ham", "Cream sauce"]
+		}
+	},
+	"FruttiDiMare": {
+		"name": "Frutti di Mare",
+		"description": "With seafood, baked with cheese",
+		"productInfo": {
+			"allergens": ["A-Gluten", "L-Molluscs", "M-Crustaceans"],
+			"substances": ["Seafood", "Cheese"]
+		}
 	}
+}
 }

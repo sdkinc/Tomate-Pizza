@@ -3,7 +3,7 @@ export interface Pasta {
 	description: string;
 	image: string;
 	price: number;
-	ingredients: Ingredients[];
+	ingredients?: Ingredients[];
 	productInfo?: ProductInfo;
 }
 export interface Ingredients {
