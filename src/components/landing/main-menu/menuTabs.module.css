@@ -42,7 +42,7 @@
 	display: flex;
 	align-items: flex-end;
 	gap: 10px;
-	overflow-x: hidden;
+	overflow-x: scroll;
 	white-space: nowrap;
 	padding: 0 40px;
 	position: relative;
@@ -100,10 +100,11 @@
 @media (max-width: 768px) {
 	.tabContainerWrapper {
 		height: 60px;
+		overflow-x: scroll;
 	}
 
 	.tab {
-		width: 120px;
+		width: 100px;
 		height: 35px;
 		font-size: 12px;
 		white-space: normal;

@@ -29,9 +29,9 @@ const CartPage: React.FC = () => {
 					className={styles.backButton}
 					aria-label={t('Back')}
 				>
-					<HomeIcon fontSize="large" />
+					<HomeIcon />
 				</button>
-				<h1 className={styles.cartTitle}>{t('My List')}</h1>
+				<div className={styles.cartTitle}>{t('My List')}</div>
 			</div>
 			<ul className={styles.itemsList}>
 				{items.map((item) => (
