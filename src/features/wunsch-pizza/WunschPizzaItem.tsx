@@ -1,34 +1,38 @@
 import { useState } from 'react';
-import { PizzaSize, ExtraIngredient, ProductInfo } from './type/PizzaTypes';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import styles from './pizzaItem.module.css';
-import PizzaModal from './PizzaModal';
-import ProductInfoModal from './ProductInfoModal';
 import { useTranslation } from 'react-i18next';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import styles from '../pizza-items/pizzaItem.module.css';
+import { ExtraIngredient, PizzaSize } from '../pizza-items/type/PizzaTypes';
+import ProductInfoModal from '../pizza-items/ProductInfoModal';
+import WunschPizzaModal from './WunschPizzaModal';
+import { ProductInfo } from './type/WunschPizzaTypes';
+import freeIngredients from './FreeIngredients';
 
-interface PizzaItemProps {
+interface WunschPizzaItemProps {
 	name: string;
 	description: string;
 	image: string;
 	sizes: PizzaSize[];
 	extras: ExtraIngredient[];
 	productInfo?: ProductInfo;
+	freeIngredientsLimit?: number;
 }
 
-const PizzaItem: React.FC<PizzaItemProps> = ({
+const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 	name,
 	description,
 	image,
 	sizes,
 	extras,
 	productInfo,
+	freeIngredientsLimit = 3,
 }) => {
 	const { t } = useTranslation();
-	const [isPizzaModalOpen, setIsPizzaModalOpen] = useState(false);
+	const [isWunschPizzaModalOpen, setIsWunschPizzaModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
 
-	const openPizzaModal = (): void => setIsPizzaModalOpen(true);
-	const closePizzaModal = (): void => setIsPizzaModalOpen(false);
+	const openWunschPizzaModal = (): void => setIsWunschPizzaModalOpen(true);
+	const closeWunschPizzaModal = (): void => setIsWunschPizzaModalOpen(false);
 
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
@@ -39,7 +43,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 			onClick={() => {
 				if (!isProductInfoModalOpen) {
 					// Проверка, чтобы открывать только при закрытом ProductInfoModal
-					openPizzaModal();
+					openWunschPizzaModal();
 				}
 			}}
 		>
@@ -49,7 +53,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 				<div className={styles.topContainer}>
 					<div className={styles.pizzaHeader}>
 						<div className={styles.pizzaNameInfo}>
-							<div className={styles.pizzaName}>{name}</div>
+							<div className={styles.pizzaName}>{t(name)}</div>
 							<button
 								type="button"
 								className={styles.productInfoButton}
@@ -66,7 +70,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
 						</div>
 					</div>
-					<p className={styles.pizzaDescription}>{description}</p>
+					<p className={styles.pizzaDescription}>{t(description)}</p>
 				</div>
 				<div className={styles.pizzaActions}>
 					<button type="button" className={styles.viewButton} aria-label={t('View pizza')}>
@@ -75,13 +79,15 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 				</div>
 			</div>
 
-			{isPizzaModalOpen && !isProductInfoModalOpen && (
-				<PizzaModal
+			{isWunschPizzaModalOpen && !isProductInfoModalOpen && (
+				<WunschPizzaModal
 					name={name}
 					description={description}
 					sizes={sizes}
 					extras={extras}
-					onClose={closePizzaModal}
+					freeIngredients={freeIngredients}
+					freeIngredientsLimit={freeIngredientsLimit}
+					onClose={closeWunschPizzaModal}
 					image={image}
 				/>
 			)}
@@ -91,7 +97,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsPizzaModalOpen(false); // Обновление состояния, чтобы исключить автоматическое открытие WunschPizzaModal
+						setIsWunschPizzaModalOpen(false); // Обновление состояния, чтобы исключить автоматическое открытие WunschPizzaModal
 					}}
 					productInfo={productInfo}
 				/>
@@ -100,4 +106,4 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 	);
 };
 
-export default PizzaItem;
+export default WunschPizzaItem;

@@ -1,11 +1,27 @@
 {
 	"signUp": "Anmelden",
 	"signIn": "Einloggen",
+	"Appetizers": "Vorspeisen",
+	"Salads": "Salate",
+	"Breadsticks": "Pizzabrötchen",
+	"Pizza": "Pizza",
+	"Custom Pizza": "Wunschpizza",
+	"Calzone": "Calzone",
+	"Pasta": "Pasta",
+	"Meat Dishes": "Fleischgerichte",
+	"Burgers & Baguettes": "Burger & Baguette",
+	"American Diner": "Americana Diner",
+	"French Fries": "Pommes frites",
+	"Desserts": "Desserts",
+	"Ice Cream": "Ice Cream",
+	"Non-Alcoholic Drinks": "Alkoholfreie Getränke",
+	"Alcoholic Drinks": "Alkoholische Getränke",
 	"viewMyList": "Meine Liste anzeigen",
 	"choose": "Wählen",
 	"View pizza": "Pizza ansehen",
 	"total": "Gesamt",
 	"youExtras": "Ihre Extras",
+	"chooseFreeIngredients": "Wählen Sie 3 kostenlose Zutaten",
 	"pizzaSize": "Pizzagröße",
 	"selectSize": "Größe auswählen",
 	"yourTypeOfPasta": "Ihre Pastaart",
@@ -14,18 +30,65 @@
 	"allergens": "Allergene",
 	"View info": "Informationen anzeigen",
 	"pcs": "Stk",
-	"ingredients": {
-		"Regatoni": "Regatoni",
-		"Spaghetti": "Spaghetti",
-		"Cheese": "Käse",
-		"Knoblauch": "Knoblauch",
-		"Ananas": "Ananas",
-		"Artischocken": "Artischocken",
-		"BBQ-Sauce": "BBQ-Sauce"
+	"pizzaSizes": {
+		"Klein": "Klein",
+		"Mittel": "Mittel",
+		"Familie": "Familie"
 	},
+	"ingredients": {
+		"Chili": "mit Chili",
+		"Knoblauch": "mitKnoblauch",
+		"Ananas": "mit Ananas",
+		"Artischocken": "mit Artischocken",
+		"BBQ-Sauce": "mit BBQ-Sauce",
+		"Knoblauch": "mit Knoblauch",
+		"Bolognese": "mit Bolognese",
+		"Broccoli": "mit Broccoli",
+		"Champignons": "mit Champignons, frisch",
+		"Currysauce": "mit Currysauce",
+		"Ei": "mit Ei",
+		"Gorgonzola": "mit Gorgonzola",
+		"Hühnerfleisch": "mit Hühnerfleisch",
+		"Jalapenos": "mit Jalapenos",
+		"Kapern": "mit Kapern",
+		"Käse": "mit Käse",
+		"Käserand": "mit Käserand",
+		"Mais": "mit Mais",
+		"Meeresfrüchten": "mit Meeresfrüchten",
+		"Mozzarella": "mit Mozzarella",
+		"Oliven": "mit Oliven",
+		"Paprika": "mit Paprika",
+		"Parmaschinken": "mit Parmaschinken",
+		"Peperoni": "mit Peperoni",
+		"Rinderhackfleisch": "mit Rinderhackfleisch",
+		"Rucola": "mit Rucola",
+		"Salami": "mit Salami",
+		"Sardellen": "mit Sardellen",
+		"Schinken": "mit Schinken",
+		"Shrimps": "mit Shrimps",
+		"Spinat": "mit Spinat",
+		"Sucuk": "mit Sucuk",
+		"Thunfisch": "mit Thunfisch",
+		"Tomatenscheiben": "mit Tomatenscheiben",
+		"Zwiebeln": "mit Zwiebeln"
+	},
+	"Show Less": "Weniger anzeigen",
+	"Show More": "Mehr anzeigen",
 	"disclaimer": "Diese Angaben zu Allergenen wurden vom Restaurant bestätigt.",
 	"additionalInfo": "Bitte beachte, dass diese Angaben sich ändern können.",
 	"pizzas": {
+		"Wunschpizza": {
+			"name": "Wunschpizza",
+			"description": "mit 3 Zutaten nach Wahl",
+			"productInfo": {
+			
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
 		"PizzaMargarita": {
 			"name": "Pizza Margarita",
 			"description": "Mit würziger Tomatensauce und Käse",
@@ -111,6 +174,8 @@
 			}
 		}
 	},
+	"Regatoni": "Regatoni",
+	"Spaghetti": "Spaghetti",
 	"pastas": {
 		"Napoli": {
 			"name": "Napoli",

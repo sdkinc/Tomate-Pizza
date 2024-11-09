@@ -8,7 +8,8 @@ interface CartItem {
 	image: string;
 	price: number;
 	quantity: number;
-	extras?: ExtraIngredient[];
+	extras?: ExtraIngredient[]; // Paid extras
+	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[]; // Free ingredients for wunschPizza
 	ingredients?: Ingredients[];
 	size?: string;
 	type: string;
@@ -27,15 +28,24 @@ const cartSlice = createSlice({
 	initialState,
 	reducers: {
 		addItem: (state, action: PayloadAction<CartItem>) => {
-			const existingItem = state.items.find(
-				(item) => item.id === action.payload.id && item.size === action.payload.size
-			);
+			const { id, size, freeIngredients, type } = action.payload;
+
+			// Unique identifier for cart items based on id, size, and free ingredients for wunschPizza
+			const uniqueId =
+				type === 'wunschpizza' && freeIngredients
+					? `${id}-${size}-${freeIngredients.map((ingredient) => ingredient.label).join(',')}`
+					: id;
+
+			const existingItem = state.items.find((item) => item.id === uniqueId && item.size === size);
 
 			if (existingItem) {
 				existingItem.quantity += action.payload.quantity;
-				existingItem.price += action.payload.price; // Пересчитываем общую цену для данного товара
+				existingItem.price += action.payload.price; // Update total price for the item
 			} else {
-				state.items.push(action.payload);
+				state.items.push({
+					...action.payload,
+					id: uniqueId, // Set unique ID for wunschPizza items with free ingredients
+				});
 			}
 		},
 		removeItem: (state, action: PayloadAction<string>) => {

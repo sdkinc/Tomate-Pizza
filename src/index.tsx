@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './locales/i18n';
-import { CartProvider } from './features/cart-items/CartContext'; // Импорт CartProvider
+import { CartProvider } from './features/cart-items/CartContext';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

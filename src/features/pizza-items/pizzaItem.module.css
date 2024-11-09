@@ -9,6 +9,18 @@
 	width: 100%;
 	box-sizing: border-box;
 	align-items: center;
+	transition: transform 0.2s ease, background-color 0.2s ease; 
+	cursor: pointer;
+}
+.pizzaItem:hover {
+	background-color: #f1f1f1; /* Немного затемненный цвет при наведении */
+	/* transform: scale(1.02);  */
+	box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2); /* Чуть более глубокая тень */
+}
+
+.pizzaItem:active {
+	background-color: #e8e8e8; /* Темнее при нажатии */
+	
 }
 .topContainer {
 	display: flex;

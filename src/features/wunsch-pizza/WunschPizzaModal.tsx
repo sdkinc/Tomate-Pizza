@@ -1,38 +1,55 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { ExtraIngredient, PizzaSize } from './type/PizzaTypes';
-import { addItem } from '../cart-items/cartSlice';
-import styles from './pizzaModal.module.css';
 
-interface PizzaModalProps {
+import { addItem } from '../cart-items/cartSlice';
+import styles from './wunschPizzaModal.module.css';
+import { PizzaSize, ExtraIngredient, FreeIngredient } from './type/WunschPizzaTypes';
+
+interface WunschPizzaModalProps {
 	name: string;
 	description: string;
 	image: string;
 	sizes: PizzaSize[];
 	extras: ExtraIngredient[];
+	freeIngredients: FreeIngredient[];
+	freeIngredientsLimit: number;
 	onClose: () => void;
 }
 
-const PizzaModal: React.FC<PizzaModalProps> = ({
+const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 	name,
 	description,
+	image,
 	sizes,
 	extras,
-	image,
+	freeIngredients,
+	freeIngredientsLimit = 1, // один ингредиент из каждого раскрывающегося списка
 	onClose,
 }) => {
 	const { t } = useTranslation();
 	const [selectedSize, setSelectedSize] = useState<PizzaSize>(sizes[0]);
+	const [selectedFreeIngredients, setSelectedFreeIngredients] = useState<FreeIngredient[]>([]);
 	const [selectedExtras, setSelectedExtras] = useState<ExtraIngredient[]>([]);
 	const [quantity, setQuantity] = useState(1);
-	const [showAllExtras, setShowAllExtras] = useState(false);
 	const dispatch = useDispatch();
+	const [showAllFree, setShowAllFree] = useState(false); // для раскрытия списка бесплатных ингредиентов
+	const [showAllExtras, setShowAllExtras] = useState(false);
 
-	const handleSizeChange = (size: PizzaSize): void => {
-		setSelectedSize(size);
+	const handleSizeChange = (size: PizzaSize): void => setSelectedSize(size);
+
+	// Обработка выбора бесплатных ингредиентов
+	const handleFreeIngredientToggle = (ingredient: FreeIngredient): void => {
+		setSelectedFreeIngredients((prev) =>
+			prev.includes(ingredient)
+				? prev.filter((ing) => ing !== ingredient)
+				: prev.length < freeIngredientsLimit
+					? [...prev, ingredient]
+					: prev
+		);
 	};
 
+	// Обработка выбора платных ингредиентов
 	const handleExtraToggle = (extra: ExtraIngredient): void => {
 		setSelectedExtras((prev) =>
 			prev.includes(extra) ? prev.filter((e) => e !== extra) : [...prev, extra]
@@ -41,29 +58,31 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 
 	const getExtraPrice = (extra: ExtraIngredient): number => {
 		const sizeKey = selectedSize.label as 'Klein' | 'Mittel' | 'Familie';
-		return extra.priceBySize[sizeKey] || 0;
+		return extra.priceBySize ? extra.priceBySize[sizeKey] : 0;
 	};
-
-	const increaseQuantity = (): void => setQuantity(quantity + 1);
-	const decreaseQuantity = (): void => setQuantity(quantity > 1 ? quantity - 1 : 1);
 
 	const calculateTotalPrice = (): number => {
 		const extrasTotal = selectedExtras.reduce((acc, extra) => acc + getExtraPrice(extra), 0);
-		const singlePizzaPrice = selectedSize.price + extrasTotal;
-		return singlePizzaPrice * quantity;
+		return (selectedSize.price + extrasTotal) * quantity;
 	};
 
 	const handleAddToCart = (): void => {
-		const uniqueId = `${name}-${selectedSize.size}-${selectedExtras.map((extra) => extra.label).join(',')}`;
+		const uniqueId = `${name}-${selectedSize.size}-${selectedExtras
+			.map((extra) => extra.label)
+			.join(',')}`;
 		dispatch(
 			addItem({
 				id: uniqueId,
-				type: 'pizza',
+				type: 'wunschpizza',
 				name,
 				image,
 				price: calculateTotalPrice(),
 				quantity,
-				extras: selectedExtras,
+				extras: selectedExtras.map((extra) => ({
+					...extra,
+					priceBySize: extra.priceBySize || { Klein: 0, Mittel: 0, Familie: 0 },
+				})),
+				freeIngredients: selectedFreeIngredients,
 				size: selectedSize.size,
 			})
 		);
@@ -95,6 +114,31 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 						))}
 					</select>
 
+					<div className={styles.typeTitle}>{t('chooseFreeIngredients')}:</div>
+					<div className={`${styles.ingredientContainer} ${showAllFree ? styles.scrollable : ''}`}>
+						{freeIngredients
+							.slice(0, showAllFree ? freeIngredients.length : 3)
+							.map((ingredient) => (
+								<label key={ingredient.label} className={styles.extraOption}>
+									<input
+										type="checkbox"
+										onChange={() => handleFreeIngredientToggle(ingredient)}
+										checked={selectedFreeIngredients.includes(ingredient)}
+									/>
+									{t(`ingredients.${ingredient.label}`)}
+								</label>
+							))}
+					</div>
+					{freeIngredients.length > 3 && (
+						<button
+							type="button"
+							onClick={() => setShowAllFree(!showAllFree)}
+							className={styles.toggleButton}
+						>
+							{showAllFree ? t('Show Less') : t('Show More')}
+						</button>
+					)}
+
 					<div className={styles.typeTitle}>{t('youExtras')}:</div>
 					<div
 						className={`${styles.ingredientContainer} ${showAllExtras ? styles.scrollable : ''}`}
@@ -122,11 +166,19 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 				</div>
 				<div className={styles.footer}>
 					<div className={styles.quantityControls}>
-						<button type="button" onClick={decreaseQuantity} className={styles.quantityButton}>
+						<button
+							type="button"
+							onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
+							className={styles.quantityButton}
+						>
 							-
 						</button>
 						<span className={styles.quantity}>{quantity}</span>
-						<button type="button" onClick={increaseQuantity} className={styles.quantityButton}>
+						<button
+							type="button"
+							onClick={() => setQuantity(quantity + 1)}
+							className={styles.quantityButton}
+						>
 							+
 						</button>
 					</div>
@@ -142,4 +194,4 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 	);
 };
 
-export default PizzaModal;
+export default WunschPizzaModal;

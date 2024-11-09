@@ -1,11 +1,27 @@
 {
 	"signUp": "Sign Up",
 	"signIn": "Sign In",
+	"Appetizers": "Appetizers",
+	"Salads": "Salads",
+	"Breadsticks": "Breadsticks",
+	"Pizza": "Pizza",
+	"Custom Pizza": "Custom Pizza",
+	"Calzone": "Calzone",
+	"Pasta": "Pasta",
+	"Meat Dishes": "Meat Dishes",
+	"Burgers & Baguettes": "Burgers & Baguettes",
+	"American Diner": "American Diner",
+	"French Fries": "French Fries",
+	"Desserts": "Desserts",
+	"Ice Cream": "Ice Cream",
+	"Non-Alcoholic Drinks": "Non-Alcoholic Drinks",
+	"Alcoholic Drinks": "Alcoholic Drinks",
 	"viewMyList": "View my list",
-	"choose": "Choose",
+	"choose": "Add to List",
 	"View pizza": "View pizza",
 	"total": "Total",
-	"youExtras": "Your extras",
+	"youExtras": "Choose extras",
+	"chooseFreeIngredients": "Choose 3 free ingredients",
 	"pizzaSize": "Pizza size",
 	"selectSize": "Select size",
 	"yourTypeOfPasta": "Your type of pasta",
@@ -14,13 +30,49 @@
 	"allergens": "Allergens",
 	"View info": "View info",
 	"pcs": "pcs",
-	"ingredients": {
-		"Cheese": "Cheese",
-		"Knoblauch": "Garlic",
-		"Ananas": "Pineapple",
-		"Artischocken": "Artichokes",
-		"BBQ-Sauce": "BBQ Sauce"
+	"pizzaSizes": {
+		"Klein": "Small",
+		"Mittel": "Medium",
+		"Familie": "Family"
 	},
+	"ingredients": {
+		"Chili": "with chili",
+		"Knoblauch": "with garlic",
+		"Ananas": "with pineapple",
+		"Artischocken": "with artichokes",
+		"BBQ-Sauce": "with BBQ sauce",
+		"Bolognese": "with bolognese",
+		"Broccoli": "with broccoli",
+		"Champignons": "with fresh mushrooms",
+		"Currysauce": "with curry sauce",
+		"Ei": "with egg",
+		"Gorgonzola": "with gorgonzola",
+		"Hühnerfleisch": "with chicken",
+		"Jalapenos": "with jalapenos",
+		"Kapern": "with capers",
+		"Käse": "with cheese",
+		"Käserand": "with cheese edge",
+		"Mais": "with corn",
+		"Meeresfrüchten": "with seafood",
+		"Mozzarella": "with mozzarella",
+		"Oliven": "with olives",
+		"Paprika": "with bell pepper",
+		"Parmaschinken": "with prosciutto",
+		"Peperoni": "with chili peppers",
+		"Rinderhackfleisch": "with ground beef",
+		"Rucola": "with arugula",
+		"Salami": "with salami",
+		"Sardellen": "with anchovies",
+		"Schinken": "with ham",
+		"Shrimps": "with shrimp",
+		"Spinat": "with spinach",
+		"Sucuk": "with sucuk",
+		"Thunfisch": "with tuna",
+		"Tomatenscheiben": "with tomato slices",
+		"Zwiebeln": "with onions"
+	},
+	"Show Less": "show Less",
+	"Show More": "show More",
 	"disclaimer": "These allergen details have been confirmed by the restaurant.",
 	"additionalInfo": "Please note that this information may change.",
 	"pizzas": {
@@ -109,38 +161,40 @@
 			}
 		}
 	},
+	"Regatoni": "rigatoni",
+	"Spaghetti": "spaghetti",
 	"pastas": {
-	"Napoli": {
-		"name": "Napoli",
-		"description": "With tomato sauce and garlic",
-		"productInfo": {
-			"allergens": ["A-Gluten", "B-Egg"],
-			"substances": ["Tomatoes", "Garlic"]
-		}
-	},
-	"Bolognese": {
-		"name": "Bolognese",
-		"description": "With tomato and minced meat sauce",
-		"productInfo": {
-			"allergens": ["A-Gluten", "B-Egg"],
-			"substances": ["Minced meat", "Tomatoes"]
-		}
-	},
-	"Carbonara": {
-		"name": "Carbonara",
-		"description": "With ham, egg, and cream sauce",
-		"productInfo": {
-			"allergens": ["A-Gluten", "B-Egg", "E-Milk"],
-			"substances": ["Ham", "Cream sauce"]
-		}
-	},
-	"FruttiDiMare": {
-		"name": "Frutti di Mare",
-		"description": "With seafood, baked with cheese",
-		"productInfo": {
-			"allergens": ["A-Gluten", "L-Molluscs", "M-Crustaceans"],
-			"substances": ["Seafood", "Cheese"]
+		"Napoli": {
+			"name": "Napoli",
+			"description": "With tomato sauce and garlic",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Egg"],
+				"substances": ["Tomatoes", "Garlic"]
+			}
+		},
+		"Bolognese": {
+			"name": "Bolognese",
+			"description": "With tomato and minced meat sauce",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Egg"],
+				"substances": ["Minced meat", "Tomatoes"]
+			}
+		},
+		"Carbonara": {
+			"name": "Carbonara",
+			"description": "With ham, egg, and cream sauce",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Egg", "E-Milk"],
+				"substances": ["Ham", "Cream sauce"]
+			}
+		},
+		"FruttiDiMare": {
+			"name": "Frutti di Mare",
+			"description": "With seafood, baked with cheese",
+			"productInfo": {
+				"allergens": ["A-Gluten", "L-Molluscs", "M-Crustaceans"],
+				"substances": ["Seafood", "Cheese"]
+			}
 		}
 	}
-}
 }

@@ -58,7 +58,7 @@ const CartPage: React.FC = () => {
 									</div>
 								</div>
 								<div className={styles.extrasBox}>
-									{/* Отображение размеров и добавок для пиццы */}
+									{/* Display size and extras for regular pizza */}
 									{item.type === 'pizza' && (
 										<>
 											{item.size && (
@@ -74,7 +74,28 @@ const CartPage: React.FC = () => {
 										</>
 									)}
 
-									{/* Отображение ингредиентов для пасты */}
+									{/* Display size, extras, and free ingredients for WunschPizza */}
+									{item.type === 'wunschpizza' && (
+										<>
+											{item.size && (
+												<div className={styles.sizeExtras}>
+													{t('Size')}: {item.size}
+												</div>
+											)}
+											{item.extras && item.extras.length > 0 && (
+												<div className={styles.sizeExtras}>
+													{t('Extras')}: {item.extras.map((extra) => extra.label).join(', ')}
+												</div>
+											)}
+											{item.freeIngredients && item.freeIngredients.length > 0 && (
+												<div className={styles.sizeExtras}>
+													{t('Free Ingredients')}:{' '}
+													{item.freeIngredients.map((ingredient) => ingredient.label).join(', ')}
+												</div>
+											)}
+										</>
+									)}
+									{/* Display ingredients for pasta */}
 									{item.type === 'pasta' && item.ingredients && item.ingredients.length > 0 && (
 										<div className={styles.sizeExtras}>
 											{t('Ingredients')}:{' '}
