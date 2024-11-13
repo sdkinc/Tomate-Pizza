@@ -1,55 +1,57 @@
 import { useState } from 'react';
-import { PizzaSize, ExtraIngredient, ProductInfo } from './type/PizzaTypes';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import styles from './pizzaItem.module.css';
-import PizzaModal from './PizzaModal';
-import ProductInfoModal from './ProductInfoModal';
+import styles from '../pasta-items/pastaItems.module.css';
+
 import { useTranslation } from 'react-i18next';
 
-interface PizzaItemProps {
+import ProductInfoModal from '../pasta-items/ProductInfoModal';
+import { ProductInfo, SaladsIngredients } from './type/SaladsType';
+import SaladsModal from './SaladsModal';
+
+interface SaladsItemProps {
 	name: string;
 	description: string;
 	image: string;
-	sizes: PizzaSize[];
-	extras: ExtraIngredient[];
+	price: number;
+	saladsIngredients: SaladsIngredients[];
 	productInfo?: ProductInfo;
 }
 
-const PizzaItem: React.FC<PizzaItemProps> = ({
+const SaladsItem: React.FC<SaladsItemProps> = ({
 	name,
 	description,
 	image,
-	sizes,
-	extras,
+	price,
+	saladsIngredients,
 	productInfo,
 }) => {
 	const { t } = useTranslation();
-	const [isPizzaModalOpen, setIsPizzaModalOpen] = useState(false);
+	const [isPastaModalOpen, setIsPastaModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
 
-	const openPizzaModal = (): void => setIsPizzaModalOpen(true);
-	const closePizzaModal = (): void => setIsPizzaModalOpen(false);
+	const openPastaModal = (): void => setIsPastaModalOpen(true);
+	const closePastaModal = (): void => setIsPastaModalOpen(false);
 
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
 
 	return (
 		<div
-			className={styles.pizzaItem}
+			className={styles.itemBox}
 			onClick={() => {
 				if (!isProductInfoModalOpen) {
 					// Проверка, чтобы открывать только при закрытом ProductInfoModal
-					openPizzaModal();
+					openPastaModal();
 				}
 			}}
 		>
-			<img src={image} alt={name} className={styles.pizzaImage} />
-
-			<div className={styles.pizzaContent}>
+			<img src={image} alt={name} className={styles.itemImage} />
+			<div className={styles.itemContent}>
 				<div className={styles.topContainer}>
-					<div className={styles.pizzaHeader}>
-						<div className={styles.pizzaNameInfo}>
-							<div className={styles.pizzaName}>{name}</div>
+					<div className={styles.itemHeader}>
+						<div className={styles.itemNameInfo}>
+							<div className={styles.itemName}>{name}</div>
+
 							<button
 								type="button"
 								className={styles.productInfoButton}
@@ -62,27 +64,32 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 								{t('Product info')}
 							</button>
 						</div>
-						<div className={styles.priceBox}>
-							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
+						<div className={styles.priceContainer}>
+							<p className={styles.itemPrice}>{price} €</p>
 						</div>
 					</div>
-					<p className={styles.pizzaDescription}>{description}</p>
+					<p className={styles.itemDescription}>{description}</p>
 				</div>
-				<div className={styles.pizzaActions}>
-					<button type="button" className={styles.viewButton} aria-label={t('View pizza')}>
+				<div className={styles.itemActions}>
+					<button
+						type="button"
+						className={styles.viewButton}
+						onClick={openPastaModal}
+						aria-label={t('View pasta')}
+					>
 						<VisibilityIcon fontSize="medium" />
 					</button>
 				</div>
 			</div>
 
-			{isPizzaModalOpen && !isProductInfoModalOpen && (
-				<PizzaModal
+			{isPastaModalOpen && !isProductInfoModalOpen && (
+				<SaladsModal
 					name={name}
 					description={description}
-					sizes={sizes}
-					extras={extras}
-					onClose={closePizzaModal}
+					saladsIngredients={saladsIngredients}
+					price={price}
 					image={image}
+					onClose={closePastaModal}
 				/>
 			)}
 
@@ -91,7 +98,7 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsPizzaModalOpen(false);
+						setIsPastaModalOpen(false);
 					}}
 					productInfo={productInfo}
 				/>
@@ -100,4 +107,4 @@ const PizzaItem: React.FC<PizzaItemProps> = ({
 	);
 };
 
-export default PizzaItem;
+export default SaladsItem;

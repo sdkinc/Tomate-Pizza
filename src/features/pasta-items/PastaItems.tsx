@@ -34,7 +34,15 @@ const PastaItem: React.FC<PastaItemProps> = ({
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
 
 	return (
-		<div className={styles.itemBox}>
+		<div
+			className={styles.itemBox}
+			onClick={() => {
+				if (!isProductInfoModalOpen) {
+					// Проверка, чтобы открывать только при закрытом ProductInfoModal
+					openPastaModal();
+				}
+			}}
+		>
 			<img src={image} alt={name} className={styles.itemImage} />
 			<div className={styles.itemContent}>
 				<div className={styles.topContainer}>
@@ -45,7 +53,10 @@ const PastaItem: React.FC<PastaItemProps> = ({
 							<button
 								type="button"
 								className={styles.productInfoButton}
-								onClick={openProductInfoModal}
+								onClick={(e) => {
+									e.stopPropagation();
+									openProductInfoModal();
+								}}
 								aria-label={t('View info')}
 							>
 								{t('Product info')}
@@ -69,7 +80,7 @@ const PastaItem: React.FC<PastaItemProps> = ({
 				</div>
 			</div>
 
-			{isPastaModalOpen && (
+			{isPastaModalOpen && !isProductInfoModalOpen && (
 				<PastaModal
 					name={name}
 					description={description}
@@ -83,7 +94,10 @@ const PastaItem: React.FC<PastaItemProps> = ({
 			{isProductInfoModalOpen && productInfo && (
 				<ProductInfoModal
 					isOpen={isProductInfoModalOpen}
-					onClose={closeProductInfoModal}
+					onClose={() => {
+						closeProductInfoModal();
+						setIsPastaModalOpen(false);
+					}}
 					productInfo={productInfo}
 				/>
 			)}

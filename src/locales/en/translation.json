@@ -36,6 +36,11 @@
 		"Familie": "Family"
 	},
 	"ingredients": {
+		"balsamico": "with balsamico dressing",
+		"french": "with French dressing",
+		"vinegar": "with vinegar & oil",
+		"yogurt": "with yogurt dressing",
+		"noDressing": "no dressing",
 		"Chili": "with chili",
 		"Knoblauch": "with garlic",
 		"Ananas": "with pineapple",
@@ -253,6 +258,69 @@
 			"description": "with tzatziki",
 			"productInfo": {
 				"allergens": ["Contains milk and products thereof (including lactose)"]
+			}
+		}
+	},
+	"chooseDressing": "choose a dressing",
+	"salads": {
+		"green": {
+			"name": "Green salad",
+			"description": "with green lettuce and onions",
+			"productInfo": {
+				"allergens": ["Contains milk and products thereof (including lactose)"]
+			}
+		},
+		"cucumber": {
+			"name": "Cucumber salad",
+			"description": "with green lettuce, cucumber and onions"
+		},
+		"mixed": {
+			"name": "Mixed salad",
+			"description": "with green lettuce, tomatoes, olives, carrots, corn, cucumber and onions",
+			"productInfo": {
+				"allergens": ["Contains milk and products thereof (including lactose)"]
+			}
+		},
+		"tomato": {
+			"name": "Tomato salad",
+			"description": "with green lettuce, tomatoes and onions"
+		},
+		"mozzarella": {
+			"name": "Mozzarella salad",
+			"description": "with mozzarella, fresh tomatoes and fresh basil",
+			"productInfo": {
+				"allergens": ["Contains milk and products thereof (including lactose)"]
+			}
+		},
+		"greek": {
+			"name": "Greek farmer's salad",
+			"description": "with green lettuce, sheep cheese, cucumber, tomatoes, fresh bell pepper, olives, pepperoni and onions",
+			"productInfo": {
+				"allergens": ["Contains milk and products thereof (including lactose)"]
+			}
+		},
+		"nicoise": {
+			"name": "Nicoise salad",
+			"description": "with green lettuce, tomatoes, cucumber, carrots, olives, cheese, pepperoni, egg, onions and tuna",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains fish and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains mustard and products thereof",
+					"Contains sulphur dioxide and sulphites"
+				]
+			}
+		},
+		"chef": {
+			"name": "Chef's salad",
+			"description": "with green lettuce, cucumber, tomatoes, olives, cheese, carrots, pepperoni, egg, onions and fresh bell pepper",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains sulphur dioxide and sulphites"
+				]
 			}
 		}
 	}

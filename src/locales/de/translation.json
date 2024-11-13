@@ -36,6 +36,11 @@
 		"Familie": "Familie"
 	},
 	"ingredients": {
+		"balsamico": "mit Balsamico-Dressing",
+		"french": "mit Essig-Öl-Dressing",
+		"vinegar": "mit French-Dressing",
+		"yogurt": "mit Joghurt-Dressing",
+		"noDressing": "ohne Dressing",
 		"Chili": "mit Chili",
 		"Knoblauch": "mit Knoblauch",
 		"Ananas": "mit Ananas",
@@ -235,7 +240,7 @@
 			}
 		}
 	},
-"starters": {
+	"starters": {
 		"springRolls": {
 			"name": "Frühlingsrollen",
 			"productInfo": {
@@ -252,6 +257,69 @@
 			"description": "mit Tzatziki",
 			"productInfo": {
 				"allergens": ["Enthält Milch/-Erzeugnisse (laktosehaltig)"]
+			}
+		}
+	},
+	"chooseDressing": "Ihr Dressing",
+	"salads": {
+		"green": {
+			"name": "Grüner Salat",
+			"description": "mit grünem Salat und Zwiebeln",
+			"productInfo": {
+				"allergens": ["Enthält Milch/-Erzeugnisse (laktosehaltig)"]
+			}
+		},
+		"cucumber": {
+			"name": "Gurken Salat",
+			"description": "mit grünem Salat, Gurken und Zwiebeln"
+		},
+		"mixed": {
+			"name": "Gemischter Salat",
+			"description": "mit grünem Salat, Tomaten, Oliven, Karotten, Mais, Gurken und Zwiebeln",
+			"productInfo": {
+				"allergens": ["Enthält Milch/-Erzeugnisse (laktosehaltig)"]
+			}
+		},
+		"tomato": {
+			"name": "Tomatensalat",
+			"description": "mit grünem Salat, Tomaten und Zwiebeln"
+		},
+		"mozzarella": {
+			"name": "Mozzarellasalat",
+			"description": "mit Mozzarella, frischen Tomaten und frischem Basilikum",
+			"productInfo": {
+				"allergens": ["Enthält Milch/-Erzeugnisse (laktosehaltig)"]
+			}
+		},
+		"greek": {
+			"name": "Griechischer Bauernsalat",
+			"description": "mit grünem Salat, Schafskäse, Gurken, Tomaten, frischer Paprika, Oliven, Peperoni und Zwiebeln",
+			"productInfo": {
+				"allergens": ["Enthält Milch/-Erzeugnisse (laktosehaltig)"]
+			}
+		},
+		"nicoise": {
+			"name": "Nizza Salat",
+			"description": "mit grünem Salat, Tomaten, Gurken, Karotten, Oliven, Käse, Peperoni, Ei, Zwiebeln und Thunfisch",
+			"productInfo": {
+				"allergens": [
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Fisch/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Senf/-Erzeugnisse",
+					"Enthält Schwefeldioxid/Sulfite"
+				]
+			}
+		},
+		"chef": {
+			"name": "Chef Salat",
+			"description": "mit grünem Salat, Gurken, Tomaten, Oliven, Käse, Karotten, Peperoni, Ei, Zwiebeln und frischer Paprika",
+			"productInfo": {
+				"allergens": [
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Schwefeldioxid/Sulfite"
+				]
 			}
 		}
 	}
