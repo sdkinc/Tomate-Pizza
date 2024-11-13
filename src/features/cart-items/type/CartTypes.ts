@@ -1,16 +1,19 @@
+import { ExtraIngredientCalzone } from '../../calzone/type/CalzoneTypes';
 import { Ingredients } from '../../pasta-items/type/PastaTypes';
 import { ExtraIngredient } from '../../pizza-items/type/PizzaTypes';
 
-export type ProductType = 'pizza' | 'pasta' | 'other';
+export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'starters';
 
 export interface CartItem {
 	id: string;
-	type: ProductType; // Добавляем тип продукта
+	type: ProductType;
 	name: string;
-	image: string; // Свойство для изображения
+	image: string;
 	price: number;
 	quantity: number;
-	size?: string; // Размер продукта, если применимо
-	extras?: ExtraIngredient[];
+	size?: string;
+	extras?: ExtraIngredient[]; // Допы для пиццы
+	extrasCalzone?: ExtraIngredientCalzone[]; // Допы для Calzone
+	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[]; // Бесплатные ингредиенты для WunschPizza
 	ingredients?: Ingredients[];
 }

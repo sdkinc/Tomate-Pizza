@@ -1,18 +1,22 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ExtraIngredient } from '../pizza-items/type/PizzaTypes';
+import { ExtraIngredientCalzone } from '../calzone/type/CalzoneTypes';
 import { Ingredients } from '../pasta-items/type/PastaTypes';
+
+export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'wunschpizza' | 'starters';
 
 interface CartItem {
 	id: string;
+	type: ProductType;
 	name: string;
 	image: string;
 	price: number;
 	quantity: number;
-	extras?: ExtraIngredient[]; // Paid extras
-	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[]; // Free ingredients for wunschPizza
-	ingredients?: Ingredients[];
 	size?: string;
-	type: string;
+	extras?: ExtraIngredient[];
+	extrasCalzone?: ExtraIngredientCalzone[];
+	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
+	ingredients?: Ingredients[];
 }
 
 interface CartState {
@@ -30,21 +34,20 @@ const cartSlice = createSlice({
 		addItem: (state, action: PayloadAction<CartItem>) => {
 			const { id, size, freeIngredients, type } = action.payload;
 
-			// Unique identifier for cart items based on id, size, and free ingredients for wunschPizza
 			const uniqueId =
 				type === 'wunschpizza' && freeIngredients
 					? `${id}-${size}-${freeIngredients.map((ingredient) => ingredient.label).join(',')}`
-					: id;
+					: id + (size ? `-${size}` : '');
 
 			const existingItem = state.items.find((item) => item.id === uniqueId && item.size === size);
 
 			if (existingItem) {
 				existingItem.quantity += action.payload.quantity;
-				existingItem.price += action.payload.price; // Update total price for the item
+				existingItem.price += action.payload.price;
 			} else {
 				state.items.push({
 					...action.payload,
-					id: uniqueId, // Set unique ID for wunschPizza items with free ingredients
+					id: uniqueId,
 				});
 			}
 		},
