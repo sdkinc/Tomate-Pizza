@@ -34,6 +34,12 @@ select {
 	overflow: hidden; /* Прокрутка скрыта */
 	transition: max-height 0.3s ease;
 }
+.ingredientContainer2 {
+	text-align: left;
+	max-height: 150px; /* Ограничиваем высоту, чтобы включить прокрутку */
+	overflow: hidden; /* Прокрутка скрыта */
+	transition: max-height 0.3s ease;
+}
 .scrollable {
 	max-height: 300px; /* Увеличенная высота для отображения всех ингредиентов */
 	overflow-y: auto; /* Включаем вертикальную прокрутку */
@@ -134,6 +140,22 @@ select {
 .addToCartButton:hover {
 	background-color: #247045;
 }
+.freeIngredientOption {
+	display: block;
+	margin: 5px 0;
+	padding: 6px;
+	background-color: #f0f8e7; /* Светлый фон */
+	border-radius: 6px;
+	border: 1px dashed #a0d199; /* Пунктирная рамка */
+	font-weight: 500;
+	color: #006400;
+	transition: background-color 0.3s ease;
+}
+
+.freeIngredientOption:hover {
+	background-color: #d7ebc6; /* Более тёмный оттенок при наведении */
+}
+
 @media (max-width: 768px) {
 	.modal {
 		position: fixed;
