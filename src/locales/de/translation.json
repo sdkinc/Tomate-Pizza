@@ -37,11 +37,10 @@
 	},
 	"ingredients": {
 		"Chili": "mit Chili",
-		"Knoblauch": "mitKnoblauch",
+		"Knoblauch": "mit Knoblauch",
 		"Ananas": "mit Ananas",
 		"Artischocken": "mit Artischocken",
 		"BBQ-Sauce": "mit BBQ-Sauce",
-		"Knoblauch": "mit Knoblauch",
 		"Bolognese": "mit Bolognese",
 		"Broccoli": "mit Broccoli",
 		"Champignons": "mit Champignons, frisch",
@@ -81,7 +80,6 @@
 			"name": "Wunschpizza",
 			"description": "mit 3 Zutaten nach Wahl",
 			"productInfo": {
-			
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
 					"Enthält Milch/-Erzeugnisse (laktosehaltig)",

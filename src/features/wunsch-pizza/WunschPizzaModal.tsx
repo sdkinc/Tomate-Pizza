@@ -40,13 +40,23 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 
 	// Обработка выбора бесплатных ингредиентов
 	const handleFreeIngredientToggle = (ingredient: FreeIngredient): void => {
-		setSelectedFreeIngredients((prev) =>
-			prev.includes(ingredient)
+		setSelectedFreeIngredients((prev) => {
+			const isSelected = prev.includes(ingredient);
+
+			// Обновляем список, добавляя или удаляя выбранный ингредиент
+			const updatedIngredients = isSelected
 				? prev.filter((ing) => ing !== ingredient)
 				: prev.length < freeIngredientsLimit
 					? [...prev, ingredient]
-					: prev
-		);
+					: prev;
+
+			// Если достигнут лимит, автоматически сворачиваем список
+			if (updatedIngredients.length === freeIngredientsLimit) {
+				setShowAllFree(false);
+			}
+
+			return updatedIngredients;
+		});
 	};
 
 	// Обработка выбора платных ингредиентов
@@ -115,11 +125,14 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 					</select>
 
 					<div className={styles.typeTitle}>{t('chooseFreeIngredients')}:</div>
-					<div className={`${styles.ingredientContainer} ${showAllFree ? styles.scrollable : ''}`}>
-						{freeIngredients
+					<div className={`${styles.ingredientContainer2} ${showAllFree ? styles.scrollable : ''}`}>
+						{[
+							...selectedFreeIngredients,
+							...freeIngredients.filter((ing) => !selectedFreeIngredients.includes(ing)),
+						]
 							.slice(0, showAllFree ? freeIngredients.length : 3)
 							.map((ingredient) => (
-								<label key={ingredient.label} className={styles.extraOption}>
+								<label key={ingredient.label} className={styles.freeIngredientOption}>
 									<input
 										type="checkbox"
 										onChange={() => handleFreeIngredientToggle(ingredient)}
