@@ -12,6 +12,7 @@ import PastaCartItem from './PastaCartItem';
 import PizzaCartItem from './PizzaCartItem';
 import WunschPizzaCartItem from './WunschPizzaCartItem';
 import StartersCartItem from './StartersCartItem'; // Импорт нового компонента
+import SaladsCartItem from './SaladsCartItem';
 
 const CartPage: React.FC = () => {
 	const items = useSelector((state: RootState) => state.cart.items);
@@ -79,6 +80,13 @@ const CartPage: React.FC = () => {
 									)}
 									{item.type === 'starters' && (
 										<StartersCartItem name={item.name} quantity={item.quantity} />
+									)}
+									{item.type === 'salads' && (
+										<SaladsCartItem
+											name={item.name}
+											saladsIngredients={item.ingredients}
+											quantity={item.quantity}
+										/>
 									)}
 									<div className={styles.removeBox}>
 										<span className={styles.itemPrice}>

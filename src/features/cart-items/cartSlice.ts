@@ -2,8 +2,9 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { ExtraIngredient } from '../pizza-items/type/PizzaTypes';
 import { ExtraIngredientCalzone } from '../calzone/type/CalzoneTypes';
 import { Ingredients } from '../pasta-items/type/PastaTypes';
+import { SaladsIngredients } from '../salads/type/SaladsType';
 
-export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'wunschpizza' | 'starters';
+export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'wunschpizza' | 'starters' | 'salads';
 
 interface CartItem {
 	id: string;
@@ -17,6 +18,7 @@ interface CartItem {
 	extrasCalzone?: ExtraIngredientCalzone[];
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
 	ingredients?: Ingredients[];
+	saladsIngredients?: SaladsIngredients[];
 }
 
 interface CartState {

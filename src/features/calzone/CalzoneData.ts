@@ -22,7 +22,7 @@ const calzone: Calzone[] = [
 	{
 		name: 'calzone.calzoneTomate.name',
 		description: 'calzone.calzoneTomate.description',
-		image: 'calzone.webp',
+		image: 'calzone1.webp',
 		sizes: [
 			{ label: 'Klein', size: '26 cm', price: 8.5 },
 			{ label: 'Mittel', size: '32 cm', price: 10.5 },

@@ -5,6 +5,7 @@ import styles from './renderMenu.module.css';
 import WunschPizzaMenu from '../../../features/wunsch-pizza/WunschPizzaMenu';
 import CalzoneMenu from '../../../features/calzone/CalzoneMenu';
 import StartersMenu from '../../../features/starters/StartersMenu';
+import SaladsMenu from '../../../features/salads/SaladsMenu';
 
 interface RenderMenuProps {
 	selectedMenu: string;
@@ -17,6 +18,7 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 			case 'Appetizers':
 				return <StartersMenu />;
 			case 'Salads':
+				return <SaladsMenu />;
 			case 'Breadsticks':
 			case 'Custom Pizza':
 				return <WunschPizzaMenu />;

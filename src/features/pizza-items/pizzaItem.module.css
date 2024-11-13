@@ -13,13 +13,13 @@
 	cursor: pointer;
 }
 .pizzaItem:hover {
-	background-color: #f1f1f1; /* Немного затемненный цвет при наведении */
+	background-color: #f1f1f1;
 	/* transform: scale(1.02);  */
-	box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2); /* Чуть более глубокая тень */
+	box-shadow: 0 5px 14px rgba(0, 0, 0, 0.2);
 }
 
 .pizzaItem:active {
-	background-color: #e8e8e8; /* Темнее при нажатии */
+	background-color: #e8e8e8;
 	
 }
 .topContainer {
