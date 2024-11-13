@@ -1,21 +1,21 @@
 {
 	"signUp": "Sign Up",
 	"signIn": "Sign In",
-	"Appetizers": "Appetizers",
+	"Appetizers": "Starters",
 	"Salads": "Salads",
-	"Breadsticks": "Breadsticks",
+	"Breadsticks": "Pizza bread rolls",
 	"Pizza": "Pizza",
 	"Custom Pizza": "Custom Pizza",
 	"Calzone": "Calzone",
 	"Pasta": "Pasta",
 	"Meat Dishes": "Meat Dishes",
-	"Burgers & Baguettes": "Burgers & Baguettes",
-	"American Diner": "American Diner",
-	"French Fries": "French Fries",
-	"Desserts": "Desserts",
+	"Burgers & Baguettes": "Burger & Baguette",
+	"American Diner": "Americana diner",
+	"French Fries": "French fries",
+	"Desserts": "Dessert",
 	"Ice Cream": "Ice Cream",
-	"Non-Alcoholic Drinks": "Non-Alcoholic Drinks",
-	"Alcoholic Drinks": "Alcoholic Drinks",
+	"Non-Alcoholic Drinks": "Non-alcoholic drinks",
+	"Alcoholic Drinks": "Alcoholic drinks",
 	"viewMyList": "View my list",
 	"choose": "Add to List",
 	"View pizza": "View pizza",
@@ -25,9 +25,9 @@
 	"pizzaSize": "Pizza size",
 	"selectSize": "Select size",
 	"yourTypeOfPasta": "Your type of pasta",
-	"productInfo": "Product info",
-	"substances": "Substances or products that may cause allergies or intolerances.",
-	"allergens": "Allergens",
+	"productInfo": "More product information",
+	"substances": "Substances or products causing allergies or intolerances",
+	"allergens": "LMIV - Allergen",
 	"View info": "View info",
 	"pcs": "pcs",
 	"pizzaSizes": {
@@ -73,9 +73,21 @@
 	},
 	"Show Less": "show Less",
 	"Show More": "show More",
-	"disclaimer": "These allergen details have been confirmed by the restaurant.",
+	"disclaimer": "This allergen information was verified by the restaurant",
 	"additionalInfo": "Please note that this information may change.",
+
 	"pizzas": {
+		"Wunschpizza": {
+			"name": "Custom pizza",
+			"description": "with 3 ingredients of choice",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
 		"PizzaMargarita": {
 			"name": "Pizza Margarita",
 			"description": "With spicy tomato sauce and cheese",
@@ -194,6 +206,53 @@
 			"productInfo": {
 				"allergens": ["A-Gluten", "L-Molluscs", "M-Crustaceans"],
 				"substances": ["Seafood", "Cheese"]
+			}
+		}
+	},
+	"calzone": {
+		"calzone": {
+			"name": "Calzone",
+			"description": "filled with spicy tomato sauce, cheese, ham, mushrooms and tuna",
+			"productInfo": {
+				"substances": ["With nitrate", "With nitrite curing salt and nitrate"],
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains fish and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"calzoneTomate": {
+			"name": "Calzone Tomate",
+			"description": "filled with ham, salami, mushrooms and tomatoes",
+			"productInfo": {
+				"substances": ["With nitrate", "With nitrite curing salt and nitrate"],
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		}
+	},
+	"starters": {
+		"springRolls": {
+			"name": "Spring Rolls",
+			"productInfo": {
+				"substances": ["With nitrate", "With nitrite curing salt and nitrate"],
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"dolmates": {
+			"name": "Dolmates",
+			"description": "with tzatziki",
+			"productInfo": {
+				"allergens": ["Contains milk and products thereof (including lactose)"]
 			}
 		}
 	}

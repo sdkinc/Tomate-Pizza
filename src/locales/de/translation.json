@@ -207,5 +207,52 @@
 				"substances": ["Meeresfrüchte", "Käse"]
 			}
 		}
+	},
+	"calzone": {
+		"calzone": {
+			"name": "Calzone",
+			"description": "gefüllt mit würziger Tomatensauce, Käse, Schinken, Champignons und Thunfisch",
+			"productInfo": {
+				"substances": ["Mit Nitrat", "Mit Nitritpökelsalz und Nitrat"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Fisch/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"calzoneTomate": {
+			"name": "Calzone Tomate",
+			"description": "gefüllt mit Schinken, Salami, Champignons und Tomaten",
+			"productInfo": {
+				"substances": ["Mit Nitrat", "Mit Nitritpökelsalz und Nitrat"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		}
+	},
+"starters": {
+		"springRolls": {
+			"name": "Frühlingsrollen",
+			"productInfo": {
+				"substances": ["With nitrate", "With nitrite curing salt and nitrate"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Sojabohnen/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		},
+		"dolmates": {
+			"name": "Dolmates",
+			"description": "mit Tzatziki",
+			"productInfo": {
+				"allergens": ["Enthält Milch/-Erzeugnisse (laktosehaltig)"]
+			}
+		}
 	}
 }

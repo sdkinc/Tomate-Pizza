@@ -7,6 +7,11 @@ import { RootState } from '../../app/store';
 import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
 import styles from './cartPage.module.css';
+import CalzoneCartItem from './CalzoneCartItem';
+import PastaCartItem from './PastaCartItem';
+import PizzaCartItem from './PizzaCartItem';
+import WunschPizzaCartItem from './WunschPizzaCartItem';
+import StartersCartItem from './StartersCartItem'; // Импорт нового компонента
 
 const CartPage: React.FC = () => {
 	const items = useSelector((state: RootState) => state.cart.items);
@@ -40,9 +45,41 @@ const CartPage: React.FC = () => {
 							<img src={item.image} alt={item.name} className={styles.itemImage} />
 							<div className={styles.itemBox}>
 								<div className={styles.itemDetails}>
-									<span className={styles.itemName}>
-										{item.name} ({item.quantity} {t('pcs')})
-									</span>
+									{item.type === 'pizza' && (
+										<PizzaCartItem
+											name={item.name}
+											size={item.size}
+											extras={item.extras}
+											quantity={item.quantity}
+										/>
+									)}
+									{item.type === 'calzone' && (
+										<CalzoneCartItem
+											name={item.name}
+											size={item.size}
+											extras={item.extrasCalzone}
+											quantity={item.quantity}
+										/>
+									)}
+									{item.type === 'wunschpizza' && (
+										<WunschPizzaCartItem
+											name={item.name}
+											size={item.size}
+											extras={item.extras}
+											freeIngredients={item.freeIngredients}
+											quantity={item.quantity}
+										/>
+									)}
+									{item.type === 'pasta' && (
+										<PastaCartItem
+											name={item.name}
+											ingredients={item.ingredients}
+											quantity={item.quantity}
+										/>
+									)}
+									{item.type === 'starters' && (
+										<StartersCartItem name={item.name} quantity={item.quantity} />
+									)}
 									<div className={styles.removeBox}>
 										<span className={styles.itemPrice}>
 											{(item.price * item.quantity).toFixed(2)} €
@@ -56,52 +93,6 @@ const CartPage: React.FC = () => {
 											<DeleteForeverIcon fontSize="small" />
 										</button>
 									</div>
-								</div>
-								<div className={styles.extrasBox}>
-									{/* Display size and extras for regular pizza */}
-									{item.type === 'pizza' && (
-										<>
-											{item.size && (
-												<div className={styles.sizeExtras}>
-													{t('Size')}: {item.size}
-												</div>
-											)}
-											{item.extras && item.extras.length > 0 && (
-												<div className={styles.sizeExtras}>
-													{t('Extras')}: {item.extras.map((extra) => extra.label).join(', ')}
-												</div>
-											)}
-										</>
-									)}
-
-									{/* Display size, extras, and free ingredients for WunschPizza */}
-									{item.type === 'wunschpizza' && (
-										<>
-											{item.size && (
-												<div className={styles.sizeExtras}>
-													{t('Size')}: {item.size}
-												</div>
-											)}
-											{item.extras && item.extras.length > 0 && (
-												<div className={styles.sizeExtras}>
-													{t('Extras')}: {item.extras.map((extra) => extra.label).join(', ')}
-												</div>
-											)}
-											{item.freeIngredients && item.freeIngredients.length > 0 && (
-												<div className={styles.sizeExtras}>
-													{t('Free Ingredients')}:{' '}
-													{item.freeIngredients.map((ingredient) => ingredient.label).join(', ')}
-												</div>
-											)}
-										</>
-									)}
-									{/* Display ingredients for pasta */}
-									{item.type === 'pasta' && item.ingredients && item.ingredients.length > 0 && (
-										<div className={styles.sizeExtras}>
-											{t('Ingredients')}:{' '}
-											{item.ingredients.map((ingredient) => ingredient.label).join(', ')}
-										</div>
-									)}
 								</div>
 							</div>
 						</div>
