@@ -19,6 +19,13 @@
 	"viewMyList": "Meine Liste anzeigen",
 	"choose": "Wählen",
 	"View pizza": "Pizza ansehen",
+	"View pasta": "Pasta ansehen",
+	"View breadsticks": "Pizzabrötchen ansehen",
+	"View starter": "Vorspeisen ansehen",
+	"View calzone": "Calzone ansehen",
+	"View custom pizza": "Wunschpizza ansehen",
+	"View salads": "Salate ansehen",
+	"View meat dishes": "Fleischgerichte ansehen",
 	"total": "Gesamt",
 	"youExtras": "Ihre Extras",
 	"chooseFreeIngredients": "Wählen Sie 3 kostenlose Zutaten",
@@ -30,6 +37,23 @@
 	"allergens": "Allergene",
 	"View info": "Informationen anzeigen",
 	"pcs": "Stk",
+	"categories": {
+		"Appetizers": "Vorspeisen",
+		"Salads": "Salate",
+		"Breadsticks": "Pizzabrötchen",
+		"Pizza": "Pizza",
+		"Custom Pizza": "Wunschpizza",
+		"Calzone": "Calzone",
+		"Pasta": "Pasta",
+		"Meat Dishes": "Fleischgerichte",
+		"Burgers & Baguettes": "Burger & Baguette",
+		"American Diner": "Americana Diner",
+		"French Fries": "Pommes Frites",
+		"Desserts": "Desserts",
+		"Ice Cream": "Eiscreme",
+		"Non-Alcoholic Drinks": "Alkoholfreie Getränke",
+		"Alcoholic Drinks": "Alkoholische Getränke"
+	},
 	"pizzaSizes": {
 		"Klein": "Klein",
 		"Mittel": "Mittel",
@@ -319,6 +343,44 @@
 					"Enthält Ei/-Erzeugnisse",
 					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
 					"Enthält Schwefeldioxid/Sulfite"
+				]
+			}
+		}
+	},
+	"breadsticks": {
+		"breadsticks": {
+			"name": "Pizzabrötchen",
+			"description": "6 Stück - frisch gebacken mit Käse, Tomaten und zwei Zutaten nach Wahl",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		}
+	},
+	"meatDishes": {
+		"schnitzel": {
+			"name": "Schnitzel paniert",
+			"description": "Schweineschnitzel mit Pommes frites",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		},
+		"turkeySchnitzel": {
+			"name": "Putenschnitzel",
+			"description": "mit Pommes frites",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Weizen"
 				]
 			}
 		}

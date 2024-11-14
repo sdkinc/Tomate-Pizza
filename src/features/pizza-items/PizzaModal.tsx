@@ -55,13 +55,15 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 
 	const handleAddToCart = (): void => {
 		const uniqueId = `${name}-${selectedSize.size}-${selectedExtras.map((extra) => extra.label).join(',')}`;
+		const singlePizzaPrice =
+			selectedSize.price + selectedExtras.reduce((acc, extra) => acc + getExtraPrice(extra), 0);
 		dispatch(
 			addItem({
 				id: uniqueId,
 				type: 'pizza',
 				name,
 				image,
-				price: calculateTotalPrice(),
+				price: singlePizzaPrice, // Передаем цену за единицу
 				quantity,
 				extras: selectedExtras,
 				size: selectedSize.size,

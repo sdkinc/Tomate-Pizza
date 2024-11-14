@@ -6,6 +6,9 @@ import WunschPizzaMenu from '../../../features/wunsch-pizza/WunschPizzaMenu';
 import CalzoneMenu from '../../../features/calzone/CalzoneMenu';
 import StartersMenu from '../../../features/starters/StartersMenu';
 import SaladsMenu from '../../../features/salads/SaladsMenu';
+import BreadsticksMenu from '../../../features/breadsticks/BreadsticksMenu';
+import MeatDishesMenu from '../../../features/meat-dishes/MeatDishesMenu';
+import { useTranslation } from 'react-i18next';
 
 interface RenderMenuProps {
 	selectedMenu: string;
@@ -13,6 +16,7 @@ interface RenderMenuProps {
 }
 
 const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }) => {
+	const { t } = useTranslation();
 	const getMenuComponent = (category: string): JSX.Element | null => {
 		switch (category) {
 			case 'Appetizers':
@@ -20,11 +24,13 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 			case 'Salads':
 				return <SaladsMenu />;
 			case 'Breadsticks':
+				return <BreadsticksMenu />;
 			case 'Custom Pizza':
 				return <WunschPizzaMenu />;
 			case 'Calzone':
 				return <CalzoneMenu />;
 			case 'Meat Dishes':
+				return <MeatDishesMenu />;
 			case 'Burgers & Baguettes':
 			case 'American Diner':
 			case 'French Fries':
@@ -74,7 +80,7 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 								/>
 							</div>
 							<div className={styles.titleBox}>
-								<h2 className={styles.categoryTitle}>{category}</h2>
+								<h2 className={styles.categoryTitle}>{t(`categories.${category}`)}</h2>
 								{getMenuComponent(category)}
 							</div>
 						</div>

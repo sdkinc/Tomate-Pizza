@@ -2,7 +2,7 @@ import { ExtraIngredientCalzone } from '../../calzone/type/CalzoneTypes';
 import { Ingredients } from '../../pasta-items/type/PastaTypes';
 import { ExtraIngredient } from '../../pizza-items/type/PizzaTypes';
 
-export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'starters';
+export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'starters' | 'breadsticks' | 'meatDishes';
 
 export interface CartItem {
 	id: string;

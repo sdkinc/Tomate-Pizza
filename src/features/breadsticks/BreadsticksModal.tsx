@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import styles from '../pasta-items/pastaModal.module.css';
-
 import { t } from 'i18next';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../cart-items/cartSlice';
 
-interface StartersModalProps {
+interface BreadsticksModalProps {
 	name: string;
 	description: string;
 	price: number;
@@ -13,7 +12,7 @@ interface StartersModalProps {
 	onClose: () => void;
 }
 
-const StartersModal: React.FC<StartersModalProps> = ({
+const BreadsticksModal: React.FC<BreadsticksModalProps> = ({
 	name,
 	description,
 	price,
@@ -34,7 +33,7 @@ const StartersModal: React.FC<StartersModalProps> = ({
 		dispatch(
 			addItem({
 				id: name,
-				type: 'starters',
+				type: 'breadsticks',
 				name,
 				image,
 				price,
@@ -80,4 +79,4 @@ const StartersModal: React.FC<StartersModalProps> = ({
 	);
 };
 
-export default StartersModal;
+export default BreadsticksModal;

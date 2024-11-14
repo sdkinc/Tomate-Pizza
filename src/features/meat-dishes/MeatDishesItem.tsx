@@ -1,38 +1,33 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from '../pizza-items/pizzaItem.module.css';
-import { ExtraIngredient, PizzaSize } from '../pizza-items/type/PizzaTypes';
-import ProductInfoModal from '../pizza-items/ProductInfoModal';
-import WunschPizzaModal from './WunschPizzaModal';
-import { ProductInfo } from './type/WunschPizzaTypes';
-import freeIngredients from './FreeIngredients';
 
-interface WunschPizzaItemProps {
+import ProductInfoModal from '../pizza-items/ProductInfoModal';
+import { useTranslation } from 'react-i18next';
+import { ProductInfo } from './type/MeatDishesTypes';
+import MeatDishesModal from './MeatDishesModal';
+
+interface MeatDishesItemProps {
 	name: string;
 	description: string;
 	image: string;
-	sizes: PizzaSize[];
-	extras: ExtraIngredient[];
+	price: number;
 	productInfo?: ProductInfo;
-	freeIngredientsLimit?: number;
 }
 
-const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
+const MeatDishesItem: React.FC<MeatDishesItemProps> = ({
 	name,
 	description,
 	image,
-	sizes,
-	extras,
+	price,
 	productInfo,
-	freeIngredientsLimit = 3,
 }) => {
 	const { t } = useTranslation();
-	const [isWunschPizzaModalOpen, setIsWunschPizzaModalOpen] = useState(false);
+	const [isMeatDishesModalOpen, setIsMeatDishesModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
 
-	const openWunschPizzaModal = (): void => setIsWunschPizzaModalOpen(true);
-	const closeWunschPizzaModal = (): void => setIsWunschPizzaModalOpen(false);
+	const openMeatDishesModal = (): void => setIsMeatDishesModalOpen(true);
+	const closeMeatDishesModal = (): void => setIsMeatDishesModalOpen(false);
 
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
@@ -42,8 +37,7 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 			className={styles.pizzaItem}
 			onClick={() => {
 				if (!isProductInfoModalOpen) {
-					// Проверка, чтобы открывать только при закрытом ProductInfoModal
-					openWunschPizzaModal();
+					openMeatDishesModal();
 				}
 			}}
 		>
@@ -53,7 +47,7 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 				<div className={styles.topContainer}>
 					<div className={styles.pizzaHeader}>
 						<div className={styles.pizzaNameInfo}>
-							<div className={styles.pizzaName}>{t(name)}</div>
+							<div className={styles.pizzaName}>{name}</div>
 							<button
 								type="button"
 								className={styles.productInfoButton}
@@ -67,28 +61,25 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 							</button>
 						</div>
 						<div className={styles.priceBox}>
-							<p className={styles.pizzaPrice}>{sizes[0].price} €</p>
+							<p className={styles.pizzaPrice}>{price} €</p>
 						</div>
 					</div>
-					<p className={styles.pizzaDescription}>{t(description)}</p>
+					<p className={styles.pizzaDescription}>{description}</p>
 				</div>
 				<div className={styles.pizzaActions}>
-					<button type="button" className={styles.viewButton} aria-label={t('View custom pizza')}>
+					<button type="button" className={styles.viewButton} aria-label={t('View meat dishes')}>
 						<VisibilityIcon fontSize="medium" />
 					</button>
 				</div>
 			</div>
 
-			{isWunschPizzaModalOpen && !isProductInfoModalOpen && (
-				<WunschPizzaModal
+			{isMeatDishesModalOpen && !isProductInfoModalOpen && (
+				<MeatDishesModal
 					name={name}
 					description={description}
-					sizes={sizes}
-					extras={extras}
-					freeIngredients={freeIngredients}
-					freeIngredientsLimit={freeIngredientsLimit}
-					onClose={closeWunschPizzaModal}
+					price={price}
 					image={image}
+					onClose={closeMeatDishesModal}
 				/>
 			)}
 
@@ -97,7 +88,7 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsWunschPizzaModalOpen(false); // Обновление состояния, чтобы исключить автоматическое открытие WunschPizzaModal
+						setIsMeatDishesModalOpen(false);
 					}}
 					productInfo={productInfo}
 				/>
@@ -106,4 +97,4 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 	);
 };
 
-export default WunschPizzaItem;
+export default MeatDishesItem;

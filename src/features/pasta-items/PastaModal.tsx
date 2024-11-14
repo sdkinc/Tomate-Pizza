@@ -10,7 +10,7 @@ interface PastaModalProps {
 	description: string;
 	price: number;
 	ingredients: Ingredients[];
-	image: string; // Добавляем изображение для отправки в корзину
+	image: string;
 	onClose: () => void;
 }
 
@@ -45,13 +45,13 @@ const PastaModal: React.FC<PastaModalProps> = ({
 
 		dispatch(
 			addItem({
-				id: name + selectedIngredient.label, // Используем уникальный ID для вариаций
+				id: name + selectedIngredient.label,
 				type: 'pasta',
 				name,
 				image,
-				price: calculateTotalPrice(),
+				price,
 				quantity,
-				ingredients: [selectedIngredient], // Передаем выбранный ингредиент как массив
+				ingredients: [selectedIngredient],
 			})
 		);
 		onClose();

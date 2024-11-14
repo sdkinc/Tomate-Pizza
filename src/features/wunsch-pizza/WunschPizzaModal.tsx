@@ -24,7 +24,7 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 	sizes,
 	extras,
 	freeIngredients,
-	freeIngredientsLimit = 1, // один ингредиент из каждого раскрывающегося списка
+	freeIngredientsLimit = 1,
 	onClose,
 }) => {
 	const { t } = useTranslation();
@@ -33,12 +33,11 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 	const [selectedExtras, setSelectedExtras] = useState<ExtraIngredient[]>([]);
 	const [quantity, setQuantity] = useState(1);
 	const dispatch = useDispatch();
-	const [showAllFree, setShowAllFree] = useState(false); // для раскрытия списка бесплатных ингредиентов
+	const [showAllFree, setShowAllFree] = useState(false);
 	const [showAllExtras, setShowAllExtras] = useState(false);
 
 	const handleSizeChange = (size: PizzaSize): void => setSelectedSize(size);
 
-	// Обработка выбора бесплатных ингредиентов
 	const handleFreeIngredientToggle = (ingredient: FreeIngredient): void => {
 		setSelectedFreeIngredients((prev) => {
 			const isSelected = prev.includes(ingredient);
@@ -86,7 +85,7 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 				type: 'wunschpizza',
 				name,
 				image,
-				price: calculateTotalPrice(),
+				price: selectedSize.price, // Передаем единичную стоимость размера
 				quantity,
 				extras: selectedExtras.map((extra) => ({
 					...extra,

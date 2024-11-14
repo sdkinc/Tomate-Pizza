@@ -4,14 +4,22 @@ import { ExtraIngredientCalzone } from '../calzone/type/CalzoneTypes';
 import { Ingredients } from '../pasta-items/type/PastaTypes';
 import { SaladsIngredients } from '../salads/type/SaladsType';
 
-export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'wunschpizza' | 'starters' | 'salads';
+export type ProductType =
+	| 'pizza'
+	| 'pasta'
+	| 'calzone'
+	| 'wunschpizza'
+	| 'starters'
+	| 'salads'
+	| 'breadsticks'
+	| 'meatDishes';
 
 interface CartItem {
 	id: string;
 	type: ProductType;
 	name: string;
 	image: string;
-	price: number;
+	price: number; // Цена за единицу товара
 	quantity: number;
 	size?: string;
 	extras?: ExtraIngredient[];
@@ -44,12 +52,11 @@ const cartSlice = createSlice({
 			const existingItem = state.items.find((item) => item.id === uniqueId && item.size === size);
 
 			if (existingItem) {
-				existingItem.quantity += action.payload.quantity;
-				existingItem.price += action.payload.price;
+				existingItem.quantity += action.payload.quantity; // Обновляем только количество
 			} else {
 				state.items.push({
 					...action.payload,
-					id: uniqueId,
+					id: uniqueId, // Устанавливаем уникальный ID
 				});
 			}
 		},

@@ -75,7 +75,7 @@ const SaladsItem: React.FC<SaladsItemProps> = ({
 						type="button"
 						className={styles.viewButton}
 						onClick={openPastaModal}
-						aria-label={t('View pasta')}
+						aria-label={t('View salads')}
 					>
 						<VisibilityIcon fontSize="medium" />
 					</button>
