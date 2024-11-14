@@ -46,13 +46,13 @@ const SaladsModal: React.FC<SaladsModalProps> = ({
 
 		dispatch(
 			addItem({
-				id: name + selectedIngredient.label, // Используем уникальный ID для вариаций
+				id: name + selectedIngredient.label,
 				type: 'salads',
 				name,
 				image,
-				price: calculateTotalPrice(),
+				price,
 				quantity,
-				ingredients: [selectedIngredient], // Передаем выбранный ингредиент как массив
+				ingredients: [selectedIngredient],
 			})
 		);
 		onClose();

@@ -19,6 +19,13 @@
 	"viewMyList": "View my list",
 	"choose": "Add to List",
 	"View pizza": "View pizza",
+	"View pasta": "View pasta",
+	"View breadsticks": "View Pizza bread rolls",
+	"View starter": "View starter",
+	"View calzone": "View calzone",
+	"View custom pizza": "View custom pizza",
+	"View salads": "View salads",
+	"View meat dishes": "View meat dishes",
 	"total": "Total",
 	"youExtras": "Choose extras",
 	"chooseFreeIngredients": "Choose 3 free ingredients",
@@ -30,6 +37,23 @@
 	"allergens": "LMIV - Allergen",
 	"View info": "View info",
 	"pcs": "pcs",
+	"categories": {
+		"Appetizers": "Appetizers",
+		"Salads": "Salads",
+		"Breadsticks": "Breadsticks",
+		"Pizza": "Pizza",
+		"Custom Pizza": "Custom Pizza",
+		"Calzone": "Calzone",
+		"Pasta": "Pasta",
+		"Meat Dishes": "Meat Dishes",
+		"Burgers & Baguettes": "Burgers & Baguettes",
+		"American Diner": "American Diner",
+		"French Fries": "French Fries",
+		"Desserts": "Desserts",
+		"Ice Cream": "Ice Cream",
+		"Non-Alcoholic Drinks": "Non-Alcoholic Drinks",
+		"Alcoholic Drinks": "Alcoholic Drinks"
+	},
 	"pizzaSizes": {
 		"Klein": "Small",
 		"Mittel": "Medium",
@@ -320,6 +344,44 @@
 					"Contains eggs and products thereof",
 					"Contains milk and products thereof (including lactose)",
 					"Contains sulphur dioxide and sulphites"
+				]
+			}
+		}
+	},
+	"breadsticks": {
+		"breadsticks": {
+			"name": "Pizza bread rolls",
+			"description": "6 bread rolls - freshly baked with cheese, tomatoes and two ingredients of choice",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		}
+	},
+	"meatDishes": {
+		"schnitzel": {
+			"name": "Schnitzel Breaded",
+			"description": "pork schnitzel with french fries",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"wheat"
+				]
+			}
+		},
+		"turkeySchnitzel": {
+			"name": "Turkey Schnitzel",
+			"description": "with french fries",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"wheat"
 				]
 			}
 		}

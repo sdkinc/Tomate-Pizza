@@ -11,7 +11,7 @@ interface StartersItemProps {
 	name: string;
 	description?: string;
 	image: string;
-	price: number; // Добавляем свойство price в интерфейс
+	price: number;
 	productInfo?: ProductInfo;
 }
 
@@ -60,12 +60,14 @@ const StartersItem: React.FC<StartersItemProps> = ({
 								{t('Product info')}
 							</button>
 						</div>
-						<div className={styles.priceBox}>{price} €</div> {/* Отображение цены */}
+						<div className={styles.priceBox}>
+							<p className={styles.pizzaPrice}>{price} €</p>
+						</div>
 					</div>
 					<p className={styles.pizzaDescription}>{description}</p>
 				</div>
 				<div className={styles.pizzaActions}>
-					<button type="button" className={styles.viewButton} aria-label={t('View pizza')}>
+					<button type="button" className={styles.viewButton} aria-label={t('View starter')}>
 						<VisibilityIcon fontSize="medium" />
 					</button>
 				</div>

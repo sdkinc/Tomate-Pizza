@@ -61,7 +61,7 @@ const CalzoneModal: React.FC<CalzoneModalProps> = ({
 				type: 'calzone',
 				name,
 				image,
-				price: calculateTotalPrice(),
+				price: calculateTotalPrice() / quantity, // передаем цену за единицу
 				quantity,
 				extrasCalzone: selectedExtras,
 				size: selectedSize.size,

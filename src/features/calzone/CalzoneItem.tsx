@@ -70,7 +70,7 @@ const CalzoneItem: React.FC<CalzoneItemProps> = ({
 					<p className={styles.pizzaDescription}>{description}</p>
 				</div>
 				<div className={styles.pizzaActions}>
-					<button type="button" className={styles.viewButton} aria-label={t('View pizza')}>
+					<button type="button" className={styles.viewButton} aria-label={t('View calzone')}>
 						<VisibilityIcon fontSize="medium" />
 					</button>
 				</div>
@@ -92,7 +92,7 @@ const CalzoneItem: React.FC<CalzoneItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsPizzaModalOpen(false); // Обновление состояния, чтобы исключить автоматическое открытие WunschPizzaModal
+						setIsPizzaModalOpen(false);
 					}}
 					productInfo={productInfo}
 				/>
