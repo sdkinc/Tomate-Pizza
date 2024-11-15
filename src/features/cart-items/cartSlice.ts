@@ -21,7 +21,7 @@ interface CartItem {
 	type: ProductType;
 	name: string;
 	image: string;
-	price: number;
+	price: number; // Цена за единицу товара
 	quantity: number;
 	size?: string;
 	extras?: ExtraIngredient[];
@@ -29,8 +29,8 @@ interface CartItem {
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
 	ingredients?: Ingredients[];
 	saladsIngredients?: SaladsIngredients[];
-	sizes: FrenchFriesSizes[];
-	selectedSauces?: SauceOption[];
+	frenchFriesSize?: FrenchFriesSizes;
+	sauces?: SauceOption[];
 }
 
 interface CartState {

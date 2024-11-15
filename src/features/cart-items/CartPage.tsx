@@ -79,8 +79,8 @@ const CartPage: React.FC = () => {
 				return (
 					<FrenchFriesCartItem
 						name={item.name}
-						size={typeof item.size === 'object' ? item.size : undefined}
-						sauces={item.selectedSauces || []}
+						size={item.size}
+						sauces={item.sauces || []}
 						quantity={item.quantity}
 					/>
 				);
@@ -89,7 +89,6 @@ const CartPage: React.FC = () => {
 		}
 	};
 
-	// Функция для удаления товара
 	const handleRemoveItem = (id: string): void => {
 		dispatch(removeItem(id));
 	};

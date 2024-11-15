@@ -14,7 +14,7 @@ const FrenchFriesMenu: React.FC = () => {
 				<FrenchFriesItem
 					key={frenchFries.name}
 					name={t(frenchFries.name)}
-					description={frenchFries.description ? t(frenchFries.description) : ''}
+					description={t(frenchFries.description)}
 					image={frenchFries.image}
 					sizes={frenchFries.sizes || []}
 					sauces={sauceOptions}

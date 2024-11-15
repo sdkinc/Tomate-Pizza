@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { FrenchFriesSizes, SauceOption } from './type/FrenchFriesTypes';
 import { addItem } from '../cart-items/cartSlice';
 import styles from '../pizza-items/pizzaModal.module.css';
-import frenchFriesIngredients from './FrenchFriesSize';
 
 interface FrenchFriesModalProps {
 	name: string;
@@ -48,19 +47,19 @@ const FrenchFriesModal: React.FC<FrenchFriesModalProps> = ({
 	};
 
 	const handleAddToCart = (): void => {
-		const uniqueId = `${name}-${selectedSize.label}-${selectedSauces
-			.map((sauce) => sauce.label)
-			.join(',')}`;
+		const uniqueId = `${name}-${selectedSize.size}-${selectedSauces.map((extra) => extra.label).join(',')}`;
+		const singlePizzaPrice =
+			selectedSize.price + selectedSauces.reduce((acc, sauce) => acc + (sauce.price || 0), 0);
 		dispatch(
 			addItem({
 				id: uniqueId,
 				type: 'frenchFries',
 				name,
 				image,
-				price: calculateTotalPrice() / quantity,
+				price: singlePizzaPrice,
 				quantity,
-				size: selectedSize.label,
-				selectedSauces,
+				size: selectedSize.size,
+				sauces: selectedSauces,
 			})
 		);
 		onClose();
@@ -84,10 +83,9 @@ const FrenchFriesModal: React.FC<FrenchFriesModalProps> = ({
 						aria-label={t('frenchFriesSize')}
 						onChange={(e) => handleSizeChange(sizes[+e.target.value])}
 					>
-						{frenchFriesIngredients.map((sizeOption, index) => (
-							<option key={index} value={index}>
-								{t(`frenchFriesSizes.${sizeOption.label}`)} (
-								{t(`frenchFriesSizes.${sizeOption.size}`)}) - {sizeOption.price} €
+						{sizes.map((size, index) => (
+							<option key={size.label} value={index}>
+								{t(`frenchFriesSizes.${size.label}`)} ({size.size}) - {size.price} €
 							</option>
 						))}
 					</select>

@@ -9,7 +9,7 @@ import ProductInfoModal from '../pizza-items/ProductInfoModal';
 
 interface FrenchFriesItemProps {
 	name: string;
-	description?: string; // Optional description
+	description?: string;
 	image: string;
 	sizes: FrenchFriesSizes[];
 	sauces: SauceOption[];

@@ -4,10 +4,10 @@ const frenchFries: FrenchFries[] = [
 	{
 		name: 'frenchFries.frenchFries.name',
 		description: 'frenchFries.frenchFries.description',
-		image: 'frenchFries.webp',
+		image: 'frenchFries_image.webp',
 		sizes: [
-			{ label: 'Classic Fries', size: 'Small', price: 4.0 },
-			{ label: 'Classic Fries', size: 'Large', price: 4.5 },
+			{ label: 'Small', size: 'Small', price: 4.0 },
+			{ label: 'Large', size: 'Large', price: 4.5 },
 		],
 		productInfo: {
 			allergens: [
