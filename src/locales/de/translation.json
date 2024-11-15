@@ -384,5 +384,20 @@
 				]
 			}
 		}
-	}
+	},
+	"frenchFriesSizes": {
+    "Classic Fries": "Klassische Pommes",
+    "Small": "Klein",
+    "Large": "Groß"
+  },
+  "frenchFries": {
+    "frenchFries": {
+      "name": "Pommes Frites",
+      "description": "Leckere, knusprige Pommes Frites in verschiedenen Größen erhältlich.",
+      "productInfo": {
+        "allergens": ["Enthält Gluten", "Kann Spuren von Nüssen enthalten"],
+        "substances": ["Pflanzenöl", "Natürliche Gewürze"]
+      }
+    }
+  }
 }

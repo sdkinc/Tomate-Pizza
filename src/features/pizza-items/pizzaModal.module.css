@@ -30,13 +30,13 @@ select {
 }
 .ingredientContainer {
 	text-align: left;
-	max-height: 100px; /* Ограничиваем высоту, чтобы включить прокрутку */
-	overflow: hidden; /* Прокрутка скрыта */
+	max-height: 100px;
+	overflow: hidden;
 	transition: max-height 0.3s ease;
 }
 .scrollable {
-	max-height: 300px; /* Увеличенная высота для отображения всех ингредиентов */
-	overflow-y: auto; /* Включаем вертикальную прокрутку */
+	max-height: 300px;
+	overflow-y: auto;
 }
 
 .toggleButton {
@@ -160,6 +160,8 @@ select {
 		border-radius: 8px;
 		width: 87%;
 		position: relative;
+		overflow-y: auto;
+		max-height: 90vh; 
 	}
 	.pizzaImage {
 		width: 200px;

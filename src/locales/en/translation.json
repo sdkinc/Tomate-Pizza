@@ -385,5 +385,30 @@
 				]
 			}
 		}
-	}
+	},
+	"frenchFriesSizes": {
+    "Classic Fries": "Klassische Pommes",
+    "Small": "Klein",
+    "Large": "Groß"
+  },
+	"frenchFries": {
+    "frenchFries": {
+      "name": "French Fries",
+      "description": "Delicious crispy French fries, available in multiple sizes.",
+      "sizes": {
+        "Small": "Small",
+        "Large": "Large"
+      },
+			"productInfo": {
+        "allergens": [
+          "Contains gluten",
+          "May contain traces of nuts"
+        ],
+        "substances": [
+          "Vegetable oil",
+          "Natural seasoning"
+        ]
+      }
+    }
+  }
 }

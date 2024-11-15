@@ -2,12 +2,11 @@ import 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import HomeIcon from '@mui/icons-material/Home';
-import { clearCart, removeItem } from '../cart-items/cartSlice';
+import { clearCart, removeItem, updateQuantity } from '../cart-items/cartSlice'; // Импорт нового действия updateQuantity
 import { RootState } from '../../app/store';
 import { useNavigate } from 'react-router-dom';
 import { t } from 'i18next';
 import styles from './cartPage.module.css';
-
 import CalzoneCartItem from './CalzoneCartItem';
 import PastaCartItem from './PastaCartItem';
 import PizzaCartItem from './PizzaCartItem';
@@ -16,6 +15,7 @@ import StartersCartItem from './StartersCartItem';
 import SaladsCartItem from './SaladsCartItem';
 import BreadsticksCartItem from './BreadsticksCartItem';
 import MeatDishesCartItem from './MeatDishesCartItem';
+import FrenchFriesCartItem from './FrenchFriesCartItem';
 
 const CartPage: React.FC = () => {
 	const items = useSelector((state: RootState) => state.cart.items);
@@ -75,6 +75,14 @@ const CartPage: React.FC = () => {
 						quantity={item.quantity}
 					/>
 				);
+			case 'frenchFries':
+				return (
+					<FrenchFriesCartItem
+						name={item.name}
+						size={typeof item.size === 'object' ? item.size : undefined}
+						quantity={item.quantity}
+					/>
+				);
 			default:
 				return null;
 		}
@@ -83,6 +91,14 @@ const CartPage: React.FC = () => {
 	// Функция для удаления товара
 	const handleRemoveItem = (id: string): void => {
 		dispatch(removeItem(id));
+	};
+
+	const handleIncreaseQuantity = (id: string): void => {
+		dispatch(updateQuantity({ id, change: 1 }));
+	};
+
+	const handleDecreaseQuantity = (id: string): void => {
+		dispatch(updateQuantity({ id, change: -1 }));
 	};
 
 	return (
@@ -106,10 +122,32 @@ const CartPage: React.FC = () => {
 							<div className={styles.itemBox}>
 								<div className={styles.itemDetails}>
 									{renderCartItem(item)}
+
 									<div className={styles.removeBox}>
 										<span className={styles.itemPrice}>
 											{(item.price * item.quantity).toFixed(2)} €
 										</span>
+									</div>
+								</div>
+								<div className={styles.quantityBox}>
+									<div className={styles.quantityControls}>
+										<button
+											type="button"
+											onClick={() => handleDecreaseQuantity(item.id)}
+											className={styles.quantityButton}
+										>
+											-
+										</button>
+										<span className={styles.quantity}>{item.quantity}</span>
+										<button
+											type="button"
+											onClick={() => handleIncreaseQuantity(item.id)}
+											className={styles.quantityButton}
+										>
+											+
+										</button>
+									</div>
+									<div>
 										<button
 											type="button"
 											className={styles.deleteButton}

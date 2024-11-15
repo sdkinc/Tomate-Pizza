@@ -1,8 +1,16 @@
 import { ExtraIngredientCalzone } from '../../calzone/type/CalzoneTypes';
+import { FrenchFriesSizes } from '../../french-fries/type/FrenchFriesTypes';
 import { Ingredients } from '../../pasta-items/type/PastaTypes';
 import { ExtraIngredient } from '../../pizza-items/type/PizzaTypes';
 
-export type ProductType = 'pizza' | 'pasta' | 'calzone' | 'starters' | 'breadsticks' | 'meatDishes';
+export type ProductType =
+	| 'pizza'
+	| 'pasta'
+	| 'calzone'
+	| 'starters'
+	| 'breadsticks'
+	| 'meatDishes'
+	| 'frenchFries';
 
 export interface CartItem {
 	id: string;
@@ -16,4 +24,5 @@ export interface CartItem {
 	extrasCalzone?: ExtraIngredientCalzone[]; // Допы для Calzone
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[]; // Бесплатные ингредиенты для WunschPizza
 	ingredients?: Ingredients[];
+	sizes?: FrenchFriesSizes[];
 }

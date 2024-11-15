@@ -3,6 +3,7 @@ import { ExtraIngredient } from '../pizza-items/type/PizzaTypes';
 import { ExtraIngredientCalzone } from '../calzone/type/CalzoneTypes';
 import { Ingredients } from '../pasta-items/type/PastaTypes';
 import { SaladsIngredients } from '../salads/type/SaladsType';
+import { FrenchFriesSizes } from '../french-fries/type/FrenchFriesTypes';
 
 export type ProductType =
 	| 'pizza'
@@ -12,7 +13,8 @@ export type ProductType =
 	| 'starters'
 	| 'salads'
 	| 'breadsticks'
-	| 'meatDishes';
+	| 'meatDishes'
+	| 'frenchFries';
 
 interface CartItem {
 	id: string;
@@ -27,6 +29,7 @@ interface CartItem {
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
 	ingredients?: Ingredients[];
 	saladsIngredients?: SaladsIngredients[];
+	frenchFriesSize?: FrenchFriesSizes;
 }
 
 interface CartState {
@@ -52,7 +55,7 @@ const cartSlice = createSlice({
 			const existingItem = state.items.find((item) => item.id === uniqueId && item.size === size);
 
 			if (existingItem) {
-				existingItem.quantity += action.payload.quantity; // Обновляем только количество
+				existingItem.quantity += action.payload.quantity; // Увеличиваем количество
 			} else {
 				state.items.push({
 					...action.payload,
@@ -66,8 +69,19 @@ const cartSlice = createSlice({
 		clearCart: (state) => {
 			state.items = [];
 		},
+		updateQuantity: (state, action: PayloadAction<{ id: string; change: number }>) => {
+			const { id, change } = action.payload;
+			const targetItem = state.items.find((entry) => entry.id === id); // Уникальное имя параметра
+
+			if (targetItem && targetItem.quantity + change > 0) {
+				targetItem.quantity += change; // Изменяем количество товара
+			} else if (targetItem && targetItem.quantity + change <= 0) {
+				// Если количество становится 0 или меньше, удаляем товар
+				state.items = state.items.filter((entry) => entry.id !== id); // Уникальное имя параметра
+			}
+		},
 	},
 });
 
-export const { addItem, removeItem, clearCart } = cartSlice.actions;
+export const { addItem, removeItem, clearCart, updateQuantity } = cartSlice.actions;
 export default cartSlice.reducer;
