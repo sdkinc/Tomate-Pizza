@@ -410,5 +410,104 @@
 				"substances": ["Vegetable oil", "Natural seasoning"]
 			}
 		}
+	},
+	"burgers": {
+		"hamburger": {
+			"name": "Hamburger",
+			"description": "with beef, pickles, onions, tomatoes, iceberg lettuce and snack sauce",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains mustard and products thereof",
+					"wheat"
+				]
+			}
+		},
+		"doubleBurger": {
+			"name": "Double Burger",
+			"description": "with double beef, pickles, onions, tomatoes, iceberg lettuce and snack sauce",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains mustard and products thereof",
+					"wheat"
+				]
+			}
+		},
+		"chickenBurger": {
+			"name": "Chicken Burger",
+			"description": "with breaded chicken, tomatoes and pickles",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"baguetteSalami": {
+			"name": "Baguette Salami",
+			"description": "with butter, tomatoes, iceberg lettuce and salami",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"baguetteHam": {
+			"name": "Baguette Ham",
+			"description": "with butter, ham, iceberg lettuce, boiled egg, shrimp and basil",
+			"productInfo": {
+				"substances": ["With preservative", "With flavor enhancer"],
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains mustard and products thereof",
+					"wheat"
+				]
+			}
+		},
+		"baguetteMozzarella": {
+			"name": "Baguette Mozzarella",
+			"description": "with butter, tomatoes, iceberg lettuce and mozzarella",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"baguetteChickenBreast": {
+			"name": "Baguette Chicken Breast",
+			"description": "with tomatoes, cucumber, iceberg lettuce and chicken breast strips",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"baguetteTonno": {
+			"name": "Baguette Tonno",
+			"description": "with tuna, butter, tomatoes, iceberg lettuce and onions",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains fish and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		}
 	}
 }

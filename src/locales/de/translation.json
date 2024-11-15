@@ -405,5 +405,104 @@
 				"substances": ["Pflanzenöl", "Natürliche Gewürze"]
 			}
 		}
+	},
+	"burgers": {
+		"hamburger": {
+			"name": "Hamburger",
+			"description": "mit Rindfleisch, Gurken, Zwiebeln, Tomaten, Eisbergsalat und Snack-Sauce",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Senf/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		},
+		"doubleBurger": {
+			"name": "Double Burger",
+			"description": "mit doppelt Rindfleisch, Gurken, Zwiebeln, Tomaten, Eisbergsalat und Snack-Sauce",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Senf/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		},
+		"chickenBurger": {
+			"name": "Chicken Burger",
+			"description": "mit paniertem Hähnchenfleisch, Tomaten, Gurken",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"baguetteSalami": {
+			"name": "Baguette Salami",
+			"description": "mit Butter, Tomaten, Eisbergsalat und Salami",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"baguetteHam": {
+			"name": "Baguette Schinken",
+			"description": "mit Butter, Vorderschinken, Eisbergsalat, gekochtem Ei, Shrimps und Basilikum",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen", "Mit Geschmacksverstärker"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Senf/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		},
+		"baguetteMozzarella": {
+			"name": "Baguette Mozzarella",
+			"description": "mit Butter, Tomaten, Eisbergsalat und Mozzarella",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"baguetteChickenBreast": {
+			"name": "Baguette Hühnerbrust",
+			"description": "mit Tomaten, Gurken, Eisbergsalat und Hühnerbruststreifen",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"baguetteTonno": {
+			"name": "Baguette Tonno",
+			"description": "mit Thunfisch, Butter, Tomaten, Eisbergsalat und Zwiebeln",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Fisch/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		}
 	}
 }
