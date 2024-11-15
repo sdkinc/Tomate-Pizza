@@ -16,6 +16,7 @@ import SaladsCartItem from './SaladsCartItem';
 import BreadsticksCartItem from './BreadsticksCartItem';
 import MeatDishesCartItem from './MeatDishesCartItem';
 import FrenchFriesCartItem from './FrenchFriesCartItem';
+import BurgerCartItem from './BurgerCartItem';
 
 const CartPage: React.FC = () => {
 	const items = useSelector((state: RootState) => state.cart.items);
@@ -75,6 +76,8 @@ const CartPage: React.FC = () => {
 						quantity={item.quantity}
 					/>
 				);
+			case 'burgers':
+				return <BurgerCartItem name={item.name} quantity={item.quantity} />;
 			case 'frenchFries':
 				return (
 					<FrenchFriesCartItem

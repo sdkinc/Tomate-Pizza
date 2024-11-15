@@ -10,6 +10,7 @@ import BreadsticksMenu from '../../../features/breadsticks/BreadsticksMenu';
 import MeatDishesMenu from '../../../features/meat-dishes/MeatDishesMenu';
 import { useTranslation } from 'react-i18next';
 import FrenchFriesMenu from '../../../features/french-fries/FrenchFriesMenu';
+import BurgerMenu from '../../../features/burger/BurgerMenu';
 
 interface RenderMenuProps {
 	selectedMenu: string;
@@ -33,6 +34,7 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 			case 'Meat Dishes':
 				return <MeatDishesMenu />;
 			case 'Burgers & Baguettes':
+				return <BurgerMenu />;
 			case 'American Diner':
 			case 'French Fries':
 				return <FrenchFriesMenu />;

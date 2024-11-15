@@ -14,6 +14,7 @@ export type ProductType =
 	| 'salads'
 	| 'breadsticks'
 	| 'meatDishes'
+	| 'burgers'
 	| 'frenchFries';
 
 interface CartItem {
