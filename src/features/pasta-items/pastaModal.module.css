@@ -138,6 +138,8 @@ select {
 		border-radius: 8px;
 		width: 87%;
 		position: relative;
+		overflow-y: auto;
+		max-height: 90vh; 
 	}
 	.image {
 		width: 200px;

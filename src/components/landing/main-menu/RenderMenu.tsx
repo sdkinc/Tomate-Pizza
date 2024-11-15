@@ -9,6 +9,7 @@ import SaladsMenu from '../../../features/salads/SaladsMenu';
 import BreadsticksMenu from '../../../features/breadsticks/BreadsticksMenu';
 import MeatDishesMenu from '../../../features/meat-dishes/MeatDishesMenu';
 import { useTranslation } from 'react-i18next';
+import FrenchFriesMenu from '../../../features/french-fries/FrenchFriesMenu';
 
 interface RenderMenuProps {
 	selectedMenu: string;
@@ -34,6 +35,7 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 			case 'Burgers & Baguettes':
 			case 'American Diner':
 			case 'French Fries':
+				return <FrenchFriesMenu />;
 			case 'Desserts':
 			case 'Ice Cream':
 			case 'Non-Alcoholic Drinks':
