@@ -3,12 +3,12 @@ import { FrenchFriesSizes } from './type/FrenchFriesTypes';
 const frenchFriesIngredients: FrenchFriesSizes[] = [
 	{
 		label: 'Classic Fries',
-		size: 'Small', // Differentiate sizes here
+		size: 'Small',
 		price: 4.0,
 	},
 	{
 		label: 'Classic Fries',
-		size: 'Large', // Differentiate sizes here
+		size: 'Large',
 		price: 4.5,
 	},
 ];

@@ -80,6 +80,7 @@ const CartPage: React.FC = () => {
 					<FrenchFriesCartItem
 						name={item.name}
 						size={typeof item.size === 'object' ? item.size : undefined}
+						sauces={item.selectedSauces || []}
 						quantity={item.quantity}
 					/>
 				);

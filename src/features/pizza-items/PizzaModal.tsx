@@ -63,7 +63,7 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 				type: 'pizza',
 				name,
 				image,
-				price: singlePizzaPrice, // Передаем цену за единицу
+				price: singlePizzaPrice,
 				quantity,
 				extras: selectedExtras,
 				size: selectedSize.size,

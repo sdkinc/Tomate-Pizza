@@ -3,6 +3,7 @@ export interface FrenchFries {
 	description: string;
 	image: string;
 	sizes: FrenchFriesSizes[];
+	sauces?: SauceOption[];
 	productInfo?: ProductInfo;
 }
 
@@ -17,4 +18,8 @@ export interface ProductInfo {
 	substances?: string[];
 	disclaimer?: string;
 	additionalInfo?: string;
+}
+export interface SauceOption {
+	label: string;
+	price?: number;
 }

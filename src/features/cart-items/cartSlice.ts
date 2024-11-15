@@ -3,7 +3,7 @@ import { ExtraIngredient } from '../pizza-items/type/PizzaTypes';
 import { ExtraIngredientCalzone } from '../calzone/type/CalzoneTypes';
 import { Ingredients } from '../pasta-items/type/PastaTypes';
 import { SaladsIngredients } from '../salads/type/SaladsType';
-import { FrenchFriesSizes } from '../french-fries/type/FrenchFriesTypes';
+import { FrenchFriesSizes, SauceOption } from '../french-fries/type/FrenchFriesTypes';
 
 export type ProductType =
 	| 'pizza'
@@ -21,7 +21,7 @@ interface CartItem {
 	type: ProductType;
 	name: string;
 	image: string;
-	price: number; // Цена за единицу товара
+	price: number;
 	quantity: number;
 	size?: string;
 	extras?: ExtraIngredient[];
@@ -29,7 +29,8 @@ interface CartItem {
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
 	ingredients?: Ingredients[];
 	saladsIngredients?: SaladsIngredients[];
-	frenchFriesSize?: FrenchFriesSizes;
+	sizes: FrenchFriesSizes[];
+	selectedSauces?: SauceOption[];
 }
 
 interface CartState {

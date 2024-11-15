@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import frenchFriesData from './FrenchFriesData';
 import FrenchFriesItem from './FrenchFriesItem';
 import styles from '../pizza-items/pizzaMenu.module.css';
+import sauceOptions from './SauceOption';
 
 const FrenchFriesMenu: React.FC = () => {
 	const { t } = useTranslation();
@@ -16,6 +17,7 @@ const FrenchFriesMenu: React.FC = () => {
 					description={frenchFries.description ? t(frenchFries.description) : ''}
 					image={frenchFries.image}
 					sizes={frenchFries.sizes || []}
+					sauces={sauceOptions}
 					productInfo={frenchFries.productInfo}
 				/>
 			))}

@@ -1,5 +1,5 @@
 import { ExtraIngredientCalzone } from '../../calzone/type/CalzoneTypes';
-import { FrenchFriesSizes } from '../../french-fries/type/FrenchFriesTypes';
+import { FrenchFriesSizes, SauceOption } from '../../french-fries/type/FrenchFriesTypes';
 import { Ingredients } from '../../pasta-items/type/PastaTypes';
 import { ExtraIngredient } from '../../pizza-items/type/PizzaTypes';
 
@@ -25,4 +25,5 @@ export interface CartItem {
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[]; // Бесплатные ингредиенты для WunschPizza
 	ingredients?: Ingredients[];
 	sizes?: FrenchFriesSizes[];
+	selectedSauces?: SauceOption[];
 }
