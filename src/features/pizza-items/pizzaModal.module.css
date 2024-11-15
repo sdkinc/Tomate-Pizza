@@ -165,4 +165,9 @@ select {
 		width: 200px;
 		height: 200px;
 	}
+	.totalPrice {
+		font-size: 18px;
+		font-weight: bold;
+		margin-right: auto;
+	}
 }

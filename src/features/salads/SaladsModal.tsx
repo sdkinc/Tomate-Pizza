@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from '../pasta-items/pastaModal.module.css';
-
 import { t } from 'i18next';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../cart-items/cartSlice';
