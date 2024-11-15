@@ -386,18 +386,24 @@
 		}
 	},
 	"frenchFriesSizes": {
-    "Classic Fries": "Klassische Pommes",
-    "Small": "Klein",
-    "Large": "Groß"
-  },
-  "frenchFries": {
-    "frenchFries": {
-      "name": "Pommes Frites",
-      "description": "Leckere, knusprige Pommes Frites in verschiedenen Größen erhältlich.",
-      "productInfo": {
-        "allergens": ["Enthält Gluten", "Kann Spuren von Nüssen enthalten"],
-        "substances": ["Pflanzenöl", "Natürliche Gewürze"]
-      }
-    }
-  }
+		"Classic Fries": "Klassische Pommes",
+		"Small": "Klein",
+		"Large": "Groß"
+	},
+	"chooseSauce": "Ihre Sauce",
+	"frenchFriesSauces": {
+		"Mayonnaise": "mit Mayonnaise",
+		"Ketchup": "mit Ketchup",
+		"No Sauce": "ohne Sauce"
+	},
+	"frenchFries": {
+		"frenchFries": {
+			"name": "Pommes Frites",
+			"description": "Leckere, knusprige Pommes Frites in verschiedenen Größen erhältlich.",
+			"productInfo": {
+				"allergens": ["Enthält Gluten", "Kann Spuren von Nüssen enthalten"],
+				"substances": ["Pflanzenöl", "Natürliche Gewürze"]
+			}
+		}
+	}
 }

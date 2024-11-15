@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FrenchFriesSizes, ProductInfo } from './type/FrenchFriesTypes';
+import { FrenchFriesSizes, ProductInfo, SauceOption } from './type/FrenchFriesTypes';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from '../pizza-items/pizzaItem.module.css';
 
@@ -12,6 +12,7 @@ interface FrenchFriesItemProps {
 	description?: string; // Optional description
 	image: string;
 	sizes: FrenchFriesSizes[];
+	sauces: SauceOption[];
 	productInfo?: ProductInfo;
 }
 
@@ -20,6 +21,7 @@ const FrenchFriesItem: React.FC<FrenchFriesItemProps> = ({
 	description,
 	image,
 	sizes,
+	sauces,
 	productInfo,
 }) => {
 	const { t } = useTranslation();
@@ -81,6 +83,7 @@ const FrenchFriesItem: React.FC<FrenchFriesItemProps> = ({
 					sizes={sizes}
 					onClose={closeFrenchFriesModal}
 					image={image}
+					sauces={sauces || []}
 				/>
 			)}
 

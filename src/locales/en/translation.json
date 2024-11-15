@@ -387,28 +387,28 @@
 		}
 	},
 	"frenchFriesSizes": {
-    "Classic Fries": "Klassische Pommes",
-    "Small": "Klein",
-    "Large": "Groß"
-  },
+		"Classic Fries": "Klassische Pommes",
+		"Small": "Klein",
+		"Large": "Groß"
+	},
+	"chooseSauces": "your sauce",
+	"frenchFriesSauces": {
+		"Mayonnaise": "with mayonnaise",
+		"Ketchup": "with ketchup",
+		"No Sauce": "No Sauce"
+	},
 	"frenchFries": {
-    "frenchFries": {
-      "name": "French Fries",
-      "description": "Delicious crispy French fries, available in multiple sizes.",
-      "sizes": {
-        "Small": "Small",
-        "Large": "Large"
-      },
+		"frenchFries": {
+			"name": "French Fries",
+			"description": "Delicious crispy French fries, available in multiple sizes.",
+			"sizes": {
+				"Small": "Small",
+				"Large": "Large"
+			},
 			"productInfo": {
-        "allergens": [
-          "Contains gluten",
-          "May contain traces of nuts"
-        ],
-        "substances": [
-          "Vegetable oil",
-          "Natural seasoning"
-        ]
-      }
-    }
-  }
+				"allergens": ["Contains gluten", "May contain traces of nuts"],
+				"substances": ["Vegetable oil", "Natural seasoning"]
+			}
+		}
+	}
 }
