@@ -11,7 +11,8 @@ export type ProductType =
 	| 'breadsticks'
 	| 'meatDishes'
 	| 'burgers'
-	| 'frenchFries';
+	| 'frenchFries'
+	| 'americana';
 
 export interface CartItem {
 	id: string;

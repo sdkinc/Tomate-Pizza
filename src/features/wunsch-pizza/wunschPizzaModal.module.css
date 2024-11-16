@@ -9,6 +9,7 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 1200;
+
 }
 select {
 	padding: 5px;
@@ -41,8 +42,8 @@ select {
 	transition: max-height 0.3s ease;
 }
 .scrollable {
-	max-height: 300px; /* Увеличенная высота для отображения всех ингредиентов */
-	overflow-y: auto; /* Включаем вертикальную прокрутку */
+	max-height: unset; /* Снимаем ограничение высоты для раскрытого списка */
+	overflow-y: auto;  /* Включаем вертикальную прокрутку */
 }
 
 .toggleButton {
@@ -73,6 +74,8 @@ select {
 	width: 400px;
 	max-width: 90%;
 	position: relative;
+	overflow-y: auto; /* Включаем вертикальную прокрутку */
+	max-height: 90vh;
 }
 
 .closeButton {
