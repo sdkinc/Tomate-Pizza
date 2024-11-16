@@ -85,7 +85,7 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 				type: 'wunschpizza',
 				name,
 				image,
-				price: selectedSize.price, // Передаем единичную стоимость размера
+				price: selectedSize.price,
 				quantity,
 				extras: selectedExtras.map((extra) => ({
 					...extra,

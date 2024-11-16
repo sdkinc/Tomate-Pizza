@@ -26,6 +26,8 @@
 	"View custom pizza": "Wunschpizza ansehen",
 	"View salads": "Salate ansehen",
 	"View meat dishes": "Fleischgerichte ansehen",
+	"View americana diner": "Americana Diner ansehen",
+	"View burger": "Burger & Baguette ansehen",
 	"total": "Gesamt",
 	"youExtras": "Ihre Extras",
 	"chooseFreeIngredients": "Wählen Sie 3 kostenlose Zutaten",
@@ -500,6 +502,53 @@
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
 					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
 					"Enthält Fisch/-Erzeugnisse",
+					"Weizen"
+				]
+			}
+		}
+	},
+	"americana": {
+		"chickenWingsKetchup": {
+			"name": "Chicken Wings mit Ketchup (scharf)",
+			"description": "mit Barbecuesauce und Pommes Frites",
+			"productInfo": {
+				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Senf/-Erzeugnisse"]
+			}
+		},
+		"chickenWingsMayonnaise": {
+			"name": "Chicken Wings mit Mayonnaise (scharf)",
+			"description": "mit Barbecuesauce und Pommes Frites",
+			"productInfo": {
+				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Senf/-Erzeugnisse"]
+			}
+		},
+		"chickenNuggets": {
+			"name": "Chicken Nuggets",
+			"description": "mit Barbecuesauce und Pommes Frites",
+			"productInfo": {
+				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Senf/-Erzeugnisse", "Weizen"]
+			}
+		},
+		"chickenBleu": {
+			"name": "Chicken Bleu",
+			"description": "paniert mit Pommes frites und Zitrone",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"chickenCordonBleu": {
+			"name": "Chicken Cordon Bleu",
+			"description": "paniert mit Pommes frites und Zitrone",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
 					"Weizen"
 				]
 			}

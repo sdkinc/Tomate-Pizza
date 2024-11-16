@@ -26,6 +26,8 @@
 	"View custom pizza": "View custom pizza",
 	"View salads": "View salads",
 	"View meat dishes": "View meat dishes",
+	"View americana diner": "View americana diner",
+	"View burger": "View burger & baguette",
 	"total": "Total",
 	"youExtras": "Choose extras",
 	"chooseFreeIngredients": "Choose 3 free ingredients",
@@ -504,6 +506,57 @@
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
 					"Contains fish and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		}
+	},
+	"americana": {
+		"chickenWingsKetchup": {
+			"name": "Chicken wings with ketchup (spicy)",
+			"description": "with barbecue sauce and french fries",
+			"productInfo": {
+				"allergens": ["Contains eggs and products thereof", "Contains mustard and products thereof"]
+			}
+		},
+		"chickenWingsMayonnaise": {
+			"name": "Chicken wings with mayonnaise (spicy)",
+			"description": "with barbecue sauce and french fries",
+			"productInfo": {
+				"allergens": ["Contains eggs and products thereof", "Contains mustard and products thereof"]
+			}
+		},
+		"chickenNuggets": {
+			"name": "Chicken nuggets",
+			"description": "with barbecue sauce and french fries",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains cereals and products thereof containing gluten",
+					"wheat"
+				]
+			}
+		},
+		"chickenBleu": {
+			"name": "Chicken bleu",
+			"description": "breaded with french fries and lemon",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"chickenCordonBleu": {
+			"name": "Chicken cordon bleu",
+			"description": "breaded with french fries and lemon",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains cereals and products thereof containing gluten",
 					"Contains milk and products thereof (including lactose)",
 					"wheat"
 				]
