@@ -75,7 +75,7 @@
 	-webkit-user-select: none;
 	user-select: none;
 	text-align: center;
-	white-space: normal; 
+	white-space: normal;
 	word-wrap: break-word;
 	padding: 0 5px;
 }
@@ -109,7 +109,16 @@
 		font-size: 12px;
 		white-space: normal;
 	}
+	.tab:hover {
+		height: 40px;
+		font-size: 14px;
+	}
 
+	.activeTab {
+		background-color: #ddd;
+		font-size: 14px;
+		height: 40px;
+	}
 	.scrollButton {
 		height: 35px;
 		width: 30px;

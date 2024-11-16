@@ -39,6 +39,17 @@
 	"allergens": "LMIV - Allergen",
 	"View info": "View info",
 	"pcs": "pcs",
+	"impressum": {
+		"title": "Legal Notice",
+		"owner": "Taleh Huseynov acts on behalf of Tomate Pizzeria",
+		"address": {
+			"street": "Rosenheimerstr. 117",
+			"city": "81667 Munich"
+		},
+		"email": "Send us an email",
+		"registerCourt": "Court of Registration: Munich District Court",
+		"registerNumber": "Register Number: a11083935"
+	},
 	"categories": {
 		"Appetizers": "Appetizers",
 		"Salads": "Salads",

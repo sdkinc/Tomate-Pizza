@@ -11,12 +11,8 @@ function FooterPage(): JSX.Element {
 	}, [location]);
 	return (
 		<div className={styles.footerBox}>
-			<div className={styles.container}>
-				<div className={styles.footerContent}>
-					<div className={styles.bottomInfoBox}>
-						<span>© 2024 Tomate Pizza. All Rights Reserved</span>
-					</div>
-				</div>
+			<div className={styles.bottomInfoBox}>
+				<span>© 2024 Tomate Pizza. All Rights Reserved</span>
 			</div>
 		</div>
 	);
