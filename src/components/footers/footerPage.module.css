@@ -1,9 +1,21 @@
-html {
-	scroll-behavior: smooth;
+html,
+body {
+	height: 100%; /* Устанавливаем высоту на весь экран */
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 }
 
-a {
-	text-decoration: none;
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+/* Основной контент страницы (все, кроме футера) */
+.mainContent {
+	flex: 1; /* Заставляет контент занимать всё доступное пространство */
 }
 
 .footerBox {
@@ -16,7 +28,6 @@ a {
 	display: flex;
 	justify-content: center;
 }
-
 .bottomInfoBox {
 	padding: 20px 0;
 	display: flex;
@@ -24,11 +35,23 @@ a {
 	gap: 10px;
 	font-size: 14px;
 }
+.link {
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 10px;
+	border: 1px solid #ffffff;
+	padding: 5px 10px;
+	border-radius: 4px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.link:hover {
+	background-color: #ffffff;
+	color: #313131;
+}
 
 @media (max-width: 768px) {
 	.footerBox {
-		display: flex;
-		justify-content: center;
 		padding: 0;
 	}
 }

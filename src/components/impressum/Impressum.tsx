@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './impressum.module.css';
 import { useTranslation } from 'react-i18next';
 
@@ -24,6 +25,12 @@ function Impressum(): JSX.Element {
 					<p>
 						<strong>{t('impressum.registerNumber')}</strong>
 					</p>
+				</div>
+				<div className={styles.backToHome}>
+					<Link to="/">
+						<span className={styles.arrow}>&larr;</span>
+						<span>{t('impressum.backToHome')}</span>
+					</Link>
 				</div>
 			</div>
 		</div>

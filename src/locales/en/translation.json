@@ -48,7 +48,8 @@
 		},
 		"email": "Send us an email",
 		"registerCourt": "Court of Registration: Munich District Court",
-		"registerNumber": "Register Number: a11083935"
+		"registerNumber": "Register Number: a11083935",
+		"backToHome": "Back to Home"
 	},
 	"categories": {
 		"Appetizers": "Appetizers",
@@ -465,7 +466,7 @@
 		},
 		"baguetteSalami": {
 			"name": "Baguette Salami",
-			"description": "with butter, tomatoes, iceberg lettuce and salami",
+			"description": "with remoulade, lettuce, tomatoes, cucumbers",
 			"productInfo": {
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
@@ -476,12 +477,11 @@
 		},
 		"baguetteHam": {
 			"name": "Baguette Ham",
-			"description": "with butter, ham, iceberg lettuce, boiled egg, shrimp and basil",
+			"description": "Boiled ham with remoulade, lettuce, tomatoes, cucumbers",
 			"productInfo": {
 				"substances": ["With preservative", "With flavor enhancer"],
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
-					"Contains eggs and products thereof",
 					"Contains milk and products thereof (including lactose)",
 					"Contains mustard and products thereof",
 					"wheat"
@@ -490,7 +490,7 @@
 		},
 		"baguetteMozzarella": {
 			"name": "Baguette Mozzarella",
-			"description": "with butter, tomatoes, iceberg lettuce and mozzarella",
+			"description": "with mozzarella, remoulade, lettuce, tomatoes, cucumbers",
 			"productInfo": {
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
@@ -501,7 +501,7 @@
 		},
 		"baguetteChickenBreast": {
 			"name": "Baguette Chicken Breast",
-			"description": "with tomatoes, cucumber, iceberg lettuce and chicken breast strips",
+			"description": "with chicken breast strips, remoulade, lettuce, tomatoes, cucumbers",
 			"productInfo": {
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
@@ -512,7 +512,7 @@
 		},
 		"baguetteTonno": {
 			"name": "Baguette Tonno",
-			"description": "with tuna, butter, tomatoes, iceberg lettuce and onions",
+			"description": "with tuna, remoulade, lettuce, tomatoes, cucumbers, and onions",
 			"productInfo": {
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
@@ -568,6 +568,76 @@
 				"allergens": [
 					"Contains eggs and products thereof",
 					"Contains cereals and products thereof containing gluten",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		}
+	},
+	"desserts": {
+		"cassata": {
+			"name": "Cassata",
+			"description": "ice cream with whipped cream",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"tartufo": {
+			"name": "Tartufo",
+			"description": "ice cream with whipped cream",
+			"productInfo": {
+				"allergens": [
+					"almonds",
+					"Brazil nuts",
+					"cashews",
+					"Contains soybeans and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains nuts and products thereof",
+					"hazelnuts",
+					"macadamia",
+					"pecan nuts",
+					"pistachio nuts",
+					"Queensland nuts",
+					"walnuts"
+				]
+			}
+		},
+		"tiramisu": {
+			"name": "Tiramisu",
+			"description": "homemade",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"strudel": {
+			"name": "Apple strudel",
+			"description": "with whipped cream",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"wheat"
+				]
+			}
+		},
+		"muffin": {
+			"name": "Muffin",
+			"description": "Soft and tasty muffin",
+			"productInfo": {
+				"allergens": [
+					"Contains cereals and products thereof containing gluten",
+					"Contains eggs and products thereof",
 					"Contains milk and products thereof (including lactose)",
 					"wheat"
 				]
