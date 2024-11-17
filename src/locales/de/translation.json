@@ -48,7 +48,8 @@
 		},
 		"email": "Sende uns eine E-Mail",
 		"registerCourt": "Registergericht: Amtsgericht München",
-		"registerNumber": "Registernummer: a11083935"
+		"registerNumber": "Registernummer: a11083935",
+		"backToHome": "Zur Startseite"
 	},
 	"categories": {
 		"Appetizers": "Vorspeisen",
@@ -460,7 +461,7 @@
 		},
 		"baguetteSalami": {
 			"name": "Baguette Salami",
-			"description": "mit Butter, Tomaten, Eisbergsalat und Salami",
+			"description": "mit Remoulade, Salat, Tomaten, Gurken",
 			"productInfo": {
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
@@ -471,12 +472,11 @@
 		},
 		"baguetteHam": {
 			"name": "Baguette Schinken",
-			"description": "mit Butter, Vorderschinken, Eisbergsalat, gekochtem Ei, Shrimps und Basilikum",
+			"description": "Vorderschinken mit Remoulade, Salat, Tomaten, Gurken",
 			"productInfo": {
 				"substances": ["Mit Konservierungsstoffen", "Mit Geschmacksverstärker"],
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
-					"Enthält Ei/-Erzeugnisse",
 					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
 					"Enthält Senf/-Erzeugnisse",
 					"Weizen"
@@ -485,7 +485,7 @@
 		},
 		"baguetteMozzarella": {
 			"name": "Baguette Mozzarella",
-			"description": "mit Butter, Tomaten, Eisbergsalat und Mozzarella",
+			"description": "mit Mozzarella Remoulade, Salat, Tomaten, Gurken",
 			"productInfo": {
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
@@ -496,7 +496,7 @@
 		},
 		"baguetteChickenBreast": {
 			"name": "Baguette Hühnerbrust",
-			"description": "mit Tomaten, Gurken, Eisbergsalat und Hühnerbruststreifen",
+			"description": "mit Hühnerbruststreifen , Remoulade, Salat, Tomaten, Gurken",
 			"productInfo": {
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
@@ -507,7 +507,7 @@
 		},
 		"baguetteTonno": {
 			"name": "Baguette Tonno",
-			"description": "mit Thunfisch, Butter, Tomaten, Eisbergsalat und Zwiebeln",
+			"description": "mit Thunfisch, Remoulade, Salat, Tomaten, Gurken und Zwiebeln",
 			"productInfo": {
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
@@ -555,6 +555,76 @@
 		"chickenCordonBleu": {
 			"name": "Chicken Cordon Bleu",
 			"description": "paniert mit Pommes frites und Zitrone",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		}
+	},
+	"desserts": {
+		"cassata": {
+			"name": "Cassata",
+			"description": "Eis mit Sahne",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"tartufo": {
+			"name": "Tartufo",
+			"description": "Eis mit Sahne",
+			"productInfo": {
+				"allergens": [
+					"Mandeln",
+					"Paranüsse",
+					"Cashewnüsse",
+					"Enthält Sojabohnen/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse",
+					"Haselnuss",
+					"Macadamianuss",
+					"Pekannüsse",
+					"Pistazien",
+					"Queensland-Nuss",
+					"Walnüsse"
+				]
+			}
+		},
+		"tiramisu": {
+			"name": "Tiramisu",
+			"description": "hausgemacht",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"strudel": {
+			"name": "Apfelstrudel",
+			"description": "mit Sahne",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				]
+			}
+		},
+		"muffin": {
+			"name": "Muffin",
+			"description": "Leckerer und fluffiger Muffin",
 			"productInfo": {
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",

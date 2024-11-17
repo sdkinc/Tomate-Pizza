@@ -73,7 +73,6 @@ const burgers: Burgers[] = [
 				'burgers.baguetteHam.productInfo.allergens.1',
 				'burgers.baguetteHam.productInfo.allergens.2',
 				'burgers.baguetteHam.productInfo.allergens.3',
-				'burgers.baguetteHam.productInfo.allergens.4',
 			],
 		},
 	},

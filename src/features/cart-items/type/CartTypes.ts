@@ -12,7 +12,8 @@ export type ProductType =
 	| 'meatDishes'
 	| 'burgers'
 	| 'frenchFries'
-	| 'americana';
+	| 'americana'
+	| 'desserts';
 
 export interface CartItem {
 	id: string;
@@ -22,9 +23,9 @@ export interface CartItem {
 	price: number;
 	quantity: number;
 	size?: string;
-	extras?: ExtraIngredient[]; // Допы для пиццы
-	extrasCalzone?: ExtraIngredientCalzone[]; // Допы для Calzone
-	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[]; // Бесплатные ингредиенты для WunschPizza
+	extras?: ExtraIngredient[];
+	extrasCalzone?: ExtraIngredientCalzone[];
+	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
 	ingredients?: Ingredients[];
 	sizes?: FrenchFriesSizes[];
 	selectedSauces?: SauceOption[];

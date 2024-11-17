@@ -1,20 +1,24 @@
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './footerPage.module.css';
 
-import { useEffect } from 'react';
-
-function FooterPage(): JSX.Element {
+function FooterPage(): JSX.Element | null {
 	const location = useLocation();
 
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, [location]);
+	// Если путь равен '/admin', возвращаем null, чтобы скрыть футер
+	if (location.pathname === '/admin') {
+		return null;
+	}
+
 	return (
-		<div className={styles.footerBox}>
+		<footer className={styles.footerBox}>
 			<div className={styles.bottomInfoBox}>
 				<span>© 2024 Tomate Pizza. All Rights Reserved</span>
+				<Link to="/impressum" className={styles.link}>
+					Impressum
+				</Link>
 			</div>
-		</div>
+		</footer>
 	);
 }
+
 export default FooterPage;

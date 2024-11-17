@@ -3,10 +3,10 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from '../pizza-items/pizzaItem.module.css';
 import ProductInfoModal from '../pizza-items/ProductInfoModal';
 import { useTranslation } from 'react-i18next';
-import { ProductInfo } from './type/AmericanaTypes';
-import AmericanaModal from './AmericanaModal';
+import DessertsModal from './DessertsModal';
+import { ProductInfo } from './type/DessertsTypes';
 
-interface AmericanaItemProps {
+interface DessertsItemProps {
 	name: string;
 	description: string;
 	image: string;
@@ -14,7 +14,7 @@ interface AmericanaItemProps {
 	productInfo?: ProductInfo;
 }
 
-const AmericanaItem: React.FC<AmericanaItemProps> = ({
+const DessertsItem: React.FC<DessertsItemProps> = ({
 	name,
 	description,
 	image,
@@ -22,11 +22,11 @@ const AmericanaItem: React.FC<AmericanaItemProps> = ({
 	productInfo,
 }) => {
 	const { t } = useTranslation();
-	const [isAmericanaModalOpen, setIsAmericanaModalOpen] = useState(false);
+	const [isDessertsModalOpen, setIsDessertsModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
 
-	const openAmericanaModal = (): void => setIsAmericanaModalOpen(true);
-	const closeAmericanaModal = (): void => setIsAmericanaModalOpen(false);
+	const openDessertsModal = (): void => setIsDessertsModalOpen(true);
+	const closeDessertsModal = (): void => setIsDessertsModalOpen(false);
 
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
@@ -36,7 +36,7 @@ const AmericanaItem: React.FC<AmericanaItemProps> = ({
 			className={styles.pizzaItem}
 			onClick={() => {
 				if (!isProductInfoModalOpen) {
-					openAmericanaModal();
+					openDessertsModal();
 				}
 			}}
 		>
@@ -66,23 +66,19 @@ const AmericanaItem: React.FC<AmericanaItemProps> = ({
 					<p className={styles.pizzaDescription}>{description}</p>
 				</div>
 				<div className={styles.pizzaActions}>
-					<button
-						type="button"
-						className={styles.viewButton}
-						aria-label={t('View americana diner')}
-					>
+					<button type="button" className={styles.viewButton} aria-label={t('View desserts')}>
 						<VisibilityIcon fontSize="medium" />
 					</button>
 				</div>
 			</div>
 
-			{isAmericanaModalOpen && !isProductInfoModalOpen && (
-				<AmericanaModal
+			{isDessertsModalOpen && !isProductInfoModalOpen && (
+				<DessertsModal
 					name={name}
 					description={description}
 					price={price}
 					image={image}
-					onClose={closeAmericanaModal}
+					onClose={closeDessertsModal}
 				/>
 			)}
 
@@ -91,7 +87,7 @@ const AmericanaItem: React.FC<AmericanaItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsAmericanaModalOpen(false);
+						setIsDessertsModalOpen(false);
 					}}
 					productInfo={productInfo}
 				/>
@@ -100,4 +96,4 @@ const AmericanaItem: React.FC<AmericanaItemProps> = ({
 	);
 };
 
-export default AmericanaItem;
+export default DessertsItem;

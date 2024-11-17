@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import FrenchFriesMenu from '../../../features/french-fries/FrenchFriesMenu';
 import BurgerMenu from '../../../features/burger/BurgerMenu';
 import AmericanMenu from '../../../features/americana-diner/AmericanaMenu';
+import DessertsMenu from '../../../features/desserts/DessertsMenu';
 
 interface RenderMenuProps {
 	selectedMenu: string;
@@ -41,6 +42,7 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 			case 'French Fries':
 				return <FrenchFriesMenu />;
 			case 'Desserts':
+				return <DessertsMenu />;
 			case 'Ice Cream':
 			case 'Non-Alcoholic Drinks':
 			case 'Alcoholic Drinks':

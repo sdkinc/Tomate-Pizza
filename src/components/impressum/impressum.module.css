@@ -33,18 +33,48 @@
 }
 
 .content a {
-	color: #007bff;
+	color: #009640;
 	text-decoration: none;
 	transition: color 0.3s;
 }
 
 .content a:hover {
-	color: #0056b3;
+	color: #065b2b;
 }
+
+.backToHome {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.backToHome a {
+	color: #009640;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	transition: color 0.3s ease;
+}
+
+.backToHome a:hover {
+	color: #065b2b;
+}
+
+.arrow {
+	font-size: 20px;
+	font-weight: bold;
+	transition: transform 0.3s ease;
+}
+
+.backToHome a:hover .arrow {
+	transform: translateX(-5px); /* Добавляем анимацию сдвига стрелки */
+}
+
 @media (max-width: 480px) {
 	.mainBox {
-		width: 80%;
-		padding: 8px;
+		width: 90%;
+		padding: 10px;
 	}
 
 	.titlePage {
@@ -52,10 +82,10 @@
 	}
 
 	.content p {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
-	.content a {
-		font-size: 12px;
+	.backToHome {
+		font-size: 14px;
 	}
 }
