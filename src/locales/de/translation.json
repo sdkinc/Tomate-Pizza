@@ -30,6 +30,7 @@
 	"View burger": "Burger & Baguette ansehen",
 	"View desserts": "Desserts ansehen",
 	"View Ice Cream": "Ice Cream ansehen",
+	"View Non-alcoholic drinks": "Alkoholfreie Getränke ansehen",
 	"total": "Gesamt",
 	"youExtras": "Ihre Extras",
 	"chooseFreeIngredients": "Wählen Sie 3 kostenlose Zutaten",
@@ -39,6 +40,8 @@
 	"productInfo": "Produktinformation",
 	"substances": "Substanzen oder Produkte, die Allergien oder Intoleranzen hervorrufen können.",
 	"allergens": "Allergene",
+	"nutritionFacts": "Nährwerte",
+	"allergensSubstances": "Substanzen oder Produkte, die Allergien oder Intoleranzen hervorrufen können.",
 	"View info": "Informationen anzeigen",
 	"pcs": "Stk",
 	"impressum": {
@@ -67,7 +70,7 @@
 		"French Fries": "Pommes Frites",
 		"Desserts": "Desserts",
 		"Ice Cream": "Eiscreme",
-		"Non-Alcoholic Drinks": "Alkoholfreie Getränke",
+		"Non Alcoholic Drinks": "Alkoholfreie Getränke",
 		"Alcoholic Drinks": "Alkoholische Getränke"
 	},
 	"pizzaSizes": {
@@ -692,6 +695,125 @@
 				],
 				"nutritionFacts": [
 					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Weizenmehl, Kokosnussöl, fettreduziertes Kakaopulver, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
+				]
+			}
+		}
+	},
+"nonAlcoholicDrinks": {
+		"cocaCola": {
+			"name": "Coca Cola 1,0l (MEHRWEG)",
+			"description": "Erfrischendes Erfrischungsgetränk mit Koffein (10,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"Mit Farbstoff",
+					"Enthält Koffein",
+					"Enthält Säuerungsmittel",
+					"Enthält Koffein. Nicht empfohlen für Kinder oder schwangere Frauen."
+				],
+				"nutritionFacts": [
+					"Zutaten: Wasser, Zucker, Kohlensäure, Farbstoff E 150d, Säuerungsmittel Phosphorsäure, natürliches Aroma, Aroma Koffein."
+				]
+			}
+		},
+		"cocaColaLight": {
+			"name": "Coca Cola light 1,0l (MEHRWEG)",
+			"description": "Kalorienarmes Erfrischungsgetränk mit Koffein (12,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"Mit Farbstoff",
+					"Mit Süßungsmitteln",
+					"Enthält Phenylalanin",
+					"Enthält Koffein",
+					"Enthält Säuerungsmittel",
+					"Enthält Koffein. Nicht empfohlen für Kinder oder schwangere Frauen."
+				],
+				"nutritionFacts": [
+					"Zutaten: Wasser, Kohlensäure, Farbstoff E 150d, Säuerungsmittel (Phosphorsäure, Citronensäure), Süßungsmittel (Natriumcyclamat, Acesulfam K, Aspartam), natürliches Aroma inklusive Koffein. Enthält eine Phenylalaninquelle."
+				]
+			}
+		},
+		"fanta": {
+			"name": "Fanta 1,0l (MEHRWEG)",
+			"description": "Fruchtiges Orangen-Erfrischungsgetränk",
+			"productInfo": {
+				"allergens": [
+					"Mit Farbstoff",
+					"Mit Antioxidationsmitteln",
+					"Enthält Säuerungsmittel",
+					"Enthält Stabilisatoren"
+				],
+				"nutritionFacts": [
+					"Zutaten: Wasser, Zucker, Orangensaft aus Orangensaftkonzentrat, Kohlensäure, Säuerungsmittel (Citronensäure, Äpfelsäure), Citrusextrakt, Säureregulator Natriumgluconat, Aroma, Antioxidationsmittel Ascorbinsäure, Stabilisatoren (E 440, E 414, E 445 und E 412), Farbstoff Carotin."
+				]
+			}
+		},
+		"mezzoMix": {
+			"name": "Mezzo Mix 1,0l (MEHRWEG)",
+			"description": "Erfrischende Mischung aus Cola und Orangen-Geschmack mit Koffein (6,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"Mit Farbstoff",
+					"Enthält Koffein",
+					"Enthält Säuerungsmittel",
+					"Enthält Stabilisatoren",
+					"Enthält Koffein. Nicht empfohlen für Kinder oder schwangere Frauen."
+				],
+				"nutritionFacts": [
+					"Zutaten: Wasser, Zucker, Fruktose, Orangensaft aus Orangensaftkonzentrat (1,5%), Kohlensäure, Farbstoff E 150d, Säuerungsmittel Citronensäure, Apfelsäure; Aroma, Aroma Koffein, Stabilisator E 412."
+				]
+			}
+		},
+		"sprite": {
+			"name": "Sprite 1,0l (MEHRWEG)",
+			"description": "Erfrischendes Zitronen-Limetten-Erfrischungsgetränk",
+			"productInfo": {
+				"allergens": ["Enthält Säuerungsmittel"],
+				"nutritionFacts": [
+					"Zutaten: Wasser, Zucker, Kohlensäure, Säuerungsmittel Citronensäure, Zitronensaft aus Zitronensaftkonzentrat (1%), Limettensaft aus Limettensaftkonzentrat (0.1%), Säureregulator Natriumcitrate, natürliches Zitronen- und Limettenaroma."
+				]
+			}
+		},
+		"apfelschorle": {
+			"name": "Apfelschorle 1,0l (MEHRWEG)",
+			"description": "Apfelsaft-Schorle aus natürlichem Apfelsaft",
+			"productInfo": {
+				"nutritionFacts": ["Zutaten: Apfelsaft, Kohlensäurehaltiges Wasser."]
+			}
+		},
+		"mineralwasser": {
+			"name": "Mineralwasser 1,0l (MEHRWEG)",
+			"description": "Reines Mineralwasser",
+			"productInfo": {
+				"nutritionFacts": ["Zutaten: Wasser."]
+			}
+		},
+		"apfelsaft": {
+			"name": "Apfelsaft 1,0l (MEHRWEG)",
+			"description": "Natürlicher Apfelsaft",
+			"productInfo": {
+				"nutritionFacts": ["Zutaten: Apfelsaft."]
+			}
+		},
+		"orangensaft": {
+			"name": "Orangensaft 1,0l (MEHRWEG)",
+			"description": "Frischer Orangensaft",
+			"productInfo": {
+				"nutritionFacts": ["Zutaten: Orangensaft."]
+			}
+		},
+		"redBull": {
+			"name": "Red Bull 1,0l (MEHRWEG)",
+			"description": "Energy-Drink mit hohem Koffeingehalt (32 mg/100 ml). Nicht empfohlen für Kinder, Schwangere oder stillende Frauen",
+			"productInfo": {
+				"allergens": [
+					"Mit Farbstoff",
+					"Enthält Koffein",
+					"Enthält Säuerungsmittel",
+					"Enthält Stabilisatoren",
+					"Hoher Koffeingehalt. Nicht empfohlen für Kinder, Schwangere oder stillende Frauen."
+				],
+				"nutritionFacts": [
+					"Zutaten: Wasser, Saccharose, Glucose, Säuerungsmittel (Citronensäure), Kohlensäure, Taurin (0,4%), Säureregulatoren (Natriumcarbonate, Magnesiumcarbonate), Koffein (0,03%), Vitamine (Niacin, Pantothensäure, B6, B12), Aromen, Farbstoffe (Zuckerkulör, Riboflavine)."
 				]
 			}
 		}

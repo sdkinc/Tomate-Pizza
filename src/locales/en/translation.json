@@ -14,7 +14,7 @@
 	"French Fries": "French fries",
 	"Desserts": "Dessert",
 	"Ice Cream": "Ice Cream",
-	"Non-Alcoholic Drinks": "Non-alcoholic drinks",
+	"Non-Alcoholic Drinks": "Non alcoholic drinks",
 	"Alcoholic Drinks": "Alcoholic drinks",
 	"viewMyList": "View my list",
 	"choose": "Add to List",
@@ -30,6 +30,7 @@
 	"View burger": "View burger & baguette",
 	"View desserts": "View desserts",
 	"View Ice Cream": "View Ice Cream",
+	"View Non-alcoholic drinks": "Non-alcoholic drinks",
 	"total": "Total",
 	"youExtras": "Choose extras",
 	"chooseFreeIngredients": "Choose 3 free ingredients",
@@ -39,6 +40,8 @@
 	"productInfo": "More product information",
 	"substances": "Substances or products causing allergies or intolerances",
 	"allergens": "LMIV - Allergen",
+	"nutritionFacts": "Nutrition facts",
+	"allergensSubstances": "Substances or products causing allergies or intolerances",
 	"View info": "View info",
 	"pcs": "pcs",
 	"impressum": {
@@ -67,7 +70,7 @@
 		"French Fries": "French Fries",
 		"Desserts": "Desserts",
 		"Ice Cream": "Ice Cream",
-		"Non-Alcoholic Drinks": "Non-Alcoholic Drinks",
+		"Non Alcoholic Drinks": "Non-Alcoholic Drinks",
 		"Alcoholic Drinks": "Alcoholic Drinks"
 	},
 	"pizzaSizes": {
@@ -656,7 +659,7 @@
 					"Contains milk and products thereof (including lactose)"
 				],
 				"nutritionFacts": [
-					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, natürliches Vanille-Aroma."
+					"Ingredients: Fresh cream, condensed skimmed milk, sugar, egg yolk, natural vanilla flavor."
 				]
 			}
 		},
@@ -670,7 +673,7 @@
 					"Contains milk and products thereof (including lactose)"
 				],
 				"nutritionFacts": [
-					"Zutaten: Frische SAHNE (35,1%), KONDENSMAGERMILCH, Erdbeeren (21,1%), Zucker, EIGELB."
+					"Ingredients: Fresh CREAM (35.1%), CONDENSED SKIMMED MILK, strawberries (21.1%), sugar, EGG YOLK."
 				]
 			}
 		},
@@ -685,7 +688,7 @@
 					"macadamia"
 				],
 				"nutritionFacts": [
-					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Glukosesirup, Macadamianüsse, Kokosnussöl, Butter, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
+					"Ingredients: Fresh cream, condensed skimmed milk, sugar, egg yolk, glucose syrup, macadamia nuts, coconut oil, butter, natural vanilla flavor, leavening agent: sodium bicarbonate, table salt."
 				]
 			}
 		},
@@ -700,7 +703,127 @@
 					"macadamia"
 				],
 				"nutritionFacts": [
-					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Weizenmehl, Kokosnussöl, fettreduziertes Kakaopulver, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
+					"Ingredients: Fresh cream, condensed skimmed milk, sugar, egg yolk, wheat flour, coconut oil, reduced-fat cocoa powder, natural vanilla flavor, leavening agent: sodium bicarbonate, table salt."
+				]
+			}
+		}
+	},
+"nonAlcoholicDrinks": {
+		"cocaCola": {
+			"name": "Coca Cola 1,0l (MEHRWEG)",
+			"description": "Refreshing soft drink with caffeine (10,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"With colorant",
+					"Contains caffeine",
+					"Contains acidifiers",
+					"Contains caffeine. Not recommended for children or pregnant women"
+				],
+				"nutritionFacts": [
+					"Ingredients: Water, sugar, carbon dioxide, coloring E 150d, acidifier phosphoric acid, natural flavor, caffeine flavor."
+				]
+			}
+		},
+		"cocaColaLight": {
+			"name": "Coca Cola light 1,0l (MEHRWEG)",
+			"description": "Low-calorie soft drink with caffeine (12,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"With colorant",
+					"With sweetener(s)",
+					"Contains phenylalanine",
+					"Contains caffeine",
+					"Contains acidifiers",
+					"Contains caffeine. Not recommended for children or pregnant women"
+				],
+				"nutritionFacts": [
+					"Ingredients: Water, carbon dioxide, coloring E 150d, acidifiers (phosphoric acid, citric acid), sweeteners (sodium cyclamate, acesulfame K, aspartame), natural flavor including caffeine. Contains a source of phenylalanine."
+				]
+			}
+		},
+		"fanta": {
+			"name": "Fanta 1,0l (MEHRWEG)",
+			"description": "Fruity orange soft drink",
+			"productInfo": {
+				"allergens": [
+					"With colorant",
+					"With antioxidant",
+					"Contains acidifiers",
+					"contains stabilisers"
+				],
+				"nutritionFacts": [
+					
+"Ingredients: Water, sugar, orange juice from orange juice concentrate, carbon dioxide, acidifiers (citric acid, malic acid), citrus extract, acidity regulator sodium gluconate, flavoring, antioxidant ascorbic acid, stabilizers (E 440, E 414, E 445, and E 412), coloring carotene."
+				]
+			}
+		},
+		"mezzoMix": {
+			"name": "Mezzo Mix 1,0l (MEHRWEG)",
+			"description": "Refreshing mix of cola and orange flavor with caffeine (6,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"With colorant",
+					"Contains caffeine",
+					"Contains acidifiers",
+					"Contains stabilisers",
+					"Contains caffeine. Not recommended for children or pregnant women."
+				],
+				"nutritionFacts": [
+					"Ingredients: Water, sugar, fructose, orange juice from orange juice concentrate (1.5%), carbon dioxide, coloring E 150d, acidifiers citric acid, malic acid; flavoring, caffeine flavor, stabilizer E 412."
+				]
+			}
+		},
+		"sprite": {
+			"name": "Sprite 1,0l (MEHRWEG)",
+			"description": "Refreshing lemon-lime soft drink",
+			"productInfo": {
+				"allergens": ["Contains acidifiers"],
+				"nutritionFacts": [
+					"Ingredients: Water, sugar, carbon dioxide, acidifier citric acid, lemon juice from lemon juice concentrate (1%), lime juice from lime juice concentrate (0.1%), acidity regulator sodium citrate, natural lemon and lime flavor."
+				]
+			}
+		},
+		"apfelschorle": {
+			"name": "Apfelschorle 1,0l (MEHRWEG)",
+			"description": "Apple spritzer made with natural apple juice",
+			"productInfo": {
+				"nutritionFacts": ["Ingredients: Apple juice, carbonated water."]
+			}
+		},
+		"mineralwasser": {
+			"name": "Mineralwasser 1,0l (MEHRWEG)",
+			"description": "Pure mineral water",
+			"productInfo": {
+				"nutritionFacts": ["Ingredients: Water."]
+			}
+		},
+		"apfelsaft": {
+			"name": "Apfelsaft 1,0l (MEHRWEG)",
+			"description": "Natural apple juice",
+			"productInfo": {
+				"nutritionFacts": ["Ingredients: Apple juice."]
+			}
+		},
+		"orangensaft": {
+			"name": "Orangensaft 1,0l (MEHRWEG)",
+			"description": "Fresh orange juice",
+			"productInfo": {
+				"nutritionFacts": ["Ingredients: Orange juice."]
+			}
+		},
+		"redBull": {
+			"name": "Red Bull 1,0l (MEHRWEG)",
+			"description": "Energy drink with high caffeine content (32 mg/100 ml). Not recommended for children, pregnant, or breast-feeding women",
+			"productInfo": {
+				"allergens": [
+					"With colorant",
+					"Contains caffeine",
+					"Contains acidifiers",
+					"Contains stabilisers",
+					"High caffeine content. Not recommended for children or pregnant or breast-feeding women."
+				],
+				"nutritionFacts": [
+					"Ingredients: Water, sucrose, glucose, acidifier (citric acid), carbon dioxide, taurine (0.4%), acidity regulators (sodium carbonates, magnesium carbonates), caffeine (0.03%), vitamins (niacin, pantothenic acid, B6, B12), flavorings, colorings (caramel color, riboflavins)."
 				]
 			}
 		}
