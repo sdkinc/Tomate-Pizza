@@ -28,6 +28,8 @@
 	"View meat dishes": "Fleischgerichte ansehen",
 	"View americana diner": "Americana Diner ansehen",
 	"View burger": "Burger & Baguette ansehen",
+	"View desserts": "Desserts ansehen",
+	"View Ice Cream": "Ice Cream ansehen",
 	"total": "Gesamt",
 	"youExtras": "Ihre Extras",
 	"chooseFreeIngredients": "Wählen Sie 3 kostenlose Zutaten",
@@ -631,6 +633,65 @@
 					"Enthält Ei/-Erzeugnisse",
 					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
 					"Weizen"
+				]
+			}
+		}
+	},
+	"iceCream": {
+		"iceCreamVanilla": {
+			"name": "Häagen Dazs Vanilla 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, natürliches Vanille-Aroma."
+				]
+			}
+		},
+
+		"iceCreamStrawberry": {
+			"name": "Häagen Dazs Strawberry 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische SAHNE (35,1%), KONDENSMAGERMILCH, Erdbeeren (21,1%), Zucker, EIGELB."
+				]
+			}
+		},
+		"iceCreamMacadamia": {
+			"name": "Häagen Dazs Macadamia 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Glukosesirup, Macadamianüsse, Kokosnussöl, Butter, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
+				]
+			}
+		},
+		"iceCreamCookies": {
+			"name": "Häagen Dazs Cookies & Cream 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Weizen"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Weizenmehl, Kokosnussöl, fettreduziertes Kakaopulver, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
 				]
 			}
 		}

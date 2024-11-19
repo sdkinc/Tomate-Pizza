@@ -17,14 +17,15 @@ export type ProductType =
 	| 'burgers'
 	| 'frenchFries'
 	| 'americana'
-	| 'desserts';
+	| 'desserts'
+	| 'iceCream';
 
 interface CartItem {
 	id: string;
 	type: ProductType;
 	name: string;
 	image: string;
-	price: number; // Цена за единицу товара
+	price: number;
 	quantity: number;
 	size?: string;
 	extras?: ExtraIngredient[];

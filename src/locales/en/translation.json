@@ -28,6 +28,8 @@
 	"View meat dishes": "View meat dishes",
 	"View americana diner": "View americana diner",
 	"View burger": "View burger & baguette",
+	"View desserts": "View desserts",
+	"View Ice Cream": "View Ice Cream",
 	"total": "Total",
 	"youExtras": "Choose extras",
 	"chooseFreeIngredients": "Choose 3 free ingredients",
@@ -640,6 +642,65 @@
 					"Contains eggs and products thereof",
 					"Contains milk and products thereof (including lactose)",
 					"wheat"
+				]
+			}
+		}
+	},
+	"iceCream": {
+		"iceCreamVanilla": {
+			"name": "Häagen Dazs Vanilla 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, natürliches Vanille-Aroma."
+				]
+			}
+		},
+
+		"iceCreamStrawberry": {
+			"name": "Häagen Dazs Strawberry 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische SAHNE (35,1%), KONDENSMAGERMILCH, Erdbeeren (21,1%), Zucker, EIGELB."
+				]
+			}
+		},
+		"iceCreamMacadamia": {
+			"name": "Häagen Dazs Macadamia 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains nuts and products thereof",
+					"macadamia"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Glukosesirup, Macadamianüsse, Kokosnussöl, Butter, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
+				]
+			}
+		},
+		"iceCreamCookies": {
+			"name": "Häagen Dazs Cookies & Cream 500ml",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Contains cereals and products thereof containing gluten",
+					"macadamia"
+				],
+				"nutritionFacts": [
+					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, Weizenmehl, Kokosnussöl, fettreduziertes Kakaopulver, natürliches Vanille-Aroma, Backtriebmittel: Natriumhydrogencarbonat, Speisesalz."
 				]
 			}
 		}
