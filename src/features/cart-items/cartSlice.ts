@@ -18,7 +18,8 @@ export type ProductType =
 	| 'frenchFries'
 	| 'americana'
 	| 'desserts'
-	| 'iceCream';
+	| 'iceCream'
+	| 'nonAlcoholicDrinks';
 
 interface CartItem {
 	id: string;

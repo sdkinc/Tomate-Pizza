@@ -3,11 +3,11 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from '../pizza-items/pizzaItem.module.css';
 
 import { useTranslation } from 'react-i18next';
-import { ProductInfo } from './type/IceCreamTypes';
-import IceCreamModal from './IceCreamModal';
+import NonAlcoholicDrinksModal from './NonAlcoholicDrinksModal';
+import { ProductInfo } from './type/NonAlcoholicDrinksTypes';
 import ProductInfoModal from './ProductInfoModal';
 
-interface IceCreamItemProps {
+interface NonAlcoholicDrinksItemProps {
 	name: string;
 	description: string;
 	image: string;
@@ -15,7 +15,7 @@ interface IceCreamItemProps {
 	productInfo?: ProductInfo;
 }
 
-const IceCreamItem: React.FC<IceCreamItemProps> = ({
+const NonAlcoholicDrinksItem: React.FC<NonAlcoholicDrinksItemProps> = ({
 	name,
 	description,
 	image,
@@ -23,11 +23,11 @@ const IceCreamItem: React.FC<IceCreamItemProps> = ({
 	productInfo,
 }) => {
 	const { t } = useTranslation();
-	const [isIceCreamModalOpen, setIsIceCreamModalOpen] = useState(false);
+	const [isNonAlcoholicDrinksModalOpen, setIsNonAlcoholicDrinksModalOpen] = useState(false);
 	const [isProductInfoModalOpen, setIsProductInfoModalOpen] = useState(false);
 
-	const openIceCreamModal = (): void => setIsIceCreamModalOpen(true);
-	const closeIceCreamModal = (): void => setIsIceCreamModalOpen(false);
+	const openNonAlcoholicDrinksModal = (): void => setIsNonAlcoholicDrinksModalOpen(true);
+	const closeNonAlcoholicDrinksModal = (): void => setIsNonAlcoholicDrinksModalOpen(false);
 
 	const openProductInfoModal = (): void => setIsProductInfoModalOpen(true);
 	const closeProductInfoModal = (): void => setIsProductInfoModalOpen(false);
@@ -37,7 +37,7 @@ const IceCreamItem: React.FC<IceCreamItemProps> = ({
 			className={styles.pizzaItem}
 			onClick={() => {
 				if (!isProductInfoModalOpen) {
-					openIceCreamModal();
+					openNonAlcoholicDrinksModal();
 				}
 			}}
 		>
@@ -67,19 +67,23 @@ const IceCreamItem: React.FC<IceCreamItemProps> = ({
 					<p className={styles.pizzaDescription}>{description}</p>
 				</div>
 				<div className={styles.pizzaActions}>
-					<button type="button" className={styles.viewButton} aria-label={t('View Ice Cream')}>
+					<button
+						type="button"
+						className={styles.viewButton}
+						aria-label={t('View Non-alcoholic drinks')}
+					>
 						<VisibilityIcon fontSize="medium" />
 					</button>
 				</div>
 			</div>
 
-			{isIceCreamModalOpen && !isProductInfoModalOpen && (
-				<IceCreamModal
+			{isNonAlcoholicDrinksModalOpen && !isProductInfoModalOpen && (
+				<NonAlcoholicDrinksModal
 					name={name}
 					description={description}
 					price={price}
 					image={image}
-					onClose={closeIceCreamModal}
+					onClose={closeNonAlcoholicDrinksModal}
 				/>
 			)}
 
@@ -88,7 +92,7 @@ const IceCreamItem: React.FC<IceCreamItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsIceCreamModalOpen(false);
+						setIsNonAlcoholicDrinksModalOpen(false);
 					}}
 					productInfo={productInfo}
 				/>
@@ -97,4 +101,4 @@ const IceCreamItem: React.FC<IceCreamItemProps> = ({
 	);
 };
 
-export default IceCreamItem;
+export default NonAlcoholicDrinksItem;

@@ -153,8 +153,8 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 					{t('Ice Cream')}
 				</div>
 				<div
-					className={`${styles.tab} ${activeMenu === 'Non-Alcoholic Drinks' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Non-Alcoholic Drinks')}
+					className={`${styles.tab} ${activeMenu === 'Non Alcoholic Drinks' ? styles.activeTab : ''}`}
+					onClick={() => handleTabClick('Non Alcoholic Drinks')}
 				>
 					{t('Non-Alcoholic Drinks')}
 				</div>
