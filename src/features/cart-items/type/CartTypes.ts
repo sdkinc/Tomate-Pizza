@@ -13,7 +13,8 @@ export type ProductType =
 	| 'burgers'
 	| 'frenchFries'
 	| 'americana'
-	| 'desserts';
+	| 'desserts'
+	| 'iceCream';
 
 export interface CartItem {
 	id: string;
