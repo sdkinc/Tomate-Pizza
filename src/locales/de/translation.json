@@ -645,10 +645,7 @@
 			"name": "Häagen Dazs Vanilla 500ml",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
-				"allergens": [
-					"Enthält Ei/-Erzeugnisse",
-					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
-				],
+				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Milch/-Erzeugnisse (laktosehaltig)"],
 				"nutritionFacts": [
 					"Zutaten: Frische Sahne, kondensierte Magermilch, Zucker, Eigelb, natürliches Vanille-Aroma."
 				]
@@ -659,10 +656,7 @@
 			"name": "Häagen Dazs Strawberry 500ml",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
-				"allergens": [
-					"Enthält Ei/-Erzeugnisse",
-					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
-				],
+				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Milch/-Erzeugnisse (laktosehaltig)"],
 				"nutritionFacts": [
 					"Zutaten: Frische SAHNE (35,1%), KONDENSMAGERMILCH, Erdbeeren (21,1%), Zucker, EIGELB."
 				]
@@ -699,7 +693,7 @@
 			}
 		}
 	},
-"nonAlcoholicDrinks": {
+	"nonAlcoholicDrinks": {
 		"cocaCola": {
 			"name": "Coca Cola 1,0l (MEHRWEG)",
 			"description": "Erfrischendes Erfrischungsgetränk mit Koffein (10,00 mg/100 ml)",
@@ -817,5 +811,82 @@
 				]
 			}
 		}
+	},
+	"alcoholicDrinks": {
+		"augustinerPale": {
+			"name": "Augustiner Pale Beer 0,5l",
+			"description": "Erfrischendes helles Bier mit mildem Hopfenaroma. Volumen: 0,5l.",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltiges Getreide und daraus hergestellte Erzeugnisse",
+					"Gerste"
+				],
+				"nutritionFacts": ["Zutaten: Wasser, Hopfen, Hefe, Gerstenmalz"]
+			}
+		},
+		"augustinerEdelstoff": {
+			"name": "Augustiner Edelstoff 0,5l",
+			"description": "Klassisches bayerisches Lagerbier mit einem weichen und frischen Geschmack. Volumen: 0,5l.",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltiges Getreide und daraus hergestellte Erzeugnisse",
+					"Gerste"
+				],
+				"nutritionFacts": ["Zutaten: Wasser, Gerstenmalz, Hopfen"]
+			}
+		},
+		"franziskaner": {
+			"name": "Franziskaner Wheat Beer 0,5l",
+			"description": "Traditionelles Weizenbier mit fruchtigem und malzigem Geschmack. Volumen: 0,5l.",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltiges Getreide und daraus hergestellte Erzeugnisse",
+					"Weizen",
+					"Gerste"
+				],
+				"nutritionFacts": ["Zutaten: Wasser, Weizenmalz, Gerstenmalz, Hopfen, Hefe"]
+			}
+		},
+		"becks": {
+			"name": "Becks 0,33l",
+			"description": "Beliebtes deutsches Bier mit einem erfrischenden und hopfigen Geschmack. Volumen: 0,33l.",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltiges Getreide und daraus hergestellte Erzeugnisse",
+					"Gerste"
+				],
+				"nutritionFacts": ["Zutaten: Brauwasser, Gerstenmalz, Hopfen"]
+			}
+		},
+		"merlot": {
+			"name": "Merlot 0,75l",
+			"description": "Kräftiger und geschmeidiger Rotwein mit Noten von Kirsche und Pflaume. Volumen: 0,75l.",
+			"productInfo": {
+				"allergens": ["Enthält Sulfite"],
+				"nutritionFacts": ["Zutaten: Trauben, Sulfite"]
+			}
+		},
+		"chardonnay": {
+			"name": "Chardonnay 0,75l",
+			"description": "Frischer und fruchtiger Weißwein mit Noten von Apfel und Zitrusfrüchten. Volumen: 0,75l.",
+			"productInfo": {
+				"allergens": ["Enthält Sulfite"],
+				"nutritionFacts": ["Zutaten: Trauben, Sulfite"]
+			}
+		},
+		"prosecco": {
+			"name": "Prosecco 0,75l",
+			"description": "Leichter und spritziger Wein mit einem zarten, blumigen Aroma. Volumen: 0,75l.",
+			"productInfo": {
+				"allergens": ["Enthält Sulfite"],
+				"nutritionFacts": ["Zutaten: Trauben, Sulfite"]
+			}
+		}
+	},
+	"footer": {
+		"workingHours": "Öffnungszeiten: Dienstag - Sonntag: 16:00 - 03:00",
+		"mondayClosed": "Montag: Geschlossen",
+		"allRightsReserved": "Alle Rechte vorbehalten",
+		"impressum": "Impressum"
 	}
 }

@@ -3,7 +3,7 @@ import { RootState } from '../../app/store';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import styles from './cartButton.module.css';
-import ListAltIcon from '@mui/icons-material/ListAlt';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const CartButton: React.FC = () => {
 	const items = useSelector((state: RootState) => state.cart.items);
@@ -33,14 +33,14 @@ const CartButton: React.FC = () => {
 	return (
 		<>
 			{isVisible ? (
-				<button onClick={toggleVisibility} className={styles.toggleButton}>
+				<button type="button" onClick={toggleVisibility} className={styles.toggleButton}>
 					{/* Иконка закрытия (крестик) */}
 					<span className={styles.closeIcon}>✕</span>
 				</button>
 			) : (
-				<button onClick={toggleVisibility} className={styles.toggleButton}>
+				<button type="button" onClick={toggleVisibility} className={styles.toggleButton}>
 					{/* Иконка открытия (стрелка влево) */}
-					<ListAltIcon />
+					<KeyboardArrowRightIcon className={styles.rotatedIcon} />
 				</button>
 			)}
 

@@ -15,6 +15,7 @@ import AmericanMenu from '../../../features/americana-diner/AmericanaMenu';
 import DessertsMenu from '../../../features/desserts/DessertsMenu';
 import IceCreamMenu from '../../../features/ice-cream/IceCreamMenu';
 import NonAlcoholicDrinksMenu from '../../../features/non-alcoholic-drinks/NonAlcoholicDrinksMenu';
+import AlcoholicDrinksMenu from '../../../features/alcoholic-drinks/AlcoholicDrinksMenu';
 
 interface RenderMenuProps {
 	selectedMenu: string;
@@ -49,8 +50,8 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 				return <IceCreamMenu />;
 			case 'Non Alcoholic Drinks':
 				return <NonAlcoholicDrinksMenu />;
-			// case 'Alcoholic Drinks':
-			// 	return <NonAlcoholicDrinksMenu />;
+			case 'Alcoholic Drinks':
+				return <AlcoholicDrinksMenu />;
 			case 'Pizza':
 				return <PizzaMenu />;
 			case 'Pasta':
