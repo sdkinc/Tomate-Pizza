@@ -27,9 +27,11 @@ body {
 	box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 .bottomInfoBox {
-	padding: 20px 0;
+	padding: 0 0 20px 0;
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -49,7 +51,15 @@ body {
 	background-color: #ffffff;
 	color: #313131;
 }
-
+.workingHoursBox {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff;
+}
+.workingHours {
+	padding-left: 10px;
+}
 @media (max-width: 768px) {
 	.footerBox {
 		padding: 0;

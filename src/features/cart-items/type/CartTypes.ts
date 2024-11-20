@@ -15,7 +15,8 @@ export type ProductType =
 	| 'americana'
 	| 'desserts'
 	| 'iceCream'
-	| 'nonAlcoholicDrinks';
+	| 'nonAlcoholicDrinks'
+	| 'alcoholicDrinks';
 
 export interface CartItem {
 	id: string;

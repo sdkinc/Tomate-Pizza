@@ -21,6 +21,7 @@ import AmericanaCartItem from './AmericanaCartItem';
 import DessertsCartItem from './DessertsCartItem';
 import IceCreamCartItem from './IceCreamCartItem';
 import NonAlcoholicDrinksCartItem from './NonAlcoholicDrinksCartItem';
+import AlcoholicDrinksCartItem from './AlcoholicDrinksCartItem';
 
 const CartPage: React.FC = () => {
 	const items = useSelector((state: RootState) => state.cart.items);
@@ -90,6 +91,8 @@ const CartPage: React.FC = () => {
 				return <IceCreamCartItem name={item.name} quantity={item.quantity} />;
 			case 'nonAlcoholicDrinks':
 				return <NonAlcoholicDrinksCartItem name={item.name} quantity={item.quantity} />;
+			case 'alcoholicDrinks':
+				return <AlcoholicDrinksCartItem name={item.name} quantity={item.quantity} />;
 			case 'frenchFries':
 				return (
 					<FrenchFriesCartItem

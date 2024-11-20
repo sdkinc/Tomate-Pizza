@@ -708,7 +708,7 @@
 			}
 		}
 	},
-"nonAlcoholicDrinks": {
+	"nonAlcoholicDrinks": {
 		"cocaCola": {
 			"name": "Coca Cola 1,0l (MEHRWEG)",
 			"description": "Refreshing soft drink with caffeine (10,00 mg/100 ml)",
@@ -752,8 +752,7 @@
 					"contains stabilisers"
 				],
 				"nutritionFacts": [
-					
-"Ingredients: Water, sugar, orange juice from orange juice concentrate, carbon dioxide, acidifiers (citric acid, malic acid), citrus extract, acidity regulator sodium gluconate, flavoring, antioxidant ascorbic acid, stabilizers (E 440, E 414, E 445, and E 412), coloring carotene."
+					"Ingredients: Water, sugar, orange juice from orange juice concentrate, carbon dioxide, acidifiers (citric acid, malic acid), citrus extract, acidity regulator sodium gluconate, flavoring, antioxidant ascorbic acid, stabilizers (E 440, E 414, E 445, and E 412), coloring carotene."
 				]
 			}
 		},
@@ -827,5 +826,69 @@
 				]
 			}
 		}
+	},
+	"alcoholicDrinks": {
+		"augustinerPale": {
+			"name": "Augustiner Pale Beer 0,5l",
+			"description": "Refreshing pale beer with a mild hop flavor. Volume: 0,5l.",
+			"productInfo": {
+				"allergens": ["Contains cereals and products containing gluten", "Barley"],
+				"nutritionFacts": ["Ingredients: Water, hops, yeast, barley malt"]
+			}
+		},
+		"augustinerEdelstoff": {
+			"name": "Augustiner Edelstoff 0,5l",
+			"description": "Classic Bavarian lager with a smooth and crisp taste. Volume: 0,5l.",
+			"productInfo": {
+				"allergens": ["Contains cereals and products containing gluten", "Barley"],
+				"nutritionFacts": ["Ingredients: Water, barley malt, hops"]
+			}
+		},
+		"franziskaner": {
+			"name": "Franziskaner Wheat Beer 0,5l",
+			"description": "Traditional wheat beer with a fruity and malty flavor. Volume: 0,5l.",
+			"productInfo": {
+				"allergens": ["Contains cereals and products containing gluten", "Wheat", "Barley"],
+				"nutritionFacts": ["Ingredients: Water, wheat malt, barley malt, hops, yeast"]
+			}
+		},
+		"becks": {
+			"name": "Becks 0,33l",
+			"description": "Popular German beer with a refreshing and hoppy taste. Volume: 0,33l.",
+			"productInfo": {
+				"allergens": ["Contains cereals and products containing gluten", "Barley"],
+				"nutritionFacts": ["Ingredients: Brewing water, barley malt, hops"]
+			}
+		},
+		"merlot": {
+			"name": "Merlot 0,75l",
+			"description": "Rich and smooth red wine with notes of cherry and plum. Volume: 0,75l.",
+			"productInfo": {
+				"allergens": ["Contains sulfites"],
+				"nutritionFacts": ["Ingredients: Grapes, sulfites"]
+			}
+		},
+		"chardonnay": {
+			"name": "Chardonnay 0,75l",
+			"description": "Crisp and fruity white wine with hints of apple and citrus. Volume: 0,75l.",
+			"productInfo": {
+				"allergens": ["Contains sulfites"],
+				"nutritionFacts": ["Ingredients: Grapes, sulfites"]
+			}
+		},
+		"prosecco": {
+			"name": "Prosecco 0,75l",
+			"description": "Light and sparkling wine with a delicate floral aroma. Volume: 0,75l.",
+			"productInfo": {
+				"allergens": ["Contains sulfites"],
+				"nutritionFacts": ["Ingredients: Grapes, sulfites"]
+			}
+		}
+	},
+	"footer": {
+		"workingHours": "Working Hours: Tuesday - Sunday: 16:00 - 03:00",
+		"mondayClosed": "Monday: Closed",
+		"allRightsReserved": "All Rights Reserved",
+		"impressum": "Impressum"
 	}
 }

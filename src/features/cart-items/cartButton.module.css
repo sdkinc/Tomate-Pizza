@@ -17,7 +17,9 @@
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	transition: transform 0.3s ease-in-out;
 }
-
+.rotatedIcon {
+	transform: rotate(180deg);
+}
 .toggleButton:hover {
 	transform: scale(1.1);
 }
@@ -59,27 +61,24 @@
 
 @media (max-width: 768px) {
 	.cartIcon {
-		width: 120px;
+		width: 100px;
 		height: auto;
+		
 	}
 	.itemCount {
 		position: absolute;
-		top: 60px;
-		right: 90px;
+		top: 45px;
+		right: 70px;
 		font-size: 10px;
 	}
 	.toggleButton {
 		bottom: 30px;
-		right: 10px;
-		width: 30px;
-		height: 30px;
-		font-size: 20px;
+		right: 20px;
+		width: 20px;
+		height: 20px;
+		font-size: 16px;
 	}
 	.closeIcon {
-		font-size: 14px;
-	}
-	
-	.openIcon {
 		font-size: 14px;
 	}
 }

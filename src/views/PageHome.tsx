@@ -36,7 +36,6 @@ function PageHome(): JSX.Element {
 			<RenderMenu selectedMenu="All" excludeCategory={selectedMenu} />
 			{cartItems.length > 0 && <CartButton />}
 			<Cookies />
-
 			<ScrollToTopButton />
 		</>
 	);
