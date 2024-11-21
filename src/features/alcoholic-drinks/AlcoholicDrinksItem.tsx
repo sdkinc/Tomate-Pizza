@@ -58,6 +58,7 @@ const AlcoholicDrinksItem: React.FC<AlcoholicDrinksItemProps> = ({
 							>
 								{t('Product info')}
 							</button>
+							<div className={styles.age}>18+</div>
 						</div>
 						<div className={styles.priceBox}>
 							<p className={styles.pizzaPrice}>{price} €</p>
