@@ -1,5 +1,5 @@
 html, body {
-    height: 100%; /* Устанавливаем 100% высоты для корневых элементов */
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,7 +13,7 @@ html, body {
 }
 
 .mainContent {
-    flex: 1; /* Контент растягивается, чтобы заполнить оставшееся пространство */
+    flex: 1;
 }
 
 footer {

@@ -121,7 +121,7 @@
 	},
 	"Show Less": "show Less",
 	"Show More": "show More",
-	"disclaimer": "This allergen information was verified by the restaurant",
+	"disclaimer": "Allergen information provided by our pizzeria.",
 	"additionalInfo": "Please note that this information may change.",
 
 	"pizzas": {
@@ -138,86 +138,332 @@
 		},
 		"PizzaMargarita": {
 			"name": "Pizza Margarita",
-			"description": "With spicy tomato sauce and cheese",
+			"description": "with spicy tomato sauce and cheese",
 			"productInfo": {
-				"substances": ["With preservatives"],
 				"allergens": [
 					"Contains gluten-containing grains/products",
 					"Wheat",
-					"Contains milk products (contains lactose)"
+					"Contains milk/products (lactose)"
 				]
 			}
 		},
 		"PizzaFunghi": {
 			"name": "Pizza Funghi",
-			"description": "With spicy tomato sauce, cheese, and mushrooms",
+			"description": "with spicy tomato sauce, cheese, and mushrooms",
 			"productInfo": {
-				"substances": ["Without preservatives"],
-				"allergens": ["Gluten", "Wheat", "Milk"]
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)"
+				]
 			}
 		},
 		"PizzaSalami": {
 			"name": "Pizza Salami",
-			"description": "With spicy tomato sauce, cheese, and salami",
+			"description": "with spicy tomato sauce, cheese, and salami",
 			"productInfo": {
-				"substances": ["With preservatives"],
-				"allergens": ["Gluten", "Milk", "Wheat"]
+				"substances": ["With preservatives", "With nitrite curing salt", "With antioxidant"],
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)"
+				]
 			}
 		},
 		"PizzaProsciutto": {
 			"name": "Pizza Prosciutto",
-			"description": "With spicy tomato sauce, cheese, and ham",
+			"description": "with spicy tomato sauce, cheese, and cooked ham",
 			"productInfo": {
-				"substances": ["With coloring"],
-				"allergens": ["Milk", "Wheat", "Soy"]
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)",
+					"Contains sulfur dioxide/sulfites"
+				]
+			}
+		},
+		"PizzaSpinaci": {
+			"name": "Pizza Spinaci",
+			"description": "with spicy tomato sauce, cheese, onions, and spinach",
+			"productInfo": {
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaTonno": {
+			"name": "Pizza Tonno",
+			"description": "with spicy tomato sauce, cheese, tuna, and onions",
+			"productInfo": {
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains fish/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaTomate": {
+			"name": "Pizza Tomato",
+			"description": "with spicy tomato sauce, cheese, mild mozzarella, and tomatoes",
+			"productInfo": {
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains fish/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaBroccoli": {
+			"name": "Pizza Broccoli",
+			"description": "with spicy tomato sauce, cheese, cooked ham, and broccoli",
+			"productInfo": {
+				"substances": ["With preservatives", "With flavor enhancer"],
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaBolognese": {
+			"name": "Pizza Bolognese",
+			"description": "with fine Bolognese sauce and cheese",
+			"productInfo": {
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains egg/products",
+					"Contains milk/products (lactose)",
+					"Contains celery/products",
+					"Contains sulfur dioxide/sulfites"
+				]
+			}
+		},
+		"PizzaRoma": {
+			"name": "Pizza Roma",
+			"description": "with spicy tomato sauce, cheese, mild mozzarella, tomatoes, Parma ham, and arugula",
+			"productInfo": {
+				"substances": ["With preservatives", "With flavor enhancer"],
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)"
+				]
 			}
 		},
 		"PizzaHawaii": {
 			"name": "Pizza Hawaii",
-			"description": "With spicy tomato sauce, cheese, ham, and pineapple",
+			"description": "with spicy tomato sauce, cheese, cooked ham, and pineapple",
 			"productInfo": {
-				"substances": ["With preservatives"],
-				"allergens": ["Gluten", "Milk"]
-			}
-		},
-		"PizzaDiavolo": {
-			"name": "Pizza Diavolo",
-			"description": "With spicy tomato sauce, cheese, salami, peppers, onions, and chili",
-			"productInfo": {
-				"substances": ["Without artificial additives"],
-				"allergens": ["Gluten", "Milk", "Wheat"]
-			}
-		},
-		"PizzaVegetaria": {
-			"name": "Pizza Vegetaria",
-			"description": "With spicy tomato sauce, cheese, broccoli, fresh tomatoes, onions, peppers, and corn",
-			"productInfo": {
-				"substances": ["Vegan"],
-				"allergens": ["Gluten", "Milk"]
+				"substances": ["With preservatives", "With flavor enhancer"],
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains milk/products (lactose)"
+				]
 			}
 		},
 		"PizzaFruttiDiMare": {
 			"name": "Pizza Frutti di Mare",
-			"description": "With spicy tomato sauce, cheese, garlic, and seafood",
+			"description": "with spicy tomato sauce, cheese, garlic, and seafood",
 			"productInfo": {
-				"substances": ["With coloring"],
-				"allergens": ["Gluten", "Milk", "Shellfish"]
+				"allergens": [
+					"Contains gluten-containing grains/products",
+					"Wheat",
+					"Contains crustaceans/products",
+					"Contains milk/products (lactose)",
+					"Contains fish/products",
+					"Contains mollusks/products"
+				]
 			}
 		},
 		"PizzaQuattroStagioni": {
 			"name": "Pizza Quattro Stagioni",
-			"description": "With spicy tomato sauce, cheese, ham, salami, mushrooms, and artichokes",
+			"description": "with spicy tomato sauce, cheese, spinach, salami, ham, mushrooms, and onions",
 			"productInfo": {
-				"substances": ["With preservatives"],
-				"allergens": ["Gluten", "Milk"]
+				"substances": [
+					"With preservatives",
+					"With nitrite curing salt",
+					"With antioxidant",
+					"With flavor enhancer"
+				],
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
 			}
 		},
 		"PizzaSchinkenSalami": {
 			"name": "Pizza Ham-Salami",
-			"description": "With ham, salami, and chili",
+			"description": "with cooked ham, salami, and peppers",
 			"productInfo": {
-				"substances": ["Without additives"],
-				"allergens": ["Gluten", "Milk"]
+				"substances": [
+					"With coloring",
+					"With preservatives",
+					"With nitrite curing salt",
+					"With antioxidant",
+					"With flavor enhancer"
+				],
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaDiavolo": {
+			"name": "Pizza Diavolo",
+			"description": "with spicy tomato sauce, cheese, salami, bell peppers, onions, and jalapenos",
+			"productInfo": {
+				"substances": ["With preservatives", "With nitrite curing salt", "With antioxidant"],
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaPrimaVera": {
+			"name": "Pizza Prima Vera",
+			"description": "with spicy tomato sauce, cheese, mushrooms, tuna, and spinach",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains fish/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaOrient": {
+			"name": "Pizza Orient",
+			"description": "with sucuk (garlic sausage), onions, and peppers",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaQuattroFormaggi": {
+			"name": "Pizza Quattro Formaggi",
+			"description": "with four different types of cheese",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaSchafskäse": {
+			"name": "Pizza Feta Cheese",
+			"description": "with fresh mushrooms, fresh tomatoes, broccoli, and feta cheese",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaShrimps": {
+			"name": "Pizza Shrimps",
+			"description": "with garlic and shrimps",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)",
+					"Contains crustaceans/products"
+				]
+			}
+		},
+		"PizzaDehli": {
+			"name": "Pizza Dehli",
+			"description": "with spicy tomato sauce, cheese, chicken breast, pineapple, and curry sauce",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaSardellen": {
+			"name": "Pizza Anchovies",
+			"description": "with anchovies, salami, peppers, olives, and garlic",
+			"productInfo": {
+				"substances": ["With nitrite curing salt and nitrate", "With nitrate"],
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)",
+					"Contains fish/products"
+				]
+			}
+		},
+		"PizzaItalia": {
+			"name": "Pizza Italia",
+			"description": "with spicy tomato sauce, cheese, salami, bell peppers, onions, peppers, mozzarella, and gorgonzola",
+			"productInfo": {
+				"substances": ["With nitrite curing salt", "With antioxidant"],
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaChicken": {
+			"name": "Pizza Chicken",
+			"description": "with spicy tomato sauce, cheese, chicken breast, tomatoes, bell peppers, onions, and peppers",
+			"productInfo": {
+				"substances": ["With nitrite curing salt and nitrate", "With nitrate"],
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaBBQ": {
+			"name": "Pizza BBQ",
+			"description": "with barbecue sauce, minced meat, onions, and mozzarella",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaGorgonzola": {
+			"name": "Pizza Gorgonzola",
+			"description": "with gorgonzola, fresh mushrooms, and garlic",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
+			}
+		},
+		"PizzaVegetaria": {
+			"name": "Pizza Vegetaria",
+			"description": "with spicy tomato sauce, cheese, broccoli, tomatoes, onions, bell peppers, and corn",
+			"productInfo": {
+				"allergens": [
+					"Wheat",
+					"Contains gluten-containing grains/products",
+					"Contains milk/products (lactose)"
+				]
 			}
 		}
 	},

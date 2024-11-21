@@ -121,7 +121,7 @@
 	},
 	"Show Less": "Weniger anzeigen",
 	"Show More": "Mehr anzeigen",
-	"disclaimer": "Diese Angaben zu Allergenen wurden vom Restaurant bestätigt.",
+	"disclaimer": "Allergeninformationen bereitgestellt von unserer Pizzeria.",
 	"additionalInfo": "Bitte beachte, dass diese Angaben sich ändern können.",
 	"pizzas": {
 		"Wunschpizza": {
@@ -137,9 +137,8 @@
 		},
 		"PizzaMargarita": {
 			"name": "Pizza Margarita",
-			"description": "Mit würziger Tomatensauce und Käse",
+			"description": "mit würziger Tomatensauce und Käse",
 			"productInfo": {
-				"substances": ["Mit Konservierungsstoffen"],
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
 					"Weizen",
@@ -149,74 +148,329 @@
 		},
 		"PizzaFunghi": {
 			"name": "Pizza Funghi",
-			"description": "Mit würziger Tomatensauce, Käse und Champignons",
+			"description": "mit würziger Tomatensauce, Käse und Champignons",
 			"productInfo": {
-				"substances": ["Ohne Konservierungsstoffe"],
-				"allergens": ["Gluten", "Weizen", "Milch"]
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
 			}
 		},
 		"PizzaSalami": {
 			"name": "Pizza Salami",
 			"description": "Mit würziger Tomatensauce, Käse und Salami",
 			"productInfo": {
-				"substances": ["Mit Konservierungsstoffen"],
-				"allergens": ["Gluten", "Milch", "Weizen"]
+				"substances": [
+					"Mit Konservierungsstoffen",
+					"Mit Nitritpökelsalz",
+					"Mit Antioxidationsmittel"
+				],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
 			}
 		},
 		"PizzaProsciutto": {
 			"name": "Pizza Prosciutto",
 			"description": "Mit würziger Tomatensauce, Käse und Vorderschinken",
 			"productInfo": {
-				"substances": ["Mit Farbstoff"],
-				"allergens": ["Milch", "Weizen", "Soja"]
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Schwefeldioxid/Sulfite"
+				]
+			}
+		},
+		"PizzaSpinaci": {
+			"name": "Pizza Spinaci",
+			"description": "mit würziger Tomatensauce, Käse, Zwiebeln und Spinat",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaTonno": {
+			"name": "Pizza Tonno",
+			"description": "mit würziger Tomatensauce, Käse, Thunfisch und Zwiebeln",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Fisch/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaTomate": {
+			"name": "Pizza Tomate",
+			"description": "mit würziger Tomatensauce, Käse, mildem Mozzarella und Tomaten",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Fisch/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaBroccoli": {
+			"name": "Pizza Broccoli",
+			"description": "mit würziger Tomatensauce, Käse, Vorderschinken und Brokkoli",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen", "Mit Geschmacksverstärker"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaBolognese": {
+			"name": "Pizza Bolognese",
+			"description": "mit feiner Bolognesesauce und Käse",
+			"productInfo": {
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Sellerie/-Erzeugnisse",
+					"Enthält Schwefeldioxid/Sulfite"
+				]
+			}
+		},
+		"PizzaRoma": {
+			"name": "Pizza Roma",
+			"description": "mit würziger Tomatensauce, Käse, mildem Mozzarella, Tomaten, Parmaschinken und Rucola",
+			"productInfo": {
+				"substances": ["Mit Konservierungsstoffen", "Mit Geschmacksverstärker"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
 			}
 		},
 		"PizzaHawaii": {
 			"name": "Pizza Hawaii",
-			"description": "Mit würziger Tomatensauce, Käse, Vorderschinken und Ananas",
+			"description": "mit würziger Tomatensauce, Käse, Vorderschinken und Ananas",
 			"productInfo": {
-				"substances": ["Mit Konservierungsstoffen"],
-				"allergens": ["Gluten", "Milch"]
-			}
-		},
-		"PizzaDiavolo": {
-			"name": "Pizza Diavolo",
-			"description": "Mit würziger Tomatensauce, Käse, Salami, Paprika, Zwiebeln und Peperoni",
-			"productInfo": {
-				"substances": ["Ohne künstliche Zusätze"],
-				"allergens": ["Gluten", "Milch", "Weizen"]
-			}
-		},
-		"PizzaVegetaria": {
-			"name": "Pizza Vegetaria",
-			"description": "Mit würziger Tomatensauce, Käse, Broccoli, frischen Tomaten, Zwiebeln, Paprika und Mais",
-			"productInfo": {
-				"substances": ["Vegan"],
-				"allergens": ["Gluten", "Milch"]
+				"substances": ["Mit Konservierungsstoffen", "Mit Geschmacksverstärker"],
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
 			}
 		},
 		"PizzaFruttiDiMare": {
 			"name": "Pizza Frutti di Mare",
-			"description": "Mit würziger Tomatensauce, Käse, Knoblauch und Meeresfrüchten",
+			"description": "mit würziger Tomatensauce, Käse, Knoblauch und Meeresfrüchte",
 			"productInfo": {
-				"substances": ["Mit Farbstoff"],
-				"allergens": ["Gluten", "Milch", "Schalentiere"]
+				"allergens": [
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Weizen",
+					"Enthält Krebstiere/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Fisch/-Erzeugnisse",
+					"Enthält Weichtiere/-Erzeugnisse"
+				]
 			}
 		},
 		"PizzaQuattroStagioni": {
 			"name": "Pizza Quattro Stagioni",
-			"description": "Mit würziger Tomatensauce, Käse, Vorderschinken, Salami, Champignons und Artischocken",
+			"description": "mit würziger Tomatensauce, Käse, Spinat, Salami, Schinken, Champignons und Zwiebeln",
 			"productInfo": {
-				"substances": ["Mit Konservierungsstoffen"],
-				"allergens": ["Gluten", "Milch"]
+				"substances": [
+					"Mit Konservierungsstoffen",
+					"Mit Nitritpökelsalz",
+					"Mit Antioxidationsmittel",
+					"Mit Geschmacksverstärker"
+				],
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
 			}
 		},
 		"PizzaSchinkenSalami": {
 			"name": "Pizza Schinken-Salami",
-			"description": "Mit Vorderschinken, Salami und Peperoni",
+			"description": "mit Vorderschinken, Salami und Peperoni",
 			"productInfo": {
-				"substances": ["Ohne Zusatzstoffe"],
-				"allergens": ["Gluten", "Milch"]
+				"substances": [
+					"Mit Farbstoff",
+					"Mit Konservierungsstoffen",
+					"Mit Nitritpökelsalz",
+					"Mit Antioxidationsmittel",
+					"Mit Geschmacksverstärker"
+				],
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaDiavolo": {
+			"name": "Pizza Diavolo",
+			"description": "mit würziger Tomatensauce, Käse, Salami, Paprika, Zwiebeln und Jalapenos",
+			"productInfo": {
+				"substances": [
+					"Mit Konservierungsstoffen",
+					"Mit Nitritpökelsalz",
+					"Mit Antioxidationsmittel"
+				],
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaPrimaVera": {
+			"name": "Pizza Prima Vera",
+			"description": "mit würziger Tomatensauce, Käse, Champignons, Thunfisch und Spinat",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Fisch/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaOrient": {
+			"name": "Pizza Orient",
+			"description": "mit Sucuk (Knoblauchwurst), Zwiebeln und Peperoni",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaQuattroFormaggi": {
+			"name": "Pizza Quattro Formaggi",
+			"description": "mit vier verschiedenen Käsesorten",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaSchafskäse": {
+			"name": "Pizza Schafskäse",
+			"description": "mit frischen Champignons, frischen Tomaten, Brokkoli und Schafskäse",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaShrimps": {
+			"name": "Pizza Shrimps",
+			"description": "mit Knoblauch und Shrimps",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Krebstiere/-Erzeugnisse"
+				]
+			}
+		},
+		"PizzaDehli": {
+			"name": "Pizza Dehli",
+			"description": "mit würziger Tomatensauce, Käse, Hähnchenbrust, Ananas und Currysauce",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaSardellen": {
+			"name": "Pizza Sardellen",
+			"description": "mit Sardellen, Salami, Peperoni, Oliven und Knoblauch",
+			"productInfo": {
+				"substances": ["Mit Nitritpökelsalz und Nitrat", "Mit Nitrat"],
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Enthält Fisch/-Erzeugnisse"
+				]
+			}
+		},
+		"PizzaItalia": {
+			"name": "Pizza Italia",
+			"description": "mit würziger Tomatensauce, Käse, Salami, Paprika, Zwiebeln, Peperoni, Mozzarella und Gorgonzola",
+			"productInfo": {
+				"substances": ["Mit Nitritpökelsalz", "Mit Antioxidationsmittel"],
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaChicken": {
+			"name": "Pizza Chicken",
+			"description": "mit würziger Tomatensauce, Käse, Hähnchenbrust, Tomaten, Paprika, Zwiebeln und Peperoni",
+			"productInfo": {
+				"substances": ["Mit Nitritpökelsalz und Nitrat", "Mit Nitrat"],
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaBBQ": {
+			"name": "Pizza BBQ",
+			"description": "mit Barbecue-Sauce, Hackfleisch, Zwiebeln und Mozzarella",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaGorgonzola": {
+			"name": "Pizza Gorgonzola",
+			"description": "mit Gorgonzola, frischen Champignons und Knoblauch",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
+			}
+		},
+		"PizzaVegetaria": {
+			"name": "Pizza Vegetaria",
+			"description": "mit würziger Tomatensauce, Käse, Brokkoli, Tomaten, Zwiebeln, Paprika und Mais",
+			"productInfo": {
+				"allergens": [
+					"Weizen",
+					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)"
+				]
 			}
 		}
 	},
