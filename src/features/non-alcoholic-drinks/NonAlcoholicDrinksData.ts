@@ -5,7 +5,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.cocaCola.name',
 		description: 'nonAlcoholicDrinks.cocaCola.description',
 		image: 'cocaCola.webp',
-		price: 3.5,
+		price: 3.0,
 		productInfo: {
 			allergens: [
 				'nonAlcoholicDrinks.cocaCola.productInfo.allergens.0',
@@ -21,7 +21,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.cocaColaLight.name',
 		description: 'nonAlcoholicDrinks.cocaColaLight.description',
 		image: 'cocaColaLight.webp',
-		price: 3.5,
+		price: 3.0,
 		productInfo: {
 			allergens: [
 				'nonAlcoholicDrinks.cocaColaLight.productInfo.allergens.0',
@@ -40,7 +40,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.fanta.name',
 		description: 'nonAlcoholicDrinks.fanta.description',
 		image: 'fanta.webp',
-		price: 3.5,
+		price: 3.0,
 		productInfo: {
 			allergens: [
 				'nonAlcoholicDrinks.fanta.productInfo.allergens.0',
@@ -56,7 +56,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.mezzoMix.name',
 		description: 'nonAlcoholicDrinks.mezzoMix.description',
 		image: 'mezzoMix.webp',
-		price: 3.5,
+		price: 3.0,
 		productInfo: {
 			allergens: [
 				'nonAlcoholicDrinks.mezzoMix.productInfo.allergens.0',
@@ -73,7 +73,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.sprite.name',
 		description: 'nonAlcoholicDrinks.sprite.description',
 		image: 'sprite.webp',
-		price: 3.5,
+		price: 3.0,
 		productInfo: {
 			allergens: ['nonAlcoholicDrinks.sprite.productInfo.allergens.0'],
 			nutritionFacts: ['nonAlcoholicDrinks.sprite.productInfo.nutritionFacts.0'],
@@ -83,7 +83,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.apfelschorle.name',
 		description: 'nonAlcoholicDrinks.apfelschorle.description',
 		image: 'apfelschorle.webp',
-		price: 3.5,
+		price: 3.0,
 		productInfo: {
 			nutritionFacts: ['nonAlcoholicDrinks.apfelschorle.productInfo.nutritionFacts.0'],
 		},
@@ -92,7 +92,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.mineralwasser.name',
 		description: 'nonAlcoholicDrinks.mineralwasser.description',
 		image: 'mineralwasser.webp',
-		price: 3.0,
+		price: 2.5,
 		productInfo: {
 			nutritionFacts: ['nonAlcoholicDrinks.mineralwasser.productInfo.nutritionFacts.0'],
 		},
@@ -101,7 +101,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.apfelsaft.name',
 		description: 'nonAlcoholicDrinks.apfelsaft.description',
 		image: 'apfelsaft.webp',
-		price: 4.0,
+		price: 3.0,
 		productInfo: {
 			nutritionFacts: ['nonAlcoholicDrinks.apfelsaft.productInfo.nutritionFacts.0'],
 		},
@@ -110,7 +110,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.orangensaft.name',
 		description: 'nonAlcoholicDrinks.orangensaft.description',
 		image: 'orangensaft.webp',
-		price: 4.0,
+		price: 3.0,
 		productInfo: {
 			nutritionFacts: ['nonAlcoholicDrinks.orangensaft.productInfo.nutritionFacts.0'],
 		},
@@ -119,7 +119,7 @@ const nonAlcoholicDrinks: NonAlcoholicDrinks[] = [
 		name: 'nonAlcoholicDrinks.redBull.name',
 		description: 'nonAlcoholicDrinks.redBull.description',
 		image: 'redBull.webp',
-		price: 3.5,
+		price: 2.8,
 		productInfo: {
 			allergens: [
 				'nonAlcoholicDrinks.redBull.productInfo.allergens.0',

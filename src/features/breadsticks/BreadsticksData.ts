@@ -5,7 +5,7 @@ const breadsticks: Breadsticks[] = [
 		name: 'breadsticks.breadsticks.name',
 		description: 'breadsticks.breadsticks.description',
 		image: 'pizzaRolls.webp',
-		price: 8.0,
+		price: 7.0,
 		productInfo: {
 			substances: ['breadsticks.breadsticks.productInfo.substances.0'],
 			allergens: [
