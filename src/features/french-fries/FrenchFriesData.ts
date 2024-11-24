@@ -7,7 +7,7 @@ const frenchFries: FrenchFries[] = [
 		image: 'frenchFries_image.webp',
 		sizes: [
 			{ label: 'Small', size: 'Small', price: 4.0 },
-			{ label: 'Large', size: 'Large', price: 4.5 },
+			{ label: 'Large', size: 'Large', price: 5.0 },
 		],
 		productInfo: {
 			allergens: [

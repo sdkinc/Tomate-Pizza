@@ -5,7 +5,7 @@ const IntroBanner: React.FC = () => {
 	return (
 		<div className={styles.pageBox}>
 			<div className={styles.bannerContainer}>
-				<img src="/schapka_menu.svg" alt="Banner" className={styles.bannerImage} />
+				<img src="/shapka2.png" alt="Banner" className={styles.bannerImage} />
 			</div>
 		</div>
 	);

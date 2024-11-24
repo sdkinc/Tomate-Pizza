@@ -5,7 +5,7 @@ const pastas: Pasta[] = [
 		name: 'pastas.Napoli.name',
 		description: 'pastas.Napoli.description',
 		image: 'napoli.webp',
-		price: 7.5,
+		price: 8.5,
 		productInfo: {
 			allergens: ['pastas.Napoli.productInfo.allergens.0', 'pastas.Napoli.productInfo.allergens.1'],
 			substances: [
@@ -18,7 +18,7 @@ const pastas: Pasta[] = [
 		name: 'pastas.Bolognese.name',
 		description: 'pastas.Bolognese.description',
 		image: 'bolognese.webp',
-		price: 8.5,
+		price: 10.5,
 		productInfo: {
 			allergens: [
 				'pastas.Bolognese.productInfo.allergens.0',
@@ -34,7 +34,7 @@ const pastas: Pasta[] = [
 		name: 'pastas.Carbonara.name',
 		description: 'pastas.Carbonara.description',
 		image: 'carbonara.webp',
-		price: 8.5,
+		price: 10.5,
 		productInfo: {
 			allergens: [
 				'pastas.Carbonara.productInfo.allergens.0',
@@ -51,7 +51,7 @@ const pastas: Pasta[] = [
 		name: 'pastas.FruttiDiMare.name',
 		description: 'pastas.FruttiDiMare.description',
 		image: 'fruttdiMare.webp',
-		price: 8.5,
+		price: 10.5,
 		productInfo: {
 			allergens: [
 				'pastas.FruttiDiMare.productInfo.allergens.0',

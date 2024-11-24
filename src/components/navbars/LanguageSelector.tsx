@@ -30,16 +30,28 @@ function LanguageSelector(): JSX.Element {
 				<span>{i18n.language.toUpperCase()}</span>
 			</button>
 			<div className={dropdownList ? styles.dropdownListActive : styles.dropdownListNoneActive}>
-				<button type="button" onClick={() => handleLanguageChange('en')}>
+				<button
+					className={styles.languageBox}
+					type="button"
+					onClick={() => handleLanguageChange('en')}
+				>
 					EN
 				</button>
-				<button type="button" onClick={() => handleLanguageChange('de')}>
+				<button
+					className={styles.languageBox}
+					type="button"
+					onClick={() => handleLanguageChange('de')}
+				>
 					DE
 				</button>
-				<button type="button" onClick={() => handleLanguageChange('tr')}>
+				<button
+					className={styles.languageBox}
+					type="button"
+					onClick={() => handleLanguageChange('tr')}
+				>
 					TR
 				</button>
-				<button type="button" onClick={() => handleLanguageChange('ru')}>
+				{/* <button type="button" onClick={() => handleLanguageChange('ru')}>
 					RU
 				</button>
 				<button type="button" onClick={() => handleLanguageChange('es')}>
@@ -47,7 +59,7 @@ function LanguageSelector(): JSX.Element {
 				</button>
 				<button type="button" onClick={() => handleLanguageChange('uk')}>
 					UK
-				</button>
+				</button> */}
 			</div>
 		</div>
 	);

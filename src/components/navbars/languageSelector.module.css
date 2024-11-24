@@ -6,6 +6,7 @@
 .imageBox {
 	color: #ffffff;
 }
+
 .dropdownHeader {
 	display: flex;
 	justify-content: center;
@@ -102,6 +103,7 @@
 		cursor: pointer;
 		color: #333;
 		text-align: center;
+
 	}
 
 	.dropdownListActive button:hover {
