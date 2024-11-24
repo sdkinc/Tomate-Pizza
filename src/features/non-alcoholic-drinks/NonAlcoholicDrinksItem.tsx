@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from '../pizza-items/pizzaItem.module.css';
-
 import { useTranslation } from 'react-i18next';
 import NonAlcoholicDrinksModal from './NonAlcoholicDrinksModal';
 import { ProductInfo } from './type/NonAlcoholicDrinksTypes';

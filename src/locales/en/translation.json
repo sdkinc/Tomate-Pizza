@@ -57,21 +57,21 @@
 		"backToHome": "Back to Home"
 	},
 	"categories": {
-		"Appetizers": "Appetizers",
-		"Salads": "Salads",
-		"Breadsticks": "Breadsticks",
-		"Pizza": "Pizza",
-		"Custom Pizza": "Custom Pizza",
-		"Calzone": "Calzone",
-		"Pasta": "Pasta",
-		"Meat Dishes": "Meat Dishes",
-		"Burgers & Baguettes": "Burgers & Baguettes",
-		"American Diner": "American Diner",
-		"French Fries": "French Fries",
-		"Desserts": "Desserts",
-		"Ice Cream": "Ice Cream",
-		"Non Alcoholic Drinks": "Non-Alcoholic Drinks",
-		"Alcoholic Drinks": "Alcoholic Drinks"
+		"Appetizers": "The perfect start to your meal - enjoy our delicious appetizers",
+		"Salads": "Fresh and crisp - a healthy choice for every taste",
+		"Breadsticks": "Crispy rolls, freshly baked with delicious ingredients",
+		"Pizza": "Our pizzas - crispy, hearty, and irresistibly delicious",
+		"Custom Pizza": "Create your own pizza with your favorite ingredients",
+		"Calzone": "Stuffed pizza - a delight for lovers of hearty flavors",
+		"Pasta": "Italian classics - freshly prepared pasta with delicious sauces",
+		"Meat Dishes": "Juicy meat specialties, perfectly prepared for connoisseurs",
+		"Burgers & Baguettes": "Filling and tasty - our burgers and baguettes",
+		"American Diner": "A taste experience straight from the USA - our Americana dishes",
+		"French Fries": "Crispy French fries - a popular side dish for any meal",
+		"Desserts": "Sweet temptations - the perfect ending to your meal",
+		"Ice Cream": "Refreshing and creamy - our delicious ice cream specialties",
+		"Non Alcoholic Drinks": "Refreshing thirst-quenchers for every taste",
+		"Alcoholic Drinks": "Enjoy our selection of beers, wines, and more"
 	},
 	"pizzaSizes": {
 		"Klein": "Small",
@@ -123,7 +123,6 @@
 	"Show More": "show More",
 	"disclaimer": "Allergen information provided by our pizzeria.",
 	"additionalInfo": "Please note that this information may change.",
-
 	"pizzas": {
 		"Wunschpizza": {
 			"name": "Custom pizza",
@@ -653,22 +652,22 @@
 	},
 	"frenchFriesSizes": {
 		"Classic Fries": "Klassische Pommes",
-		"Small": "Klein",
-		"Large": "Groß"
+		"Small": "small",
+		"Large": "large"
 	},
 	"chooseSauces": "your sauce",
 	"frenchFriesSauces": {
 		"Mayonnaise": "with mayonnaise",
 		"Ketchup": "with ketchup",
-		"No Sauce": "No Sauce"
+		"No Sauce": "no Sauce"
 	},
 	"frenchFries": {
 		"frenchFries": {
 			"name": "French Fries",
 			"description": "Delicious crispy French fries, available in multiple sizes.",
 			"sizes": {
-				"Small": "Small",
-				"Large": "Large"
+				"Small": "small",
+				"Large": "large"
 			},
 			"productInfo": {
 				"allergens": ["Contains gluten", "May contain traces of nuts"],
@@ -897,7 +896,7 @@
 	},
 	"iceCream": {
 		"iceCreamVanilla": {
-			"name": "Häagen Dazs Vanilla 500ml",
+			"name": "Häagen Dazs Vanilla",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": [
@@ -909,9 +908,8 @@
 				]
 			}
 		},
-
 		"iceCreamStrawberry": {
-			"name": "Häagen Dazs Strawberry 500ml",
+			"name": "Häagen Dazs Strawberry",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": [
@@ -924,7 +922,7 @@
 			}
 		},
 		"iceCreamMacadamia": {
-			"name": "Häagen Dazs Macadamia 500ml",
+			"name": "Häagen Dazs Macadamia",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": [
@@ -939,7 +937,7 @@
 			}
 		},
 		"iceCreamCookies": {
-			"name": "Häagen Dazs Cookies & Cream 500ml",
+			"name": "Häagen Dazs Cookies & Cream",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": [

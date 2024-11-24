@@ -142,14 +142,14 @@ select {
 	background-color: #247045;
 }
 .select {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: #fff;
-  cursor: pointer;
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: #fff;
+	cursor: pointer;
 }
 @media (max-width: 768px) {
 	.modal {
@@ -168,18 +168,28 @@ select {
 		background: #fff;
 		padding: 20px;
 		border-radius: 8px;
-		width: 87%;
+		width: 100%;
+		margin: 10px;
+		height: 90%;
 		position: relative;
 		overflow-y: auto;
-		max-height: 90vh; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	}
 	.pizzaImage {
 		width: 200px;
 		height: 200px;
 	}
+	.closeButton {
+		font-size: 16px;
+}
 	.totalPrice {
 		font-size: 18px;
 		font-weight: bold;
 		margin-right: auto;
+	}
+	.addToCartButton {
+		padding: 10px;
 	}
 }

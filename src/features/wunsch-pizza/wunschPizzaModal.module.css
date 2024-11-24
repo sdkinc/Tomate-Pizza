@@ -9,7 +9,6 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 1200;
-
 }
 select {
 	padding: 5px;
@@ -43,7 +42,7 @@ select {
 }
 .scrollable {
 	max-height: unset; /* Снимаем ограничение высоты для раскрытого списка */
-	overflow-y: auto;  /* Включаем вертикальную прокрутку */
+	overflow-y: auto; /* Включаем вертикальную прокрутку */
 }
 
 .toggleButton {
@@ -147,12 +146,7 @@ select {
 	display: block;
 	margin: 5px 0;
 	padding: 6px;
-	background-color: #f0f8e7; /* Светлый фон */
-	border-radius: 6px;
-	border: 1px dashed #a0d199; /* Пунктирная рамка */
-	font-weight: 500;
-	color: #006400;
-	transition: background-color 0.3s ease;
+	font-size: 14px;
 }
 
 .freeIngredientOption:hover {
@@ -177,17 +171,37 @@ select {
 		padding: 20px;
 		border-radius: 8px;
 		width: 87%;
+		height: 90%;
 		position: relative;
 		overflow-y: auto;
-		max-height: 90vh; 
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
-	.image {
+	.pizzaImage {
 		width: 200px;
 		height: 200px;
+	}
+	.freeIngredientOption {
+		display: block;
+		margin: 5px 0;
+		padding: 2px;
+		background-color: #f0f8e7; /* Светлый фон */
+		border-radius: 6px;
+		border: 1px dashed #a0d199; /* Пунктирная рамка */
+		font-weight: 500;
+		color: #006400;
+		transition: background-color 0.3s ease;
 	}
 	.totalPrice {
 		font-size: 18px;
 		font-weight: bold;
 		margin-right: auto;
+	}
+	.closeButton {
+		font-size: 16px;
+}
+	.addToCartButton {
+		padding: 10px;
 	}
 }
