@@ -1,1 +1,1138 @@
-{}
+{
+	"signUp": "Kayıt Ol",
+	"signIn": "Giriş Yap",
+	"Appetizers": "Başlangıçlar",
+	"Salads": "Salatalar",
+	"Breadsticks": "Pizza Ekmek Çubukları",
+	"Pizza": "Pizza",
+	"Custom Pizza": "Özel Pizza",
+	"Calzone": "Kapalı Pizza",
+	"Pasta": "Makarna",
+	"Meat Dishes": "Et Yemekleri",
+	"Burgers & Baguettes": "Burger & Baget",
+	"American Diner": "Amerikan Lokantası",
+	"French Fries": "Patates Kızartması",
+	"Desserts": "Tatlılar",
+	"Ice Cream": "Dondurma",
+	"Non-Alcoholic Drinks": "Alkolsüz İçecekler",
+	"Alcoholic Drinks": "Alkollü İçecekler",
+	"viewMyList": "Listemi Görüntüle",
+	"choose": "Listeye Ekle",
+	"View pizza": "Pizzayı Görüntüle",
+	"View pasta": "Makarnayı Görüntüle",
+	"View breadsticks": "Pizza Ekmek Çubuklarını Görüntüle",
+	"View starter": "Başlangıcı Görüntüle",
+	"View calzone": "Kapalı Pizzayı Görüntüle",
+	"View custom pizza": "Özel Pizzayı Görüntüle",
+	"View salads": "Salataları Görüntüle",
+	"View meat dishes": "Et Yemeklerini Görüntüle",
+	"View americana diner": "Amerikan Lokantasını Görüntüle",
+	"View burger": "Burger & Bageti Görüntüle",
+	"View desserts": "Tatlıları Görüntüle",
+	"View Ice Cream": "Dondurmayı Görüntüle",
+	"View Non-alcoholic drinks": "Alkolsüz İçecekleri Görüntüle",
+	"total": "Toplam",
+	"youExtras": "Ekstra Seçin",
+	"chooseFreeIngredients": "3 ücretsiz malzeme seçin",
+	"pizzaSize": "Pizza boyutu",
+	"selectSize": "Boyut seçin",
+	"yourTypeOfPasta": "Makarna türünüz",
+	"productInfo": "Ürün hakkında daha fazla bilgi",
+	"substances": "Alerji veya intoleransa neden olan maddeler veya ürünler",
+	"allergens": "LMIV - Alerjen",
+	"nutritionFacts": "Besin değerleri",
+	"allergensSubstances": "Alerji veya intoleransa neden olan maddeler veya ürünler",
+	"View info": "Bilgiyi Görüntüle",
+	"pcs": "adet",
+	"impressum": {
+		"title": "Yasal Uyarı",
+		"owner": "Tomate Pizzeria adına Taleh Huseynov hareket etmektedir",
+		"address": {
+			"street": "Rosenheimerstr. 117",
+			"city": "81667 Münih"
+		},
+		"email": "Bize e-posta gönderin",
+		"registerCourt": "Kayıt Mahkemesi: Münih Bölge Mahkemesi",
+		"registerNumber": "Kayıt Numarası: a11083935",
+		"backToHome": "Ana Sayfaya Dön"
+	},
+	"categories": {
+		"Appetizers": "Yemeğiniz için mükemmel bir başlangıç - lezzetli başlangıçlarımızın tadını çıkarın",
+		"Salads": "Taze ve çıtır - her damak zevkine uygun sağlıklı bir seçim",
+		"Breadsticks": "Lezzetli malzemelerle taze pişmiş çıtır çubuklar",
+		"Pizza": "Pizzalarımız - çıtır, doyurucu ve karşı konulmaz derecede lezzetli",
+		"Custom Pizza": "Favori malzemelerinizle kendi pizzanızı oluşturun",
+		"Calzone": "Doldurulmuş pizza - doyurucu lezzetlerin sevenleri için bir zevk",
+		"Pasta": "İtalyan klasiklerinden - lezzetli soslarla taze hazırlanmış makarna",
+		"Meat Dishes": "Şefkatle hazırlanan, mükemmel şekilde pişirilmiş et spesiyalleri",
+		"Burgers & Baguettes": "Doyurucu ve lezzetli - burgerlerimiz ve bagetlerimiz",
+		"American Diner": "Amerika'dan gelen lezzet deneyimi - Americana yemeklerimiz",
+		"French Fries": "Çıtır patates kızartması - her yemeğin favori eşlikçisi",
+		"Desserts": "Tatlı cazibeler - yemeğinizin mükemmel sonu",
+		"Ice Cream": "Ferahlatıcı ve kremalı - lezzetli dondurma spesiyallerimiz",
+		"Non Alcoholic Drinks": "Her damak zevkine uygun ferahlatıcı içecekler",
+		"Alcoholic Drinks": "Bira, şarap ve daha fazlasından oluşan seçimimizin keyfini çıkarın"
+	},
+	"pizzaSizes": {
+		"Klein": "Küçük",
+		"Mittel": "Orta",
+		"Familie": "Aile Boyu"
+	},
+	"ingredients": {
+		"balsamico": "balsamik soslu",
+		"french": "Fransız soslu",
+		"vinegar": "sirke ve zeytinyağı ile",
+		"yogurt": "yoğurt soslu",
+		"noDressing": "sossuz",
+		"Chili": "acı biberli",
+		"Knoblauch": "sarımsaklı",
+		"Ananas": "ananaslı",
+		"Artischocken": "enginar ile",
+		"BBQ-Sauce": "BBQ soslu",
+		"Bolognese": "bolonez soslu",
+		"Broccoli": "brokolili",
+		"Champignons": "taze mantarlı",
+		"Currysauce": "köri soslu",
+		"Ei": "yumurtalı",
+		"Gorgonzola": "gorgonzola peynirli",
+		"Hühnerfleisch": "tavuk etli",
+		"Jalapenos": "jalapeno biberli",
+		"Kapern": "kapari ile",
+		"Käse": "peynirli",
+		"Käserand": "peynir kenarlı",
+		"Mais": "mısırlı",
+		"Meeresfrüchten": "deniz ürünlü",
+		"Mozzarella": "mozzarella peynirli",
+		"Oliven": "zeytinli",
+		"Paprika": "dolmalık biberli",
+		"Parmaschinken": "prosciutto ile",
+		"Peperoni": "acı biberli",
+		"Rinderhackfleisch": "kıyma ile",
+		"Rucola": "roka ile",
+		"Salami": "salamlı",
+		"Sardellen": "hamsili",
+		"Schinken": "jambonlu",
+		"Shrimps": "karidesli",
+		"Spinat": "ıspanaklı",
+		"Sucuk": "sucuklu",
+		"Thunfisch": "ton balıklı",
+		"Tomatenscheiben": "domates dilimleri ile",
+		"Zwiebeln": "soğanlı"
+	},
+	"Show Less": "Daha Az Göster",
+	"Show More": "Daha Fazla Göster",
+	"disclaimer": "Alerjen bilgileri pizzacımız tarafından sağlanmaktadır.",
+	"additionalInfo": "Bu bilgilerin değişebileceğini lütfen unutmayın.",
+	"pizzas": {
+		"Wunschpizza": {
+			"name": "Özel Pizza",
+			"description": "Seçtiğiniz 3 malzeme ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve bunların ürünlerini içerir",
+					"Süt ve süt ürünlerini içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"PizzaMargarita": {
+			"name": "Pizza Margarita",
+			"description": "Baharatlı domates sosu ve peynir ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaFunghi": {
+			"name": "Pizza Funghi",
+			"description": "Baharatlı domates sosu, peynir ve mantar ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaSalami": {
+			"name": "Pizza Salamlı",
+			"description": "Baharatlı domates sosu, peynir ve salam ile",
+			"productInfo": {
+				"substances": ["Koruyucu içerir", "Nitrit kürleme tuzu içerir", "Antioksidan içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaProsciutto": {
+			"name": "Pizza Prosciutto",
+			"description": "Baharatlı domates sosu, peynir ve pişmiş jambon ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir",
+					"Kükürt dioksit/sülfit içerir"
+				]
+			}
+		},
+		"PizzaSpinaci": {
+			"name": "Pizza Ispanaklı",
+			"description": "Baharatlı domates sosu, peynir, soğan ve ıspanak ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaTonno": {
+			"name": "Pizza Tonno",
+			"description": "Baharatlı domates sosu, peynir, ton balığı ve soğan ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Balık/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaTomate": {
+			"name": "Pizza Domates",
+			"description": "Baharatlı domates sosu, peynir, hafif mozzarella ve domates ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Balık/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaBroccoli": {
+			"name": "Pizza Brokoli",
+			"description": "Baharatlı domates sosu, peynir, pişmiş jambon ve brokoli ile",
+			"productInfo": {
+				"substances": ["Koruyucu içerir", "Lezzet artırıcı içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaBolognese": {
+			"name": "Pizza Bolonez",
+			"description": "İnce bolonez sosu ve peynir ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Yumurta/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir",
+					"Kereviz/ürünler içerir",
+					"Kükürt dioksit/sülfit içerir"
+				]
+			}
+		},
+		"PizzaRoma": {
+			"name": "Pizza Roma",
+			"description": "Baharatlı domates sosu, peynir, hafif mozzarella, domates, Parma jambonu ve roka ile",
+			"productInfo": {
+				"substances": ["Koruyucu içerir", "Lezzet artırıcı içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaHawaii": {
+			"name": "Pizza Hawaii",
+			"description": "Baharatlı domates sosu, peynir, pişmiş jambon ve ananas ile",
+			"productInfo": {
+				"substances": ["Koruyucu içerir", "Lezzet artırıcı içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaFruttiDiMare": {
+			"name": "Pizza Frutti di Mare",
+			"description": "Baharatlı domates sosu, peynir, sarımsak ve deniz ürünleri ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Buğday içerir",
+					"Kabuklu deniz ürünleri/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir",
+					"Balık/ürünler içerir",
+					"Yumuşakça/ürünler içerir"
+				]
+			}
+		},
+		"PizzaQuattroStagioni": {
+			"name": "Pizza Quattro Stagioni",
+			"description": "Baharatlı domates sosu, peynir, ıspanak, salam, jambon, mantar ve soğan ile",
+			"productInfo": {
+				"substances": [
+					"Koruyucu içerir",
+					"Nitrit kürleme tuzu içerir",
+					"Antioksidan içerir",
+					"Lezzet artırıcı içerir"
+				],
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaSchinkenSalami": {
+			"name": "Pizza Jambon-Salam",
+			"description": "Pişmiş jambon, salam ve dolmalık biber ile",
+			"productInfo": {
+				"substances": [
+					"Renklendirici içerir",
+					"Koruyucu içerir",
+					"Nitrit kürleme tuzu içerir",
+					"Antioksidan içerir",
+					"Lezzet artırıcı içerir"
+				],
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaDiavolo": {
+			"name": "Pizza Diavolo",
+			"description": "Baharatlı domates sosu, peynir, salam, dolmalık biber, soğan ve jalapeno ile",
+			"productInfo": {
+				"substances": ["Koruyucu içerir", "Nitrit kürleme tuzu içerir", "Antioksidan içerir"],
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaPrimaVera": {
+			"name": "Pizza Prima Vera",
+			"description": "Baharatlı domates sosu, peynir, mantar, ton balığı ve ıspanak ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Balık/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaOrient": {
+			"name": "Pizza Orient",
+			"description": "Sucuk (sarımsaklı sosis), soğan ve dolmalık biber ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaQuattroFormaggi": {
+			"name": "Pizza Quattro Formaggi",
+			"description": "Dört farklı peynir ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaSchafskäse": {
+			"name": "Pizza Beyaz Peynir",
+			"description": "Taze mantar, taze domates, brokoli ve beyaz peynir ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaShrimps": {
+			"name": "Pizza Karides",
+			"description": "Sarımsak ve karides ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir",
+					"Kabuklu deniz ürünleri/ürünler içerir"
+				]
+			}
+		},
+		"PizzaDehli": {
+			"name": "Pizza Dehli",
+			"description": "Baharatlı domates sosu, peynir, tavuk göğsü, ananas ve köri sosu ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaSardellen": {
+			"name": "Pizza Ançuez",
+			"description": "Ançuez, salam, dolmalık biber, zeytin ve sarımsak ile",
+			"productInfo": {
+				"substances": ["Nitrit kürleme tuzu ve nitrat içerir", "İçeriğinde nitrat bulunur"],
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir",
+					"Balık/ürünler içerir"
+				]
+			}
+		},
+		"PizzaItalia": {
+			"name": "Pizza Italia",
+			"description": "Baharatlı domates sosu, peynir, salam, dolmalık biber, soğan, biber, mozzarella ve gorgonzola ile",
+			"productInfo": {
+				"substances": ["Nitrit kürleme tuzu içerir", "Antioksidan içerir"],
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaChicken": {
+			"name": "Pizza Tavuk",
+			"description": "Baharatlı domates sosu, peynir, tavuk göğsü, domates, dolmalık biber, soğan ve biber ile",
+			"productInfo": {
+				"substances": ["Nitrit kürleme tuzu ve nitrat içerir", "İçeriğinde nitrat bulunur"],
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaBBQ": {
+			"name": "Pizza BBQ",
+			"description": "Barbekü sosu, kıyma, soğan ve mozzarella ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaGorgonzola": {
+			"name": "Pizza Gorgonzola",
+			"description": "Gorgonzola, taze mantar ve sarımsak ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		},
+		"PizzaVegetaria": {
+			"name": "Pizza Vejeteryan",
+			"description": "Baharatlı domates sosu, peynir, brokoli, domates, soğan, dolmalık biber ve mısır ile",
+			"productInfo": {
+				"allergens": [
+					"Buğday içerir",
+					"Gluten içeren tahıllar/ürünler içerir",
+					"Süt/ürünler (laktoz) içerir"
+				]
+			}
+		}
+	},
+	"Regatoni": "Rigatoni",
+	"Spaghetti": "Spagetti",
+	"pastas": {
+		"Napoli": {
+			"name": "Napoli",
+			"description": "Domates sosu ve sarımsak ile",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Yumurta"],
+				"substances": ["Domates", "Sarımsak"]
+			}
+		},
+		"Bolognese": {
+			"name": "Bolonez",
+			"description": "Domates ve kıyma sosu ile",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Yumurta"],
+				"substances": ["Kıyma", "Domates"]
+			}
+		},
+		"Carbonara": {
+			"name": "Carbonara",
+			"description": "Jambon, yumurta ve kremalı sos ile",
+			"productInfo": {
+				"allergens": ["A-Gluten", "B-Yumurta", "E-Süt"],
+				"substances": ["Jambon", "Kremalı sos"]
+			}
+		},
+		"FruttiDiMare": {
+			"name": "Frutti di Mare",
+			"description": "Deniz ürünleri ile, peynirle fırınlanmış",
+			"productInfo": {
+				"allergens": ["A-Gluten", "L-Yumuşakça", "M-Kabuklu Deniz Ürünleri"],
+				"substances": ["Deniz ürünleri", "Peynir"]
+			}
+		}
+	},
+	"calzone": {
+		"calzone": {
+			"name": "Kapalı Pizza",
+			"description": "Baharatlı domates sosu, peynir, jambon, mantar ve ton balığı ile doldurulmuş",
+			"productInfo": {
+				"substances": ["Nitrat içerir", "Nitrit kürleme tuzu ve nitrat içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Balık ve balık ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"calzoneTomate": {
+			"name": "Kapalı Pizza Domates",
+			"description": "Jambon, salam, mantar ve domates ile doldurulmuş",
+			"productInfo": {
+				"substances": ["Nitrat içerir", "Nitrit kürleme tuzu ve nitrat içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		}
+	},
+	"starters": {
+		"springRolls": {
+			"name": "Bahar Ruloları",
+			"productInfo": {
+				"substances": ["Nitrat içerir", "Nitrit kürleme tuzu ve nitrat içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"dolmates": {
+			"name": "Dolma",
+			"description": "cacık ile",
+			"productInfo": {
+				"allergens": ["Süt ve süt ürünleri içerir (laktoz dahil)"]
+			}
+		}
+	},
+	"chooseDressing": "bir sos seçin",
+	"salads": {
+		"green": {
+			"name": "Yeşil Salata",
+			"description": "yeşil marul ve soğan ile",
+			"productInfo": {
+				"allergens": ["Süt ve süt ürünleri içerir (laktoz dahil)"]
+			}
+		},
+		"cucumber": {
+			"name": "Salatalık Salatası",
+			"description": "yeşil marul, salatalık ve soğan ile"
+		},
+		"mixed": {
+			"name": "Karışık Salata",
+			"description": "yeşil marul, domates, zeytin, havuç, mısır, salatalık ve soğan ile",
+			"productInfo": {
+				"allergens": ["Süt ve süt ürünleri içerir (laktoz dahil)"]
+			}
+		},
+		"tomato": {
+			"name": "Domates Salatası",
+			"description": "yeşil marul, domates ve soğan ile"
+		},
+		"mozzarella": {
+			"name": "Mozzarella Salatası",
+			"description": "mozarella, taze domates ve taze fesleğen ile",
+			"productInfo": {
+				"allergens": ["Süt ve süt ürünleri içerir (laktoz dahil)"]
+			}
+		},
+		"greek": {
+			"name": "Yunan Çiftçi Salatası",
+			"description": "yeşil marul, beyaz peynir, salatalık, domates, taze dolmalık biber, zeytin, biber ve soğan ile",
+			"productInfo": {
+				"allergens": ["Süt ve süt ürünleri içerir (laktoz dahil)"]
+			}
+		},
+		"nicoise": {
+			"name": "Nicoise Salatası",
+			"description": "yeşil marul, domates, salatalık, havuç, zeytin, peynir, biber, yumurta, soğan ve ton balığı ile",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Balık ve balık ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Hardal ve hardal ürünleri içerir",
+					"Kükürt dioksit ve sülfit içerir"
+				]
+			}
+		},
+		"chef": {
+			"name": "Şefin Salatası",
+			"description": "yeşil marul, salatalık, domates, zeytin, peynir, havuç, biber, yumurta, soğan ve taze dolmalık biber ile",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Kükürt dioksit ve sülfit içerir"
+				]
+			}
+		}
+	},
+	"breadsticks": {
+		"breadsticks": {
+			"name": "Pizza Ekmek Çubukları",
+			"description": "6 ekmek çubuğu - taze pişmiş, peynir, domates ve seçiminize göre iki malzeme ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		}
+	},
+	"meatDishes": {
+		"schnitzel": {
+			"name": "Ekmek Kaplamalı Şnitzel",
+			"description": "domuz şnitzeli ve patates kızartması ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Buğday içerir"
+				]
+			}
+		},
+		"turkeySchnitzel": {
+			"name": "Hindi Şnitzel",
+			"description": "patates kızartması ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Buğday içerir"
+				]
+			}
+		}
+	},
+	"frenchFriesSizes": {
+		"Classic Fries": "Klasik Patates Kızartması",
+		"Small": "küçük",
+		"Large": "büyük"
+	},
+	"chooseSauces": "sosunuzu seçin",
+	"frenchFriesSauces": {
+		"Mayonnaise": "mayonez ile",
+		"Ketchup": "ketçap ile",
+		"No Sauce": "sossuz"
+	},
+	"frenchFries": {
+		"frenchFries": {
+			"name": "Patates Kızartması",
+			"description": "Lezzetli, çıtır patates kızartması, farklı boyutlarda sunulmaktadır.",
+			"sizes": {
+				"Small": "küçük",
+				"Large": "büyük"
+			},
+			"productInfo": {
+				"allergens": ["Gluten içerir", "Fındık izleri içerebilir"],
+				"substances": ["Bitkisel yağ", "Doğal baharatlar"]
+			}
+		}
+	},
+	"burgers": {
+		"hamburger": {
+			"name": "Hamburger",
+			"description": "Dana eti, turşu, soğan, domates, marul ve atıştırmalık sos ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Hardal ve hardal ürünleri içerir",
+					"Buğday içerir"
+				]
+			}
+		},
+		"doubleBurger": {
+			"name": "Double Burger",
+			"description": "Çift dana eti, turşu, soğan, domates, marul ve atıştırmalık sos ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Hardal ve hardal ürünleri içerir",
+					"Buğday içerir"
+				]
+			}
+		},
+		"chickenBurger": {
+			"name": "Tavuk Burger",
+			"description": "Pane kaplamalı tavuk, domates ve turşu ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"baguetteSalami": {
+			"name": "Baget Salam",
+			"description": "Remoulade, marul, domates ve salatalık ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"baguetteHam": {
+			"name": "Baget Jambon",
+			"description": "Pişmiş jambon, remoulade, marul, domates ve salatalık ile",
+			"productInfo": {
+				"substances": ["Koruyucu içerir", "Lezzet artırıcı içerir"],
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Hardal ve hardal ürünleri içerir",
+					"Buğday içerir"
+				]
+			}
+		},
+		"baguetteMozzarella": {
+			"name": "Baget Mozzarella",
+			"description": "Mozzarella, remoulade, marul, domates ve salatalık ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"baguetteChickenBreast": {
+			"name": "Baget Tavuk Göğsü",
+			"description": "Tavuk göğsü dilimleri, remoulade, marul, domates ve salatalık ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"baguetteTonno": {
+			"name": "Baget Tonno",
+			"description": "Ton balığı, remoulade, marul, domates, salatalık ve soğan ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Balık ve balık ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		}
+	},
+	"americana": {
+		"chickenWingsKetchup": {
+			"name": "Ketçaplı Tavuk Kanatları (Acılı)",
+			"description": "Barbekü sosu ve patates kızartması ile",
+			"productInfo": {
+				"allergens": ["Yumurta ve yumurta ürünleri içerir", "Hardal ve hardal ürünleri içerir"]
+			}
+		},
+		"chickenWingsMayonnaise": {
+			"name": "Mayonezli Tavuk Kanatları (Acılı)",
+			"description": "Barbekü sosu ve patates kızartması ile",
+			"productInfo": {
+				"allergens": ["Yumurta ve yumurta ürünleri içerir", "Hardal ve hardal ürünleri içerir"]
+			}
+		},
+		"chickenNuggets": {
+			"name": "Tavuk Nugget",
+			"description": "Barbekü sosu ve patates kızartması ile",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Buğday içerir"
+				]
+			}
+		},
+		"chickenBleu": {
+			"name": "Tavuk Bleu",
+			"description": "Pane kaplı, patates kızartması ve limon ile",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"chickenCordonBleu": {
+			"name": "Tavuk Cordon Bleu",
+			"description": "Pane kaplı, patates kızartması ve limon ile",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		}
+	},
+	"desserts": {
+		"cassata": {
+			"name": "Cassata",
+			"description": "Dondurma ve krem şanti ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"tartufo": {
+			"name": "Tartufo",
+			"description": "Dondurma ve krem şanti ile",
+			"productInfo": {
+				"allergens": [
+					"Badem",
+					"Brezilya fındığı",
+					"Kaju",
+					"Soya ve soya ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Kuruyemiş ve ürünleri içerir",
+					"Fındık",
+					"Macadamia",
+					"Pekan cevizi",
+					"Antep fıstığı",
+					"Queensland cevizi",
+					"Ceviz"
+				]
+			}
+		},
+		"tiramisu": {
+			"name": "Tiramisu",
+			"description": "Ev yapımı",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"strudel": {
+			"name": "Elmalı Strudel",
+			"description": "Krem şanti ile",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		},
+		"muffin": {
+			"name": "Muffin",
+			"description": "Yumuşak ve lezzetli muffin",
+			"productInfo": {
+				"allergens": [
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Buğday içerir"
+				]
+			}
+		}
+	},
+	"iceCream": {
+		"iceCreamVanilla": {
+			"name": "Häagen Dazs Vanilya",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)"
+				],
+				"nutritionFacts": [
+					"İçindekiler: Taze krema, yoğunlaştırılmış yağsız süt, şeker, yumurta sarısı, doğal vanilya aroması."
+				]
+			}
+		},
+		"iceCreamStrawberry": {
+			"name": "Häagen Dazs Çilekli",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)"
+				],
+				"nutritionFacts": [
+					"İçindekiler: Taze KREMA (35.1%), YOĞUNLAŞTIRILMIŞ YAĞSIZ SÜT, çilek (21.1%), şeker, YUMURTA SARISI."
+				]
+			}
+		},
+		"iceCreamMacadamia": {
+			"name": "Häagen Dazs Macadamia",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Kuruyemiş ve ürünleri içerir",
+					"Macadamia"
+				],
+				"nutritionFacts": [
+					"İçindekiler: Taze krema, yoğunlaştırılmış yağsız süt, şeker, yumurta sarısı, glikoz şurubu, macadamia fındıkları, hindistancevizi yağı, tereyağı, doğal vanilya aroması, kabartma tozu: sodyum bikarbonat, sofra tuzu."
+				]
+			}
+		},
+		"iceCreamCookies": {
+			"name": "Häagen Dazs Kurabiye & Krema",
+			"description": "14,00 €/l, 500ml",
+			"productInfo": {
+				"allergens": [
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Gluten içeren tahıllar ve ürünler içerir",
+					"Macadamia"
+				],
+				"nutritionFacts": [
+					"İçindekiler: Taze krema, yoğunlaştırılmış yağsız süt, şeker, yumurta sarısı, buğday unu, hindistancevizi yağı, az yağlı kakao tozu, doğal vanilya aroması, kabartma tozu: sodyum bikarbonat, sofra tuzu."
+				]
+			}
+		}
+	},
+	"nonAlcoholicDrinks": {
+		"cocaCola": {
+			"name": "Coca Cola 1,0l (MEHRWEG)",
+			"description": "Kafeinli ferahlatıcı gazlı içecek (10,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"Renklendirici içerir",
+					"Kafein içerir",
+					"Asit düzenleyiciler içerir",
+					"Kafein içerir. Çocuklar veya hamile kadınlar için önerilmez."
+				],
+				"nutritionFacts": [
+					"İçindekiler: Su, şeker, karbondioksit, renklendirici E 150d, asit düzenleyici fosforik asit, doğal aroma, kafein aroması."
+				]
+			}
+		},
+		"cocaColaLight": {
+			"name": "Coca Cola light 1,0l (MEHRWEG)",
+			"description": "Düşük kalorili kafeinli gazlı içecek (12,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"Renklendirici içerir",
+					"Tatlandırıcı içerir",
+					"Fenilalanin içerir",
+					"Kafein içerir",
+					"Asit düzenleyiciler içerir",
+					"Kafein içerir. Çocuklar veya hamile kadınlar için önerilmez."
+				],
+				"nutritionFacts": [
+					"İçindekiler: Su, karbondioksit, renklendirici E 150d, asit düzenleyiciler (fosforik asit, sitrik asit), tatlandırıcılar (sodyum siklamat, asesülfam K, aspartam), doğal aroma dahil kafein. Fenilalanin kaynağı içerir."
+				]
+			}
+		},
+		"fanta": {
+			"name": "Fanta 1,0l (MEHRWEG)",
+			"description": "Meyveli portakal aromalı gazlı içecek",
+			"productInfo": {
+				"allergens": [
+					"Renklendirici içerir",
+					"Antioksidan içerir",
+					"Asit düzenleyiciler içerir",
+					"Stabilizör içerir"
+				],
+				"nutritionFacts": [
+					"İçindekiler: Su, şeker, portakal suyu (portakal suyu konsantresinden), karbondioksit, asit düzenleyiciler (sitrik asit, malik asit), narenciye özü, asitlik düzenleyici sodyum glukonat, aroma, antioksidan askorbik asit, stabilizörler (E 440, E 414, E 445, E 412), renklendirici karoten."
+				]
+			}
+		},
+		"mezzoMix": {
+			"name": "Mezzo Mix 1,0l (MEHRWEG)",
+			"description": "Kola ve portakal aroması karışımı, kafein içerir (6,00 mg/100 ml)",
+			"productInfo": {
+				"allergens": [
+					"Renklendirici içerir",
+					"Kafein içerir",
+					"Asit düzenleyiciler içerir",
+					"Stabilizör içerir",
+					"Kafein içerir. Çocuklar veya hamile kadınlar için önerilmez."
+				],
+				"nutritionFacts": [
+					"İçindekiler: Su, şeker, fruktoz, portakal suyu (portakal suyu konsantresinden) (1.5%), karbondioksit, renklendirici E 150d, asit düzenleyiciler (sitrik asit, malik asit), aroma, kafein aroması, stabilizör E 412."
+				]
+			}
+		},
+		"sprite": {
+			"name": "Sprite 1,0l (MEHRWEG)",
+			"description": "Limon ve misket limonu aromalı ferahlatıcı içecek",
+			"productInfo": {
+				"allergens": ["Asit düzenleyiciler içerir"],
+				"nutritionFacts": [
+					"İçindekiler: Su, şeker, karbondioksit, asit düzenleyici sitrik asit, limon suyu (limon suyu konsantresinden) (1%), misket limonu suyu (misket limonu suyu konsantresinden) (0.1%), asitlik düzenleyici sodyum sitrat, doğal limon ve misket limonu aroması."
+				]
+			}
+		},
+		"apfelschorle": {
+			"name": "Apfelschorle 1,0l (MEHRWEG)",
+			"description": "Doğal elma suyu ile yapılan elma gazozu",
+			"productInfo": {
+				"nutritionFacts": ["İçindekiler: Elma suyu, karbondioksitli su."]
+			}
+		},
+		"mineralwasser": {
+			"name": "Mineralwasser 1,0l (MEHRWEG)",
+			"description": "Saf maden suyu",
+			"productInfo": {
+				"nutritionFacts": ["İçindekiler: Su."]
+			}
+		},
+		"apfelsaft": {
+			"name": "Apfelsaft 1,0l (MEHRWEG)",
+			"description": "Doğal elma suyu",
+			"productInfo": {
+				"nutritionFacts": ["İçindekiler: Elma suyu."]
+			}
+		},
+		"orangensaft": {
+			"name": "Orangensaft 1,0l (MEHRWEG)",
+			"description": "Taze portakal suyu",
+			"productInfo": {
+				"nutritionFacts": ["İçindekiler: Portakal suyu."]
+			}
+		},
+		"redBull": {
+			"name": "Red Bull 1,0l (MEHRWEG)",
+			"description": "Yüksek kafein içerikli enerji içeceği (32 mg/100 ml). Çocuklar, hamile veya emziren kadınlar için önerilmez.",
+			"productInfo": {
+				"allergens": [
+					"Renklendirici içerir",
+					"Kafein içerir",
+					"Asit düzenleyiciler içerir",
+					"Stabilizör içerir",
+					"Yüksek kafein içeriği. Çocuklar, hamile veya emziren kadınlar için önerilmez."
+				],
+				"nutritionFacts": [
+					"İçindekiler: Su, sakkaroz, glikoz, asit düzenleyici (sitrik asit), karbondioksit, taurin (0.4%), asitlik düzenleyiciler (sodyum karbonatlar, magnezyum karbonatlar), kafein (0.03%), vitaminler (niasin, pantotenik asit, B6, B12), aroma, renklendiriciler (karamel rengi, riboflavinler)."
+				]
+			}
+		}
+	},
+	"alcoholicDrinks": {
+		"augustinerPale": {
+			"name": "Augustiner Açık Bira 0,5l",
+			"description": "Hafif şerbetçiotu aromalı ferahlatıcı açık bira. Hacim: 0,5l.",
+			"productInfo": {
+				"allergens": ["Gluten içeren tahıllar ve ürünler içerir", "Arpa"],
+				"nutritionFacts": ["İçindekiler: Su, şerbetçiotu, maya, arpa maltı"]
+			}
+		},
+		"augustinerEdelstoff": {
+			"name": "Augustiner Edelstoff 0,5l",
+			"description": "Pürüzsüz ve çıtır bir tada sahip klasik bir Bavyera lager birası. Hacim: 0,5l.",
+			"productInfo": {
+				"allergens": ["Gluten içeren tahıllar ve ürünler içerir", "Arpa"],
+				"nutritionFacts": ["İçindekiler: Su, arpa maltı, şerbetçiotu"]
+			}
+		},
+		"franziskaner": {
+			"name": "Franziskaner Buğday Birası 0,5l",
+			"description": "Meyvemsi ve maltlı aromasıyla geleneksel bir buğday birası. Hacim: 0,5l.",
+			"productInfo": {
+				"allergens": ["Gluten içeren tahıllar ve ürünler içerir", "Buğday", "Arpa"],
+				"nutritionFacts": ["İçindekiler: Su, buğday maltı, arpa maltı, şerbetçiotu, maya"]
+			}
+		},
+		"becks": {
+			"name": "Becks 0,33l",
+			"description": "Ferahlatıcı ve şerbetçiotu tadıyla popüler Alman birası. Hacim: 0,33l.",
+			"productInfo": {
+				"allergens": ["Gluten içeren tahıllar ve ürünler içerir", "Arpa"],
+				"nutritionFacts": ["İçindekiler: Bira yapım suyu, arpa maltı, şerbetçiotu"]
+			}
+		},
+		"merlot": {
+			"name": "Merlot 0,75l",
+			"description": "Kiraz ve erik notalarına sahip zengin ve pürüzsüz kırmızı şarap. Hacim: 0,75l.",
+			"productInfo": {
+				"allergens": ["Sülfit içerir"],
+				"nutritionFacts": ["İçindekiler: Üzüm, sülfit"]
+			}
+		},
+		"chardonnay": {
+			"name": "Chardonnay 0,75l",
+			"description": "Elma ve narenciye ipuçlarıyla gevrek ve meyvemsi beyaz şarap. Hacim: 0,75l.",
+			"productInfo": {
+				"allergens": ["Sülfit içerir"],
+				"nutritionFacts": ["İçindekiler: Üzüm, sülfit"]
+			}
+		},
+		"prosecco": {
+			"name": "Prosecco 0,75l",
+			"description": "Hafif ve çiçeksi aromasıyla köpüklü bir şarap. Hacim: 0,75l.",
+			"productInfo": {
+				"allergens": ["Sülfit içerir"],
+				"nutritionFacts": ["İçindekiler: Üzüm, sülfit"]
+			}
+		}
+	},
+	"footer": {
+		"workingHours": "Çalışma Saatleri: Salı - Pazar: 16:00 - 03:00",
+		"mondayClosed": "Pazartesi: Kapalı",
+		"allRightsReserved": "Tüm Hakları Saklıdır",
+		"impressum": "Hakkında"
+	}
+}

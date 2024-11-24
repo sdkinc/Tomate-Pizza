@@ -13,7 +13,6 @@ body {
 	min-height: 100%;
 }
 
-/* Основной контент страницы (все, кроме футера) */
 .mainContent {
 	flex: 1; /* Заставляет контент занимать всё доступное пространство */
 }
@@ -63,5 +62,20 @@ body {
 @media (max-width: 768px) {
 	.footerBox {
 		padding: 0;
+	}
+	.bottomInfoBox {
+
+		font-size: 10px;
+	}
+	.workingHoursBox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+
+	}
+	.workingHours,
+	.workingHours2 {
+		font-size: 12px;
 	}
 }

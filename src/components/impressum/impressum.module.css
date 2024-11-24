@@ -9,26 +9,28 @@
 }
 
 .mainContainer {
-	background-color: #fff;
+
 	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 	width: 100%;
 	max-width: 600px;
 }
 
 .titlePage {
 	text-align: center;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: bold;
-	color: #333;
+	color: #fff;
 	margin-bottom: 20px;
 }
-
+.owner {
+	padding-bottom: 20px;
+}
 .content p {
 	margin: 10px 0;
 	font-size: 16px;
-	color: #555;
+	color: #fff;
+	font-weight: 400;
 	line-height: 1.5;
 }
 
@@ -46,6 +48,8 @@
 	margin-top: 20px;
 	text-align: center;
 	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
 }
 
 .backToHome a {
@@ -70,19 +74,32 @@
 .backToHome a:hover .arrow {
 	transform: translateX(-5px); /* Добавляем анимацию сдвига стрелки */
 }
-
+.contentText {
+	font-weight: 400;
+}
+.contentTextTitle {
+	font-size: 18px;
+	font-weight: 500;
+}
 @media (max-width: 480px) {
 	.mainBox {
 		width: 90%;
 		padding: 10px;
 	}
 
+	.owner {
+		padding-bottom: 20px;
+	}
 	.titlePage {
 		font-size: 18px;
 	}
-
+	.contentTextTitle {
+		font-size: 14px;
+		font-weight: 500;
+	}
 	.content p {
 		font-size: 14px;
+		font-weight: 300;
 	}
 
 	.backToHome {

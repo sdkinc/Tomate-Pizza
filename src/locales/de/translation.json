@@ -57,21 +57,21 @@
 		"backToHome": "Zur Startseite"
 	},
 	"categories": {
-		"Appetizers": "Vorspeisen",
-		"Salads": "Salate",
-		"Breadsticks": "Pizzabrötchen",
-		"Pizza": "Pizza",
-		"Custom Pizza": "Wunschpizza",
-		"Calzone": "Calzone",
-		"Pasta": "Pasta",
-		"Meat Dishes": "Fleischgerichte",
-		"Burgers & Baguettes": "Burger & Baguette",
-		"American Diner": "Americana Diner",
-		"French Fries": "Pommes Frites",
-		"Desserts": "Desserts",
-		"Ice Cream": "Eiscreme",
-		"Non Alcoholic Drinks": "Alkoholfreie Getränke",
-		"Alcoholic Drinks": "Alkoholische Getränke"
+		"Appetizers": "Perfekter Start für Ihre Mahlzeit - genießen Sie unsere köstlichen Vorspeisen",
+		"Salads": "Frisch und knackig - eine gesunde Wahl für jeden Geschmack",
+		"Breadsticks": "Knusprige Brötchen, frisch gebacken mit köstlichen Zutaten",
+		"Pizza": "Unsere Pizzen - knusprig, herzhaft und unwiderstehlich lecker",
+		"Custom Pizza": "Gestalten Sie Ihre eigene Pizza mit Ihren Lieblingszutaten",
+		"Calzone": "Gefüllte Pizza - ein Genuss für Liebhaber herzhaften Geschmacks",
+		"Pasta": "Italienische Klassiker - frisch zubereitete Pasta mit leckeren Saucen",
+		"Meat Dishes": "Saftige Fleischspezialitäten, perfekt zubereitet für Genießer",
+		"Burgers & Baguettes": "Sättigend und lecker - unsere Burger und Baguettes",
+		"American Diner": "Ein Geschmackserlebnis direkt aus den USA - unsere Americana-Gerichte",
+		"French Fries": "Knusprige Pommes frites - ein beliebter Begleiter für jede Mahlzeit",
+		"Desserts": "Süße Versuchungen - der perfekte Abschluss für Ihre Mahlzeit",
+		"Ice Cream": "Erfrischend und cremig - unsere köstlichen Eisspezialitäten",
+		"Non Alcoholic Drinks": "Erfrischende Durstlöscher für jeden Geschmack",
+		"Alcoholic Drinks": "Genießen Sie unsere Auswahl an Bieren, Weinen und mehr"
 	},
 	"pizzaSizes": {
 		"Klein": "Klein",
@@ -673,6 +673,10 @@
 		"frenchFries": {
 			"name": "Pommes Frites",
 			"description": "Leckere, knusprige Pommes Frites in verschiedenen Größen erhältlich.",
+			"sizes": {
+				"Small": "Klein",
+				"Large": "Groß"
+			},
 			"productInfo": {
 				"allergens": ["Enthält Gluten", "Kann Spuren von Nüssen enthalten"],
 				"substances": ["Pflanzenöl", "Natürliche Gewürze"]
@@ -896,7 +900,7 @@
 	},
 	"iceCream": {
 		"iceCreamVanilla": {
-			"name": "Häagen Dazs Vanilla 500ml",
+			"name": "Häagen Dazs Vanilla",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Milch/-Erzeugnisse (laktosehaltig)"],
@@ -907,7 +911,7 @@
 		},
 
 		"iceCreamStrawberry": {
-			"name": "Häagen Dazs Strawberry 500ml",
+			"name": "Häagen Dazs Strawberry",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": ["Enthält Ei/-Erzeugnisse", "Enthält Milch/-Erzeugnisse (laktosehaltig)"],
@@ -917,7 +921,7 @@
 			}
 		},
 		"iceCreamMacadamia": {
-			"name": "Häagen Dazs Macadamia 500ml",
+			"name": "Häagen Dazs Macadamia",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": [
@@ -932,7 +936,7 @@
 			}
 		},
 		"iceCreamCookies": {
-			"name": "Häagen Dazs Cookies & Cream 500ml",
+			"name": "Häagen Dazs Cookies & Cream",
 			"description": "14,00 €/l, 500ml",
 			"productInfo": {
 				"allergens": [
