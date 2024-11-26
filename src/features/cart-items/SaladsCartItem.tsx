@@ -1,5 +1,4 @@
 import 'react';
-
 import styles from './cartPage.module.css';
 import { useTranslation } from 'react-i18next';
 import { SaladsIngredients } from '../salads/type/SaladsType';
@@ -20,7 +19,8 @@ const SaladsCartItem: React.FC<SaladsCartItemProps> = ({ name, saladsIngredients
 			</span>
 			{saladsIngredients && saladsIngredients.length > 0 && (
 				<div>
-					{t('Ingredients')}: {saladsIngredients.map((ingredient) => ingredient.label).join(', ')}
+					{t('Ingredients')}:{' '}
+					{saladsIngredients.map((ingredient) => t(`ingredients.${ingredient.label}`)).join(', ')}
 				</div>
 			)}
 		</div>

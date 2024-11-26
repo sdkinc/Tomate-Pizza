@@ -33,13 +33,13 @@ const WunschPizzaCartItem: React.FC<WunschPizzaCartItemProps> = ({
 			)}
 			{extras && extras.length > 0 && (
 				<div>
-					{t('Extras')}: {extras.map((extra) => extra.label).join(', ')}
+					{t('Extras')}: {extras.map((extra) => t(`ingredients.${extra.label}`)).join(', ')}
 				</div>
 			)}
 			{freeIngredients && freeIngredients.length > 0 && (
 				<div>
 					{t('Free Ingredients')}:{' '}
-					{freeIngredients.map((ingredient) => ingredient.label).join(', ')}
+					{freeIngredients.map((ingredient) => t(`ingredients.${ingredient.label}`)).join(', ')}
 				</div>
 			)}
 		</div>

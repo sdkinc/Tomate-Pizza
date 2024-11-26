@@ -19,7 +19,8 @@ const PastaCartItem: React.FC<PastaCartItemProps> = ({ name, ingredients, quanti
 			</span>
 			{ingredients && ingredients.length > 0 && (
 				<div>
-					{t('Ingredients')}: {ingredients.map((ingredient) => ingredient.label).join(', ')}
+					{t('Ingredients')}:{' '}
+					{ingredients.map((ingredient) => t(`ingredients.${ingredient.label}`)).join(', ')}
 				</div>
 			)}
 		</div>
