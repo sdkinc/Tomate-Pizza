@@ -17,6 +17,10 @@
 	"Non-Alcoholic Drinks": "Alkoholfreie Getränke",
 	"Alcoholic Drinks": "Alkoholische Getränke",
 	"viewMyList": "Meine Liste anzeigen",
+	"My List": "Meine Liste",
+	"Delete item": "Artikel löschen",
+	"Total amount": "Gesamtbetrag",
+	"Clear list": "Liste leeren",
 	"choose": "Wählen",
 	"View pizza": "Pizza ansehen",
 	"View pasta": "Pasta ansehen",
@@ -31,6 +35,7 @@
 	"View desserts": "Desserts ansehen",
 	"View Ice Cream": "Ice Cream ansehen",
 	"View Non-alcoholic drinks": "Alkoholfreie Getränke ansehen",
+	"Product info": "Produktinfo",
 	"total": "Gesamt",
 	"youExtras": "Ihre Extras",
 	"chooseFreeIngredients": "Wählen Sie 3 kostenlose Zutaten",
@@ -43,7 +48,11 @@
 	"nutritionFacts": "Nährwerte",
 	"allergensSubstances": "Substanzen oder Produkte, die Allergien oder Intoleranzen hervorrufen können.",
 	"View info": "Informationen anzeigen",
+	"Size": "Größe",
+	"Extras": "Extras",
+	"Free Ingredients": "Kostenlose Zutaten",
 	"pcs": "Stk",
+	"Ingredients": "Zutaten",
 	"impressum": {
 		"title": "Impressum",
 		"owner": "Taleh Huseynov handelt im Namen von Tomate Pizzeria",
@@ -78,7 +87,16 @@
 		"Mittel": "Mittel",
 		"Familie": "Familie"
 	},
+	"saladsIngredients": {
+		"balsamico": "mit Balsamico-Dressing",
+		"french": "mit Essig-Öl-Dressing",
+		"vinegar": "mit French-Dressing",
+		"yogurt": "mit Joghurt-Dressing",
+		"noDressing": "ohne Dressing"
+	},
 	"ingredients": {
+		"Regatoni": "Rigatoni",
+		"Spaghetti": "Spaghetti",
 		"balsamico": "mit Balsamico-Dressing",
 		"french": "mit Essig-Öl-Dressing",
 		"vinegar": "mit French-Dressing",

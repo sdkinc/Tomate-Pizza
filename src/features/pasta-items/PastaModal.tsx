@@ -79,7 +79,7 @@ const PastaModal: React.FC<PastaModalProps> = ({
 									onChange={() => handleIngredientSelect(ingredient)}
 									checked={selectedIngredient === ingredient}
 								/>
-								{ingredient.label}
+								{t(`ingredients.${ingredient.label}`)}
 							</label>
 						))}
 					</div>

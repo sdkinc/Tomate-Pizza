@@ -1,3 +1,4 @@
+import { SaladsIngredients } from './../../salads/type/SaladsType';
 import { ExtraIngredientCalzone } from '../../calzone/type/CalzoneTypes';
 import { FrenchFriesSizes, SauceOption } from '../../french-fries/type/FrenchFriesTypes';
 import { Ingredients } from '../../pasta-items/type/PastaTypes';
@@ -13,9 +14,9 @@ export type ProductType =
 	| 'burgers'
 	| 'frenchFries'
 	| 'americana'
+	| 'salads'
 	| 'desserts'
 	| 'iceCream'
-	| 'nonAlcoholicDrinks'
 	| 'alcoholicDrinks';
 
 export interface CartItem {
@@ -30,6 +31,7 @@ export interface CartItem {
 	extrasCalzone?: ExtraIngredientCalzone[];
 	freeIngredients?: Omit<ExtraIngredient, 'priceBySize'>[];
 	ingredients?: Ingredients[];
+	saladsIngredients?: SaladsIngredients[];
 	sizes?: FrenchFriesSizes[];
 	selectedSauces?: SauceOption[];
 }

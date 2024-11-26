@@ -10,7 +10,7 @@ interface SaladsModalProps {
 	description: string;
 	price: number;
 	saladsIngredients: SaladsIngredients[];
-	image: string; // Добавляем изображение для отправки в корзину
+	image: string;
 	onClose: () => void;
 }
 
@@ -51,7 +51,7 @@ const SaladsModal: React.FC<SaladsModalProps> = ({
 				image,
 				price,
 				quantity,
-				ingredients: [selectedIngredient],
+				saladsIngredients: [selectedIngredient],
 			})
 		);
 		onClose();
@@ -79,7 +79,7 @@ const SaladsModal: React.FC<SaladsModalProps> = ({
 									onChange={() => handleIngredientSelect(ingredient)}
 									checked={selectedIngredient === ingredient}
 								/>
-								{t(`ingredients.${ingredient.label}`)} {/* Применяем перевод к ingredient.label */}
+								{t(`saladsIngredients.${ingredient.label}`)}
 							</label>
 						))}
 					</div>

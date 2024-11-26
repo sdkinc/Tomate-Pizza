@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 interface FrenchFriesCartItemProps {
 	name: string;
 	size?: string;
-	sauces?: SauceOption[]; // Массив соусов
+	sauces?: SauceOption[];
 	quantity: number;
 }
 
@@ -25,7 +25,7 @@ const FrenchFriesCartItem: React.FC<FrenchFriesCartItemProps> = ({
 			</span>
 			{size && (
 				<div>
-					{t('Size')}: {size}
+					{t('Size')}: {t(`frenchFriesSizes.${size}`)}
 				</div>
 			)}
 			{sauces.length > 0 && (

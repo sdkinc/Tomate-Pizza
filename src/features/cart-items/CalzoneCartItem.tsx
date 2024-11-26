@@ -25,7 +25,7 @@ const CalzoneCartItem: React.FC<CalzoneCartItemProps> = ({ name, size, extras, q
 			)}
 			{extras && extras.length > 0 && (
 				<div>
-					{t('Extras')}: {extras.map((extra) => extra.label).join(', ')}
+					{t('Extras')}: {extras.map((extra) => t(`ingredients.${extra.label}`)).join(', ')}
 				</div>
 			)}
 		</div>

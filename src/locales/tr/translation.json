@@ -17,6 +17,10 @@
 	"Non-Alcoholic Drinks": "Alkolsüz İçecekler",
 	"Alcoholic Drinks": "Alkollü İçecekler",
 	"viewMyList": "Listemi Görüntüle",
+	"My List": "Listem",
+	"Delete item": "Öğeyi sil",
+	"Total amount": "Toplam tutar",
+	"Clear list": "Listeyi temizle",
 	"choose": "Listeye Ekle",
 	"View pizza": "Pizzayı Görüntüle",
 	"View pasta": "Makarnayı Görüntüle",
@@ -30,6 +34,7 @@
 	"View burger": "Burger & Bageti Görüntüle",
 	"View desserts": "Tatlıları Görüntüle",
 	"View Ice Cream": "Dondurmayı Görüntüle",
+	"Product info": "Ürün bilgisi",
 	"View Non-alcoholic drinks": "Alkolsüz İçecekleri Görüntüle",
 	"total": "Toplam",
 	"youExtras": "Ekstra Seçin",
@@ -43,7 +48,11 @@
 	"nutritionFacts": "Besin değerleri",
 	"allergensSubstances": "Alerji veya intoleransa neden olan maddeler veya ürünler",
 	"View info": "Bilgiyi Görüntüle",
+	"Size": "boyut",
+	"Extras": "Ekstra",
+	"Free Ingredients": "Ücretsiz Malzemeler",
 	"pcs": "adet",
+	"Ingredients": "Malzemeler",
 	"impressum": {
 		"title": "Yasal Uyarı",
 		"owner": "Tomate Pizzeria adına Taleh Huseynov hareket etmektedir",
@@ -78,7 +87,16 @@
 		"Mittel": "Orta",
 		"Familie": "Aile Boyu"
 	},
+	"saladsIngredients": {
+		"balsamico": "balsamik soslu",
+		"french": "Fransız soslu",
+		"vinegar": "sirke ve zeytinyağı ile",
+		"yogurt": "yoğurt soslu",
+		"noDressing": "sossuz"
+	},
 	"ingredients": {
+		"Regatoni": "Rigatoni",
+		"Spaghetti": "Spagetti",
 		"balsamico": "balsamik soslu",
 		"french": "Fransız soslu",
 		"vinegar": "sirke ve zeytinyağı ile",
