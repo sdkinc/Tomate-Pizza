@@ -3,6 +3,8 @@ export interface Breadsticks {
 	description: string;
 	image: string;
 	price: number;
+	freeIngredients?: FreeIngredient[];
+	freeIngredientsLimit?: number;
 	productInfo?: ProductInfo;
 }
 export interface ProductInfo {
@@ -10,4 +12,7 @@ export interface ProductInfo {
 	substances?: string[];
 	disclaimer?: string;
 	additionalInfo?: string;
+}
+export interface FreeIngredient {
+	label: string;
 }

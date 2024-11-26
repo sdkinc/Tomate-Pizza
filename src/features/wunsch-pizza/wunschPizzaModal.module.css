@@ -30,19 +30,19 @@ select {
 }
 .ingredientContainer {
 	text-align: left;
-	max-height: 100px; /* Ограничиваем высоту, чтобы включить прокрутку */
-	overflow: hidden; /* Прокрутка скрыта */
+	max-height: 100px;
+	overflow: hidden;
 	transition: max-height 0.3s ease;
 }
 .ingredientContainer2 {
 	text-align: left;
-	max-height: 150px; /* Ограничиваем высоту, чтобы включить прокрутку */
-	overflow: hidden; /* Прокрутка скрыта */
+	max-height: 150px;
+	overflow: hidden;
 	transition: max-height 0.3s ease;
 }
 .scrollable {
-	max-height: unset; /* Снимаем ограничение высоты для раскрытого списка */
-	overflow-y: auto; /* Включаем вертикальную прокрутку */
+	max-height: unset;
+	overflow-y: auto;
 }
 
 .toggleButton {
@@ -73,7 +73,7 @@ select {
 	width: 400px;
 	max-width: 90%;
 	position: relative;
-	overflow-y: auto; /* Включаем вертикальную прокрутку */
+	overflow-y: auto;
 	max-height: 90vh;
 }
 
@@ -150,7 +150,7 @@ select {
 }
 
 .freeIngredientOption:hover {
-	background-color: #d7ebc6; /* Более тёмный оттенок при наведении */
+	background-color: #d7ebc6;
 }
 
 @media (max-width: 768px) {
@@ -170,7 +170,8 @@ select {
 		background: #fff;
 		padding: 20px;
 		border-radius: 8px;
-		width: 87%;
+		width: 100%;
+		margin: 10px;
 		height: 90%;
 		position: relative;
 		overflow-y: auto;
@@ -200,7 +201,7 @@ select {
 	}
 	.closeButton {
 		font-size: 16px;
-}
+	}
 	.addToCartButton {
 		padding: 10px;
 	}

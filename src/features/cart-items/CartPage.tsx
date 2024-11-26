@@ -70,7 +70,13 @@ const CartPage: React.FC = () => {
 			case 'starters':
 				return <StartersCartItem name={item.name} quantity={item.quantity} />;
 			case 'breadsticks':
-				return <BreadsticksCartItem name={item.name} quantity={item.quantity} />;
+				return (
+					<BreadsticksCartItem
+						name={item.name}
+						freeIngredients={item.freeIngredients}
+						quantity={item.quantity}
+					/>
+				);
 			case 'meatDishes':
 				return <MeatDishesCartItem name={item.name} quantity={item.quantity} />;
 			case 'salads':
@@ -136,7 +142,9 @@ const CartPage: React.FC = () => {
 				{items.map((item) => (
 					<li key={item.id} className={styles.item}>
 						<div className={styles.mainBox}>
-							<img src={item.image} alt={item.name} className={styles.itemImage} />
+							<div>
+								<img src={item.image} alt={item.name} className={styles.itemImage} />
+							</div>
 							<div className={styles.itemBox}>
 								<div className={styles.itemDetails}>
 									{renderCartItem(item)}

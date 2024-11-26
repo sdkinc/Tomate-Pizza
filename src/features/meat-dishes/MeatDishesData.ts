@@ -7,7 +7,6 @@ const meatDishes: MeatDishes[] = [
 		image: 'schnitzel.webp',
 		price: 11.9,
 		productInfo: {
-			substances: ['meatDishes.schnitzel.productInfo.substances.0'],
 			allergens: [
 				'meatDishes.schnitzel.productInfo.allergens.0',
 				'meatDishes.schnitzel.productInfo.allergens.1',
@@ -21,7 +20,6 @@ const meatDishes: MeatDishes[] = [
 		image: 'turkeySchnitzel.webp',
 		price: 11.9,
 		productInfo: {
-			substances: ['meatDishes.turkeySchnitzel.productInfo.substances.0'],
 			allergens: [
 				'meatDishes.turkeySchnitzel.productInfo.allergens.0',
 				'meatDishes.turkeySchnitzel.productInfo.allergens.1',

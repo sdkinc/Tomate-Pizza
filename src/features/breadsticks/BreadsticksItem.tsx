@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import styles from '../pizza-items/pizzaItem.module.css';
-
 import ProductInfoModal from '../pizza-items/ProductInfoModal';
 import { useTranslation } from 'react-i18next';
 import { ProductInfo } from './type/BreadsticksTypes';
 import BreadsticksModal from './BreadsticksModal';
+import freeIngredients from '../wunsch-pizza/FreeIngredients';
 
 interface BreadsticksItemProps {
 	name: string;
@@ -13,6 +13,7 @@ interface BreadsticksItemProps {
 	image: string;
 	price: number;
 	productInfo?: ProductInfo;
+	freeIngredientsLimit?: number;
 }
 
 const BreadsticksItem: React.FC<BreadsticksItemProps> = ({
@@ -21,6 +22,7 @@ const BreadsticksItem: React.FC<BreadsticksItemProps> = ({
 	image,
 	price,
 	productInfo,
+	freeIngredientsLimit = 2,
 }) => {
 	const { t } = useTranslation();
 	const [isBreadsticksModalOpen, setIsBreadsticksModalOpen] = useState(false);
@@ -79,6 +81,8 @@ const BreadsticksItem: React.FC<BreadsticksItemProps> = ({
 					description={description}
 					price={price}
 					image={image}
+					freeIngredients={freeIngredients}
+					freeIngredientsLimit={freeIngredientsLimit}
 					onClose={closeBreadsticksModal}
 				/>
 			)}

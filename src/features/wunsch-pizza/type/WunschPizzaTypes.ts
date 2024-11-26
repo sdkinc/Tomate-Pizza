@@ -3,9 +3,9 @@ export interface WunschPizza {
 	description: string;
 	image: string;
 	sizes: PizzaSize[];
-	extras?: ExtraIngredient[]; // Платные ингредиенты с ценами
-	freeIngredients?: FreeIngredient[]; // Бесплатные ингредиенты без цен
-	freeIngredientsLimit?: number; // Лимит на бесплатные ингредиенты
+	extras?: ExtraIngredient[];
+	freeIngredients?: FreeIngredient[];
+	freeIngredientsLimit?: number;
 	productInfo?: ProductInfo;
 	selectedIngredients?: ExtraIngredient[];
 }
@@ -23,17 +23,15 @@ export interface PizzaSize {
 	price: number;
 }
 
-// Платные ингредиенты с ценами
 export interface ExtraIngredient {
 	label: string;
 	priceBySize: {
 		Klein: number;
 		Mittel: number;
 		Familie: number;
-	}; // Убираем | undefined и используем значения по умолчанию
+	};
 }
 
-// Бесплатные ингредиенты без цен
 export interface FreeIngredient {
 	label: string;
 }

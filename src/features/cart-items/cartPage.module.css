@@ -38,6 +38,7 @@
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	height: 100%;
 	align-items: center;
 }
 .itemBox {
@@ -46,7 +47,7 @@
 	justify-content: space-between;
 	width: 100%;
 height: 100%;
-	padding: 10px 0;
+	padding: 0;
 }
 .extrasBox {
 	display: flex;
@@ -95,7 +96,7 @@ height: 100%;
 }
 
 .sizeExtras {
-	margin-top: 5px;
+	margin: 0;
 	font-size: 14px;
 	color: #000000;
 }

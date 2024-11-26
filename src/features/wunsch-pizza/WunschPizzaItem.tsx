@@ -42,7 +42,6 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 			className={styles.pizzaItem}
 			onClick={() => {
 				if (!isProductInfoModalOpen) {
-					// Проверка, чтобы открывать только при закрытом ProductInfoModal
 					openWunschPizzaModal();
 				}
 			}}
@@ -97,7 +96,7 @@ const WunschPizzaItem: React.FC<WunschPizzaItemProps> = ({
 					isOpen={isProductInfoModalOpen}
 					onClose={() => {
 						closeProductInfoModal();
-						setIsWunschPizzaModalOpen(false); // Обновление состояния, чтобы исключить автоматическое открытие WunschPizzaModal
+						setIsWunschPizzaModalOpen(false);
 					}}
 					productInfo={productInfo}
 				/>

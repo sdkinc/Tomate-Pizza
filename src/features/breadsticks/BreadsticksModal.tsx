@@ -1,14 +1,17 @@
 import { useState } from 'react';
-import styles from '../pasta-items/pastaModal.module.css';
+import styles from '../wunsch-pizza/wunschPizzaModal.module.css';
 import { t } from 'i18next';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../cart-items/cartSlice';
+import { FreeIngredient } from '../wunsch-pizza/type/WunschPizzaTypes';
 
 interface BreadsticksModalProps {
 	name: string;
 	description: string;
 	price: number;
 	image: string;
+	freeIngredients: FreeIngredient[];
+	freeIngredientsLimit: number;
 	onClose: () => void;
 }
 
@@ -17,14 +20,34 @@ const BreadsticksModal: React.FC<BreadsticksModalProps> = ({
 	description,
 	price,
 	image,
+	freeIngredients,
+	freeIngredientsLimit = 1,
 	onClose,
 }) => {
 	const [quantity, setQuantity] = useState(1);
 	const dispatch = useDispatch();
-
+	const [selectedFreeIngredients, setSelectedFreeIngredients] = useState<FreeIngredient[]>([]);
 	const increaseQuantity = (): void => setQuantity(quantity + 1);
 	const decreaseQuantity = (): void => setQuantity(quantity > 1 ? quantity - 1 : 1);
+	const [showAllFree, setShowAllFree] = useState(false);
 
+	const handleFreeIngredientToggle = (ingredient: FreeIngredient): void => {
+		setSelectedFreeIngredients((prev) => {
+			const isSelected = prev.includes(ingredient);
+
+			const updatedIngredients = isSelected
+				? prev.filter((ing) => ing !== ingredient)
+				: prev.length < freeIngredientsLimit
+					? [...prev, ingredient]
+					: prev;
+
+			if (updatedIngredients.length === freeIngredientsLimit) {
+				setShowAllFree(false);
+			}
+
+			return updatedIngredients;
+		});
+	};
 	const calculateTotalPrice = (): number => {
 		return price * quantity;
 	};
@@ -38,6 +61,7 @@ const BreadsticksModal: React.FC<BreadsticksModalProps> = ({
 				image,
 				price,
 				quantity,
+				freeIngredients: selectedFreeIngredients,
 			})
 		);
 		onClose();
@@ -55,6 +79,33 @@ const BreadsticksModal: React.FC<BreadsticksModalProps> = ({
 						<img src={image} alt={name} className={styles.image} />
 					</div>
 					<p>{description}</p>
+					<div className={styles.typeTitle}>{t('chooseTwoFreeIngredients')}:</div>
+					<div className={`${styles.ingredientContainer2} ${showAllFree ? styles.scrollable : ''}`}>
+						{[
+							...selectedFreeIngredients,
+							...freeIngredients.filter((ing) => !selectedFreeIngredients.includes(ing)),
+						]
+							.slice(0, showAllFree ? freeIngredients.length : 3)
+							.map((ingredient) => (
+								<label key={ingredient.label} className={styles.freeIngredientOption}>
+									<input
+										type="checkbox"
+										onChange={() => handleFreeIngredientToggle(ingredient)}
+										checked={selectedFreeIngredients.includes(ingredient)}
+									/>
+									{t(`ingredients.${ingredient.label}`)}
+								</label>
+							))}
+					</div>
+					{freeIngredients.length > 3 && (
+						<button
+							type="button"
+							onClick={() => setShowAllFree(!showAllFree)}
+							className={styles.toggleButton}
+						>
+							{showAllFree ? t('Show Less') : t('Show More')}
+						</button>
+					)}
 				</div>
 
 				<div className={styles.footer}>

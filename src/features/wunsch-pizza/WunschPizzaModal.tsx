@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-
 import { addItem } from '../cart-items/cartSlice';
 import styles from './wunschPizzaModal.module.css';
 import { PizzaSize, ExtraIngredient, FreeIngredient } from './type/WunschPizzaTypes';
@@ -42,14 +41,12 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 		setSelectedFreeIngredients((prev) => {
 			const isSelected = prev.includes(ingredient);
 
-			// Обновляем список, добавляя или удаляя выбранный ингредиент
 			const updatedIngredients = isSelected
 				? prev.filter((ing) => ing !== ingredient)
 				: prev.length < freeIngredientsLimit
 					? [...prev, ingredient]
 					: prev;
 
-			// Если достигнут лимит, автоматически сворачиваем список
 			if (updatedIngredients.length === freeIngredientsLimit) {
 				setShowAllFree(false);
 			}
@@ -58,7 +55,6 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 		});
 	};
 
-	// Обработка выбора платных ингредиентов
 	const handleExtraToggle = (extra: ExtraIngredient): void => {
 		setSelectedExtras((prev) =>
 			prev.includes(extra) ? prev.filter((e) => e !== extra) : [...prev, extra]

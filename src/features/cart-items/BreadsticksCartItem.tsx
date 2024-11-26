@@ -1,24 +1,31 @@
 import 'react';
 import { t } from 'i18next';
 import styles from './cartPage.module.css';
+import { FreeIngredient } from '../wunsch-pizza/type/WunschPizzaTypes';
 
 interface BreadsticksCartItemProps {
 	name: string;
-	description?: string;
+	freeIngredients?: FreeIngredient[];
 	quantity: number;
 }
 
 const BreadsticksCartItem: React.FC<BreadsticksCartItemProps> = ({
 	name,
-	description,
+	freeIngredients,
 	quantity,
 }) => {
 	return (
-		<div className={styles.itemDetails}>
-			<div className={styles.itemName}>
+		<div className={styles.sizeExtras}>
+			<span className={styles.itemName}>
 				{name} ({quantity} {t('pcs')})
-			</div>
-			{description && <div className={styles.itemDescription}>{description}</div>}
+			</span>
+
+			{freeIngredients && freeIngredients.length > 0 && (
+				<div>
+					{t('Free Ingredients')}:{' '}
+					{freeIngredients.map((ingredient) => t(`ingredients.${ingredient.label}`)).join(', ')}
+				</div>
+			)}
 		</div>
 	);
 };

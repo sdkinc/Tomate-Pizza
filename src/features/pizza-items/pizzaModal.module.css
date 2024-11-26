@@ -173,9 +173,9 @@ select {
 		height: 90%;
 		position: relative;
 		overflow-y: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	.pizzaImage {
 		width: 200px;
@@ -183,7 +183,7 @@ select {
 	}
 	.closeButton {
 		font-size: 16px;
-}
+	}
 	.totalPrice {
 		font-size: 18px;
 		font-weight: bold;

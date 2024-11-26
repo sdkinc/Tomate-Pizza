@@ -14,7 +14,7 @@ function FooterPage(): JSX.Element | null {
 	return (
 		<footer className={styles.footerBox}>
 			<div className={styles.workingHoursBox}>
-				<span className={styles.workingHours}>{t('footer.workingHours')}</span>
+				<span className={styles.workingHours}>{t('footer.workingHours')}</span>{' '}
 				<span className={styles.workingHours2}>{t('footer.mondayClosed')}</span>
 			</div>
 			<div className={styles.bottomInfoBox}>
