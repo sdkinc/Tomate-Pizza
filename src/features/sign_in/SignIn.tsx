@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
-import Privacy from '../../components/privacy/Privacy';
-import Terms from '../../components/terms/Terms';
+// import Privacy from '../../components/privacy/Privacy';
+// import Terms from '../../components/terms/Terms';
 import styles from './signIn.module.css';
 import { ChangeEvent, useCallback, useState } from 'react';
 import Cookies from '../../components/cookies/Cookies';
@@ -72,8 +72,10 @@ function SignIn(): JSX.Element {
 							×
 						</button>
 						<div className={styles.modalBody}>
-							{modalContentKey === 'terms' && <Terms />}
-							{modalContentKey === 'privacy' && <Privacy />}
+							{/*{modalContentKey === 'terms' && <Terms />}*/}
+							{/*{modalContentKey === 'privacy' && <Privacy />}*/}
+							{modalContentKey === 'terms'}
+							{modalContentKey === 'privacy'}
 						</div>
 					</div>
 				</div>
