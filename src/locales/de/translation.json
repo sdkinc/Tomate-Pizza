@@ -882,13 +882,26 @@
 		},
 		"tiramisu": {
 			"name": "Tiramisu",
-			"description": "hausgemacht",
+			"description": "Hausgemachtes, cremiges Dessert mit Mascarpone, Löffelbiskuit, einer feinen Note von Amaretto und Kakao",
 			"productInfo": {
 				"allergens": [
 					"Enthält glutenhaltige/s Getreide/-Erzeugnisse",
 					"Enthält Ei/-Erzeugnisse",
 					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
 					"Weizen"
+				]
+			}
+		},
+		"tiramisuPistazien": {
+			"name": "Pistazien-Tiramisu",
+			"description": "Hausgemachtes, cremiges Dessert mit Mascarpone, Löffelbiskuit und aromatische Pistazienpasta",
+			"productInfo": {
+				"allergens": [
+					"Haselnuss",
+					"Enthält Ei/-Erzeugnisse",
+					"Enthält Milch/-Erzeugnisse (laktosehaltig)",
+					"Pistazien",
+					"Enthält Schalenfrüchte/Nüsse bzw. Nusserzeugnisse"
 				]
 			}
 		},

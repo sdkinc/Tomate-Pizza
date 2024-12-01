@@ -38,7 +38,7 @@ const CartButton: React.FC = () => {
 					<span className={styles.closeIcon}>✕</span>
 				</button>
 			) : (
-				<button type="button" onClick={toggleVisibility} className={styles.toggleButton}>
+				<button type="button" onClick={toggleVisibility} className={styles.toggleButton2}>
 					{/* Иконка открытия (стрелка влево) */}
 					<KeyboardArrowRightIcon className={styles.rotatedIcon} />
 				</button>

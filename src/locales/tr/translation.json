@@ -878,13 +878,26 @@
 		},
 		"tiramisu": {
 			"name": "Tiramisu",
-			"description": "Ev yapımı",
+			"description": "Ev yapımı, mascarpone, kedi dili bisküvisi, hafif Amaretto aroması ve kakao ile hazırlanan kremalı tatlı",
 			"productInfo": {
 				"allergens": [
 					"Gluten içeren tahıllar ve ürünler içerir",
 					"Yumurta ve yumurta ürünleri içerir",
 					"Süt ve süt ürünleri içerir (laktoz dahil)",
 					"Buğday içerir"
+				]
+			}
+		},
+		"tiramisuFıstık": {
+			"name": "Fıstıklı Tiramisu",
+			"description": "Ev yapımı, mascarpone, kedi dili bisküvisi ve aromatik fıstık ezmesiyle hazırlanan kremalı tatlı",
+			"productInfo": {
+				"allergens": [
+					"Fındık",
+					"Yumurta ve yumurta ürünleri içerir",
+					"Süt ve süt ürünleri içerir (laktoz dahil)",
+					"Fıstık",
+					"Kabuklu yemişler/kuruyemiş ürünleri içerir"
 				]
 			}
 		},

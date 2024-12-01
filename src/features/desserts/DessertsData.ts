@@ -52,6 +52,21 @@ const desserts: Desserts[] = [
 		},
 	},
 	{
+		name: 'desserts.tiramisuPistazien.name',
+		description: 'desserts.tiramisuPistazien.description',
+		image: 'tiramisuPistazien.webp',
+		price: 6.0,
+		productInfo: {
+			allergens: [
+				'desserts.tiramisuPistazien.productInfo.allergens.0',
+				'desserts.tiramisuPistazien.productInfo.allergens.1',
+				'desserts.tiramisuPistazien.productInfo.allergens.2',
+				'desserts.tiramisuPistazien.productInfo.allergens.3',
+				'desserts.tiramisuPistazien.productInfo.allergens.4',
+			],
+		},
+	},
+	{
 		name: 'desserts.strudel.name',
 		description: 'desserts.strudel.description',
 		image: 'strudel.webp',
