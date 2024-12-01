@@ -85,7 +85,7 @@ const BreadsticksModal: React.FC<BreadsticksModalProps> = ({
 							...selectedFreeIngredients,
 							...freeIngredients.filter((ing) => !selectedFreeIngredients.includes(ing)),
 						]
-							.slice(0, showAllFree ? freeIngredients.length : 3)
+							.slice(0, showAllFree ? freeIngredients.length : 2)
 							.map((ingredient) => (
 								<label key={ingredient.label} className={styles.freeIngredientOption}>
 									<input
@@ -97,7 +97,7 @@ const BreadsticksModal: React.FC<BreadsticksModalProps> = ({
 								</label>
 							))}
 					</div>
-					{freeIngredients.length > 3 && (
+					{freeIngredients.length > 2 && (
 						<button
 							type="button"
 							onClick={() => setShowAllFree(!showAllFree)}

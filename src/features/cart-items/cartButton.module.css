@@ -1,4 +1,5 @@
-.toggleButton {
+.toggleButton,
+.toggleButton2 {
 	position: fixed;
 	bottom: 30px;
 	right: 10px;
@@ -20,7 +21,8 @@
 .rotatedIcon {
 	transform: rotate(180deg);
 }
-.toggleButton:hover {
+.toggleButton:hover,
+.toggleButton2:hover {
 	transform: scale(1.1);
 }
 
@@ -68,11 +70,11 @@
 @media (max-width: 768px) {
 	.cartIcon {
 		width: 80px;
-		height:auto;
+		height: auto;
 		z-index: 105;
 		bottom: 90px;
-	position: fixed;
-	right: 20px;
+		position: fixed;
+		right: 20px;
 	}
 	.itemCount {
 		position: absolute;
@@ -90,7 +92,14 @@
 		height: 18px;
 		font-size: 14px;
 		margin-bottom: 70px;
-
+	}
+	.toggleButton2 {
+		bottom: 20px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		margin-bottom: 70px;
 	}
 	.closeIcon {
 		font-size: 12px;
@@ -99,5 +108,4 @@
 		height: 15px;
 		z-index: 105;
 	}
-	
 }

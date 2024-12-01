@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -14,16 +14,32 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 	const [isDragging, setIsDragging] = useState(false);
 	const [startX, setStartX] = useState(0);
 	const [scrollLeft, setScrollLeft] = useState(0);
-	const [activeMenu, setActiveMenu] = useState('Pizza');
+	const [activeMenu, setActiveMenu] = useState('Pizza'); // Устанавливаем начальное активное меню
 
-	useEffect(() => {
-		setSelectedMenu('Pizza');
-	}, [setSelectedMenu]);
+	// Список меню
+	const menuItems = [
+		'Appetizers',
+		'Salads',
+		'Breadsticks',
+		'Pizza',
+		'Custom Pizza',
+		'Calzone',
+		'Pasta',
+		'Meat Dishes',
+		'Burgers & Baguettes',
+		'American Diner',
+		'French Fries',
+		'Desserts',
+		'Ice Cream',
+		'Non Alcoholic Drinks',
+		'Alcoholic Drinks',
+	];
 
+	// Логика прокрутки
 	const scroll = (direction: 'left' | 'right'): void => {
 		if (tabContainerRef.current) {
 			const containerWidth = tabContainerRef.current.clientWidth;
-			const scrollAmount = containerWidth * 0.5; // Настроим величину прокрутки для мобильных экранов
+			const scrollAmount = containerWidth * 0.5;
 			tabContainerRef.current.scrollBy({
 				left: direction === 'left' ? -scrollAmount : scrollAmount,
 				behavior: 'smooth',
@@ -31,6 +47,7 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 		}
 	};
 
+	// Обработка начала перетаскивания
 	const handleMouseDown = (e: React.MouseEvent): void => {
 		if (tabContainerRef.current) {
 			setIsDragging(true);
@@ -39,6 +56,7 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 		}
 	};
 
+	// Перетаскивание
 	const handleMouseMove = (e: React.MouseEvent): void => {
 		if (!isDragging || !tabContainerRef.current) return;
 		const x = e.pageX - tabContainerRef.current.offsetLeft;
@@ -46,17 +64,20 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 		tabContainerRef.current.scrollLeft = scrollLeft - walk;
 	};
 
+	// Завершение перетаскивания
 	const handleMouseUpOrLeave = (): void => {
 		setIsDragging(false);
 	};
 
+	// Выбор меню
 	const handleTabClick = (menu: string): void => {
-		setSelectedMenu(menu);
-		setActiveMenu(menu);
+		setActiveMenu(menu); // Локально обновляем активное меню
+		setSelectedMenu(menu); // Передаём выбранное меню через пропс
 	};
 
 	return (
 		<div className={styles.tabContainerWrapper}>
+			{/* Кнопка прокрутки влево */}
 			<button
 				type="button"
 				className={`${styles.scrollButton} ${styles.left}`}
@@ -65,6 +86,8 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 			>
 				<ArrowLeftIcon fontSize="inherit" />
 			</button>
+
+			{/* Контейнер вкладок */}
 			<div
 				className={styles.tabContainer}
 				ref={tabContainerRef}
@@ -73,98 +96,20 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 				onMouseUp={handleMouseUpOrLeave}
 				onMouseLeave={handleMouseUpOrLeave}
 			>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Appetizers' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Appetizers')}
-				>
-					{t('Appetizers')}
-				</div>
-
-				<div
-					className={`${styles.tab} ${activeMenu === 'Salads' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Salads')}
-				>
-					{t('Salads')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Breadsticks' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Breadsticks')}
-				>
-					{t('Breadsticks')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Pizza' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Pizza')}
-				>
-					{t('Pizza')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Custom Pizza' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Custom Pizza')}
-				>
-					{t('Custom Pizza')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Calzone' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Calzone')}
-				>
-					{t('Calzone')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Pasta' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Pasta')}
-				>
-					{t('Pasta')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Meat Dishes' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Meat Dishes')}
-				>
-					{t('Meat Dishes')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Burgers & Baguettes' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Burgers & Baguettes')}
-				>
-					{t('Burgers & Baguettes')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'American Diner' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('American Diner')}
-				>
-					{t('American Diner')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'French Fries' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('French Fries')}
-				>
-					{t('French Fries')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Desserts' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Desserts')}
-				>
-					{t('Desserts')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Ice Cream' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Ice Cream')}
-				>
-					{t('Ice Cream')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Non Alcoholic Drinks' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Non Alcoholic Drinks')}
-				>
-					{t('Non-Alcoholic Drinks')}
-				</div>
-				<div
-					className={`${styles.tab} ${activeMenu === 'Alcoholic Drinks' ? styles.activeTab : ''}`}
-					onClick={() => handleTabClick('Alcoholic Drinks')}
-				>
-					{t('Alcoholic Drinks')}
-				</div>
+				{/* Отображение вкладок из списка */}
+				{menuItems.map((menu) => (
+					<div
+						key={menu}
+						className={`${styles.tab} ${activeMenu === menu ? styles.activeTab : ''}`}
+						onClick={() => handleTabClick(menu)}
+						data-menu={menu}
+					>
+						{t(menu)}
+					</div>
+				))}
 			</div>
+
+			{/* Кнопка прокрутки вправо */}
 			<button
 				type="button"
 				className={`${styles.scrollButton} ${styles.right}`}

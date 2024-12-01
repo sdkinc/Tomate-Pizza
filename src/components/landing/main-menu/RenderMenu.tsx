@@ -24,6 +24,39 @@ interface RenderMenuProps {
 
 const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }) => {
 	const { t } = useTranslation();
+
+	const allCategories = [
+		'Appetizers',
+		'Salads',
+		'Breadsticks',
+		'Pizza',
+		'Custom Pizza',
+		'Calzone',
+		'Pasta',
+		'Meat Dishes',
+		'Burgers & Baguettes',
+		'American Diner',
+		'French Fries',
+		'Desserts',
+		'Ice Cream',
+		'Non Alcoholic Drinks',
+		'Alcoholic Drinks',
+	];
+
+	// Получаем индекс текущего выбранного меню
+	const startIndex = allCategories.indexOf(selectedMenu);
+
+	// Формируем список категорий, начиная с выбранного меню
+	const orderedCategories = [
+		...allCategories.slice(startIndex), // Сначала идут категории после выбранной
+		...allCategories.slice(0, startIndex), // Затем категории до выбранной (цикличность)
+	];
+
+	// Исключаем категорию, если указано в пропсах
+	const filteredCategories = excludeCategory
+		? orderedCategories.filter((category) => category !== excludeCategory)
+		: orderedCategories;
+
 	const getMenuComponent = (category: string): JSX.Element | null => {
 		switch (category) {
 			case 'Appetizers':
@@ -61,48 +94,31 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 		}
 	};
 
-	if (selectedMenu === 'All') {
-		const allCategories = [
-			'Appetizers',
-			'Salads',
-			'Breadsticks',
-			'Pizza',
-			'Custom Pizza',
-			'Calzone',
-			'Pasta',
-			'Meat Dishes',
-			'Burgers & Baguettes',
-			'American Diner',
-			'French Fries',
-			'Desserts',
-			'Ice Cream',
-			'Non Alcoholic Drinks',
-			'Alcoholic Drinks',
-		];
-		return (
-			<>
-				{allCategories
-					.filter((category) => category !== excludeCategory)
-					.map((category) => (
-						<div key={category} className={styles.categorySection}>
-							<div className={styles.imageContainer}>
-								<img
-									src={`/${category.replace(/\s/g, '')}.webp`}
-									alt={category}
-									className={styles.categoryImage}
-								/>
-							</div>
-							<div className={styles.titleBox}>
-								<h2 className={styles.categoryTitle}>{t(`categories.${category}`)}</h2>
-								{getMenuComponent(category)}
-							</div>
+	return (
+		<>
+			{filteredCategories.map((category, index) =>
+				category === selectedMenu && index === 0 ? (
+					// Для выбранного меню отображаем только компонент меню
+					<div key={category}>{getMenuComponent(category)}</div>
+				) : (
+					// Для остальных категорий сохраняем стандартный рендеринг
+					<div key={category} className={styles.categorySection}>
+						<div className={styles.imageContainer}>
+							<img
+								src={`/${category.replace(/\s/g, '')}.webp`}
+								alt={category}
+								className={styles.categoryImage}
+							/>
 						</div>
-					))}
-			</>
-		);
-	}
-
-	return getMenuComponent(selectedMenu);
+						<div className={styles.titleBox}>
+							<h2 className={styles.categoryTitle}>{t(`categories.${category}`)}</h2>
+							{getMenuComponent(category)}
+						</div>
+					</div>
+				)
+			)}
+		</>
+	);
 };
 
 export default RenderMenu;

@@ -878,13 +878,26 @@
 		},
 		"tiramisu": {
 			"name": "Tiramisu",
-			"description": "homemade",
+			"description": "Homemade creamy dessert with mascarpone, ladyfingers, a hint of Amaretto, and cocoa",
 			"productInfo": {
 				"allergens": [
 					"Contains cereals and products thereof containing gluten",
 					"Contains eggs and products thereof",
 					"Contains milk and products thereof (including lactose)",
 					"wheat"
+				]
+			}
+		},
+		"tiramisuPistachio": {
+			"name": "Pistachio Tiramisu",
+			"description": "Homemade creamy dessert with mascarpone, ladyfingers, and aromatic pistachio paste",
+			"productInfo": {
+				"allergens": [
+					"Hazelnut",
+					"Contains eggs and products thereof",
+					"Contains milk and products thereof (including lactose)",
+					"Pistachio",
+					"Contains tree nuts/nut products"
 				]
 			}
 		},
