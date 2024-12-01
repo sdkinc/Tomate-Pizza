@@ -20,7 +20,7 @@
 	"Delete item": "Delete item",
 	"Total amount": "Total amount",
 	"Clear list": "Clear list",
-	"viewMyList": "View my list",
+	"viewMyList": "My list",
 	"choose": "Add to List",
 	"View pizza": "View pizza",
 	"View pasta": "View pasta",
@@ -888,7 +888,7 @@
 				]
 			}
 		},
-		"tiramisuPistachio": {
+		"tiramisuPistazien": {
 			"name": "Pistachio Tiramisu",
 			"description": "Homemade creamy dessert with mascarpone, ladyfingers, and aromatic pistachio paste",
 			"productInfo": {
