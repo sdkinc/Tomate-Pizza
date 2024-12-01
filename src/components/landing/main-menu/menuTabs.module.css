@@ -107,14 +107,13 @@
 		width: 100px;
 		height: 35px;
 		font-size: 12px;
-		padding: 0;
+		padding: 0 3px;
 		margin: 0;
 		white-space: normal;
 	}
 	.tab:hover {
 		height: 40px;
 		font-size: 14px;
-		
 	}
 
 	.activeTab {
@@ -127,7 +126,5 @@
 		width: 30px;
 		font-size: 30px;
 		padding: 5px;
-		
-
 	}
 }

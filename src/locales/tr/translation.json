@@ -16,7 +16,7 @@
 	"Ice Cream": "Dondurma",
 	"Non-Alcoholic Drinks": "Alkolsüz İçecekler",
 	"Alcoholic Drinks": "Alkollü İçecekler",
-	"viewMyList": "Listemi Görüntüle",
+	"viewMyList": "Listem",
 	"My List": "Listem",
 	"Delete item": "Öğeyi sil",
 	"Total amount": "Toplam tutar",
@@ -888,7 +888,7 @@
 				]
 			}
 		},
-		"tiramisuFıstık": {
+		"tiramisuPistazien": {
 			"name": "Fıstıklı Tiramisu",
 			"description": "Ev yapımı, mascarpone, kedi dili bisküvisi ve aromatik fıstık ezmesiyle hazırlanan kremalı tatlı",
 			"productInfo": {
