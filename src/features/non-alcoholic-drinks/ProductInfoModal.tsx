@@ -1,4 +1,4 @@
-import 'react';
+import { useEffect } from 'react';
 import styles from '../pizza-items/productInfoModal.module.css';
 import { useTranslation } from 'react-i18next';
 import { ProductInfo } from './type/NonAlcoholicDrinksTypes';
@@ -11,6 +11,17 @@ interface ProductInfoModalProps {
 
 const ProductInfoModal: React.FC<ProductInfoModalProps> = ({ isOpen, onClose, productInfo }) => {
 	const { t } = useTranslation();
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
+		}
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, [isOpen]);
+
 	if (!isOpen) return null;
 
 	return (

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { FrenchFriesSizes, SauceOption } from './type/FrenchFriesTypes';
@@ -45,6 +45,12 @@ const FrenchFriesModal: React.FC<FrenchFriesModalProps> = ({
 		const saucesTotal = selectedSauces.reduce((acc, sauce) => acc + (sauce.price || 0), 0);
 		return (selectedSize.price + saucesTotal) * quantity;
 	};
+	useEffect(() => {
+		document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	const handleAddToCart = (): void => {
 		const uniqueId = `${name}-${selectedSize.size}-${selectedSauces.map((extra) => extra.label).join(',')}`;

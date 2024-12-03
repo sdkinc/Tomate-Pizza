@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../pizza-items/pizzaModal.module.css';
 import { t } from 'i18next';
 import { useDispatch } from 'react-redux';
@@ -56,6 +56,13 @@ const SaladsModal: React.FC<SaladsModalProps> = ({
 		);
 		onClose();
 	};
+
+	useEffect(() => {
+		document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	return (
 		<div className={styles.modal} onClick={onClose}>
