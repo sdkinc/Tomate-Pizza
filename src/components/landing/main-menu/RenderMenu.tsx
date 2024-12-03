@@ -46,11 +46,14 @@ const RenderMenu: React.FC<RenderMenuProps> = ({ selectedMenu, excludeCategory }
 	// Получаем индекс текущего выбранного меню
 	const startIndex = allCategories.indexOf(selectedMenu);
 
-	// Формируем список категорий, начиная с выбранного меню
-	const orderedCategories = [
-		...allCategories.slice(startIndex), // Сначала идут категории после выбранной
-		...allCategories.slice(0, startIndex), // Затем категории до выбранной (цикличность)
-	];
+	// Проверка на корректность выбранной категории
+	if (startIndex === -1) {
+		console.error(`Selected menu "${selectedMenu}" is not found in the category list.`);
+		return null;
+	}
+
+	// Формируем список категорий начиная с выбранного меню и до конца
+	const orderedCategories = allCategories.slice(startIndex);
 
 	// Исключаем категорию, если указано в пропсах
 	const filteredCategories = excludeCategory

@@ -12,7 +12,7 @@ import { RootState } from '../app/store';
 
 function PageHome(): JSX.Element {
 	const { category } = useParams<{ category?: string }>();
-	const [selectedMenu, setSelectedMenu] = useState('Pizza');
+	const [selectedMenu, setSelectedMenu] = useState('Appetizers');
 
 	// Проверка, есть ли товары в корзине, чтобы показать кнопку корзины
 	const cartItems = useSelector((state: RootState) => state.cart.items);

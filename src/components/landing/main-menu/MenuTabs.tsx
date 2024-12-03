@@ -14,7 +14,7 @@ const MenuTabs: React.FC<MenuTabsProps> = ({ setSelectedMenu }) => {
 	const [isDragging, setIsDragging] = useState(false);
 	const [startX, setStartX] = useState(0);
 	const [scrollLeft, setScrollLeft] = useState(0);
-	const [activeMenu, setActiveMenu] = useState('Pizza');
+	const [activeMenu, setActiveMenu] = useState('Appetizers');
 
 	// Список меню
 	const menuItems = [
