@@ -112,14 +112,14 @@
 		white-space: normal;
 	}
 	.tab:hover {
-		height: 40px;
-		font-size: 14px;
+		height: 37px;
+		font-size: 12px;
 	}
 
 	.activeTab {
 		background-color: #ddd;
-		font-size: 14px;
-		height: 40px;
+		font-size: 12px;
+		height: 37px;
 	}
 	.scrollButton {
 		height: 35px;
