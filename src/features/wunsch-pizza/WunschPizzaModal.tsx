@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { addItem } from '../cart-items/cartSlice';
@@ -93,6 +93,13 @@ const WunschPizzaModal: React.FC<WunschPizzaModalProps> = ({
 		);
 		onClose();
 	};
+
+	useEffect(() => {
+		document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	return (
 		<div className={styles.modal} onClick={onClose}>

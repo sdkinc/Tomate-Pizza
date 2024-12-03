@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../pasta-items/pastaModal.module.css';
 import { t } from 'i18next';
 import { useDispatch } from 'react-redux';
@@ -36,6 +36,12 @@ const BurgerModal: React.FC<BurgerModalProps> = ({ name, description, price, ima
 		);
 		onClose();
 	};
+	useEffect(() => {
+		document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	return (
 		<div className={styles.modal} onClick={onClose}>

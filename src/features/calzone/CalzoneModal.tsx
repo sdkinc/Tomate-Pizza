@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { CalzoneSize, ExtraIngredientCalzone } from './type/CalzoneTypes';
@@ -32,6 +32,13 @@ const CalzoneModal: React.FC<CalzoneModalProps> = ({
 	const handleSizeChange = (size: CalzoneSize): void => {
 		setSelectedSize(size);
 	};
+
+	useEffect(() => {
+		document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	const handleExtraToggle = (extra: ExtraIngredientCalzone): void => {
 		setSelectedExtras((prev) =>

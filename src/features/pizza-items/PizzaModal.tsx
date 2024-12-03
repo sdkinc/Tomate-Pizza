@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { ExtraIngredient, PizzaSize } from './type/PizzaTypes';
@@ -28,6 +28,13 @@ const PizzaModal: React.FC<PizzaModalProps> = ({
 	const [quantity, setQuantity] = useState(1);
 	const [showAllExtras, setShowAllExtras] = useState(false);
 	const dispatch = useDispatch();
+
+	useEffect(() => {
+		document.body.style.overflow = 'hidden'; // Отключаем прокрутку
+		return () => {
+			document.body.style.overflow = ''; // Восстанавливаем прокрутку при закрытии
+		};
+	}, []);
 
 	const handleSizeChange = (size: PizzaSize): void => {
 		setSelectedSize(size);

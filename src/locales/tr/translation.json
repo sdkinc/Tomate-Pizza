@@ -14,7 +14,7 @@
 	"French Fries": "Patates Kızartması",
 	"Desserts": "Tatlılar",
 	"Ice Cream": "Dondurma",
-	"Non-Alcoholic Drinks": "Alkolsüz İçecekler",
+	"Non Alcoholic Drinks": "Alkolsüz İçecekler",
 	"Alcoholic Drinks": "Alkollü İçecekler",
 	"viewMyList": "Listem",
 	"My List": "Listem",
@@ -986,7 +986,7 @@
 	},
 	"nonAlcoholicDrinks": {
 		"cocaCola": {
-			"name": "Coca Cola 1,0l (MEHRWEG)",
+			"name": "Coca Cola 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Kafeinli ferahlatıcı gazlı içecek (10,00 mg/100 ml)",
 			"productInfo": {
 				"allergens": [
@@ -1001,7 +1001,7 @@
 			}
 		},
 		"cocaColaLight": {
-			"name": "Coca Cola light 1,0l (MEHRWEG)",
+			"name": "Coca Cola light 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Düşük kalorili kafeinli gazlı içecek (12,00 mg/100 ml)",
 			"productInfo": {
 				"allergens": [
@@ -1018,7 +1018,7 @@
 			}
 		},
 		"fanta": {
-			"name": "Fanta 1,0l (MEHRWEG)",
+			"name": "Fanta 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Meyveli portakal aromalı gazlı içecek",
 			"productInfo": {
 				"allergens": [
@@ -1033,7 +1033,7 @@
 			}
 		},
 		"mezzoMix": {
-			"name": "Mezzo Mix 1,0l (MEHRWEG)",
+			"name": "Mezzo Mix 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Kola ve portakal aroması karışımı, kafein içerir (6,00 mg/100 ml)",
 			"productInfo": {
 				"allergens": [
@@ -1049,7 +1049,7 @@
 			}
 		},
 		"sprite": {
-			"name": "Sprite 1,0l (MEHRWEG)",
+			"name": "Sprite 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Limon ve misket limonu aromalı ferahlatıcı içecek",
 			"productInfo": {
 				"allergens": ["Asit düzenleyiciler içerir"],
@@ -1059,35 +1059,35 @@
 			}
 		},
 		"apfelschorle": {
-			"name": "Apfelschorle 1,0l (MEHRWEG)",
+			"name": "Apfelschorle 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Doğal elma suyu ile yapılan elma gazozu",
 			"productInfo": {
 				"nutritionFacts": ["İçindekiler: Elma suyu, karbondioksitli su."]
 			}
 		},
 		"mineralwasser": {
-			"name": "Mineralwasser 1,0l (MEHRWEG)",
+			"name": "Mineralwasser 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Saf maden suyu",
 			"productInfo": {
 				"nutritionFacts": ["İçindekiler: Su."]
 			}
 		},
 		"apfelsaft": {
-			"name": "Apfelsaft 1,0l (MEHRWEG)",
+			"name": "Apfelsaft 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Doğal elma suyu",
 			"productInfo": {
 				"nutritionFacts": ["İçindekiler: Elma suyu."]
 			}
 		},
 		"orangensaft": {
-			"name": "Orangensaft 1,0l (MEHRWEG)",
+			"name": "Orangensaft 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Taze portakal suyu",
 			"productInfo": {
 				"nutritionFacts": ["İçindekiler: Portakal suyu."]
 			}
 		},
 		"redBull": {
-			"name": "Red Bull 1,0l (MEHRWEG)",
+			"name": "Red Bull 1,0l (YENİDEN KULLANILABİLİR)",
 			"description": "Yüksek kafein içerikli enerji içeceği (32 mg/100 ml). Çocuklar, hamile veya emziren kadınlar için önerilmez.",
 			"productInfo": {
 				"allergens": [

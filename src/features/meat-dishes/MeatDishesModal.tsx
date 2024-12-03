@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../pasta-items/pastaModal.module.css';
 import { t } from 'i18next';
 import { useDispatch } from 'react-redux';
@@ -28,6 +28,13 @@ const MeatDishesModal: React.FC<MeatDishesModalProps> = ({
 	const calculateTotalPrice = (): number => {
 		return price * quantity;
 	};
+
+	useEffect(() => {
+		document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = '';
+		};
+	}, []);
 
 	const handleAddToCart = (): void => {
 		dispatch(
