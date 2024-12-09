@@ -4,7 +4,6 @@
 This project is designed to create a digital menu for pizzerias using QR codes. Customers can scan the QR code with their smartphones and easily view the menu, place orders, and access special offers without interacting with a physical menu.
 QR Code Menu allows pizzerias to create a dynamic, easily updatable menu accessible via a QR code. This solution enhances customer convenience, reduces the use of paper materials, and speeds up the ordering process.
 
-## Key Features
 
 ### How It Works
 
