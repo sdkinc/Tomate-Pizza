@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="apple-touch-icon" sizes="57x57" href="/Tomate-Pizza/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/Tomate-Pizza/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/Tomate-Pizza/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/Tomate-Pizza/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/Tomate-Pizza/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/Tomate-Pizza/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/Tomate-Pizza/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/Tomate-Pizza/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/Tomate-Pizza/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/Tomate-Pizza/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/Tomate-Pizza/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="/Tomate-Pizza/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/Tomate-Pizza/favicon-16x16.png" />
+		<link rel="manifest" href="/Tomate-Pizza/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Tomate Pizza</title>
+		<meta name="description" content="pizza in München" />
+		<script type="module" crossorigin src="/Tomate-Pizza/assets/index-DObRQFr3.js"></script>
+		<link rel="stylesheet" crossorigin href="/Tomate-Pizza/assets/index-Cn0hQg0w.css">
+	</head>
+
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+		<!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+		<script>
+			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+						behavior: 'smooth',
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
