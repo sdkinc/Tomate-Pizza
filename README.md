@@ -1,36 +1,21 @@
-# Multi-Language Document Generator
+# QR Code Menu for Pizzeria
 
 ## Description
-This project simplifies the process of creating and filling out multi-language documents. With its
-intuitive interface and powerful features, users can effortlessly manage documents in different
-languages. Whether you need to generate contracts, forms, letters, or any other type of document,
-this application streamlines the entire process from creation to translation. With support for user
-authentication, customizable translations, and various export formats, the Multi-Language Document
-Generator is your all-in-one solution for multilingual document management.
+This project is designed to create a digital menu for pizzerias using QR codes. Customers can scan the QR code with their smartphones and easily view the menu, place orders, and access special offers without interacting with a physical menu.
+QR Code Menu allows pizzerias to create a dynamic, easily updatable menu accessible via a QR code. This solution enhances customer convenience, reduces the use of paper materials, and speeds up the ordering process.
 
 ## Key Features
 
-### 1. Multi-Language Support
+### How It Works
 
-- Input content in any language.
-- Automatic translation to the target language of the document.
+- Create the Menu: The pizzeria's menu can be created in HTML format, displaying information about pizzas, drinks, sauces, and other products.
+- Generate the QR Code: A QR code is generated that links to the URL of the menu page. Customers scan the QR code on their phones and open the menu.
+- Instant Updates: The menu can be updated in real time. Any changes will be reflected immediately for all customers scanning the QR code.
 
-### 2. Document Templates
+### Features
 
-- Predefined templates for various document types.
-- Ensures consistency in formatting and structure.
-
-### 3. User Authentication
-
-- Secure user authentication system.
-- Protects user information and documents.
-
-### 4. Customizable Translation
-
-- Fine-tune translations manually.
-- Preserve accuracy and context.
-
-### 5. Save and Export
-
-- Save documents for future reference.
-- Export in different formats such as PDF, Word, etc.
+- Responsive Design: The menu automatically adjusts to the screen size of the device (smartphone or tablet).
+- Ease of Use: Users only need to scan the QR code to access the menu.
+- Updatable: The menu can be updated without changing physical materials.
+- Multi-language Support: The ability to integrate the menu in different languages for international customers.
+- Staff Convenience: The ordering system can be integrated with the pizzeria's POS system for easier order processing.
