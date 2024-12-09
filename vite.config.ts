@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
 			outDir: 'build',
 			sourcemap: true,
 		},
-		base: '/Tomate-Pizza/',
+		base: '/Tomate-Pizza',
 		define: {
 			API_BASE_URL: isDevelopment ? JSON.stringify('') : JSON.stringify('/api'),
 		},
