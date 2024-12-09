@@ -12,9 +12,7 @@
 		"test": "vitest",
 		"lint": "tsc --noEmit && eslint src//*.ts{,x} --cache --max-warnings=0",
 		"lint:fix": "eslint src//*.ts{,x} --fix",
-		"type-check": "tsc",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"type-check": "tsc"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
